@@ -1,0 +1,6 @@
+dev/*
+node_modules
+package.json
+package-lock.json
+prettier.config.js
+config.yml
