@@ -17065,7 +17065,7 @@ const QuickOrder = (function(){
 
     return { init }
 
-})
+})()
  
 
 /* harmony default export */ const quick_order = (QuickOrder);  
