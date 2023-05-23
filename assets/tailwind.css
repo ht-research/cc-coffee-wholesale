@@ -5190,7 +5190,7 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
     display: none;
 }
 
-.collection-grid--container.list-view-active .list-viewc_card-price{
+.collection-grid--container.list-view-active .list-view_card-price{
     display: block !important;
 }
 
