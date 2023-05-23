@@ -5202,6 +5202,10 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
     transform: translate(-50%, -50%);
 }
 
+.collection-grid--container.list-view-active .list-view_content-price-wrapper{
+    width: 75%;
+}
+
 @media (max-width: 768px){
     .collection-grid--container.list-view-active .list-view__heading-price{
         padding-right: 0;
