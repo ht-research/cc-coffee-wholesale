@@ -5118,6 +5118,25 @@ img.lazyloaded {
   }
 }
 
+[data-grid-list-switch]{
+    z-index: 1;
+  }
+
+.grid-list-swatch-wrapper .layout-switch-btn {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+  }
+
+.grid-list-swatch-wrapper .layout-switch-btn.switch__active {
+    --tw-bg-opacity: 1;
+    background-color: rgb(234 232 110 / var(--tw-bg-opacity));
+  }
+
 #BambooHR {
     padding-block: 3rem;
     padding-inline: 10%;
