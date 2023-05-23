@@ -14840,7 +14840,7 @@ const Cart = (function(){
 
     //before processing cart request, close the QO modal	
     console.log('closing the QO modal first....')	
-    jquery_default()('.product--buy-panel-quick-order').css('display', 'none')	
+    jquery_default()('.product--buy-panel-quick-order').fadeOut()
     jquery_default()('.quick-order-overlay').addClass('hidden')
 
     processCartRequest(data, urls.cartAdd, () => {
