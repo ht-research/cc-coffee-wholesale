@@ -1,0 +1,142 @@
+<!-- snippets/product-card-form-quick-order -->
+<div class="relative z-[2] grid xl:grid-cols-2">
+<div class="quick-order-close cursor-pointer absolute top-5 right-5 z-10">
+  <span>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L22.5 22.5" stroke="black" stroke-width="2"/>
+      <path d="M23 1L1.5 22.5" stroke="black" stroke-width="2"/>
+    </svg>
+  </span>
+</div>
+<div class="product-image-container border-black">
+  {% render 'product-card-images', product: product %}
+</div>
+  
+<div class="product-details-container relative px-3 py-5 md:px-8 lg:py-12">
+
+{% assign product_form_id = "product-card--" | append: product.id %}
+{% assign current_variant = product.selected_or_first_available_variant %}
+
+{% assign is_archive = false %}
+{%- if product.tags contains 'archive' -%}
+  {% assign is_archive = true %}
+{%- endif -%}
+
+{%
+  form 'product',
+  product,
+  id: product_form_id,
+  class: 'js-product-form',
+  data-type: 'add-to-cart-form'
+%}
+
+  <input type="hidden" name="id" value="{{ current_variant.id }}">
+
+  {%- comment %}
+    <input type="hidden" name="properties[expire_after_specific_number_of_charges]" value="3">
+  {% endcomment -%}
+
+ 
+
+  <div class="flex flex-col md:flex-row gap-2 justify-between items-start animate-fadeInUp animate">
+    <h1 class="font-couch text-2xl md:text-3xl mb-2 flex items-center">
+      {{ product.title }}
+    </h1>
+  </div>
+
+  {% comment %}
+  {% render 'tasting-notes',
+      product: product,
+      class: "animate-fadeInUp animate",
+      show_label: true %}
+  {% endcomment %}
+  <!-- snippets/tasting-notes -->
+  {% assign tasting_notes = product.metafields.main.tasting_notes %}
+  
+  {%- if tasting_notes != blank -%}
+    <div class="flex items-center gap-2 mt-2 mb-4">
+      <p class="italic font-tenso font-regular text-base md:text-base xl:text-xl animate-fadeInUp animate">{{ tasting_notes }}</p>
+    </div>
+  {%- endif -%}
+  
+
+  {% if product.metafields.custom.small_description %}
+    <div class="rte text-base mt-3 mb-5 lg:mb-6 font-tenso tracking-wider animate animate-fadeInUp prod-desc-qo">{{ product.metafields.custom.small_description }}</div>
+  {% endif %}  
+
+
+
+
+  {%- unless is_archive -%}
+
+    {% render 'product-variant-select-quick-order', product: product, product_form_id: product_form_id, class: "animate-fadeInUp animate" %}
+
+    {% render 'product-subscription-options',
+        product: product,
+        product_form_id: product_form_id,
+        class: "animate-fadeInUp animate" %}
+
+
+    <div class="quan-div flex justify-between gap-10 items-center w-full animate animate-fadeInUp">
+      <p class="uppercase text-lg font-medium tracking-wider animate animate-fadeInUp">Quantity</p>
+
+      {%
+        render 'quantity-box',
+        input_class: "",
+        name: "quantity",
+        quantity: 1,
+        title: product.title,
+        min: 1
+      %}
+    </div>
+
+    <button type="submit"
+              name="submit"
+              class="js-product-form-atc-qo
+                     btn btn-secondary w-full flex justify-center items-center my-5 font-tenso gap-1 text-lg"
+              {% unless current_variant.available %}disabled{% endunless %}>
+        {% if current_variant.available %}
+          <span>Add to Cart</span>
+          <span>-</span> 
+          {%- unless is_archive -%}
+            {% comment %}
+              {% render 'product-price', variant: current_variant %}
+            {% endcomment %}
+
+            {% assign price = current_variant.price %}    
+            <div class="flex justify-start">
+              {%- if price == 0 -%}
+                <p class="font-tenso js-price">Free</p>
+              {%- else -%}
+                <p class="font-tenso js-price">{{ price | money_without_trailing_zeros }}</p>
+              {%- endif -%}
+            </div>
+          {%- endunless -%}
+        {%- else -%}
+          Sold Out
+        {% endif %}
+    </button>
+  {%- endunless -%}
+
+  
+    <a href="{{ product.url | within: collection }}" class="more-details-qo text-center font-tenso uppercase underline font-small block">
+      MORE DETAILS
+    </a>
+
+  
+
+  {%- if is_archive -%}
+    {% render 'notify-me-form', product: product %}
+  {%- else  -%}
+    <div class="hidden js-notify-form">
+      {% render 'notify-me-form', product: product %}
+    </div>
+  {%- endif -%}
+
+  <script type="application/json" class="js-product-script">
+    {{ product | json }}
+  </script>
+{% endform %}
+
+</div>
+</div>
