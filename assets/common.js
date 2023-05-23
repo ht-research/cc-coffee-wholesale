@@ -14838,15 +14838,19 @@ const Cart = (function(){
     let data = $this.serialize();
     $elementToFocusOnClose = $this;
 
-    //before processing cart request, close the QO modal	
-    //console.log('closing the QO modal first....')	
-    jquery_default()('.product--buy-panel-quick-order').fadeOut()
-    jquery_default()('.quick-order-overlay').addClass('hidden')
-
+    
+    closeQOModal();
     processCartRequest(data, urls.cartAdd, () => {
       buildCart()
       openCart();
     })
+  }
+
+  const closeQOModal = function(){
+    //before processing cart request, close the QO modal	
+    console.log('closing the QO modal first.... testing')	
+    jquery_default()('.product--buy-panel-quick-order').fadeOut()
+    jquery_default()('.quick-order-overlay').addClass('hidden')
   }
 
   const handleItemRemove = function(e){
