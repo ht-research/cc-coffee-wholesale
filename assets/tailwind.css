@@ -5137,6 +5137,11 @@ transition: .3s ease-in-out;
 background-color: rgb(234 232 110 / var(--tw-bg-opacity));
 }
 
+.collection-grid--container.list-view-active .list-view__heading-price{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .collection-grid--container.list-view-active .list-view__heading-roast-level{
     display: flex;
     justify-content: space-between;
