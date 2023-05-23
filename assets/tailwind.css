@@ -5206,6 +5206,10 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
     width: 75%;
 }
 
+.collection-grid--container.list-view-active .list-view_roast-level-graph{
+    width: 50%;
+}
+
 @media (max-width: 768px){
     .collection-grid--container.list-view-active .list-view__heading-price{
         padding-right: 0;
