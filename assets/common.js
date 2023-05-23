@@ -17033,15 +17033,30 @@ const Video = (function(){
 ;// CONCATENATED MODULE: ./assets/js/quick-order.js
 
 const QuickOrder = (function(){
-    jquery_default()('.quick-order-btn').each(function(){
-        jquery_default()(this).on('click', function(e){
-          e.preventDefault();
-          jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn()
-          jquery_default()('.quick-order-overlay').removeClass('hidden')
+
+
+    const init = function(){
+        if (!jquery_default()(settings.slideCartContainer).length) return;
+    
+        quickOrderOpen();
+        quickOrderClose();
+
+
+      }
+
+
+      const quickOrderOpen = function(){
+        jquery_default()('.quick-order-btn').each(function(){
+            jquery_default()(this).on('click', function(e){
+              e.preventDefault();
+              jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn()
+              jquery_default()('.quick-order-overlay').removeClass('hidden')
+            })
         })
-      })
+      }
+    
       
-      
+      const quickOrderClose = function(){
       jquery_default()('.quick-order-close').each(function(){
         jquery_default()(this).on('click', function(e){
           e.preventDefault();
@@ -17049,6 +17064,7 @@ const QuickOrder = (function(){
           jquery_default()('.quick-order-overlay').addClass('hidden')
         })
       })
+    }
 
 })
  
