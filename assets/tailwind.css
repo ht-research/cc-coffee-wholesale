@@ -5194,6 +5194,11 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
     display: block !important;
 }
 
+.collection-grid--container.list-view-active .product-coffee-image{
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #BambooHR {
     padding-block: 3rem;
     padding-inline: 10%;
