@@ -14839,7 +14839,7 @@ const Cart = (function(){
     $elementToFocusOnClose = $this;
 
     //before processing cart request, close the QO modal	
-    console.log('closing the QO modal first....')	
+    //console.log('closing the QO modal first....')	
     jquery_default()('.product--buy-panel-quick-order').fadeOut()
     jquery_default()('.quick-order-overlay').addClass('hidden')
 
