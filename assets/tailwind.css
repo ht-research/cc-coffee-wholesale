@@ -5175,6 +5175,11 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
     display: none;
 }
 
+.collection-grid--container.list-view-active .quick-order-btn{
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
 #BambooHR {
     padding-block: 3rem;
     padding-inline: 10%;
