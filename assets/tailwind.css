@@ -5204,7 +5204,7 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
 
 @media (max-width: 768px){
     .collection-grid--container.list-view-active .list-view__heading-price{
-        width: 70%;
+        padding-right: 0;
     }
 
     .collection-grid--container.list-view-active .product-card{
