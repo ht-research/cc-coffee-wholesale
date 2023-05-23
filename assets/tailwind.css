@@ -5190,7 +5190,7 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
 }
 
 .collection-grid--container.list-view-active .list-viewc_card-price{
-    display: block;
+    display: block !important;
 }
 
 #BambooHR {
