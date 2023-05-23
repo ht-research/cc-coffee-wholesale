@@ -5143,6 +5143,12 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
 
 .collection-grid--container.list-view-active .js-product-card{
     flex-direction: row;
+    align-items: center;
+}
+
+.collection-grid--container.list-view-active .js-product-card a{
+    width: 114px;
+    height: 106px;
 }
 
 #BambooHR {
