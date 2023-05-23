@@ -5221,6 +5221,11 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
         justify-content: flex-start;
         align-items: flex-start;
     }
+
+    .collection-grid--container.list-view-active .quick-order-btn{
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 
 #BambooHR {
