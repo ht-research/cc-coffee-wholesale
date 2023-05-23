@@ -5198,9 +5198,9 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
 }
 
 .collection-grid--container.list-view-active .product-coffee-image{
-    position: relative;
+    /* position: relative;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 .collection-grid--container.list-view-active .list-view_content-price-wrapper{
@@ -5221,7 +5221,7 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
     .collection-grid--container.list-view-active .list-view__heading-content-wrapper{
         width: 100%;
     }
-    
+
     .collection-grid--container.list-view-active .list-view__heading-price{
         padding-right: 0;
     }
