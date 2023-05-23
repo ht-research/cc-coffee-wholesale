@@ -5,7 +5,7 @@
   {% render 'product-card-badge', product: product %}
 
   <div
-     class="bg-white js-product-card flex flex-col justify-between h-full">
+     class="js-product-card flex flex-col justify-between h-full">
     <a href="{{ product.url | within: collection }}">
       {% render 'product-card-images', product: product %}
     </a>
