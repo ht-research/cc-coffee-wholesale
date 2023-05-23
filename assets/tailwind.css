@@ -5185,7 +5185,7 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
 .collection-grid--container.list-view-active .quick-order-btn{
     height: -moz-fit-content;
     height: fit-content;
-    transition: 4s ease-in-out;
+    /* transition: 4s ease-in-out; */
 }
 
 .collection-grid--container.list-view-active .list-view_price, 
