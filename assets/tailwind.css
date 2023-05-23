@@ -5157,6 +5157,7 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
 
 .collection-grid--container.list-view-active .product-card{
     padding: 12px 20px;
+    border-bottom: none;
 }
 
 .collection-grid--container.list-view-active .js-product-card{
