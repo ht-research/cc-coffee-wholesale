@@ -5216,6 +5216,7 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
     }
 
     .collection-grid--container.list-view-active .list-view_content-price-wrapper{
+        display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
