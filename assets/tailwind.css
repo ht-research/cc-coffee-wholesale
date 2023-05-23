@@ -5151,6 +5151,12 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
     height: 106px;
 }
 
+.collection-grid--container.list-view-active .js-product-card a .product-card--img-container{
+    min-height: unset;
+    height: 100%;
+    width: 100%;
+}
+
 #BambooHR {
     padding-block: 3rem;
     padding-inline: 10%;
