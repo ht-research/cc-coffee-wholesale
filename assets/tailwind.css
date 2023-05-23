@@ -5182,7 +5182,8 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
     height: fit-content;
 }
 
-.collection-grid--container.list-view-active .list-view_price{
+.collection-grid--container.list-view-active .list-view_price, 
+.collection-grid--container.list-view-active .list-view_origin-locale{
     display: none;
 }
 
