@@ -5238,6 +5238,7 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
     .collection-grid--container.list-view-active .quick-order-btn{
         font-size: 14px;
         line-height: 20px;
+        white-space: nowrap;
     }
 }
 
