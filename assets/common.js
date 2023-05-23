@@ -17066,11 +17066,13 @@ const QuickOrder = (function(){
       })
     }
 
+
+    return { init }
+
 })
  
 
-
-
+/* harmony default export */ const quick_order = (QuickOrder);  
 
 
 
@@ -17134,7 +17136,7 @@ jquery_default()(() => {
   backInStock.init();
   blendComponents.init();
   giftSubscription.init();
-  QuickOrder.init();
+  quick_order.init();
 });
 
 
