@@ -47,9 +47,9 @@ Variables:
 
     {% assign price = current_variant.price %}
     {%- if price == 0 -%}
-      <p class="text-lg xl:text-2xl font-tenso font-bold">Free!</p>
+      <p class="text-lg xl:text-2xl font-tenso font-medium">Free!</p>
     {%- else -%}
-      <p class="text-lg xl:text-2xl font-tenso font-bold">{{ price | money_without_trailing_zeros }}/unit</p>
+      <p class="text-lg xl:text-2xl font-tenso font-medium">{{ price | money_without_trailing_zeros }}/unit</p>
     {%- endif -%}
 
   </div>
