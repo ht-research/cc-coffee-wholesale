@@ -5150,6 +5150,7 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
 .collection-grid--container.list-view-active .list-view__heading-roast-level{
     display: flex;
     gap: 10rem;
+    align-items: center;
 }
 
 .collection-grid--container.list-view-active .product-card{
