@@ -5141,6 +5141,10 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
     display: flex;
 }
 
+.collection-grid--container.list-view-active .product-card{
+    padding: 12px 20px;
+}
+
 .collection-grid--container.list-view-active .js-product-card{
     flex-direction: row;
     align-items: center;
