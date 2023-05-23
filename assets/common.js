@@ -17035,17 +17035,13 @@ const Video = (function(){
 const QuickOrder = (function(){
 
 
-    const init = function(){
-        if (!jquery_default()(settings.slideCartContainer).length) return;
-    
+    const init = function(){    
         quickOrderOpen();
         quickOrderClose();
+    }
 
 
-      }
-
-
-      const quickOrderOpen = function(){
+    const quickOrderOpen = function(){
         jquery_default()('.quick-order-btn').each(function(){
             jquery_default()(this).on('click', function(e){
               e.preventDefault();
@@ -17053,10 +17049,10 @@ const QuickOrder = (function(){
               jquery_default()('.quick-order-overlay').removeClass('hidden')
             })
         })
-      }
+    }
     
       
-      const quickOrderClose = function(){
+    const quickOrderClose = function(){
       jquery_default()('.quick-order-close').each(function(){
         jquery_default()(this).on('click', function(e){
           e.preventDefault();
