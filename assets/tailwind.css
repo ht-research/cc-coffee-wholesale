@@ -5214,6 +5214,12 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
     .collection-grid--container.list-view-active .list-view_roast-level-graph{
         display: none
     }
+
+    .collection-grid--container.list-view-active .list-view__heading-price{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
 
 #BambooHR {
