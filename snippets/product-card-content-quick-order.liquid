@@ -13,7 +13,7 @@ Variables:
 
 {% assign current_variant = product.selected_or_first_available_variant %}
 
-  <div class="list-view__heading-price bg-white w-full h-full flex flex-col gap-2 justify-between px-4 xl:px-12 py-4 xl:py-6">
+<div class="list-view__heading-price bg-white w-full h-full flex flex-col gap-2 justify-between px-4 xl:px-12 py-4 xl:py-6">
   <div class="list-view__heading-content-wrapper">
     {% render 'origin-locale', product: product %}
 
@@ -38,16 +38,9 @@ Variables:
   </div>
 
 
-  {% comment %}
-  {%- unless is_archive or is_class -%}
-  {% render 'product-card-form', product: product %}
-  {%- endunless -%}
-  {% endcomment %}{%- if is_class -%}
-    <button
-      type="button"
-      name="button"
-      class="btn btn-secondary">Register</button>
-  {%- endif -%}
+  <div class="grid-view_price">
+    {% render 'product-price', variant: current_variant %}
+  </div>
 
 
 
