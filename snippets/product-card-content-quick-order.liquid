@@ -44,7 +44,14 @@ Variables:
 
 
   <div class="grid-view_price">
-    {% render 'product-price', variant: current_variant %} /unit
+
+    {% assign price = current_variant.price %}
+    {%- if price == 0 -%}
+      <p class="text-lg xl:text-2xl font-tenso">Free!</p>
+    {%- else -%}
+      <p class="text-lg xl:text-2xl font-tenso">{{ price | money_without_trailing_zeros }}/unit</p>
+    {%- endif -%}
+
   </div>
 
 
