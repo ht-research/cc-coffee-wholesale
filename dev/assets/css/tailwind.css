@@ -33,6 +33,7 @@
 @import './components/roast-level.css';
 @import './components/slide-cart.css';
 @import './components/video-embed.css';
+@import './components/quick-order.css';
 
 @import './dependencies/bamboo-hr.css';
 @import './dependencies/slick.css';
