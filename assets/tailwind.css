@@ -5174,6 +5174,7 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
     min-height: unset;
     height: 100%;
     width: 100%;
+    border-bottom: none;
 }
 
 .collection-grid--container.list-view-active .product-card-attr-list,
