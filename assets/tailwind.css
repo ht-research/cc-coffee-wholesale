@@ -5205,6 +5205,10 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
     .collection-grid--container.list-view-active .list-view__heading-price{
         width: 70%;
     }
+
+    .collection-grid--container.list-view-active .product-card{
+        padding: 20px;
+    }
 }
 
 #BambooHR {
