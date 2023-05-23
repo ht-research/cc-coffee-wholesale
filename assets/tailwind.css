@@ -452,6 +452,16 @@ textarea {
     transition-duration: 150ms;
   }
 
+.product--buy-panel-quick-order .quan-div .custom-radio-swatch label{
+  border: 1px solid #000F9F;
+  width: 100%;
+}
+
+.product--buy-panel-quick-order .quan-div .custom-radio-swatch label button{
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
 .custom-radio-with-image label {
   border-radius: 1rem;
 }
@@ -511,6 +521,16 @@ textarea {
 .custom-checkbox .checkbox-wrapper {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.product--buy-panel-quick-order .quan-div .custom-checkbox .checkbox-wrapper{
+  border: 1px solid #000F9F;
+  width: 100%;
+}
+
+.product--buy-panel-quick-order .quan-div .custom-checkbox .checkbox-wrapper button{
+  padding-top: .75rem;
+  padding-bottom: .75rem;
 }
 
 @media (min-width: 1024px) {
@@ -1503,6 +1523,7 @@ a.btn {
 }
 
 .btn {
+  position: relative;
   width: -moz-max-content;
   width: max-content;
   border-radius: 9999px;
@@ -1517,6 +1538,19 @@ a.btn {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.product--buy-panel-quick-order .quan-div .btn{
+  border: 1px solid #000F9F;
+  width: 100%;
+}
+
+.product--buy-panel-quick-order .quan-div .btn button{
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.btn {
 
     display: inline-block;
     outline-color: #000;
@@ -1525,7 +1559,7 @@ a.btn {
     box-shadow: 0px 0px #000F8F;
     border: 2px solid transparent;
     transition: all .15s linear;
-}
+  }
 
 @media (min-width: 1024px) {
     .btn {
@@ -2051,6 +2085,16 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
   padding: 0.75rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.product--buy-panel-quick-order .quan-div .pagination .page.current{
+  border: 1px solid #000F9F;
+  width: 100%;
+}
+
+.product--buy-panel-quick-order .quan-div .pagination .page.current button{
+  padding-top: .75rem;
+  padding-bottom: .75rem;
 }
 
 .product-card--img-container:hover .product-card--secondary-img {
@@ -3442,6 +3486,10 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
 
 .w-\[10px\] {
   width: 10px;
+}
+
+.w-1 {
+  width: 0.25rem;
 }
 
 .min-w-\[15rem\] {
@@ -5008,6 +5056,68 @@ img.lazyloaded {
   }
 }
 
+/* Quick Order */
+
+.product--buy-panel-quick-order{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: none;
+
+}
+
+.product--buy-panel-quick-order .product-card--img-container{
+  height: 100%;
+  border-bottom: 0
+}
+
+.product--buy-panel-quick-order .icon-question{
+  display: none
+}
+
+.product--buy-panel-quick-order .prod-desc-qo{
+/*   display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden; */
+}
+
+.product--buy-panel-quick-order .quan-div .rounded-full{
+  border: 1px solid #000F9F;
+  width: 100%;
+}
+
+.product--buy-panel-quick-order .quan-div .rounded-full button{
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.product--buy-panel-quick-order .custom-radio-swatch label{
+  min-width: unset;
+  border: 1px solid #000F9F;
+}
+
+.product--buy-panel-quick-order .product-image-container img{
+      -o-object-fit: contain;
+         object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .product--buy-panel-quick-order{
+    position: fixed;
+    bottom: unset;
+    right: unset;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    display: none;
+
+  }
+}
+
 #BambooHR {
     padding-block: 3rem;
     padding-inline: 10%;
@@ -5106,6 +5216,7 @@ a#quiz-kit-content #quiz-kit-container button:not(.image-size-large):not(.image-
 }
 
 #quiz-kit-content #quiz-kit-container button:not(.image-size-large):not(.image-size-medium):not(#quiz-kit-question-next-button):not(#quiz-kit-question-prev-button) {
+  position: relative;
   width: -moz-max-content;
   width: max-content;
   border-radius: 9999px;
@@ -5120,6 +5231,19 @@ a#quiz-kit-content #quiz-kit-container button:not(.image-size-large):not(.image-
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.product--buy-panel-quick-order .quan-div #quiz-kit-content #quiz-kit-container button:not(.image-size-large):not(.image-size-medium):not(#quiz-kit-question-next-button):not(#quiz-kit-question-prev-button){
+  border: 1px solid #000F9F;
+  width: 100%;
+}
+
+.product--buy-panel-quick-order .quan-div #quiz-kit-content #quiz-kit-container button:not(.image-size-large):not(.image-size-medium):not(#quiz-kit-question-next-button):not(#quiz-kit-question-prev-button) button{
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+#quiz-kit-content #quiz-kit-container button:not(.image-size-large):not(.image-size-medium):not(#quiz-kit-question-next-button):not(#quiz-kit-question-prev-button) {
 
     display: inline-block;
     outline-color: #000;
@@ -5128,7 +5252,7 @@ a#quiz-kit-content #quiz-kit-container button:not(.image-size-large):not(.image-
     box-shadow: 0px 0px #000F8F;
     border: 2px solid transparent;
     transition: all .15s linear;
-}
+  }
 
 @media (min-width: 1024px) {
     #quiz-kit-content #quiz-kit-container button:not(.image-size-large):not(.image-size-medium):not(#quiz-kit-question-next-button):not(#quiz-kit-question-prev-button) {
@@ -5403,6 +5527,7 @@ a#crmWebToEntityForm .zcwf_button {
 }
 
 #crmWebToEntityForm .zcwf_button {
+  position: relative;
   width: -moz-max-content;
   width: max-content;
   border-radius: 9999px;
@@ -5417,6 +5542,19 @@ a#crmWebToEntityForm .zcwf_button {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.product--buy-panel-quick-order .quan-div #crmWebToEntityForm .zcwf_button{
+  border: 1px solid #000F9F;
+  width: 100%;
+}
+
+.product--buy-panel-quick-order .quan-div #crmWebToEntityForm .zcwf_button button{
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+#crmWebToEntityForm .zcwf_button {
 
     display: inline-block;
     outline-color: #000;
@@ -5425,7 +5563,7 @@ a#crmWebToEntityForm .zcwf_button {
     box-shadow: 0px 0px #000F8F;
     border: 2px solid transparent;
     transition: all .15s linear;
-}
+  }
 
 @media (min-width: 1024px) {
     #crmWebToEntityForm .zcwf_button {
@@ -5564,6 +5702,7 @@ a.shopify-challenge__container input[type=submit].shopify-challenge__button {
 }
 
 .shopify-challenge__container input[type=submit].shopify-challenge__button {
+  position: relative;
   width: -moz-max-content;
   width: max-content;
   border-radius: 9999px;
@@ -5578,6 +5717,19 @@ a.shopify-challenge__container input[type=submit].shopify-challenge__button {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.product--buy-panel-quick-order .quan-div .shopify-challenge__container input[type=submit].shopify-challenge__button{
+  border: 1px solid #000F9F;
+  width: 100%;
+}
+
+.product--buy-panel-quick-order .quan-div .shopify-challenge__container input[type=submit].shopify-challenge__button button{
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.shopify-challenge__container input[type=submit].shopify-challenge__button {
 
     display: inline-block;
     outline-color: #000;
@@ -5586,7 +5738,7 @@ a.shopify-challenge__container input[type=submit].shopify-challenge__button {
     box-shadow: 0px 0px #000F8F;
     border: 2px solid transparent;
     transition: all .15s linear;
-}
+  }
 
 @media (min-width: 1024px) {
     .shopify-challenge__container input[type=submit].shopify-challenge__button {
@@ -6341,6 +6493,16 @@ a.section-store-locator #stockist-widget-wrapper #stockist-widget .stockist-sear
 
 .section-store-locator #stockist-widget-wrapper #stockist-widget .stockist-search-form .stockist-query-entry button {
   letter-spacing: 0.05em;
+}
+
+.product--buy-panel-quick-order .quan-div .section-store-locator #stockist-widget-wrapper #stockist-widget .stockist-search-form .stockist-query-entry button{
+  border: 1px solid #000F9F;
+  width: 100%;
+}
+
+.product--buy-panel-quick-order .quan-div .section-store-locator #stockist-widget-wrapper #stockist-widget .stockist-search-form .stockist-query-entry button button{
+  padding-top: .75rem;
+  padding-bottom: .75rem;
 }
 
 .section-store-locator #stockist-widget-wrapper #stockist-widget .stockist-search-form .stockist-query-entry button {
