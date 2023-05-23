@@ -17129,17 +17129,17 @@ const GriListSwitch = (function(){
             let currentViewSelected = jquery_default()(this).attr('data-switch')
             console.log('currentViewSelected: ', currentViewSelected)
 
-            jquery_default()('.js-collection-list.collection-grid--container').fadeOut('slow')
+            jquery_default()('.js-collection-list.collection-grid--container').fadeOut(200)
         
             if(currentViewSelected == 'list'){
-               jquery_default()('.js-collection-list.collection-grid--container').fadeIn('slow')
+               jquery_default()('.js-collection-list.collection-grid--container').fadeIn(200)
                setTimeout(function(){
                 jquery_default()('.js-collection-list.collection-grid--container').addClass('list-view-active')
                 jquery_default()('.js-collection-list.collection-grid--container').children('ul').addClass('grid-cols-1').removeClass('xl:grid-cols-3') 
-               }, 200)
+               }, 400)
                }
             else{
-               jquery_default()('.js-collection-list.collection-grid--container').fadeIn('slow')
+               jquery_default()('.js-collection-list.collection-grid--container').fadeIn(200)
                jquery_default()('.js-collection-list.collection-grid--container').removeClass('list-view-active')
                jquery_default()('.js-collection-list.collection-grid--container').children('ul').removeClass('grid-cols-1').addClass('xl:grid-cols-3')
             }  
