@@ -5233,6 +5233,7 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        width: 60%;
     }
 
     .collection-grid--container.list-view-active .quick-order-btn{
