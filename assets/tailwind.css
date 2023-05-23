@@ -5215,7 +5215,7 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
         display: none
     }
 
-    .collection-grid--container.list-view-active .list-view__heading-price{
+    .collection-grid--container.list-view-active .list-view_content-price-wrapper{
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
