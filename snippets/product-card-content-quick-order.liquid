@@ -15,46 +15,45 @@ Variables:
 
 <div class="list-view__heading-price bg-white w-full h-full flex flex-col gap-2 justify-between px-4 xl:px-12 py-4 xl:py-6">
 
-  <div class="list-view_content-price-wrapper flex">
-    <div class="list-view__heading-content-wrapper">
-      <div class="list-view_origin-locale">
-        {% render 'origin-locale', product: product %}
-      </div>
 
-      <div class="list-view__heading-roast-level">
-        <div class="list-view__heading-notes" style="width:50%">
-          <div class="flex flex-col md:flex-row justify-between items-start gap-2">
-            <h3 class="text-base md:text-lg xl:text-2xl font-couch">{{ product.title }}</h3>
+  <div class="list-view__heading-content-wrapper">
+    <div class="list-view_origin-locale">
+      {% render 'origin-locale', product: product %}
+    </div>
 
-            <div class="list-view_price">
-              {%- unless is_archive -%}
-                {% render 'product-price', variant: current_variant %}
-              {%- endunless -%}
-            </div>
+    <div class="list-view__heading-roast-level">
+      <div class="list-view__heading-notes" style="width:50%">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-2">
+          <h3 class="text-base md:text-lg xl:text-2xl font-couch">{{ product.title }}</h3>
 
+          <div class="list-view_price">
+            {%- unless is_archive -%}
+              {% render 'product-price', variant: current_variant %}
+            {%- endunless -%}
           </div>
-          {% render 'tasting-notes', product: product %}
+
         </div>
+        {% render 'tasting-notes', product: product %}
+      </div>
 
 
 
-        <div class="list-view_roast-level-graph" style="width:50%">
-          {% render 'roast-level', product: product %}
-        </div>
+      <div class="list-view_roast-level-graph" style="width:50%">
+        {% render 'roast-level', product: product %}
       </div>
     </div>
+  </div>
 
 
-    <div class="list-view_card-price hidden">
+  <div class="list-view_card-price hidden">
 
-      {% assign price = current_variant.price %}
-      {%- if price == 0 -%}
-        <p class="text-lg xl:text-2xl font-tenso font-medium">Free!</p>
-      {%- else -%}
-        <p class="text-lg xl:text-2xl font-tenso font-medium">{{ price | money_without_trailing_zeros }}/unit</p>
-      {%- endif -%}
+    {% assign price = current_variant.price %}
+    {%- if price == 0 -%}
+      <p class="text-lg xl:text-2xl font-tenso font-medium">Free!</p>
+    {%- else -%}
+      <p class="text-lg xl:text-2xl font-tenso font-medium">{{ price | money_without_trailing_zeros }}/unit</p>
+    {%- endif -%}
 
-    </div>
   </div>
 
 
