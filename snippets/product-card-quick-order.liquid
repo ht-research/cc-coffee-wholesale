@@ -2,10 +2,11 @@
 
 <li class="product-card bg-white relative border border-black">
 
-  {% render 'product-card-badge', product: product %}
+  <div class="product-card-badge">
+    {% render 'product-card-badge', product: product %}
+  </div>
 
-  <div
-     class="js-product-card flex flex-col justify-between h-full">
+  <div class="js-product-card flex flex-col justify-between h-full">
     <a href="{{ product.url | within: collection }}">
       {% render 'product-card-images', product: product %}
     </a>
