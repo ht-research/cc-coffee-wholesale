@@ -17030,7 +17030,39 @@ const Video = (function(){
 
 /* harmony default export */ const video = (Video);
 
+;// CONCATENATED MODULE: ./assets/js/quick-order.js
+
+const QuickOrder = (function(){
+    jquery_default()('.quick-order-btn').each(function(){
+        jquery_default()(this).on('click', function(e){
+          e.preventDefault();
+          jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn()
+          jquery_default()('.quick-order-overlay').removeClass('hidden')
+        })
+      })
+      
+      
+      jquery_default()('.quick-order-close').each(function(){
+        jquery_default()(this).on('click', function(e){
+          e.preventDefault();
+          jquery_default()(this).parents('.product--buy-panel-quick-order').fadeOut()
+          jquery_default()('.quick-order-overlay').addClass('hidden')
+        })
+      })
+
+})
+ 
+
+
+
+
+
+
+
+
+
 ;// CONCATENATED MODULE: ./assets/js/common.js
+
 
 
 
@@ -17086,6 +17118,7 @@ jquery_default()(() => {
   backInStock.init();
   blendComponents.init();
   giftSubscription.init();
+  QuickOrder.init();
 });
 
 
