@@ -19,15 +19,19 @@
   <div class="">
     {% render 'origin-locale', product: product %}
 
-    <div class="flex flex-col md:flex-row justify-between items-start gap-2">
-      <h3 class="text-base md:text-lg xl:text-2xl font-couch">{{ product.title }}</h3>
 
-      {%- unless is_archive -%}
-        {% render 'product-price', variant: current_variant %}
-      {%- endunless -%}
+    <div class="list-view__heading-notes">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-2">
+        <h3 class="text-base md:text-lg xl:text-2xl font-couch">{{ product.title }}</h3>
+
+        {%- unless is_archive -%}
+          {% render 'product-price', variant: current_variant %}
+        {%- endunless -%}
+      </div>
+      {% render 'tasting-notes', product: product %}
     </div>
 
-    {% render 'tasting-notes', product: product %}
+    
 
     {% render 'roast-level', product: product %}
   </div>
