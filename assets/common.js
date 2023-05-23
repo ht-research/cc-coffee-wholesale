@@ -14110,7 +14110,7 @@ var __webpack_exports__ = {};
 
 // EXTERNAL MODULE: ./node_modules/jquery/dist/jquery.js
 var jquery = __webpack_require__(755);
-var dist_jquery_default = /*#__PURE__*/__webpack_require__.n(jquery);
+var jquery_default = /*#__PURE__*/__webpack_require__.n(jquery);
 ;// CONCATENATED MODULE: ./assets/js/utilities/plugins.js
 
 
@@ -14127,13 +14127,13 @@ var dist_jquery_default = /*#__PURE__*/__webpack_require__.n(jquery);
         this.onElementRender($el);
     });
  */
-(dist_jquery_default()).fn.watchFor = function(child, callback) {
+(jquery_default()).fn.watchFor = function(child, callback) {
     const parent = this[0];
 
     const observer = new MutationObserver(function(mutations_list) {
         mutations_list.forEach(function(mutation) {
         mutation.addedNodes.forEach(function(added_node) {
-            const $found_nodes = dist_jquery_default()(added_node).find(child);
+            const $found_nodes = jquery_default()(added_node).find(child);
 
             if ( $found_nodes.length && callback ) callback($found_nodes);
         });
@@ -14141,7 +14141,7 @@ var dist_jquery_default = /*#__PURE__*/__webpack_require__.n(jquery);
     });
     observer.observe(parent, { subtree: true, childList: true });
 
-    if ( callback ) callback(dist_jquery_default()(child));
+    if ( callback ) callback(jquery_default()(child));
 
     return this;
 };
@@ -14166,7 +14166,7 @@ const useState = (defaultValue) => {
  * @returns boolean
  */
 function elementsExist(elements = []) {
-  return elements.filter(el => dist_jquery_default()(el).length).length == elements.length;
+  return elements.filter(el => jquery_default()(el).length).length == elements.length;
 }
 
 
@@ -14187,7 +14187,7 @@ function isTablet() {
  * Disables scrolling on the page
  */
 function disableScroll() {
-  dist_jquery_default()(document.body).addClass('overflow-hidden');
+  jquery_default()(document.body).addClass('overflow-hidden');
 }
 
 
@@ -14195,7 +14195,7 @@ function disableScroll() {
  * Enables scrolling on the page
  */
 function enableScroll() {
-  dist_jquery_default()(document.body).removeClass('overflow-hidden');
+  jquery_default()(document.body).removeClass('overflow-hidden');
 }
 
 
@@ -14282,8 +14282,8 @@ function replaceHistory(href) {
 
 class SectionNav {
     constructor(navLink) {
-        this.$navLink = dist_jquery_default()(navLink);
-        this.$section = dist_jquery_default()(this.$navLink.data('section-nav--wrapper'));
+        this.$navLink = jquery_default()(navLink);
+        this.$section = jquery_default()(this.$navLink.data('section-nav--wrapper'));
     }
 
     init() {
@@ -14299,18 +14299,18 @@ class SectionNav {
     renderSection(e) {
         e.preventDefault();
 
-        const $trigger = dist_jquery_default()(e.currentTarget);
+        const $trigger = jquery_default()(e.currentTarget);
         const sectionToRender = $trigger.data('section-nav')
         const newHref = $trigger.data('section-nav--href');
         const shouldReplaceHistory = $trigger.data('replace-history');
 
         $trigger.addClass("active")
 
-        dist_jquery_default()('[data-section-nav]')
+        jquery_default()('[data-section-nav]')
           .not($trigger)
           .removeClass('active')
 
-        dist_jquery_default().ajax(`${newHref}/?sections=${ sectionToRender }`)
+        jquery_default().ajax(`${newHref}/?sections=${ sectionToRender }`)
             .then(json => {
                 this.$section.html(json[sectionToRender]);
             });
@@ -14326,7 +14326,7 @@ class SectionNav {
 
 class SectionRerender {
     constructor(link) {
-        this.$link = dist_jquery_default()(link);
+        this.$link = jquery_default()(link);
         this.sectionID = this.$link.data('section-rerender');
         this.searchParams = Array(this.$link.data('section-rerender--params'))[0];   
     }
@@ -14364,9 +14364,9 @@ class SectionRerender {
         
         console.log(requestURL);
 
-        dist_jquery_default().ajax(requestURL).then(json => {
+        jquery_default().ajax(requestURL).then(json => {
             // debugger
-            dist_jquery_default()(`#shopify-section-${ this.sectionID }`).replaceWith(json);
+            jquery_default()(`#shopify-section-${ this.sectionID }`).replaceWith(json);
         });
     }
 
@@ -14396,11 +14396,11 @@ class SectionRerender {
  */
 class InlineToggle {
     constructor(trigger) {
-        this.targetSelector = dist_jquery_default()(trigger).data('toggle');
-        this.$target = dist_jquery_default()(this.targetSelector);
+        this.targetSelector = jquery_default()(trigger).data('toggle');
+        this.$target = jquery_default()(this.targetSelector);
 
-        this.$trigger  = dist_jquery_default()(trigger);
-        this.$triggers = dist_jquery_default()(`[data-toggle="${ this.targetSelector }"]`);
+        this.$trigger  = jquery_default()(trigger);
+        this.$triggers = jquery_default()(`[data-toggle="${ this.targetSelector }"]`);
     }
 
     init() {
@@ -14433,9 +14433,9 @@ class InlineToggle {
 
 class Deactivate {
     constructor(trigger) {
-        this.trigger = dist_jquery_default()(trigger)
-        this.data = dist_jquery_default()(trigger).data('deactivate');
-        this.elements = dist_jquery_default()(`[data-deactivate='${this.data}']`).not(this.trigger);
+        this.trigger = jquery_default()(trigger)
+        this.data = jquery_default()(trigger).data('deactivate');
+        this.elements = jquery_default()(`[data-deactivate='${this.data}']`).not(this.trigger);
     }
 
     init() {
@@ -14450,8 +14450,8 @@ class Deactivate {
 
     toggleProperties() {        
         this.elements.filter(".activated").each(function(index, element){
-            let $element = dist_jquery_default()(element)
-            let $target = dist_jquery_default()($element.data('toggle'));
+            let $element = jquery_default()(element)
+            let $target = jquery_default()($element.data('toggle'));
             $element.removeClass('activated');
             $target.removeClass('activated');
         })
@@ -14463,9 +14463,9 @@ class Deactivate {
 
 const Accordion = (function(){
   const cache = {
-    $toggle: dist_jquery_default()(".js-expandable-toggle"),
-    $content: dist_jquery_default()(".js-expandable-content"),
-    $group: dist_jquery_default()(".js-expandable-group")
+    $toggle: jquery_default()(".js-expandable-toggle"),
+    $content: jquery_default()(".js-expandable-content"),
+    $group: jquery_default()(".js-expandable-group")
   }
 
   const settings = {
@@ -14503,7 +14503,7 @@ const Accordion = (function(){
   }
 
   const toggleContent = function(e){
-    let $this = dist_jquery_default()(this)
+    let $this = jquery_default()(this)
     let toggleReference = $this.data('toggle')
     let $content = cache.$content.closest(`#${toggleReference}`)
 
@@ -14546,17 +14546,17 @@ const AudioTrigger = (function(){
   }
 
   const init = function(){
-    if (elementsExist([dist_jquery_default()(selectors.playButton), dist_jquery_default()(selectors.pronunciationFile)])) {
+    if (elementsExist([jquery_default()(selectors.playButton), jquery_default()(selectors.pronunciationFile)])) {
       initEventListeners()
     }
   }
 
   const initEventListeners = function(){
-    dist_jquery_default()(selectors.playButton).on('click', playAudio);
+    jquery_default()(selectors.playButton).on('click', playAudio);
   }
 
   const playAudio = function(e){
-    let $this = dist_jquery_default()(this);
+    let $this = jquery_default()(this);
     let pronunciationAudio = $this.find(selectors.pronunciationFile)[0]
 
     if (pronunciationAudio) {
@@ -14590,17 +14590,17 @@ const BackInStock = (function() {
   }
 
   const initEventListeners = function(){
-    dist_jquery_default()(selectors.bisSubmit).on('click', subscribeToBIS)
+    jquery_default()(selectors.bisSubmit).on('click', subscribeToBIS)
   }
 
   const subscribeToBIS = function(e){
-    let productId = dist_jquery_default()(this).data('productId');
-    let variantId = dist_jquery_default()(this).data('variantId');
-    let productTitle = dist_jquery_default()(this).data('productTitle');
-    let email = dist_jquery_default()(selectors.bisInput).val();
+    let productId = jquery_default()(this).data('productId');
+    let variantId = jquery_default()(this).data('variantId');
+    let productTitle = jquery_default()(this).data('productTitle');
+    let email = jquery_default()(selectors.bisInput).val();
 
     if (variantId && email) {
-      dist_jquery_default().ajax({
+      jquery_default().ajax({
         type: "POST",
         url: "https://a.klaviyo.com/onsite/components/back-in-stock/subscribe",
         data: {
@@ -14612,12 +14612,12 @@ const BackInStock = (function() {
           subscribe_for_newsletter: false,
         },
         success: function(response){
-          dist_jquery_default()(selectors.bisText).text("You're on the list! You'll receive an email when " + productTitle + " becomes available.");
-          dist_jquery_default()(selectors.bisForm).hide();
-          dist_jquery_default()(selectors.bisError).addClass('hidden')
+          jquery_default()(selectors.bisText).text("You're on the list! You'll receive an email when " + productTitle + " becomes available.");
+          jquery_default()(selectors.bisForm).hide();
+          jquery_default()(selectors.bisError).addClass('hidden')
         },
         error: function(error){
-          dist_jquery_default()(selectors.bisError).removeClass('hidden')
+          jquery_default()(selectors.bisError).removeClass('hidden')
         }
       })
     }
@@ -14641,14 +14641,14 @@ const BlendComponents = (function(){
   }
 
   const init = function(){
-    if (elementsExist([dist_jquery_default()(settings.searchButton)])) {
-      dist_jquery_default()(settings.searchButton).on('click', renderBlendComponents);
+    if (elementsExist([jquery_default()(settings.searchButton)])) {
+      jquery_default()(settings.searchButton).on('click', renderBlendComponents);
     }
   }
 
   const renderBlendComponents = function(){
-    let activeDate = dist_jquery_default()(settings.roastDateSelect).val()
-    let $blendContainers = dist_jquery_default()(settings.blendContainer)
+    let activeDate = jquery_default()(settings.roastDateSelect).val()
+    let $blendContainers = jquery_default()(settings.blendContainer)
     let $activeBlendContainer = $blendContainers.closest(`[data-date="${activeDate}"]`)
 
     $blendContainers.not($activeBlendContainer).addClass('hidden')
@@ -14695,32 +14695,32 @@ const Cart = (function(){
     zohoChatButton: ".zsiq_floatmain"
   }
 
-  let $elementToFocusOnClose = dist_jquery_default()(settings.openCart);
+  let $elementToFocusOnClose = jquery_default()(settings.openCart);
 
   const init = function(){
-    if (!dist_jquery_default()(settings.slideCartContainer).length) return;
+    if (!jquery_default()(settings.slideCartContainer).length) return;
 
     initializeEventListeners();
     buildCart();
   }
 
   const initializeEventListeners = function(){
-    dist_jquery_default()(settings.slideCartContainer).on('click', settings.removeItem, handleItemRemove)
-    dist_jquery_default()(settings.slideCartContainer).on('click', settings.checkoutButton, processCheckout)
-    dist_jquery_default()(settings.slideCartContainer).on('change', settings.itemQuantity, adjustItemQuantity)
-    dist_jquery_default()(settings.slideCartContainer).on('change', settings.itemSellingPlanOptions, updateItemSellingPlan)
-    dist_jquery_default()(settings.slideCartContainer).on('change', settings.itemDeliveryFrequency, updateItemDeliveryFrequency)
+    jquery_default()(settings.slideCartContainer).on('click', settings.removeItem, handleItemRemove)
+    jquery_default()(settings.slideCartContainer).on('click', settings.checkoutButton, processCheckout)
+    jquery_default()(settings.slideCartContainer).on('change', settings.itemQuantity, adjustItemQuantity)
+    jquery_default()(settings.slideCartContainer).on('change', settings.itemSellingPlanOptions, updateItemSellingPlan)
+    jquery_default()(settings.slideCartContainer).on('change', settings.itemDeliveryFrequency, updateItemDeliveryFrequency)
 
     // $(settings.slideCartContainer).on('click', settings.quantityButton, updateItemQuantity)
-    dist_jquery_default()(settings.slideCartContainer).on('change', settings.cartNoteToggle, toggleCartNote)
-    dist_jquery_default()(settings.slideCartContainer).on('change', settings.cartNoteTextarea, updateCartNote)
+    jquery_default()(settings.slideCartContainer).on('change', settings.cartNoteToggle, toggleCartNote)
+    jquery_default()(settings.slideCartContainer).on('change', settings.cartNoteTextarea, updateCartNote)
 
-    dist_jquery_default()(document).on('submit', settings.productForm, handleProductSubmit)
-    dist_jquery_default()(document).on('quizKitAddToCartSuccess', handleQuizKitSubmit)
+    jquery_default()(document).on('submit', settings.productForm, handleProductSubmit)
+    jquery_default()(document).on('quizKitAddToCartSuccess', handleQuizKitSubmit)
 
     if (location.pathname !== "/cart") {
-      dist_jquery_default()(document).on('click', settings.openCart, openCart)
-      dist_jquery_default()(document).on('click', `${settings.closeCart}, ${settings.cartOverlay}`, closeCart)
+      jquery_default()(document).on('click', settings.openCart, openCart)
+      jquery_default()(document).on('click', `${settings.closeCart}, ${settings.cartOverlay}`, closeCart)
     }
   }
 
@@ -14757,22 +14757,22 @@ const Cart = (function(){
       }
     }
 
-    dist_jquery_default().ajax(params);
+    jquery_default().ajax(params);
   }
 
   const toggleCartNote = function(e){
-    let $this = dist_jquery_default()(this);
+    let $this = jquery_default()(this);
 
     if ($this.is(":checked")){
-      dist_jquery_default()(settings.cartNoteContainer).slideDown(300)
+      jquery_default()(settings.cartNoteContainer).slideDown(300)
     } else {
-      dist_jquery_default()(settings.cartNoteContainer).slideUp(300)
-      dist_jquery_default()(settings.cartNoteTextarea).val('').change()
+      jquery_default()(settings.cartNoteContainer).slideUp(300)
+      jquery_default()(settings.cartNoteTextarea).val('').change()
     }
   }
 
   const updateCartNote = function(e){
-    let $this = dist_jquery_default()(this)
+    let $this = jquery_default()(this)
     let value = $this.val();
 
     let data = {
@@ -14783,7 +14783,7 @@ const Cart = (function(){
   }
 
   const adjustItemQuantity = function(e){
-    let $this = dist_jquery_default()(this);
+    let $this = jquery_default()(this);
     let key = $this.data('key');
 
     let data = {
@@ -14798,7 +14798,7 @@ const Cart = (function(){
   }
 
   const updateItemSellingPlan = function(e){
-    let $this = dist_jquery_default()(this)
+    let $this = jquery_default()(this)
 
     let data = {
       id: $this.data('key'),
@@ -14810,7 +14810,7 @@ const Cart = (function(){
   }
 
   const updateItemDeliveryFrequency = function(e){
-    let $this = dist_jquery_default()(this)
+    let $this = jquery_default()(this)
     let data = {};
     let value = $this.val()
 
@@ -14834,7 +14834,7 @@ const Cart = (function(){
   const handleProductSubmit = function(e){
     e.preventDefault()
 
-    let $this = dist_jquery_default()(this);
+    let $this = jquery_default()(this);
     let data = $this.serialize();
     $elementToFocusOnClose = $this;
 
@@ -14849,12 +14849,12 @@ const Cart = (function(){
   const closeQOModal = function(){
     //before processing cart request, close the QO modal	
     //console.log('closing the QO modal first.... testing')	
-    dist_jquery_default()('.product--buy-panel-quick-order').fadeOut()
-    dist_jquery_default()('.quick-order-overlay').addClass('hidden')
+    jquery_default()('.product--buy-panel-quick-order').fadeOut()
+    jquery_default()('.quick-order-overlay').addClass('hidden')
   }
 
   const handleItemRemove = function(e){
-    let $this = dist_jquery_default()(this);
+    let $this = jquery_default()(this);
     let key = $this.data('key');
 
     let data = {
@@ -14869,55 +14869,55 @@ const Cart = (function(){
   }
 
   const getCart = function(callback){
-    dist_jquery_default().ajax(urls.cartGet).then(callback);
+    jquery_default().ajax(urls.cartGet).then(callback);
   }
 
   const buildCart = function(sectionsToRender=['header', 'items', 'notes', 'upsell', 'footer']){
     getCart(function(cart){
       const isCartPage = location.pathname.includes('/cart');
       const sectionID = isCartPage
-        ? dist_jquery_default()(settings.slideCartContainer).filter('.cart--page').data('section-id')
+        ? jquery_default()(settings.slideCartContainer).filter('.cart--page').data('section-id')
         : 'ajax-cart';
 
 
       if (cart.item_count > 0) {
-        dist_jquery_default()(settings.coffeeFill).addClass('active')
+        jquery_default()(settings.coffeeFill).addClass('active')
       } else {
-        dist_jquery_default()(settings.coffeeFill).removeClass('active')
+        jquery_default()(settings.coffeeFill).removeClass('active')
       }
 
-      dist_jquery_default().ajax(`/?sections=${ sectionID }`)
+      jquery_default().ajax(`/?sections=${ sectionID }`)
 
         .then(function(response){
 
           if ( response[sectionID] ) {
-            let $response = dist_jquery_default()(response[sectionID]);
+            let $response = jquery_default()(response[sectionID]);
             let $newInnerHTML = $response.find(settings.slideCartInner);
 
             let newShippingIndicator = $newInnerHTML.find(settings.shippingIndicatorBar)
             let newShippingIndicatorWidth = newShippingIndicator.data('width')
-            newShippingIndicator.replaceWith(dist_jquery_default()(settings.shippingIndicatorBar))
+            newShippingIndicator.replaceWith(jquery_default()(settings.shippingIndicatorBar))
 
-            if (cart.item_count > 0 && dist_jquery_default()('.js-slide-cart--items').length){
+            if (cart.item_count > 0 && jquery_default()('.js-slide-cart--items').length){
 
               sectionsToRender.forEach(function(section){
-                let $sectionEl = dist_jquery_default()(settings.slideCartContainer).find(`.js-slide-cart--${section}`)
+                let $sectionEl = jquery_default()(settings.slideCartContainer).find(`.js-slide-cart--${section}`)
                 let $newEl = $newInnerHTML.find(`.js-slide-cart--${section}`);
                 $sectionEl.replaceWith($newEl)
               })
 
             } else {
-              dist_jquery_default()(settings.slideCartContainer).html($newInnerHTML)
+              jquery_default()(settings.slideCartContainer).html($newInnerHTML)
             }
 
             //update nav cart count
             if (cart.item_count > 0) {
-              dist_jquery_default()(settings.cartCount).text(cart.item_count).removeClass('hidden')
+              jquery_default()(settings.cartCount).text(cart.item_count).removeClass('hidden')
             } else {
-              dist_jquery_default()(settings.cartCount).text(cart.item_count).addClass('hidden')
+              jquery_default()(settings.cartCount).text(cart.item_count).addClass('hidden')
             }
 
-            dist_jquery_default()(settings.slideCartContainer).find(settings.shippingIndicatorBar).css({
+            jquery_default()(settings.slideCartContainer).find(settings.shippingIndicatorBar).css({
               width: newShippingIndicatorWidth
             })
           }
@@ -14930,24 +14930,24 @@ const Cart = (function(){
     if (e) {
       e.preventDefault()
 
-      $elementToFocusOnClose = dist_jquery_default()(this);
+      $elementToFocusOnClose = jquery_default()(this);
     }
 
-    let $cartContainer = dist_jquery_default()(settings.slideCartContainer);
+    let $cartContainer = jquery_default()(settings.slideCartContainer);
     $cartContainer.show()
 
     setTimeout(function(){
-      dist_jquery_default()(settings.cartOverlay).removeClass('hidden');
+      jquery_default()(settings.cartOverlay).removeClass('hidden');
       $cartContainer.addClass("active");
 
-      dist_jquery_default()(settings.zohoChatButton).css({
+      jquery_default()(settings.zohoChatButton).css({
         transition: 'all .4s linear',
         transform: 'translateX(-28rem)'
       })
 
     }, 10)
 
-    dist_jquery_default()(settings.closeCart).focus();
+    jquery_default()(settings.closeCart).focus();
 
     disableScroll()
   }
@@ -14957,11 +14957,11 @@ const Cart = (function(){
       e.preventDefault()
     }
 
-    let $cartContainer = dist_jquery_default()(settings.slideCartContainer);
+    let $cartContainer = jquery_default()(settings.slideCartContainer);
     $cartContainer.removeClass("active");
-    dist_jquery_default()(settings.cartOverlay).addClass('hidden');
+    jquery_default()(settings.cartOverlay).addClass('hidden');
 
-    dist_jquery_default()(settings.zohoChatButton).css({
+    jquery_default()(settings.zohoChatButton).css({
       transition: 'all .4s linear',
       transform: 'translateX(0)'
     })
@@ -15014,7 +15014,7 @@ const collectionNav = {
   },
 
   init: function() {
-    const $nav = dist_jquery_default()(collectionNav.settings.nav);
+    const $nav = jquery_default()(collectionNav.settings.nav);
     if ( !$nav.length ) return;
 
     // $(collectionNav.settings.link).on('click', (e) => collectionNav.handleClick(e));
@@ -15022,7 +15022,7 @@ const collectionNav = {
     // Get collection sections
     const sections = collectionNav.gatherSections($nav);
 
-    dist_jquery_default()(document).on('scroll', function() {
+    jquery_default()(document).on('scroll', function() {
       const sectionVisibility = collectionNav.checkSectionVisibility(sections);
 
       // Find the section w/ largest viewport presence
@@ -15041,11 +15041,11 @@ const collectionNav = {
   handleClick: function(e) {
     e.preventDefault();
 
-    const $link = dist_jquery_default()(e.currentTarget);
-    const $targetSection = dist_jquery_default()($link.attr('href'));
+    const $link = jquery_default()(e.currentTarget);
+    const $targetSection = jquery_default()($link.attr('href'));
 
     const scrollTarget = $targetSection.offset().top;
-    const navHeight = dist_jquery_default()('.js-nav .content').innerHeight();
+    const navHeight = jquery_default()('.js-nav .content').innerHeight();
 
     window.scrollTo(0, scrollTarget - navHeight);
   },
@@ -15055,7 +15055,7 @@ const collectionNav = {
 
     const $navLinks = $nav.find(collectionNav.settings.link);
     $navLinks.each(function() {
-      const $link = dist_jquery_default()(this);
+      const $link = jquery_default()(this);
       const href = $link.attr('href').substring(1);
 
       sections.push(document.getElementById(href));
@@ -15066,13 +15066,13 @@ const collectionNav = {
 
   checkSectionVisibility: function(sections) {
     const viewportHeight = window.innerHeight;
-    const viewportTop = dist_jquery_default()(document).scrollTop();
+    const viewportTop = jquery_default()(document).scrollTop();
     const viewportBottom = viewportTop + viewportHeight;
 
     const sectionVisibility = {};
 
     sections.forEach((section) => {
-      const $section = dist_jquery_default()(section);
+      const $section = jquery_default()(section);
 
       const sectionHeight = $section.height();
       const sectionTop = $section.offset().top;
@@ -15107,7 +15107,7 @@ const collectionNav = {
   updateLinks: function($nav, sortableSections) {
 
     const $navIndicator = $nav.find(collectionNav.settings.indicator);
-    const $links = dist_jquery_default()(collectionNav.settings.link);
+    const $links = jquery_default()(collectionNav.settings.link);
 
     if ( sortableSections && sortableSections[0] && sortableSections[0][0] ) {
       const activeLink = sortableSections[0][0];
@@ -15151,15 +15151,15 @@ const CustomerAddresses = (function(){
   let elements = {}
 
   const getElements = function(){
-    const container = dist_jquery_default()(selectors.customerAddresses);
+    const container = jquery_default()(selectors.customerAddresses);
     return container.length ? {
       container,
-      addressContainer: dist_jquery_default()(selectors.addressContainer),
-      toggleButtons: dist_jquery_default()(selectors.toggleAddressButton),
-      cancelButtons: dist_jquery_default()(selectors.cancelAddressButton),
-      deleteButtons: dist_jquery_default()(selectors.deleteAddressButton),
-      countrySelects: dist_jquery_default()(selectors.addressCountrySelect),
-      hideElementsOnToggle: dist_jquery_default()(selectors.hideElementsOnToggle)
+      addressContainer: jquery_default()(selectors.addressContainer),
+      toggleButtons: jquery_default()(selectors.toggleAddressButton),
+      cancelButtons: jquery_default()(selectors.cancelAddressButton),
+      deleteButtons: jquery_default()(selectors.deleteAddressButton),
+      countrySelects: jquery_default()(selectors.addressCountrySelect),
+      hideElementsOnToggle: jquery_default()(selectors.hideElementsOnToggle)
     } : {};
   }
 
@@ -15192,21 +15192,21 @@ const CustomerAddresses = (function(){
   }
 
   const handleAddEditButtonClick = function(e){
-    let $this = dist_jquery_default()(this)
-    let target = dist_jquery_default()($this.data('target'))
+    let $this = jquery_default()(this)
+    let target = jquery_default()($this.data('target'))
 
     toggleExpanded(target)
   }
 
   const handleCancelButtonClick = function(e){
-    let $this = dist_jquery_default()(this)
-    let target = dist_jquery_default()($this.data('target'))
+    let $this = jquery_default()(this)
+    let target = jquery_default()($this.data('target'))
 
     toggleExpanded(target)
   }
 
   const handleDeleteButtonClick = function(e){
-    Shopify.postLink(dist_jquery_default()(this).data('target'), {
+    Shopify.postLink(jquery_default()(this).data('target'), {
       parameters: { _method: 'delete' },
     });
   }
@@ -15251,7 +15251,7 @@ const CustomSelect = function($customSelectContainer){
     e.preventDefault()
     e.stopPropagation()
 
-    let $this = dist_jquery_default()(this);
+    let $this = jquery_default()(this);
     cache.$selectTrigger.toggleClass('active')
     cache.$customSelectOptions.toggleClass('hidden')
   }
@@ -15269,14 +15269,14 @@ const CustomSelect = function($customSelectContainer){
     e.preventDefault()
     e.stopPropagation()
 
-    let $this = dist_jquery_default()(this)
+    let $this = jquery_default()(this)
     let value = $this.data('value')
     let text = $this.text().trim()
     let target = $this.data('target')
     
     let targetNode = document.getElementById(target)
 
-    let $targetSelect = dist_jquery_default()(targetNode)
+    let $targetSelect = jquery_default()(targetNode)
 
     $targetSelect.val(value).change()
 
@@ -15307,8 +15307,8 @@ const CustomSelectInit = (function(){
   const init = function(){
     if (!elementsExist([selectors.customSelectContainer])) return;
 
-    dist_jquery_default()(selectors.customSelectContainer).each(function(index, customSelectContainer){
-      customSelect(dist_jquery_default()(customSelectContainer))
+    jquery_default()(selectors.customSelectContainer).each(function(index, customSelectContainer){
+      customSelect(jquery_default()(customSelectContainer))
     })
   }
 
@@ -15597,19 +15597,19 @@ const GiftSubscription = (function(){
   let variantSKU = "";
 
   const init = function(){
-    if (!elementsExist([ dist_jquery_default()(settings.buyPanel) ])) return;
+    if (!elementsExist([ jquery_default()(settings.buyPanel) ])) return;
 
     initializeEventListeners()
     getInitialValues()
   }
 
   const getInitialValues = function(){
-    dist_jquery_default()(settings.variantSkuInputs).closest(':checked').trigger('change')
-    dist_jquery_default()(settings.productSelectInputs).closest(':checked').trigger('change')
+    jquery_default()(settings.variantSkuInputs).closest(':checked').trigger('change')
+    jquery_default()(settings.productSelectInputs).closest(':checked').trigger('change')
   }
 
   const getProductJSON = function(callback){
-    dist_jquery_default().ajax(`/products/${handle}.json`)
+    jquery_default().ajax(`/products/${handle}.json`)
       .then(json => {
         if (json.product) {
           product = json.product
@@ -15620,18 +15620,18 @@ const GiftSubscription = (function(){
   }
 
   const initializeEventListeners = function(){
-    dist_jquery_default()(settings.productSelectInputs).on('change', handleProductSelectChange)
-    dist_jquery_default()(settings.variantSkuInputs).on('change', handleVariantSelectChange)
+    jquery_default()(settings.productSelectInputs).on('change', handleProductSelectChange)
+    jquery_default()(settings.variantSkuInputs).on('change', handleVariantSelectChange)
   }
 
   const handleProductSelectChange = function(e){
-    handle = dist_jquery_default()(this).val()
+    handle = jquery_default()(this).val()
 
     getProductJSON(getActiveVariant)
   }
 
   const handleVariantSelectChange = function(e){
-    variantSKU = dist_jquery_default()(this).val()
+    variantSKU = jquery_default()(this).val()
     getActiveVariant()
   }
 
@@ -15648,12 +15648,12 @@ const GiftSubscription = (function(){
     if (product && product.handle && variant && variant.id) {
       let url = `/products/${product.handle}?variant=${variant.id}&sections=${section}`
 
-      dist_jquery_default().ajax(url).then(response => {
+      jquery_default().ajax(url).then(response => {
         let responseHTML = response[section];
 
-        let $newBuyPanel = dist_jquery_default()(responseHTML).find(settings.buyPanel)
-        dist_jquery_default()(settings.buyPanel).replaceWith($newBuyPanel)
-        dist_jquery_default()(settings.buyPanel).removeClass('hidden')
+        let $newBuyPanel = jquery_default()(responseHTML).find(settings.buyPanel)
+        jquery_default()(settings.buyPanel).replaceWith($newBuyPanel)
+        jquery_default()(settings.buyPanel).removeClass('hidden')
       })
     }
   }
@@ -15673,8 +15673,8 @@ const GiftSubscription = (function(){
 
 class Marquee {
   constructor({ wrapperSelector, marqueeSelector, initializedClass }) {
-    this.$marquee = dist_jquery_default()(marqueeSelector);
-    this.$wrapper = dist_jquery_default()(wrapperSelector);
+    this.$marquee = jquery_default()(marqueeSelector);
+    this.$wrapper = jquery_default()(wrapperSelector);
 
     if ( !elementsExist([this.$wrapper, this.$marquee]) ) return;
 
@@ -15693,7 +15693,7 @@ class Marquee {
   }
 
   initEventListeners() {
-    dist_jquery_default()(window).on('resize', () => this.onResize());
+    jquery_default()(window).on('resize', () => this.onResize());
     this.onResize();
   }
 
@@ -15701,7 +15701,7 @@ class Marquee {
     this.destroy();
     this.width = this.$marquee[0].scrollWidth;
 
-    const isOverflowing = this.width >= dist_jquery_default()(window).width();
+    const isOverflowing = this.width >= jquery_default()(window).width();
 
     if ( isOverflowing ) {
       this.create();
@@ -15748,7 +15748,7 @@ class Marquee {
     $content.each(function(i) {
       if ( i > allowedLength ) {
         const contentItem = $content[i];
-        dist_jquery_default()(contentItem).remove();
+        jquery_default()(contentItem).remove();
       }
     });
 
@@ -15781,12 +15781,12 @@ const marquee = {
     this.all = {};
     const marquee = this;
 
-    dist_jquery_default()(this.settings.marquee).each(function(i) {
-      dist_jquery_default()(this).attr('data-marquee', i);
+    jquery_default()(this.settings.marquee).each(function(i) {
+      jquery_default()(this).attr('data-marquee', i);
       const ID = 'marquee' + i;
 
-      const contentQuantity = dist_jquery_default()(this).find(marquee.settings.inner + ' > *').length;
-      const marqueeWidth = dist_jquery_default()(this).find(marquee.settings.inner)[0].scrollWidth;
+      const contentQuantity = jquery_default()(this).find(marquee.settings.inner + ' > *').length;
+      const marqueeWidth = jquery_default()(this).find(marquee.settings.inner)[0].scrollWidth;
 
       const obj = {
         animationFrame: null,
@@ -15806,8 +15806,8 @@ const marquee = {
   initializeAll: function() { // check for responsiveness setting
     const marquee = this;
 
-    dist_jquery_default()(this.settings.marquee).each(function() {
-      const $marquee = dist_jquery_default()(this);
+    jquery_default()(this.settings.marquee).each(function() {
+      const $marquee = jquery_default()(this);
 
       if ( $marquee.hasClass(marquee.settings.responsiveClass) ) {
         marquee.alert($marquee);
@@ -15818,14 +15818,14 @@ const marquee = {
   },
 
   alert: function($marquee) { // trigger/kill, dependant on screen size/resize
-    dist_jquery_default()(window).on('resize', () => this.handleResize($marquee));
+    jquery_default()(window).on('resize', () => this.handleResize($marquee));
     this.handleResize($marquee);
   },
 
   handleResize: function($marquee) {
     const selfObj = this.getObject($marquee);
 
-    if ( selfObj.width >= dist_jquery_default()(window).width() ) {
+    if ( selfObj.width >= jquery_default()(window).width() ) {
       this.trigger($marquee);
     } else {
       this.kill($marquee);
@@ -15879,7 +15879,7 @@ const marquee = {
     // remove cloned nodes
     $inner.children().each(function(i) {
       if ( i > selfObj.allowedLength ) {
-        dist_jquery_default()(this).remove();
+        jquery_default()(this).remove();
       }
     });
 
@@ -15898,16 +15898,16 @@ const MegaMenu = function(selectors, activeMenu, setActiveMenu){
   if (!elementsExist([selectors.megaMenuTrigger])) return;
 
   const initEventListeners = function(){
-    dist_jquery_default()(selectors.megaMenuTrigger).on('click', toggleMegaMenu);
-    dist_jquery_default()(selectors.overlay).on('click', slideCloseMegaMenu);
+    jquery_default()(selectors.megaMenuTrigger).on('click', toggleMegaMenu);
+    jquery_default()(selectors.overlay).on('click', slideCloseMegaMenu);
   }
 
   const toggleMegaMenu = function(e){
     e.preventDefault();
 
-    let $this = dist_jquery_default()(this);
+    let $this = jquery_default()(this);
     let activeLink = $this.data('link');
-    let $activeMegaMenu = dist_jquery_default()(`${selectors.megaMenuContainer}[data-link="${activeLink}"]`);
+    let $activeMegaMenu = jquery_default()(`${selectors.megaMenuContainer}[data-link="${activeLink}"]`);
 
     if (activeMenu()) {
       // menu is open. Close the active menu and open the new active one.
@@ -15930,7 +15930,7 @@ const MegaMenu = function(selectors, activeMenu, setActiveMenu){
     $activeMegaMenu.addClass(selectors.activeClass).show();
     $activeLink.addClass(selectors.activeClass);
 
-    dist_jquery_default()(selectors.overlay).show();
+    jquery_default()(selectors.overlay).show();
 
     setActiveMenu($activeLink.data('link'))
     disableScroll()
@@ -15939,7 +15939,7 @@ const MegaMenu = function(selectors, activeMenu, setActiveMenu){
   const slideOpenMegaMenu = function($activeMegaMenu, $activeLink){
     // Opens the menu with a slide down transition
 
-    dist_jquery_default()(selectors.overlay).fadeIn(300);
+    jquery_default()(selectors.overlay).fadeIn(300);
 
     $activeMegaMenu.slideDown(300, function(){
       $activeMegaMenu.addClass(selectors.activeClass);
@@ -15952,14 +15952,14 @@ const MegaMenu = function(selectors, activeMenu, setActiveMenu){
 
   const closeMegaMenu = function(e){
     // Closes the menu without a transition
-    let $currentlyOpenMenu = dist_jquery_default()(selectors.megaMenuContainer + "." + selectors.activeClass);
+    let $currentlyOpenMenu = jquery_default()(selectors.megaMenuContainer + "." + selectors.activeClass);
 
     $currentlyOpenMenu.removeClass(selectors.activeClass);
-    dist_jquery_default()(selectors.megaMenuTrigger).removeClass(selectors.activeClass);
+    jquery_default()(selectors.megaMenuTrigger).removeClass(selectors.activeClass);
 
     $currentlyOpenMenu.hide();
 
-    dist_jquery_default()(selectors.overlay).hide();
+    jquery_default()(selectors.overlay).hide();
 
     setActiveMenu(undefined)
     enableScroll()
@@ -15967,11 +15967,11 @@ const MegaMenu = function(selectors, activeMenu, setActiveMenu){
 
   const slideCloseMegaMenu = function(){
     // Closes the menu with a slide up transition
-    let $currentlyOpenMenu = dist_jquery_default()(selectors.megaMenuContainer + "." + selectors.activeClass);
+    let $currentlyOpenMenu = jquery_default()(selectors.megaMenuContainer + "." + selectors.activeClass);
 
-    dist_jquery_default()(selectors.overlay).fadeOut(300);
+    jquery_default()(selectors.overlay).fadeOut(300);
 
-    dist_jquery_default()(selectors.megaMenuTrigger).removeClass(selectors.activeClass);
+    jquery_default()(selectors.megaMenuTrigger).removeClass(selectors.activeClass);
 
     $currentlyOpenMenu.slideUp(300, function(){
       $currentlyOpenMenu.removeClass(selectors.activeClass);
@@ -15995,14 +15995,14 @@ const MobileMegaMenu = function(selectors, activeMenu, setActiveMenu){
   if (!elementsExist([selectors.mobileMegaMenuTrigger])) return;
 
   const initEventListeners = function(){
-    dist_jquery_default()(selectors.mobileMegaMenuTrigger).on('click', toggleMegaMenu);
-    dist_jquery_default()(selectors.mobileMegaMenuClose).on('click', closeMegaMenu);
+    jquery_default()(selectors.mobileMegaMenuTrigger).on('click', toggleMegaMenu);
+    jquery_default()(selectors.mobileMegaMenuClose).on('click', closeMegaMenu);
   }
 
   const getActiveElements = function($this){
     let activeLink = $this.data('link');
-    let $activeMegaMenu = dist_jquery_default()(`${selectors.mobileMegaMenuContainer}[data-link="${activeLink}"]`);
-    let $activeTrigger = dist_jquery_default()(`${selectors.mobileMegaMenuTrigger}[data-link="${activeLink}"]`);
+    let $activeMegaMenu = jquery_default()(`${selectors.mobileMegaMenuContainer}[data-link="${activeLink}"]`);
+    let $activeTrigger = jquery_default()(`${selectors.mobileMegaMenuTrigger}[data-link="${activeLink}"]`);
 
     return { activeLink, $activeMegaMenu, $activeTrigger }
   }
@@ -16010,7 +16010,7 @@ const MobileMegaMenu = function(selectors, activeMenu, setActiveMenu){
   const toggleMegaMenu = function(e){
     e.preventDefault();
 
-    let $this = dist_jquery_default()(this);
+    let $this = jquery_default()(this);
     let { activeLink, $activeMegaMenu, $activeTrigger } = getActiveElements($this)
 
     if (activeMenu()) {
@@ -16029,7 +16029,7 @@ const MobileMegaMenu = function(selectors, activeMenu, setActiveMenu){
 
   const closeMegaMenu = function(e){
     e.preventDefault()
-    let $this = dist_jquery_default()(this);
+    let $this = jquery_default()(this);
 
     let { activeLink, $activeMegaMenu, $activeTrigger } = getActiveElements($this);
 
@@ -16039,7 +16039,7 @@ const MobileMegaMenu = function(selectors, activeMenu, setActiveMenu){
   const slideOpenMegaMenu = function($activeMegaMenu, $activeLink){
     // Opens the menu with a slide right transition
 
-    dist_jquery_default()(selectors.overlay).fadeIn(300)
+    jquery_default()(selectors.overlay).fadeIn(300)
 
     $activeMegaMenu.addClass(selectors.activeClass)
 
@@ -16055,7 +16055,7 @@ const MobileMegaMenu = function(selectors, activeMenu, setActiveMenu){
   const slideCloseMegaMenu = function($activeMegaMenu, $this){
     // Closes the menu with a slide left transition
 
-    dist_jquery_default()(selectors.overlay).fadeOut(300)
+    jquery_default()(selectors.overlay).fadeOut(300)
 
     $this.removeClass(selectors.activeClass)
 
@@ -16081,8 +16081,8 @@ const MobileMegaMenu = function(selectors, activeMenu, setActiveMenu){
 
 const AnnouncementBar = function(selectors){
   const cache = {
-    $announcementBar: dist_jquery_default()(selectors.announcementBar),
-    $announcementCloseBtn: dist_jquery_default()(selectors.announcementClose)
+    $announcementBar: jquery_default()(selectors.announcementBar),
+    $announcementCloseBtn: jquery_default()(selectors.announcementClose)
   }
 
   const init = function(){
@@ -16184,7 +16184,7 @@ const Pagination = (function($el){
   }
 
   const cache = {
-    $container: dist_jquery_default()(settings.container),
+    $container: jquery_default()(settings.container),
     section: ""
   }
 
@@ -16202,7 +16202,7 @@ const Pagination = (function($el){
   const handleClick = function(e) {
     e.preventDefault();
 
-    const $link = dist_jquery_default()(e.currentTarget)
+    const $link = jquery_default()(e.currentTarget)
     const href = $link.attr('href')
 
     replaceHistory(href)
@@ -16213,11 +16213,11 @@ const Pagination = (function($el){
     let operator = href.includes("?") ? "&" : "?";
     const url = `${href}${operator}sections=${cache.section}`
 
-    dist_jquery_default().ajax(url).then(response => {
+    jquery_default().ajax(url).then(response => {
       if (response && response[cache.section]) {
-        let $responseHTML = dist_jquery_default()(response[cache.section]).find(settings.target)
+        let $responseHTML = jquery_default()(response[cache.section]).find(settings.target)
 
-        let $target = dist_jquery_default()(settings.target)
+        let $target = jquery_default()(settings.target)
         $target.replaceWith($responseHTML)
       }
     });
@@ -16235,8 +16235,8 @@ const Pagination = (function($el){
 
 const PredictiveSearch = (function(){
   const cache = {
-    $searchBar: dist_jquery_default()(".js-predictive-search-bar"),
-    $searchForm: dist_jquery_default()('.js-predictive-search-form')
+    $searchBar: jquery_default()(".js-predictive-search-bar"),
+    $searchForm: jquery_default()('.js-predictive-search-form')
   }
 
   const settings = {
@@ -16280,7 +16280,7 @@ const PredictiveSearch = (function(){
       e.preventDefault();
     }
 
-    var $this = dist_jquery_default()(this);
+    var $this = jquery_default()(this);
     var value = $this.val();
 
     if (value) {
@@ -16291,7 +16291,7 @@ const PredictiveSearch = (function(){
   }
 
   const resetSearchResults = function(){
-    dist_jquery_default()(settings.searchResults).hide()
+    jquery_default()(settings.searchResults).hide()
   }
 
   const getSearchResults = function(value){
@@ -16306,13 +16306,13 @@ const PredictiveSearch = (function(){
       error: console.warn
     }
 
-    dist_jquery_default().ajax(params);
+    jquery_default().ajax(params);
   }
 
   var renderPredictiveSearch = function(response, query){
     if (response['predictive-search']) {
-      let $newResults = dist_jquery_default()(response['predictive-search']).find(settings.searchResults);
-      dist_jquery_default()(settings.searchResults).replaceWith($newResults)
+      let $newResults = jquery_default()(response['predictive-search']).find(settings.searchResults);
+      jquery_default()(settings.searchResults).replaceWith($newResults)
     }
   }
 
@@ -16343,7 +16343,7 @@ const ProductBuyPanel = (function(){
   }
 
   const cache = {
-    $productImageSlider: dist_jquery_default()(selectors.productImageSlider),
+    $productImageSlider: jquery_default()(selectors.productImageSlider),
   }
 
   const init = function(){
@@ -16353,7 +16353,7 @@ const ProductBuyPanel = (function(){
   }
 
   const initEventListeners = function(){
-    dist_jquery_default()(document).on('variant:change', handleVariantChange)
+    jquery_default()(document).on('variant:change', handleVariantChange)
   }
 
   const handleVariantChange = function(e){
@@ -16367,28 +16367,28 @@ const ProductBuyPanel = (function(){
 
   const toggleNotifyForm = function(variant){
     if (variant.available){
-      dist_jquery_default()(selectors.notifyMeFormContainer).addClass('hidden')
+      jquery_default()(selectors.notifyMeFormContainer).addClass('hidden')
     } else {
-      dist_jquery_default()(selectors.notifyMeFormContainer).removeClass('hidden')
+      jquery_default()(selectors.notifyMeFormContainer).removeClass('hidden')
     }
   }
 
   const updateClassInstructor = function(variant){
-    let $allInstructorContent = dist_jquery_default()(`${selectors.classInstructorContent}`)
+    let $allInstructorContent = jquery_default()(`${selectors.classInstructorContent}`)
     let $variantInstructorContent = $allInstructorContent.closest(`[data-variant="${variant.id}"]`)
 
     if ($variantInstructorContent.length) {
-      dist_jquery_default()(selectors.classInstructorPanel).removeClass('hidden')
+      jquery_default()(selectors.classInstructorPanel).removeClass('hidden')
       $allInstructorContent.not($variantInstructorContent).addClass('hidden')
       $variantInstructorContent.removeClass('hidden')
     } else {
-      dist_jquery_default()(selectors.classInstructorPanel).addClass('hidden')
+      jquery_default()(selectors.classInstructorPanel).addClass('hidden')
       $allInstructorContent.addClass('hidden')
     }
   }
 
   const updateClassButton = function(variant){
-    let $allRegisterBtns = dist_jquery_default()(`${selectors.classRegisterBtn}`)
+    let $allRegisterBtns = jquery_default()(`${selectors.classRegisterBtn}`)
     let $defaultRegisterBtn = $allRegisterBtns.closest(`[data-variant=""]`)
     let $variantRegisterBtn = $allRegisterBtns.closest(`[data-variant="${variant.id}"]`)
 
@@ -16409,7 +16409,7 @@ const ProductBuyPanel = (function(){
       cache.$productImageSlider.slick('slickUnfilter')
 
       cache.$productImageSlider.slick('slickFilter', function(index, slide){
-        let $slideItem = dist_jquery_default()(slide).find(selectors.imageSlides)
+        let $slideItem = jquery_default()(slide).find(selectors.imageSlides)
         let attachedVariantId = $slideItem.data('variant');
 
         if (attachedVariantId) {
@@ -16449,7 +16449,7 @@ const ProductCard = (function(){
 
     initEvents()
 
-    dist_jquery_default()(window).on('resize', function(){
+    jquery_default()(window).on('resize', function(){
       removeEvents()
       initEvents()
     })
@@ -16464,30 +16464,30 @@ const ProductCard = (function(){
   }
 
   const removeEvents = function(){
-    dist_jquery_default()(document).off('click', selectors.mobileButtonTrigger, handleProductCardEnter);
-    dist_jquery_default()(document).off('mouseenter', selectors.productCard, handleProductCardEnter);
-    dist_jquery_default()(document).off('focusin', selectors.productCard, handleProductCardEnter);
-    dist_jquery_default()(document).off('mouseleave', selectors.productCard, handleProductCardLeave);
-    dist_jquery_default()(document).off('focusout', selectors.productCard, handleProductCardLeaveFocus);
-    dist_jquery_default()(document).off('submit', selectors.productCardForm, handleCardFormSubmit);
+    jquery_default()(document).off('click', selectors.mobileButtonTrigger, handleProductCardEnter);
+    jquery_default()(document).off('mouseenter', selectors.productCard, handleProductCardEnter);
+    jquery_default()(document).off('focusin', selectors.productCard, handleProductCardEnter);
+    jquery_default()(document).off('mouseleave', selectors.productCard, handleProductCardLeave);
+    jquery_default()(document).off('focusout', selectors.productCard, handleProductCardLeaveFocus);
+    jquery_default()(document).off('submit', selectors.productCardForm, handleCardFormSubmit);
   }
 
   const initMobileEvents = function(){
-    dist_jquery_default()(document).on('click', selectors.mobileButtonTrigger, handleMobileCardEnter);
-    dist_jquery_default()(document).on('submit', selectors.productCardForm, handleCardFormSubmit);
+    jquery_default()(document).on('click', selectors.mobileButtonTrigger, handleMobileCardEnter);
+    jquery_default()(document).on('submit', selectors.productCardForm, handleCardFormSubmit);
   }
 
   const initDesktopEvents = function(){
-    dist_jquery_default()(document).on('mouseenter', selectors.productCard, handleProductCardEnter);
-    dist_jquery_default()(document).on('focusin', selectors.productCard, handleProductCardEnter);
-    dist_jquery_default()(document).on('mouseleave', selectors.productCard, handleProductCardLeave);
-    dist_jquery_default()(document).on('focusout', selectors.productCard, handleProductCardLeaveFocus);
-    dist_jquery_default()(document).on('submit', selectors.productCardForm, handleCardFormSubmit);
+    jquery_default()(document).on('mouseenter', selectors.productCard, handleProductCardEnter);
+    jquery_default()(document).on('focusin', selectors.productCard, handleProductCardEnter);
+    jquery_default()(document).on('mouseleave', selectors.productCard, handleProductCardLeave);
+    jquery_default()(document).on('focusout', selectors.productCard, handleProductCardLeaveFocus);
+    jquery_default()(document).on('submit', selectors.productCardForm, handleCardFormSubmit);
   }
 
   const slideDownForm = function($card){
     let $form = $card.find(selectors.productCardForm)
-    let $otherForms = dist_jquery_default()(selectors.productCardForm).not($form);
+    let $otherForms = jquery_default()(selectors.productCardForm).not($form);
 
     $form.slideDown(300)
     $otherForms.slideUp(300)
@@ -16501,7 +16501,7 @@ const ProductCard = (function(){
 
   const handleMobileCardEnter = function(e){
     e.preventDefault()
-    let $this = dist_jquery_default()(this)
+    let $this = jquery_default()(this)
     let $card = $this.parents(selectors.productCard)
 
     slideDownForm($card)
@@ -16510,18 +16510,18 @@ const ProductCard = (function(){
   }
 
   const handleProductCardEnter = function(e){
-    let $this = dist_jquery_default()(this)
+    let $this = jquery_default()(this)
     slideDownForm($this);
   }
 
   const handleProductCardLeave = function(e){
-    let $this = dist_jquery_default()(this)
+    let $this = jquery_default()(this)
     slideUpForm($this)
   }
 
   const handleProductCardLeaveFocus = function(e){
-    let $this = dist_jquery_default()(this)
-    let $target = dist_jquery_default()(e.target)
+    let $this = jquery_default()(this)
+    let $target = jquery_default()(e.target)
 
     if (!$target.parents($this).length) {
       slideUpForm($this)
@@ -16529,7 +16529,7 @@ const ProductCard = (function(){
   }
 
   const handleCardFormSubmit = function(e){
-    let $this = dist_jquery_default()(this)
+    let $this = jquery_default()(this)
     let $card = $this.parents(selectors.productCard)
 
     slideUpForm($card)
@@ -16592,11 +16592,11 @@ const ProductForm = function($form){
 
     //event listener for Quick Order	
     cache.$swatchesQO.each(function(){	
-      dist_jquery_default()(this).on('change', handleSwatchChangeQO);	
+      jquery_default()(this).on('change', handleSwatchChangeQO);	
     })	
      
     cache.$hiddenOptionSelectsQO.each(function(){	
-      dist_jquery_default()(this).on('change', setCurrentVariant);	
+      jquery_default()(this).on('change', setCurrentVariant);	
     })
 
 
@@ -16610,8 +16610,8 @@ const ProductForm = function($form){
 
   const parseOptions = function(){
     cache.$hiddenOptionSelects.each(function(index, select){
-      let name = dist_jquery_default()(select).data("name")
-      let value = dist_jquery_default()(select).val()
+      let name = jquery_default()(select).data("name")
+      let value = jquery_default()(select).val()
       setActiveOption(name, value)
     })
   }
@@ -16699,8 +16699,8 @@ const ProductForm = function($form){
     // findVariant by matching activeOptions[0] / activeOptions[1] etc
     if (!variants) return;
 
-    let name = dist_jquery_default()(this).data("name")
-    let value = dist_jquery_default()(this).val()
+    let name = jquery_default()(this).data("name")
+    let value = jquery_default()(this).val()
 
     setActiveOption(name, value)
 
@@ -16743,7 +16743,7 @@ const ProductForm = function($form){
     e.preventDefault()
     e.stopPropagation()
 
-    let $this = dist_jquery_default()(this)
+    let $this = jquery_default()(this)
     let name = $this.data('option')
     let value = $this.data('value')
 
@@ -16757,7 +16757,8 @@ const ProductForm = function($form){
     e.preventDefault()	
     e.stopPropagation()	
     console.log('swatch change QO')	
-    let $this = jquery_default()(this)	
+    
+    let $this = jquery_default()(this)
     let name = $this.data('option')	
     let value = $this.data('value')	
     cache.$hiddenOptionSelectsQO	
@@ -16767,7 +16768,7 @@ const ProductForm = function($form){
   }
 
   const handleDeliveryChange = function(e){
-    let $this = dist_jquery_default()(this)
+    let $this = jquery_default()(this)
     if ($this.val() === "subscribe") {
       // Expand the Frequency group
       cache.$frequencyContainer.slideDown(300)
@@ -16809,8 +16810,8 @@ const ProductFormsInit = (function(){
   }
 
   const initializeProductForms = function(){
-    dist_jquery_default()(selectors.form).each(function(index, form){
-      productForm(dist_jquery_default()(form))
+    jquery_default()(selectors.form).each(function(index, form){
+      productForm(jquery_default()(form))
     })
   }
 
@@ -16839,7 +16840,7 @@ const ProductRecommendations = (function(){
   }
 
   const getProductRecommendations = function(){
-    let $recommendedProductContainer = dist_jquery_default()(selectors.recommendedProductContainer)
+    let $recommendedProductContainer = jquery_default()(selectors.recommendedProductContainer)
 
     let { productId, limit, mobileLimit } = $recommendedProductContainer.data()
 
@@ -16849,9 +16850,9 @@ const ProductRecommendations = (function(){
 
     let url = baseURL.replace("<product-id>", productId).replace("<limit>", limit);
 
-    dist_jquery_default().ajax(url)
+    jquery_default().ajax(url)
       .then(html => {
-        let $html = dist_jquery_default()(html);
+        let $html = jquery_default()(html);
         $recommendedProductContainer.replaceWith($html);
 
         $html.find('.animate')
@@ -16885,12 +16886,12 @@ const QuantityBox = (function(){
   }
 
   const initializeEventListeners = function(){
-    dist_jquery_default()(document).on('click', settings.quantityButton, handleQuantityChange);
+    jquery_default()(document).on('click', settings.quantityButton, handleQuantityChange);
   }
 
   const handleQuantityChange = function(e){
-    let action = dist_jquery_default()(this).data('action')
-    let $input = dist_jquery_default()(this).siblings(settings.quantityInput)
+    let action = jquery_default()(this).data('action')
+    let $input = jquery_default()(this).siblings(settings.quantityInput)
     let quantity = parseInt($input.val())
 
     let min = parseInt($input.attr('min'));
@@ -16922,7 +16923,7 @@ const QuantityBox = (function(){
  */
 class RevealAnimation {
   constructor(target) {
-    this.$target = dist_jquery_default()(target);
+    this.$target = jquery_default()(target);
     this.triggerClass = 'animate-animated';
   }
 
@@ -16952,7 +16953,7 @@ class RevealAnimation {
 
   observeAnimations(entries) {
     entries.forEach((entry) => {
-      let $target = dist_jquery_default()(entry.target);
+      let $target = jquery_default()(entry.target);
 
       if (!$target.hasClass(this.triggerClass) && entry.isIntersecting) {
         const delay = screen.availWidth < 567 && $target.data('mobileDelay')
@@ -16978,14 +16979,14 @@ var slick = __webpack_require__(475);
 
 
 
-window.jQuery = window.$ = (dist_jquery_default());
+window.jQuery = window.$ = (jquery_default());
 
 
 
 
 class Slider {
   constructor(slider) {
-    this.$slider = dist_jquery_default()(slider);
+    this.$slider = jquery_default()(slider);
   }
 
   init() {
@@ -16993,7 +16994,7 @@ class Slider {
 
     this.$slider.slick();
 
-    dist_jquery_default()(window).on('resize', () => {
+    jquery_default()(window).on('resize', () => {
       this.$slider.slick('setPosition');
 
       if (!this.$slider.hasClass('slick-initialized')) {
@@ -17077,22 +17078,22 @@ const QuickOrder = (function(){
 
 
     const quickOrderOpen = function(){
-        dist_jquery_default()('.quick-order-btn').each(function(){
-            dist_jquery_default()(this).on('click', function(e){
+        jquery_default()('.quick-order-btn').each(function(){
+            jquery_default()(this).on('click', function(e){
               e.preventDefault();
-              dist_jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn()
-              dist_jquery_default()('.quick-order-overlay').removeClass('hidden')
+              jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn()
+              jquery_default()('.quick-order-overlay').removeClass('hidden')
             })
         })
     }
     
       
     const quickOrderClose = function(){
-      dist_jquery_default()('.quick-order-close').each(function(){
-        dist_jquery_default()(this).on('click', function(e){
+      jquery_default()('.quick-order-close').each(function(){
+        jquery_default()(this).on('click', function(e){
           e.preventDefault();
-          dist_jquery_default()(this).parents('.product--buy-panel-quick-order').fadeOut()
-          dist_jquery_default()('.quick-order-overlay').addClass('hidden')
+          jquery_default()(this).parents('.product--buy-panel-quick-order').fadeOut()
+          jquery_default()('.quick-order-overlay').addClass('hidden')
         })
       })
     }
@@ -17143,7 +17144,7 @@ const QuickOrder = (function(){
 
 
 
-dist_jquery_default()(() => {
+jquery_default()(() => {
   initComponents()
   // pageRouter()
 
@@ -17175,41 +17176,41 @@ dist_jquery_default()(() => {
  * Instantiates global components
  */
 const initComponents = () => {
-  dist_jquery_default()(document).watchFor('.animate', function($el) {
+  jquery_default()(document).watchFor('.animate', function($el) {
     $el.each(function() { new RevealAnimation(this).init(); });
   });
 
-  dist_jquery_default()(document).watchFor('[data-section-nav]', function($el) {
+  jquery_default()(document).watchFor('[data-section-nav]', function($el) {
     $el.each(function() { new SectionNav(this).init(); });
   });
 
-  dist_jquery_default()(document).watchFor('[data-section-rerender]', function($el) {
+  jquery_default()(document).watchFor('[data-section-rerender]', function($el) {
     $el.each(function() { new SectionRerender(this).init(); });
   });
 
-  dist_jquery_default()(document).watchFor('.js-custom-select-container', function($el) {
+  jquery_default()(document).watchFor('.js-custom-select-container', function($el) {
     $el.each(function(index, node) {
-      customSelect(dist_jquery_default()(node))
+      customSelect(jquery_default()(node))
     });
   });
 
-  dist_jquery_default()(document).watchFor('.js-pagination', function($el) {
+  jquery_default()(document).watchFor('.js-pagination', function($el) {
     $el.each(function(index, node) {
-      pagination.init(dist_jquery_default()(node));
+      pagination.init(jquery_default()(node));
     })
   });
 
-  dist_jquery_default()(document).watchFor('[data-customer-addresses]', function($el){
+  jquery_default()(document).watchFor('[data-customer-addresses]', function($el){
     customerAddresses.init();
   });
 
   // * InlineToggle
-  dist_jquery_default()('[data-toggle]').each(function() {
+  jquery_default()('[data-toggle]').each(function() {
     new InlineToggle(this).init();
   });
   
   // * Deactivate
-  dist_jquery_default()('[data-deactivate]').each(function() {
+  jquery_default()('[data-deactivate]').each(function() {
     new Deactivate(this).init();
   });
 
@@ -17251,7 +17252,7 @@ const triggerSlick = () => {
     slickSelector: '.js-slick:visible'
   };
 
-  let $sliders = dist_jquery_default()(config.slickSelector)
+  let $sliders = jquery_default()(config.slickSelector)
 
    $sliders.each(function(index, slider){
      const slickSlider = new Slider(slider);
