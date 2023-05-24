@@ -35,6 +35,7 @@
         "c0f36ebc-661a-487d-a635-c50f3a65e0e8": {
           "type": "banner",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Planet-2.png",
             "image_classes": "",
             "show_gradient": false,
             "bg_color": "",
@@ -46,10 +47,10 @@
             "tag": "h3",
             "font": "font-freight-sans",
             "weight": "font-regular",
-            "alignment": "text-center",
+            "alignment": "text-left",
             "text_color": "text-black",
             "title_classes": "",
-            "content": "",
+            "content": "<ul><li>Had a carbon footprint of 925.37 tonnes CO2e <\/li><li>Diverted 18,020 pounds of LDPE (low-density polyethylene) plastic from landfills<\/li><li>Donated 8,160 pounds of coffee<\/li><li>Installed 393 clean cookstoves in Honduras through our partnership with <a href=\"https:\/\/treeswaterpeople.org\/\">Trees, Water & People<\/a><\/li><\/ul>",
             "button_text": "",
             "button_url": ""
           }
