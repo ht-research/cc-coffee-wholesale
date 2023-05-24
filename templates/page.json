@@ -44,7 +44,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/cherries_76fcb0ee-fb65-4f19-8dd4-37a8252e204e.png",
         "show_sunburst": true,
-        "sunburst_color": "#d79e4f",
+        "sunburst_color": "#d7984f",
         "show_gradient": true,
         "bg_color": "#ffffff",
         "wrapper_classes": "border border-black",
