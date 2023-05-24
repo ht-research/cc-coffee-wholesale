@@ -81,6 +81,7 @@
         "ade7d22c-086f-4584-baa8-a5a1b48acb0d": {
           "type": "banner",
           "settings": {
+            "image": "shopify:\/\/shop_images\/People-3.png",
             "image_classes": "",
             "show_gradient": false,
             "bg_color": "",
