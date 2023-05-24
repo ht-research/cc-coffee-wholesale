@@ -571,6 +571,7 @@
         "205867a7-d2ba-4660-9580-ed599bcfdbf8": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/jabanto.jpg",
             "title": "Jabanto",
             "location": "Ethiopia",
             "partner_since": "2018",
