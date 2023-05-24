@@ -5201,6 +5201,7 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
     /* position: relative;
     top: 50%;
     transform: translate(-50%, -50%); */
+    top: 1rem;
 }
 
 .collection-grid--container.list-view-active .list-view_content-price-wrapper{
