@@ -497,6 +497,23 @@
             "archived_products": "",
             "country": "El Salvador"
           }
+        },
+        "40524309-16fa-4d98-a1d8-7efc39390a60": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Cooperativa Cuzcachapa",
+            "location": "El Salvador",
+            "partner_since": "2011",
+            "fob_price": "$3.45-4.15",
+            "price_range": "$3.66",
+            "pounds_purchased": "41,855",
+            "quality_score": "85.5-87",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "El Salvador"
+          }
         }
       },
       "block_order": [
@@ -514,7 +531,8 @@
         "ab1c22a5-84cd-438a-a92b-b880a46cae22",
         "03d3a7c3-a81f-41b0-9c83-28bfaf857f7d",
         "6fa742ad-2ace-4105-a72d-068f03acb118",
-        "003bd1c3-eb9c-400d-bece-bcd23c36f1e5"
+        "003bd1c3-eb9c-400d-bece-bcd23c36f1e5",
+        "40524309-16fa-4d98-a1d8-7efc39390a60"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
