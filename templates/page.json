@@ -58,6 +58,7 @@
         "7fffb337-3fa9-41f8-8c24-30802ab807ac": {
           "type": "banner",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Product-3.jpg",
             "image_classes": "",
             "show_gradient": false,
             "bg_color": "",
@@ -72,7 +73,7 @@
             "alignment": "text-center",
             "text_color": "text-black",
             "title_classes": "",
-            "content": "",
+            "content": "<ul><li>Purchased 5,600,137 pounds of green coffee, 85% from suppliers we’ve worked with for over 5 years<\/li><li>Scored our coffees an average of 86.3 points<\/li><li>Paid $3.50 per pound weighted average FOB price <\/li><li>Awarded $74,000 to fund 16 Seeds Projects<\/li><\/ul>",
             "button_text": "",
             "button_url": ""
           }
