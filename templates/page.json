@@ -479,6 +479,23 @@
             "archived_products": "",
             "country": "Ecuador"
           }
+        },
+        "003bd1c3-eb9c-400d-bece-bcd23c36f1e5": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Aida Batlle Farms",
+            "location": "El Salvador",
+            "partner_since": "2004",
+            "fob_price": "$0",
+            "price_range": "$0",
+            "pounds_purchased": "37,674",
+            "quality_score": "85-88.50",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "El Salvador"
+          }
         }
       },
       "block_order": [
@@ -495,7 +512,8 @@
         "5483e12d-d186-44b7-88a2-de80ac65f898",
         "ab1c22a5-84cd-438a-a92b-b880a46cae22",
         "03d3a7c3-a81f-41b0-9c83-28bfaf857f7d",
-        "6fa742ad-2ace-4105-a72d-068f03acb118"
+        "6fa742ad-2ace-4105-a72d-068f03acb118",
+        "003bd1c3-eb9c-400d-bece-bcd23c36f1e5"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
