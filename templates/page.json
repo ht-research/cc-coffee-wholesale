@@ -45,7 +45,7 @@
         "show_sunburst": true,
         "sunburst_color": "#4fa0d7",
         "show_gradient": true,
-        "bg_color": "#efebe1",
+        "bg_color": "#FFFFFF",
         "wrapper_classes": "border border-black",
         "use_squiggles": false,
         "title": "<p>Visualizing the Value Chain<\/p>",
@@ -64,24 +64,26 @@
     "52865e74-13e2-4be8-b958-3aeef6e8c14c": {
       "type": "richtext",
       "blocks": {
-        "1b3b1711-bd3a-484b-9b38-91406062f1a5": {
-          "type": "text_content",
-          "settings": {
-            "content": "Specialty coffee is a coordinated effort amongst many people spread across the globe. The unifying thread between us all is a unique expertise and a desire to make coffee special. ",
-            "classes": "text-left text-xl mb-5"
-          }
-        },
         "b2eaf9ee-e632-4865-bd85-fff805a15b68": {
           "type": "text_content",
           "settings": {
-            "content": "In 2021, Counter Culture set out to visualize our value chain. We wanted to illustrate the complexity of the process and the many, varied participants. We also sought to debunk the narrative that sustainable coffee means cutting out the “middlemen.” Great coffee comes from the combined efforts of many talented and hardworking people throughout the value chain.",
-            "classes": "text-left text-xl mb-5"
+            "content": "Explore our archive of reports dating back to 2009.",
+            "classes": "text-left text-xl mb-5{{ page.title }}"
+          }
+        },
+        "a8acca0b-a358-44f8-b1d4-705b595b5396": {
+          "type": "button",
+          "settings": {
+            "button_style": "btn btn-secondary",
+            "link_text": "Past Years",
+            "link_url": "shopify:\/\/collections\/all",
+            "classes": ""
           }
         }
       },
       "block_order": [
-        "1b3b1711-bd3a-484b-9b38-91406062f1a5",
-        "b2eaf9ee-e632-4865-bd85-fff805a15b68"
+        "b2eaf9ee-e632-4865-bd85-fff805a15b68",
+        "a8acca0b-a358-44f8-b1d4-705b595b5396"
       ],
       "settings": {
         "classes": ""
@@ -204,7 +206,7 @@
       "settings": {
         "reverse_blocks_mobile": false,
         "color_overlay": "",
-        "title": "<p>Brew Field Trip With Us<\/p>",
+        "title": "<p>2022 Highlights<\/p>",
         "text_size_mobile": "text-2xl",
         "text_size_desktop": "lg:text-2xl",
         "tag": "h2",
@@ -213,25 +215,6 @@
         "alignment": "text-center",
         "text_color": "text-black",
         "title_classes": ""
-      }
-    },
-    "508f51fd-74d3-41d1-b111-89bb4fc75fea": {
-      "type": "slideshow",
-      "blocks": {
-        "25897c0a-0b93-49b0-8123-aca0a26b70bf": {
-          "type": "slide",
-          "settings": {
-            "heading": "2022 Highlights",
-            "description": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "25897c0a-0b93-49b0-8123-aca0a26b70bf"
-      ],
-      "settings": {
       }
     }
   },
@@ -243,7 +226,6 @@
     "e2005a40-3df1-413d-9d74-8bbcc2d68f17",
     "7e252e61-3fcb-4964-a63f-dcb24294dd3c",
     "ebeeab5a-bdec-4b29-ae1e-081593966cbf",
-    "ce9f778a-d7af-4680-b7e6-0c9e824c1e5b",
-    "508f51fd-74d3-41d1-b111-89bb4fc75fea"
+    "ce9f778a-d7af-4680-b7e6-0c9e824c1e5b"
   ]
 }
