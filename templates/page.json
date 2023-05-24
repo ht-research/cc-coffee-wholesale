@@ -6,29 +6,6 @@
       "settings": {
       }
     },
-    "a964a693-dd18-4c70-89df-2080b8fb1460": {
-      "type": "page-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/cherries_76fcb0ee-fb65-4f19-8dd4-37a8252e204e.png",
-        "show_sunburst": true,
-        "sunburst_color": "#d7984f",
-        "show_gradient": true,
-        "bg_color": "#EFEBE1",
-        "wrapper_classes": "",
-        "use_squiggles": false,
-        "title": "",
-        "text_size_mobile": "text-6xl",
-        "text_size_desktop": "lg:text-6xl",
-        "tag": "h1",
-        "font": "font-freight-sans",
-        "weight": "font-regular",
-        "alignment": "text-center",
-        "text_color": "text-black",
-        "title_classes": "",
-        "content": "",
-        "testimonial_author": ""
-      }
-    },
     "02781444-064e-4189-9f20-c223647ae522": {
       "type": "hero",
       "settings": {
@@ -88,7 +65,7 @@
       "type": "transparency-report-dropdown",
       "settings": {
         "paragraph": "Explore our archive of reports dating back to 2009.",
-        "dropdown_links": "year-1"
+        "dropdown_links": ""
       }
     },
     "e2005a40-3df1-413d-9d74-8bbcc2d68f17": {
@@ -116,7 +93,7 @@
         "use_squiggles": false,
         "content_image": "shopify:\/\/shop_images\/Screen_Shot_2023-05-24_at_11.03.31_AM.png",
         "content": "",
-        "title": "<h1>2022 Transparency Report Coming Soon!<\/h1>",
+        "title": "<h1>Read the Full 2022 Report!<\/h1>",
         "text_size_mobile": "text-6xl",
         "text_size_desktop": "lg:text-6xl",
         "tag": "h1",
@@ -177,7 +154,6 @@
   },
   "order": [
     "main",
-    "a964a693-dd18-4c70-89df-2080b8fb1460",
     "02781444-064e-4189-9f20-c223647ae522",
     "41e3b176-36ad-447e-bfc5-a2057b206ed2",
     "07726ac8-c669-44e9-88d8-3f775f78d702",
