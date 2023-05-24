@@ -396,6 +396,7 @@
         "f75df7b5-9d67-4e2c-b6d1-c98d2d444943": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/MuunganoCooperative.png",
             "title": "Muungano Cooperative",
             "location": "Democratic Republic of Congo",
             "partner_since": "2017",
