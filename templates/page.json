@@ -427,6 +427,23 @@
             "archived_products": "",
             "country": "Bolivia"
           }
+        },
+        "ab1c22a5-84cd-438a-a92b-b880a46cae22": {
+          "type": "partner_option",
+          "settings": {
+            "title": "ACRIM",
+            "location": "Ecuador",
+            "partner_since": "2017",
+            "fob_price": "$4.40",
+            "price_range": "$4.13-4.52",
+            "pounds_purchased": "15,200",
+            "quality_score": "86.5-87",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Ecuador"
+          }
         }
       },
       "block_order": [
@@ -440,7 +457,8 @@
         "d73252ff-3b1c-491c-940a-b35d06ee564e",
         "25bef9e1-ace6-4763-ab9e-8cddb9effcee",
         "f75df7b5-9d67-4e2c-b6d1-c98d2d444943",
-        "5483e12d-d186-44b7-88a2-de80ac65f898"
+        "5483e12d-d186-44b7-88a2-de80ac65f898",
+        "ab1c22a5-84cd-438a-a92b-b880a46cae22"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
