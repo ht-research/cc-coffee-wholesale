@@ -907,6 +907,23 @@
             "archived_products": "",
             "country": "Mexico"
           }
+        },
+        "a02c7ff9-dfd3-4cc9-9abd-41689e4f2880": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Mayan Harvest",
+            "location": "Mexico",
+            "partner_since": "2018",
+            "fob_price": "$3.49",
+            "price_range": "$3.36-3.61",
+            "pounds_purchased": "83,666",
+            "quality_score": "85-86",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Mexico"
+          }
         }
       },
       "block_order": [
@@ -947,7 +964,8 @@
         "8b4429c6-f274-4ab2-b8f4-e0f62bc0395b",
         "41761071-6e5a-4e29-973b-e033039f73ab",
         "8daa88f2-800b-4b85-ace0-4393771815fc",
-        "a53d3afd-326e-4c9d-9e8a-f846f9b4a29e"
+        "a53d3afd-326e-4c9d-9e8a-f846f9b4a29e",
+        "a02c7ff9-dfd3-4cc9-9abd-41689e4f2880"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
