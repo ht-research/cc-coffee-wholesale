@@ -5217,6 +5217,10 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
     transform: none;
   } */
 
+.collection-grid--container.list-view-active .list-view_tasting-notes > div{
+    margin-bottom: 0;
+}
+
 @media (max-width: 768px){
 
     .collection-grid--container.list-view-active .list-view__heading-content-wrapper{
