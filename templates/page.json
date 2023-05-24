@@ -322,6 +322,23 @@
             "archived_products": "",
             "country": "Colombia"
           }
+        },
+        "178893c0-7025-4e46-bac1-383cc73ac660": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Cooperativa de Caficultores de Caldas",
+            "location": "Colombia",
+            "partner_since": "2022",
+            "fob_price": "$3.69",
+            "price_range": "$3.69",
+            "pounds_purchased": "84,700",
+            "quality_score": "85",
+            "product_list": [
+              "west-coast-gradient"
+            ],
+            "archived_products": "",
+            "country": "Colombia"
+          }
         }
       },
       "block_order": [
@@ -329,7 +346,8 @@
         "38ed3029-2cf0-48c2-b340-30f3cc305181",
         "9fda8cbc-3b73-4616-badc-c007365ee84c",
         "f345d451-438f-45cf-8f8e-9221aecb66f0",
-        "289f9a2f-5c8c-4d7b-82f1-b68c1b07abc8"
+        "289f9a2f-5c8c-4d7b-82f1-b68c1b07abc8",
+        "178893c0-7025-4e46-bac1-383cc73ac660"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
