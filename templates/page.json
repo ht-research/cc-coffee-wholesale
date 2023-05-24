@@ -29,33 +29,69 @@
         "testimonial_author": ""
       }
     },
-    "41e3b176-36ad-447e-bfc5-a2057b206ed2": {
-      "type": "page-banner",
+    "7092a6ee-c6e3-4328-ac10-684d3dcb4a80": {
+      "type": "banner-slider",
+      "blocks": {
+        "c0f36ebc-661a-487d-a635-c50f3a65e0e8": {
+          "type": "banner",
+          "settings": {
+            "image_classes": "",
+            "show_gradient": false,
+            "bg_color": "",
+            "wrapper_classes": "",
+            "use_squiggles": false,
+            "title": "",
+            "text_size_mobile": "text-2xl",
+            "text_size_desktop": "lg:text-3xl",
+            "tag": "h3",
+            "font": "font-freight-sans",
+            "weight": "font-regular",
+            "alignment": "text-center",
+            "text_color": "text-black",
+            "title_classes": "",
+            "content": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "7fffb337-3fa9-41f8-8c24-30802ab807ac": {
+          "type": "banner",
+          "settings": {
+            "image_classes": "",
+            "show_gradient": false,
+            "bg_color": "",
+            "wrapper_classes": "",
+            "use_squiggles": false,
+            "title": "",
+            "text_size_mobile": "text-2xl",
+            "text_size_desktop": "lg:text-3xl",
+            "tag": "h3",
+            "font": "font-freight-sans",
+            "weight": "font-regular",
+            "alignment": "text-center",
+            "text_color": "text-black",
+            "title_classes": "",
+            "content": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "c0f36ebc-661a-487d-a635-c50f3a65e0e8",
+        "7fffb337-3fa9-41f8-8c24-30802ab807ac"
+      ],
       "settings": {
-        "show_sunburst": true,
-        "sunburst_color": "#4fa0d7",
-        "show_gradient": true,
-        "bg_color": "#ffffff",
-        "wrapper_classes": "border border-black",
-        "use_squiggles": false,
-        "title": "<p>Past Reports<\/p>",
+        "reverse_order": false,
+        "title": "<p>2022 Highlights<\/p>",
         "text_size_mobile": "text-2xl",
         "text_size_desktop": "lg:text-2xl",
-        "tag": "h1",
+        "tag": "h3",
         "font": "font-couch",
-        "weight": "font-semibold",
+        "weight": "font-regular",
         "alignment": "text-center",
         "text_color": "text-black",
-        "title_classes": "",
-        "content": "<p><\/p><p><\/p>",
-        "testimonial_author": ""
-      }
-    },
-    "07726ac8-c669-44e9-88d8-3f775f78d702": {
-      "type": "transparency-report-dropdown",
-      "settings": {
-        "paragraph": "Explore our archive of reports dating back to 2009.",
-        "dropdown_links": "year-1"
+        "title_classes": ""
       }
     },
     "e2005a40-3df1-413d-9d74-8bbcc2d68f17": {
@@ -92,6 +128,35 @@
         "alignment": "text-center",
         "text_color": "text-black",
         "title_classes": ""
+      }
+    },
+    "41e3b176-36ad-447e-bfc5-a2057b206ed2": {
+      "type": "page-banner",
+      "settings": {
+        "show_sunburst": true,
+        "sunburst_color": "#4fa0d7",
+        "show_gradient": true,
+        "bg_color": "#ffffff",
+        "wrapper_classes": "border border-black",
+        "use_squiggles": false,
+        "title": "<p>Past Reports<\/p>",
+        "text_size_mobile": "text-2xl",
+        "text_size_desktop": "lg:text-2xl",
+        "tag": "h1",
+        "font": "font-couch",
+        "weight": "font-semibold",
+        "alignment": "text-center",
+        "text_color": "text-black",
+        "title_classes": "",
+        "content": "<p><\/p><p><\/p>",
+        "testimonial_author": ""
+      }
+    },
+    "07726ac8-c669-44e9-88d8-3f775f78d702": {
+      "type": "transparency-report-dropdown",
+      "settings": {
+        "paragraph": "Explore our archive of reports dating back to 2009.",
+        "dropdown_links": "year-1"
       }
     },
     "0fc3b7cb-8453-4bfe-8687-14f0d7dbcd60": {
@@ -140,58 +205,16 @@
       "settings": {
         "classes": ""
       }
-    },
-    "7092a6ee-c6e3-4328-ac10-684d3dcb4a80": {
-      "type": "banner-slider",
-      "blocks": {
-        "c0f36ebc-661a-487d-a635-c50f3a65e0e8": {
-          "type": "banner",
-          "settings": {
-            "image_classes": "",
-            "show_gradient": false,
-            "bg_color": "",
-            "wrapper_classes": "",
-            "use_squiggles": false,
-            "title": "",
-            "text_size_mobile": "text-2xl",
-            "text_size_desktop": "lg:text-3xl",
-            "tag": "h3",
-            "font": "font-freight-sans",
-            "weight": "font-regular",
-            "alignment": "text-center",
-            "text_color": "text-black",
-            "title_classes": "",
-            "content": "",
-            "button_text": "",
-            "button_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "c0f36ebc-661a-487d-a635-c50f3a65e0e8"
-      ],
-      "settings": {
-        "reverse_order": false,
-        "title": "<p>2022 Highlights<\/p>",
-        "text_size_mobile": "text-2xl",
-        "text_size_desktop": "lg:text-2xl",
-        "tag": "h3",
-        "font": "font-couch",
-        "weight": "font-regular",
-        "alignment": "text-center",
-        "text_color": "text-black",
-        "title_classes": ""
-      }
     }
   },
   "order": [
     "main",
     "a964a693-dd18-4c70-89df-2080b8fb1460",
+    "7092a6ee-c6e3-4328-ac10-684d3dcb4a80",
+    "e2005a40-3df1-413d-9d74-8bbcc2d68f17",
     "41e3b176-36ad-447e-bfc5-a2057b206ed2",
     "07726ac8-c669-44e9-88d8-3f775f78d702",
-    "e2005a40-3df1-413d-9d74-8bbcc2d68f17",
     "0fc3b7cb-8453-4bfe-8687-14f0d7dbcd60",
-    "7e252e61-3fcb-4964-a63f-dcb24294dd3c",
-    "7092a6ee-c6e3-4328-ac10-684d3dcb4a80"
+    "7e252e61-3fcb-4964-a63f-dcb24294dd3c"
   ]
 }
