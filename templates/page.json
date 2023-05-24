@@ -567,6 +567,24 @@
             "archived_products": "",
             "country": "Ethiopia"
           }
+        },
+        "205867a7-d2ba-4660-9580-ed599bcfdbf8": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Jabanto",
+            "location": "Ethiopia",
+            "partner_since": "2018",
+            "fob_price": "$4.08",
+            "price_range": "$4.00-4.43",
+            "pounds_purchased": "169,318",
+            "quality_score": "89-91",
+            "product_list": [
+              "apollo",
+              "west-coast-forty-six"
+            ],
+            "archived_products": "",
+            "country": "Ethiopia"
+          }
         }
       },
       "block_order": [
@@ -588,7 +606,8 @@
         "40524309-16fa-4d98-a1d8-7efc39390a60",
         "4951b958-cf77-4623-b978-6320a9db88f4",
         "4ff0117f-5ef4-4625-8b63-c457c64034f5",
-        "02fbd382-7ec4-4348-a59a-5c25cabe7cbb"
+        "02fbd382-7ec4-4348-a59a-5c25cabe7cbb",
+        "205867a7-d2ba-4660-9580-ed599bcfdbf8"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
