@@ -802,6 +802,7 @@
         "52ee16b8-c6b2-466b-a606-d9afbb5bd7bd": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/puente.png",
             "title": "Finca El Puente",
             "location": "Honduras",
             "partner_since": "2005",
