@@ -70,6 +70,20 @@
     },
     "e2005a40-3df1-413d-9d74-8bbcc2d68f17": {
       "type": "cta-banner-with-image",
+      "blocks": {
+        "8baeddce-a010-41a6-b6f1-62e47eb37799": {
+          "type": "button",
+          "settings": {
+            "button_style": "btn btn-secondary",
+            "link_text": "2022 Report",
+            "link_url": "shopify:\/\/collections\/all",
+            "link_classes": ""
+          }
+        }
+      },
+      "block_order": [
+        "8baeddce-a010-41a6-b6f1-62e47eb37799"
+      ],
       "settings": {
         "section_style": "background_image",
         "border_color": "border-transparent",
