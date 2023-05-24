@@ -730,6 +730,7 @@
         "10b1bc83-219b-41ec-ae1b-855ce4227bdf": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/lavoz.jpg",
             "title": "La Voz que Clama en el Desierto",
             "location": "Guatemala",
             "partner_since": "2012",
