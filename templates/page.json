@@ -270,11 +270,29 @@
             "archived_products": "",
             "country": "Bolivia"
           }
+        },
+        "38ed3029-2cf0-48c2-b340-30f3cc305181": {
+          "type": "partner_option",
+          "settings": {
+            "title": "",
+            "location": "",
+            "partner_since": "",
+            "fob_price": "",
+            "price_range": "",
+            "pounds_purchased": "",
+            "quality_score": "",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Bolivia"
+          }
         }
       },
       "block_order": [
         "5d2299a1-6870-441e-b7ab-f525d2156756",
-        "5cb59ef8-da20-449f-96b2-6e37eee9acb6"
+        "5cb59ef8-da20-449f-96b2-6e37eee9acb6",
+        "38ed3029-2cf0-48c2-b340-30f3cc305181"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
