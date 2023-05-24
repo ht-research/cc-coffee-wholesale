@@ -378,6 +378,7 @@
         "25bef9e1-ace6-4763-ab9e-8cddb9effcee": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Toldopamba.jpg",
             "title": "Toldopamba",
             "location": "Colombia",
             "partner_since": "2016",
