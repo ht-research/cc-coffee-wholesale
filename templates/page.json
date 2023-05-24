@@ -552,6 +552,7 @@
         "02fbd382-7ec4-4348-a59a-5c25cabe7cbb": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/guji.jpg",
             "title": "Guji Highlands",
             "location": "Ethiopia",
             "partner_since": "2018",
@@ -560,7 +561,8 @@
             "pounds_purchased": "253,948",
             "quality_score": "89-90.5",
             "product_list": [
-
+              "west-coast-apollo",
+              "west-coast-forty-six"
             ],
             "archived_products": "",
             "country": "Ethiopia"
