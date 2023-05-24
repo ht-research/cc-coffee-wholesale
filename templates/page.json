@@ -104,16 +104,31 @@
         "title_classes": ""
       }
     },
+    "0fc3b7cb-8453-4bfe-8687-14f0d7dbcd60": {
+      "type": "page-banner",
+      "settings": {
+        "show_sunburst": true,
+        "sunburst_color": "#4fa0d7",
+        "show_gradient": true,
+        "bg_color": "#ffffff",
+        "wrapper_classes": "border border-black",
+        "use_squiggles": false,
+        "title": "<p>Purchasing Data<\/p>",
+        "text_size_mobile": "text-2xl",
+        "text_size_desktop": "lg:text-2xl",
+        "tag": "h1",
+        "font": "font-couch",
+        "weight": "font-semibold",
+        "alignment": "text-center",
+        "text_color": "text-black",
+        "title_classes": "",
+        "content": "<p><\/p><p><\/p>",
+        "testimonial_author": ""
+      }
+    },
     "7e252e61-3fcb-4964-a63f-dcb24294dd3c": {
       "type": "richtext",
       "blocks": {
-        "ca2953c9-7aee-41e8-a076-dc3af729acfd": {
-          "type": "text_content",
-          "settings": {
-            "content": "In the graphic, the circles represent the main actors in our value stream. The dotted lines indicate potential paths for the product’s movement, while solid lines are more common tracks. The icons surrounding the circles describe specialized activities occurring at each step. We depicted these actions as happening either “always” or “sometimes” at each stage to reflect different methods of production.",
-            "classes": "text-left text-xl mb-5"
-          }
-        },
         "7847dbe9-9e10-490c-bed2-e9e7ba9fb068": {
           "type": "text_content",
           "settings": {
@@ -130,7 +145,6 @@
         }
       },
       "block_order": [
-        "ca2953c9-7aee-41e8-a076-dc3af729acfd",
         "7847dbe9-9e10-490c-bed2-e9e7ba9fb068",
         "5a07e8f2-0206-44e5-83c4-213db86d92d4"
       ],
@@ -220,6 +234,7 @@
     "41e3b176-36ad-447e-bfc5-a2057b206ed2",
     "07726ac8-c669-44e9-88d8-3f775f78d702",
     "e2005a40-3df1-413d-9d74-8bbcc2d68f17",
+    "0fc3b7cb-8453-4bfe-8687-14f0d7dbcd60",
     "7e252e61-3fcb-4964-a63f-dcb24294dd3c",
     "ebeeab5a-bdec-4b29-ae1e-081593966cbf",
     "ce9f778a-d7af-4680-b7e6-0c9e824c1e5b"
