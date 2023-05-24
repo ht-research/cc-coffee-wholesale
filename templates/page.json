@@ -708,6 +708,24 @@
             "archived_products": "",
             "country": "Guatemala"
           }
+        },
+        "32c8d41c-b69f-4630-8eeb-3673d3d4a44c": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FincaNuevaArmenia.jpg",
+            "title": "Finca Nueva Armenia",
+            "location": "Guatemala",
+            "partner_since": "2003",
+            "fob_price": "$3.06",
+            "price_range": "$3.05-3.25",
+            "pounds_purchased": "125,803",
+            "quality_score": "86",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Guatemala"
+          }
         }
       },
       "block_order": [
@@ -737,7 +755,8 @@
         "fbddbcae-b0a5-4d79-a043-60e559f098ae",
         "bb087c42-06bf-4ee9-897a-e41bb76f044e",
         "488561ce-604b-4963-b6f0-1ebc839407b0",
-        "e73bcad0-8ea9-436c-9ca7-a5c241f88060"
+        "e73bcad0-8ea9-436c-9ca7-a5c241f88060",
+        "32c8d41c-b69f-4630-8eeb-3673d3d4a44c"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
