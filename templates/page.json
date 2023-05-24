@@ -252,10 +252,28 @@
             "archived_products": "",
             "country": "Bolivia"
           }
+        },
+        "5cb59ef8-da20-449f-96b2-6e37eee9acb6": {
+          "type": "partner_option",
+          "settings": {
+            "title": "VICOPEX",
+            "location": "Bolivia",
+            "partner_since": "2015",
+            "fob_price": "$4.80",
+            "price_range": "$4.80",
+            "pounds_purchased": "616",
+            "quality_score": "88",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Bolivia"
+          }
         }
       },
       "block_order": [
-        "5d2299a1-6870-441e-b7ab-f525d2156756"
+        "5d2299a1-6870-441e-b7ab-f525d2156756",
+        "5cb59ef8-da20-449f-96b2-6e37eee9acb6"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
