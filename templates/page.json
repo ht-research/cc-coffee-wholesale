@@ -748,6 +748,7 @@
         "c24afac1-b366-44d4-a847-b0b4adedf181": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/ManosCampesinas.png",
             "title": "Manos Campesinas",
             "location": "Guatemala",
             "partner_since": "2013",
