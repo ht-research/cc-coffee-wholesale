@@ -234,6 +234,28 @@
     },
     "f9cdaccf-3549-43f3-a65e-b77ff2056cff": {
       "type": "partner-country-select",
+      "blocks": {
+        "5d2299a1-6870-441e-b7ab-f525d2156756": {
+          "type": "partner_option",
+          "settings": {
+            "title": "CENAPROC",
+            "location": "Bolivia",
+            "partner_since": "2004",
+            "fob_price": "$3.92",
+            "price_range": "$3.50-$4.80",
+            "pounds_purchased": "41,734",
+            "quality_score": "85.5-88",
+            "product_list": [
+              "west-coast-forty-six"
+            ],
+            "archived_products": "",
+            "country": "Bolivia"
+          }
+        }
+      },
+      "block_order": [
+        "5d2299a1-6870-441e-b7ab-f525d2156756"
+      ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
         "partner_image": "shopify:\/\/shop_images\/image_7_f130fd23-f24d-4f2d-8db5-24341cc62112.png",
