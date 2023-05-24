@@ -357,6 +357,23 @@
             "archived_products": "",
             "country": "Colombia"
           }
+        },
+        "d73252ff-3b1c-491c-940a-b35d06ee564e": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Tierradentro",
+            "location": "Colombia",
+            "partner_since": "2020",
+            "fob_price": "$3.25",
+            "price_range": "$3.25",
+            "pounds_purchased": "38,500",
+            "quality_score": "86",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Colombia"
+          }
         }
       },
       "block_order": [
@@ -366,7 +383,8 @@
         "f345d451-438f-45cf-8f8e-9221aecb66f0",
         "289f9a2f-5c8c-4d7b-82f1-b68c1b07abc8",
         "178893c0-7025-4e46-bac1-383cc73ac660",
-        "937e5d96-1458-4e5a-95a2-9e875335cc51"
+        "937e5d96-1458-4e5a-95a2-9e875335cc51",
+        "d73252ff-3b1c-491c-940a-b35d06ee564e"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
