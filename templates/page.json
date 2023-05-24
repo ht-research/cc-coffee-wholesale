@@ -374,6 +374,23 @@
             "archived_products": "",
             "country": "Colombia"
           }
+        },
+        "25bef9e1-ace6-4763-ab9e-8cddb9effcee": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Toldopamba",
+            "location": "Colombia",
+            "partner_since": "2016",
+            "fob_price": "$3.84",
+            "price_range": "$3.46-6",
+            "pounds_purchased": "170,086",
+            "quality_score": "84.5-88.5",
+            "product_list": [
+              "west-coast-gradient"
+            ],
+            "archived_products": "",
+            "country": "Colombia"
+          }
         }
       },
       "block_order": [
@@ -384,7 +401,8 @@
         "289f9a2f-5c8c-4d7b-82f1-b68c1b07abc8",
         "178893c0-7025-4e46-bac1-383cc73ac660",
         "937e5d96-1458-4e5a-95a2-9e875335cc51",
-        "d73252ff-3b1c-491c-940a-b35d06ee564e"
+        "d73252ff-3b1c-491c-940a-b35d06ee564e",
+        "25bef9e1-ace6-4763-ab9e-8cddb9effcee"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
