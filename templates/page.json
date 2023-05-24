@@ -65,7 +65,7 @@
       "type": "transparency-report-dropdown",
       "settings": {
         "paragraph": "Explore our archive of reports dating back to 2009.",
-        "dropdown_links": ""
+        "dropdown_links": "year"
       }
     },
     "e2005a40-3df1-413d-9d74-8bbcc2d68f17": {
