@@ -5256,6 +5256,10 @@ background-color: rgb(234 232 110 / var(--tw-bg-opacity));
         line-height: 20px;
         white-space: nowrap;
     }
+
+    .collection-grid--container.list-view-active .list-view_card-price{
+        margin-top: .5rem;
+    }
 }
 
 #BambooHR {
