@@ -839,6 +839,7 @@
         "8b4429c6-f274-4ab2-b8f4-e0f62bc0395b": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Kamavindi.png",
             "title": "Kamavindi Estate",
             "location": "Kenya",
             "partner_since": "2015",
