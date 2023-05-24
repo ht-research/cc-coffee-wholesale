@@ -853,6 +853,24 @@
             "archived_products": "",
             "country": "Kenya"
           }
+        },
+        "41761071-6e5a-4e29-973b-e033039f73ab": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kushikamana.png",
+            "title": "Kushikamana",
+            "location": "Kenya",
+            "partner_since": "2015",
+            "fob_price": "$5.20",
+            "price_range": "$3.39-6.56",
+            "pounds_purchased": "16,579",
+            "quality_score": "86.5-91",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Kenya"
+          }
         }
       },
       "block_order": [
@@ -890,7 +908,8 @@
         "961a2c52-3aa7-4ecb-8337-f672f007e716",
         "52ee16b8-c6b2-466b-a606-d9afbb5bd7bd",
         "f7102a83-88d2-4fc3-a180-3a5d3a1fff6a",
-        "8b4429c6-f274-4ab2-b8f4-e0f62bc0395b"
+        "8b4429c6-f274-4ab2-b8f4-e0f62bc0395b",
+        "41761071-6e5a-4e29-973b-e033039f73ab"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
