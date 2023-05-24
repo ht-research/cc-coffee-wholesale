@@ -31,9 +31,10 @@ Variables:
                 {% render 'product-price', variant: current_variant %}
               {%- endunless -%}
             </div>
-
           </div>
-          {% render 'tasting-notes', product: product %}
+          <div class="list-view_tasting-notes">
+            {% render 'tasting-notes', product: product %}
+          </div>
         </div>
 
 
