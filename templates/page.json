@@ -531,6 +531,23 @@
             "archived_products": "",
             "country": "Ethiopia"
           }
+        },
+        "4ff0117f-5ef4-4625-8b63-c457c64034f5": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Dambi Uddo Agro Industries",
+            "location": "Ethiopia",
+            "partner_since": "2019",
+            "fob_price": "$4.2",
+            "price_range": "$4.2",
+            "pounds_purchased": "26,456",
+            "quality_score": "90",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Ethiopia"
+          }
         }
       },
       "block_order": [
@@ -550,7 +567,8 @@
         "6fa742ad-2ace-4105-a72d-068f03acb118",
         "003bd1c3-eb9c-400d-bece-bcd23c36f1e5",
         "40524309-16fa-4d98-a1d8-7efc39390a60",
-        "4951b958-cf77-4623-b978-6320a9db88f4"
+        "4951b958-cf77-4623-b978-6320a9db88f4",
+        "4ff0117f-5ef4-4625-8b63-c457c64034f5"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
