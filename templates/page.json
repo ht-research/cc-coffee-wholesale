@@ -42,8 +42,9 @@
     "41e3b176-36ad-447e-bfc5-a2057b206ed2": {
       "type": "page-banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/cherries_76fcb0ee-fb65-4f19-8dd4-37a8252e204e.png",
         "show_sunburst": true,
-        "sunburst_color": "#4fa0d7",
+        "sunburst_color": "#d79e4f",
         "show_gradient": true,
         "bg_color": "#ffffff",
         "wrapper_classes": "border border-black",
