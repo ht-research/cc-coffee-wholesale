@@ -392,6 +392,23 @@
             "archived_products": "",
             "country": "Colombia"
           }
+        },
+        "f75df7b5-9d67-4e2c-b6d1-c98d2d444943": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Muungano Cooperative",
+            "location": "Democratic Republic of Congo",
+            "partner_since": "2017",
+            "fob_price": "$4.01",
+            "price_range": "$3.98-4.03",
+            "pounds_purchased": "10,582",
+            "quality_score": "87-88",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Democratic Republic of Congo"
+          }
         }
       },
       "block_order": [
@@ -403,7 +420,8 @@
         "178893c0-7025-4e46-bac1-383cc73ac660",
         "937e5d96-1458-4e5a-95a2-9e875335cc51",
         "d73252ff-3b1c-491c-940a-b35d06ee564e",
-        "25bef9e1-ace6-4763-ab9e-8cddb9effcee"
+        "25bef9e1-ace6-4763-ab9e-8cddb9effcee",
+        "f75df7b5-9d67-4e2c-b6d1-c98d2d444943"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
