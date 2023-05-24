@@ -291,6 +291,7 @@
         "f345d451-438f-45cf-8f8e-9221aecb66f0": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/CRS_Borderlands.png",
             "title": "Borderlands",
             "location": "Colombia",
             "partner_since": "2013",
