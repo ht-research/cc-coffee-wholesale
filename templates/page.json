@@ -890,6 +890,23 @@
             "archived_products": "",
             "country": "Mexico"
           }
+        },
+        "a53d3afd-326e-4c9d-9e8a-f846f9b4a29e": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Grapos Cooperative",
+            "location": "Mexico",
+            "partner_since": "2022",
+            "fob_price": "$3.29",
+            "price_range": "$3.29",
+            "pounds_purchased": "41,833",
+            "quality_score": "84.5",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Mexico"
+          }
         }
       },
       "block_order": [
@@ -929,7 +946,8 @@
         "f7102a83-88d2-4fc3-a180-3a5d3a1fff6a",
         "8b4429c6-f274-4ab2-b8f4-e0f62bc0395b",
         "41761071-6e5a-4e29-973b-e033039f73ab",
-        "8daa88f2-800b-4b85-ace0-4393771815fc"
+        "8daa88f2-800b-4b85-ace0-4393771815fc",
+        "a53d3afd-326e-4c9d-9e8a-f846f9b4a29e"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
