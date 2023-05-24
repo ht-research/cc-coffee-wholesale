@@ -451,10 +451,28 @@
             "title": "Capamaco Trading",
             "location": "Ecuador",
             "partner_since": "2018",
-            "fob_price": "$3.9",
-            "price_range": "$3.9",
+            "fob_price": "$3.90",
+            "price_range": "$3.90",
             "pounds_purchased": "6,600",
             "quality_score": "86",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Ecuador"
+          }
+        },
+        "6fa742ad-2ace-4105-a72d-068f03acb118": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/eladio.jpg",
+            "title": "Eladio Chamba",
+            "location": "Ecuador",
+            "partner_since": "2016",
+            "fob_price": "$7.50",
+            "price_range": "$7.50",
+            "pounds_purchased": "1,520",
+            "quality_score": "89.5",
             "product_list": [
 
             ],
@@ -476,7 +494,8 @@
         "f75df7b5-9d67-4e2c-b6d1-c98d2d444943",
         "5483e12d-d186-44b7-88a2-de80ac65f898",
         "ab1c22a5-84cd-438a-a92b-b880a46cae22",
-        "03d3a7c3-a81f-41b0-9c83-28bfaf857f7d"
+        "03d3a7c3-a81f-41b0-9c83-28bfaf857f7d",
+        "6fa742ad-2ace-4105-a72d-068f03acb118"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
