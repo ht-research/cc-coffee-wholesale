@@ -835,6 +835,23 @@
             "archived_products": "",
             "country": "Honduras"
           }
+        },
+        "8b4429c6-f274-4ab2-b8f4-e0f62bc0395b": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Kamavindi Estate",
+            "location": "Kenya",
+            "partner_since": "2015",
+            "fob_price": "$6.83",
+            "price_range": "$4.71-31.00",
+            "pounds_purchased": "3,747",
+            "quality_score": "88-92",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Kenya"
+          }
         }
       },
       "block_order": [
@@ -871,7 +888,8 @@
         "f624c049-bc33-4506-8de7-1e6bb0eef8ea",
         "961a2c52-3aa7-4ecb-8337-f672f007e716",
         "52ee16b8-c6b2-466b-a606-d9afbb5bd7bd",
-        "f7102a83-88d2-4fc3-a180-3a5d3a1fff6a"
+        "f7102a83-88d2-4fc3-a180-3a5d3a1fff6a",
+        "8b4429c6-f274-4ab2-b8f4-e0f62bc0395b"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
