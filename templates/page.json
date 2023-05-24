@@ -586,6 +586,23 @@
             "archived_products": "",
             "country": "Ethiopia"
           }
+        },
+        "69f5941c-6bca-4364-8e54-02d2f82e8445": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Kata Meduga",
+            "location": "Ethiopia",
+            "partner_since": "2019",
+            "fob_price": "$3.85",
+            "price_range": "$3.85",
+            "pounds_purchased": "42,330",
+            "quality_score": "90.5",
+            "product_list": [
+              "west-coast-forty-six"
+            ],
+            "archived_products": "",
+            "country": "Ethiopia"
+          }
         }
       },
       "block_order": [
@@ -608,7 +625,8 @@
         "4951b958-cf77-4623-b978-6320a9db88f4",
         "4ff0117f-5ef4-4625-8b63-c457c64034f5",
         "02fbd382-7ec4-4348-a59a-5c25cabe7cbb",
-        "205867a7-d2ba-4660-9580-ed599bcfdbf8"
+        "205867a7-d2ba-4660-9580-ed599bcfdbf8",
+        "69f5941c-6bca-4364-8e54-02d2f82e8445"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
