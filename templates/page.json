@@ -691,6 +691,23 @@
             "archived_products": "",
             "country": "Guatemala"
           }
+        },
+        "e73bcad0-8ea9-436c-9ca7-a5c241f88060": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Finca La Hermosa",
+            "location": "Guatemala",
+            "partner_since": "2022",
+            "fob_price": "$3.15",
+            "price_range": "$3.15",
+            "pounds_purchased": "42,594",
+            "quality_score": "83.75-85",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Guatemala"
+          }
         }
       },
       "block_order": [
@@ -719,7 +736,8 @@
         "696f4da4-b45b-4dbb-8c6d-b90b43d5753b",
         "fbddbcae-b0a5-4d79-a043-60e559f098ae",
         "bb087c42-06bf-4ee9-897a-e41bb76f044e",
-        "488561ce-604b-4963-b6f0-1ebc839407b0"
+        "488561ce-604b-4963-b6f0-1ebc839407b0",
+        "e73bcad0-8ea9-436c-9ca7-a5c241f88060"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
