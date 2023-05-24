@@ -253,45 +253,26 @@
             "country": "Bolivia"
           }
         },
-        "5cb59ef8-da20-449f-96b2-6e37eee9acb6": {
-          "type": "partner_option",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Vicopex.jpg",
-            "title": "VICOPEX",
-            "location": "Bolivia",
-            "partner_since": "2015",
-            "fob_price": "$4.80",
-            "price_range": "$4.80",
-            "pounds_purchased": "616",
-            "quality_score": "88",
-            "product_list": [
-
-            ],
-            "archived_products": "",
-            "country": "Bolivia"
-          }
-        },
         "38ed3029-2cf0-48c2-b340-30f3cc305181": {
           "type": "partner_option",
           "settings": {
-            "title": "",
-            "location": "",
-            "partner_since": "",
-            "fob_price": "",
-            "price_range": "",
-            "pounds_purchased": "",
-            "quality_score": "",
+            "title": "Kazoza N'lkawa",
+            "location": "Burundi",
+            "partner_since": "2012",
+            "fob_price": "3.92",
+            "price_range": "$3.75-4.00",
+            "pounds_purchased": "23,810",
+            "quality_score": "88-88.5",
             "product_list": [
 
             ],
             "archived_products": "",
-            "country": "Bolivia"
+            "country": "Burundi"
           }
         }
       },
       "block_order": [
         "5d2299a1-6870-441e-b7ab-f525d2156756",
-        "5cb59ef8-da20-449f-96b2-6e37eee9acb6",
         "38ed3029-2cf0-48c2-b340-30f3cc305181"
       ],
       "settings": {
