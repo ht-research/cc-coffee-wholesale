@@ -48,7 +48,7 @@
         "bg_color": "#ffffff",
         "wrapper_classes": "border border-black",
         "use_squiggles": false,
-        "title": "<p>Visualizing the Value Chain<\/p>",
+        "title": "<p>Past Reports<\/p>",
         "text_size_mobile": "text-2xl",
         "text_size_desktop": "lg:text-2xl",
         "tag": "h1",
@@ -61,47 +61,11 @@
         "testimonial_author": ""
       }
     },
-    "52865e74-13e2-4be8-b958-3aeef6e8c14c": {
-      "type": "richtext",
-      "blocks": {
-        "1279eacb-8b0d-4652-a401-da43897180a3": {
-          "type": "heading",
-          "settings": {
-            "title": "<h3>Explore our archive of reports dating back to 2009.<\/h3>",
-            "text_size_mobile": "text-6xl",
-            "text_size_desktop": "lg:text-6xl",
-            "tag": "h1",
-            "font": "font-freight-sans",
-            "weight": "font-regular",
-            "alignment": "text-center",
-            "text_color": "text-black",
-            "classes": ""
-          }
-        },
-        "f66fed6e-2a6d-466d-9f49-8f6707907975": {
-          "type": "text_content",
-          "settings": {
-            "content": "",
-            "classes": ""
-          }
-        },
-        "a8acca0b-a358-44f8-b1d4-705b595b5396": {
-          "type": "button",
-          "settings": {
-            "button_style": "btn btn-secondary",
-            "link_text": "Past Years",
-            "link_url": "shopify:\/\/collections\/all",
-            "classes": ""
-          }
-        }
-      },
-      "block_order": [
-        "1279eacb-8b0d-4652-a401-da43897180a3",
-        "f66fed6e-2a6d-466d-9f49-8f6707907975",
-        "a8acca0b-a358-44f8-b1d4-705b595b5396"
-      ],
+    "07726ac8-c669-44e9-88d8-3f775f78d702": {
+      "type": "transparency-report-dropdown",
       "settings": {
-        "classes": ""
+        "paragraph": "Explore our archive of reports dating back to 2009.",
+        "dropdown_links": ""
       }
     },
     "e2005a40-3df1-413d-9d74-8bbcc2d68f17": {
@@ -237,7 +201,7 @@
     "main",
     "02781444-064e-4189-9f20-c223647ae522",
     "41e3b176-36ad-447e-bfc5-a2057b206ed2",
-    "52865e74-13e2-4be8-b958-3aeef6e8c14c",
+    "07726ac8-c669-44e9-88d8-3f775f78d702",
     "e2005a40-3df1-413d-9d74-8bbcc2d68f17",
     "7e252e61-3fcb-4964-a63f-dcb24294dd3c",
     "ebeeab5a-bdec-4b29-ae1e-081593966cbf",
