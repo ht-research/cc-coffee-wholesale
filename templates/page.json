@@ -548,6 +548,23 @@
             "archived_products": "",
             "country": "Ethiopia"
           }
+        },
+        "02fbd382-7ec4-4348-a59a-5c25cabe7cbb": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Guji Highlands",
+            "location": "Ethiopia",
+            "partner_since": "2018",
+            "fob_price": "$3.71",
+            "price_range": "$3.70-3.77",
+            "pounds_purchased": "253,948",
+            "quality_score": "89-90.5",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Ethiopia"
+          }
         }
       },
       "block_order": [
@@ -568,7 +585,8 @@
         "003bd1c3-eb9c-400d-bece-bcd23c36f1e5",
         "40524309-16fa-4d98-a1d8-7efc39390a60",
         "4951b958-cf77-4623-b978-6320a9db88f4",
-        "4ff0117f-5ef4-4625-8b63-c457c64034f5"
+        "4ff0117f-5ef4-4625-8b63-c457c64034f5",
+        "02fbd382-7ec4-4348-a59a-5c25cabe7cbb"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
