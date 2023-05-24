@@ -92,10 +92,10 @@
             "tag": "h3",
             "font": "font-couch",
             "weight": "font-regular",
-            "alignment": "text-center",
+            "alignment": "text-left",
             "text_color": "text-black",
             "title_classes": "",
-            "content": "",
+            "content": "<ul><li>Employed 106 people<\/li><li>Paid out $101,840.51 in  Green Fund, Pushing Potential, CSA, and Preventative Care benefits<\/li><li>Introduced mental health support to all employees and their dependents <\/li><\/ul>",
             "button_text": "",
             "button_url": ""
           }
