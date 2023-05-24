@@ -1033,6 +1033,7 @@
         "674b80f7-d1e7-406e-aaf4-6cdf352652a2": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Victoria.png",
             "title": "Finca La Victoria",
             "location": "Nicaragua",
             "partner_since": "2017",
