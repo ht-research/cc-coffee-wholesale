@@ -764,6 +764,23 @@
             "archived_products": "",
             "country": "Guatemala"
           }
+        },
+        "f624c049-bc33-4506-8de7-1e6bb0eef8ea": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Vides 58",
+            "location": "Guatemala",
+            "partner_since": "2022",
+            "fob_price": "$3.39",
+            "price_range": "$3.39",
+            "pounds_purchased": "41,833",
+            "quality_score": "85.5",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Guatemala"
+          }
         }
       },
       "block_order": [
@@ -796,7 +813,8 @@
         "e73bcad0-8ea9-436c-9ca7-a5c241f88060",
         "32c8d41c-b69f-4630-8eeb-3673d3d4a44c",
         "10b1bc83-219b-41ec-ae1b-855ce4227bdf",
-        "c24afac1-b366-44d4-a847-b0b4adedf181"
+        "c24afac1-b366-44d4-a847-b0b4adedf181",
+        "f624c049-bc33-4506-8de7-1e6bb0eef8ea"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
