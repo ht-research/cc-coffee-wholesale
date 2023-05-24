@@ -232,29 +232,12 @@
         "testimonial_author": ""
       }
     },
-    "7e252e61-3fcb-4964-a63f-dcb24294dd3c": {
-      "type": "richtext",
-      "blocks": {
-        "c400fdde-e7ee-4e04-be73-da7c068e24b5": {
-          "type": "heading",
-          "settings": {
-            "title": "<h5>On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.<\/h5>",
-            "text_size_mobile": "text-6xl",
-            "text_size_desktop": "lg:text-6xl",
-            "tag": "h1",
-            "font": "font-freight-sans",
-            "weight": "font-regular",
-            "alignment": "text-center",
-            "text_color": "text-black",
-            "classes": ""
-          }
-        }
-      },
-      "block_order": [
-        "c400fdde-e7ee-4e04-be73-da7c068e24b5"
-      ],
+    "f9cdaccf-3549-43f3-a65e-b77ff2056cff": {
+      "type": "partner-country-select",
       "settings": {
-        "classes": ""
+        "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
+        "partner_image": "shopify:\/\/shop_images\/image_7_f130fd23-f24d-4f2d-8db5-24341cc62112.png",
+        "partner_title": ""
       }
     }
   },
@@ -266,6 +249,6 @@
     "41e3b176-36ad-447e-bfc5-a2057b206ed2",
     "07726ac8-c669-44e9-88d8-3f775f78d702",
     "0fc3b7cb-8453-4bfe-8687-14f0d7dbcd60",
-    "7e252e61-3fcb-4964-a63f-dcb24294dd3c"
+    "f9cdaccf-3549-43f3-a65e-b77ff2056cff"
   ]
 }
