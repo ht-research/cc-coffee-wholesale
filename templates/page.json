@@ -798,6 +798,23 @@
             "archived_products": "",
             "country": "Honduras"
           }
+        },
+        "52ee16b8-c6b2-466b-a606-d9afbb5bd7bd": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Finca El Puente",
+            "location": "Honduras",
+            "partner_since": "2005",
+            "fob_price": "$3.53",
+            "price_range": "$3.30-25.00",
+            "pounds_purchased": "284,099",
+            "quality_score": "85-90",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Honduras"
+          }
         }
       },
       "block_order": [
@@ -832,7 +849,8 @@
         "10b1bc83-219b-41ec-ae1b-855ce4227bdf",
         "c24afac1-b366-44d4-a847-b0b4adedf181",
         "f624c049-bc33-4506-8de7-1e6bb0eef8ea",
-        "961a2c52-3aa7-4ecb-8337-f672f007e716"
+        "961a2c52-3aa7-4ecb-8337-f672f007e716",
+        "52ee16b8-c6b2-466b-a606-d9afbb5bd7bd"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
