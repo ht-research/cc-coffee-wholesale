@@ -959,6 +959,23 @@
             "archived_products": "",
             "country": "Mexico"
           }
+        },
+        "5ddcbf34-694e-43a6-85ef-c597383d71e7": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Union de Ejidos",
+            "location": "Mexico",
+            "partner_since": "2022",
+            "fob_price": "$3.75",
+            "price_range": "$3.75",
+            "pounds_purchased": "12,170",
+            "quality_score": "85.5",
+            "product_list": [
+              "west-coast-forty-six"
+            ],
+            "archived_products": "",
+            "country": "Mexico"
+          }
         }
       },
       "block_order": [
@@ -1002,7 +1019,8 @@
         "a53d3afd-326e-4c9d-9e8a-f846f9b4a29e",
         "a02c7ff9-dfd3-4cc9-9abd-41689e4f2880",
         "4446fce9-fb0a-4bb5-a298-06dfabd9060f",
-        "fc92b9eb-f2ad-4d8b-92c2-4e8da4255e44"
+        "fc92b9eb-f2ad-4d8b-92c2-4e8da4255e44",
+        "5ddcbf34-694e-43a6-85ef-c597383d71e7"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
