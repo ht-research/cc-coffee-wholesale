@@ -39,20 +39,6 @@
         "text_align_sm": "text-center"
       }
     },
-    "08789d13-2c5f-4f12-9a5b-94e5b5c688e7": {
-      "type": "content-columns",
-      "settings": {
-      }
-    },
-    "a05bd05d-18bb-4c0e-9cea-11860990aa24": {
-      "type": "contact-us-section",
-      "settings": {
-        "feat_img": "shopify:\/\/shop_images\/MO4A5600.jpg",
-        "form_title": "",
-        "subtext": "",
-        "contact_topics": ""
-      }
-    },
     "41e3b176-36ad-447e-bfc5-a2057b206ed2": {
       "type": "page-banner",
       "settings": {
@@ -228,18 +214,36 @@
         "text_color": "text-black",
         "title_classes": ""
       }
+    },
+    "508f51fd-74d3-41d1-b111-89bb4fc75fea": {
+      "type": "slideshow",
+      "blocks": {
+        "25897c0a-0b93-49b0-8123-aca0a26b70bf": {
+          "type": "slide",
+          "settings": {
+            "heading": "2022 Highlights",
+            "description": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "25897c0a-0b93-49b0-8123-aca0a26b70bf"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "02781444-064e-4189-9f20-c223647ae522",
-    "08789d13-2c5f-4f12-9a5b-94e5b5c688e7",
-    "a05bd05d-18bb-4c0e-9cea-11860990aa24",
     "41e3b176-36ad-447e-bfc5-a2057b206ed2",
     "52865e74-13e2-4be8-b958-3aeef6e8c14c",
     "e2005a40-3df1-413d-9d74-8bbcc2d68f17",
     "7e252e61-3fcb-4964-a63f-dcb24294dd3c",
     "ebeeab5a-bdec-4b29-ae1e-081593966cbf",
-    "ce9f778a-d7af-4680-b7e6-0c9e824c1e5b"
+    "ce9f778a-d7af-4680-b7e6-0c9e824c1e5b",
+    "508f51fd-74d3-41d1-b111-89bb4fc75fea"
   ]
 }
