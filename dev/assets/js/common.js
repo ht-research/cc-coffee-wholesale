@@ -28,6 +28,7 @@ import RevealAnimation from './animation.js'
 import Slider from './slider.js'
 import Video from './video.js'
 import QuickOrder from './quick-order.js'
+import GriListSwitch from './grid-list-switch.js'
 
 
 $(() => {
@@ -55,6 +56,7 @@ $(() => {
   BlendComponents.init();
   GiftSubscription.init();
   QuickOrder.init();
+  GriListSwitch.init();
 });
 
 
