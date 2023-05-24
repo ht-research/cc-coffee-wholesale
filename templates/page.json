@@ -976,6 +976,23 @@
             "archived_products": "",
             "country": "Mexico"
           }
+        },
+        "48d10549-dabf-4ea7-a552-bb8877e0f438": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Bridazul",
+            "location": "Nicaragua",
+            "partner_since": "2022",
+            "fob_price": "$2.80",
+            "price_range": "$3.65-4.65",
+            "pounds_purchased": "37,726",
+            "quality_score": "85-86",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Nicaragua"
+          }
         }
       },
       "block_order": [
@@ -1020,7 +1037,8 @@
         "a02c7ff9-dfd3-4cc9-9abd-41689e4f2880",
         "4446fce9-fb0a-4bb5-a298-06dfabd9060f",
         "fc92b9eb-f2ad-4d8b-92c2-4e8da4255e44",
-        "5ddcbf34-694e-43a6-85ef-c597383d71e7"
+        "5ddcbf34-694e-43a6-85ef-c597383d71e7",
+        "48d10549-dabf-4ea7-a552-bb8877e0f438"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
