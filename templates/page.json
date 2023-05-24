@@ -343,6 +343,7 @@
         "937e5d96-1458-4e5a-95a2-9e875335cc51": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Organica.jpg",
             "title": "Organica",
             "location": "Colombia",
             "partner_since": "2007",
