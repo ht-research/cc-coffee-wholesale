@@ -77,11 +77,34 @@
             "button_text": "",
             "button_url": ""
           }
+        },
+        "ade7d22c-086f-4584-baa8-a5a1b48acb0d": {
+          "type": "banner",
+          "settings": {
+            "image_classes": "",
+            "show_gradient": false,
+            "bg_color": "",
+            "wrapper_classes": "",
+            "use_squiggles": false,
+            "title": "<p>People<\/p>",
+            "text_size_mobile": "text-2xl",
+            "text_size_desktop": "lg:text-2xl",
+            "tag": "h3",
+            "font": "font-couch",
+            "weight": "font-regular",
+            "alignment": "text-center",
+            "text_color": "text-black",
+            "title_classes": "",
+            "content": "",
+            "button_text": "",
+            "button_url": ""
+          }
         }
       },
       "block_order": [
         "c0f36ebc-661a-487d-a635-c50f3a65e0e8",
-        "7fffb337-3fa9-41f8-8c24-30802ab807ac"
+        "7fffb337-3fa9-41f8-8c24-30802ab807ac",
+        "ade7d22c-086f-4584-baa8-a5a1b48acb0d"
       ],
       "settings": {
         "reverse_order": false,
