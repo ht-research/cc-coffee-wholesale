@@ -75,7 +75,7 @@
           "type": "button",
           "settings": {
             "button_style": "btn btn-secondary",
-            "link_text": "2022 Report",
+            "link_text": "English",
             "link_url": "shopify:\/\/collections\/all",
             "link_classes": ""
           }
