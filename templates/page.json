@@ -659,6 +659,7 @@
         "bb087c42-06bf-4ee9-897a-e41bb76f044e": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Codech.png",
             "title": "CODECH",
             "location": "Guatemala",
             "partner_since": "2010",
