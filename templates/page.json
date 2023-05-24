@@ -871,6 +871,23 @@
             "archived_products": "",
             "country": "Kenya"
           }
+        },
+        "8daa88f2-800b-4b85-ace0-4393771815fc": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Cafeco",
+            "location": "Mexico",
+            "partner_since": "2020",
+            "fob_price": "$3.63",
+            "price_range": "$3.34-3.79",
+            "pounds_purchased": "56,893",
+            "quality_score": "85-86",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Mexico"
+          }
         }
       },
       "block_order": [
@@ -909,7 +926,8 @@
         "52ee16b8-c6b2-466b-a606-d9afbb5bd7bd",
         "f7102a83-88d2-4fc3-a180-3a5d3a1fff6a",
         "8b4429c6-f274-4ab2-b8f4-e0f62bc0395b",
-        "41761071-6e5a-4e29-973b-e033039f73ab"
+        "41761071-6e5a-4e29-973b-e033039f73ab",
+        "8daa88f2-800b-4b85-ace0-4393771815fc"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
