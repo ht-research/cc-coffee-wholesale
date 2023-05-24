@@ -132,21 +132,13 @@
         "7847dbe9-9e10-490c-bed2-e9e7ba9fb068": {
           "type": "text_content",
           "settings": {
-            "content": "Every coffee has a unique story and this graphic is meant to help illustrate that story. Our value stream map is not a static description, but rather a jumping-off point to trace a coffee’s journey from farm to consumer. It also demonstrates how quality coffee is the result of an entire value stream’s focus on standards and excellence.",
-            "classes": "text-left text-xl mb-5"
-          }
-        },
-        "5a07e8f2-0206-44e5-83c4-213db86d92d4": {
-          "type": "text_content",
-          "settings": {
-            "content": "Download a printable version below. Available for non-commercial and educational use only. Copyright Counter Culture Coffee 2023.",
+            "content": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.on standards and excellence.",
             "classes": "text-left text-xl mb-5"
           }
         }
       },
       "block_order": [
-        "7847dbe9-9e10-490c-bed2-e9e7ba9fb068",
-        "5a07e8f2-0206-44e5-83c4-213db86d92d4"
+        "7847dbe9-9e10-490c-bed2-e9e7ba9fb068"
       ],
       "settings": {
         "classes": ""
