@@ -135,10 +135,25 @@
             "content": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.on standards and excellence.",
             "classes": "text-left text-xl mb-5"
           }
+        },
+        "c400fdde-e7ee-4e04-be73-da7c068e24b5": {
+          "type": "heading",
+          "settings": {
+            "title": "<h5>On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.<\/h5>",
+            "text_size_mobile": "text-6xl",
+            "text_size_desktop": "lg:text-6xl",
+            "tag": "h1",
+            "font": "font-freight-sans",
+            "weight": "font-regular",
+            "alignment": "text-center",
+            "text_color": "text-black",
+            "classes": ""
+          }
         }
       },
       "block_order": [
-        "7847dbe9-9e10-490c-bed2-e9e7ba9fb068"
+        "7847dbe9-9e10-490c-bed2-e9e7ba9fb068",
+        "c400fdde-e7ee-4e04-be73-da7c068e24b5"
       ],
       "settings": {
         "classes": ""
