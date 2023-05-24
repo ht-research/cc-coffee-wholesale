@@ -104,6 +104,7 @@
         "963cd676-f2db-4d0c-9137-b6fdc8828b76": {
           "type": "banner",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-05-24_at_12.47.55_PM.png",
             "image_classes": "",
             "show_gradient": false,
             "bg_color": "",
@@ -118,7 +119,7 @@
             "alignment": "text-left",
             "text_color": "text-black",
             "title_classes": "",
-            "content": "<ul><li>Trained 3,273 <a href=\"https:\/\/www.eventbrite.com\/cc\/sca-coffee-skills-program-127469\">professional development<\/a> students and 1,017 <a href=\"https:\/\/www.eventbrite.com\/o\/calibrated-18076492859\">Coffee at Home <\/a>students for a total of 3,777 hours training students.<\/li><li>We made 1019 service calls, 820 preventative maintenance visits, and made 162 installs in 253 new locations. <\/li><\/ul>",
+            "content": "<ul><li>Raised $18,338.98 through Shift Drink events<\/li><li>Made 1,527 service calls, 821 preventative maintenance visits, and made 127 equipment installations<\/li><\/ul>",
             "button_text": "",
             "button_url": ""
           }
