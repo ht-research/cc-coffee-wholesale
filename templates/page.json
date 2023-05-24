@@ -514,6 +514,23 @@
             "archived_products": "",
             "country": "El Salvador"
           }
+        },
+        "4951b958-cf77-4623-b978-6320a9db88f4": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Biru Bekele",
+            "location": "Ethiopia",
+            "partner_since": "2022",
+            "fob_price": "$3.07",
+            "price_range": "$3.07",
+            "pounds_purchased": "13,228",
+            "quality_score": "89.5",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Ethiopia"
+          }
         }
       },
       "block_order": [
@@ -532,7 +549,8 @@
         "03d3a7c3-a81f-41b0-9c83-28bfaf857f7d",
         "6fa742ad-2ace-4105-a72d-068f03acb118",
         "003bd1c3-eb9c-400d-bece-bcd23c36f1e5",
-        "40524309-16fa-4d98-a1d8-7efc39390a60"
+        "40524309-16fa-4d98-a1d8-7efc39390a60",
+        "4951b958-cf77-4623-b978-6320a9db88f4"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
