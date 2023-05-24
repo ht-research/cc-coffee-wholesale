@@ -483,6 +483,7 @@
         "003bd1c3-eb9c-400d-bece-bcd23c36f1e5": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/aida.jpg",
             "title": "Aida Batlle Farms",
             "location": "El Salvador",
             "partner_since": "2004",
