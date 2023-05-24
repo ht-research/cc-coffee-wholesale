@@ -256,6 +256,7 @@
         "5cb59ef8-da20-449f-96b2-6e37eee9acb6": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Vicopex.jpg",
             "title": "VICOPEX",
             "location": "Bolivia",
             "partner_since": "2015",
