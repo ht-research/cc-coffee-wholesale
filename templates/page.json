@@ -821,6 +821,7 @@
         "f7102a83-88d2-4fc3-a180-3a5d3a1fff6a": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/pashapa.png",
             "title": "Finca Pashapa",
             "location": "Honduras",
             "partner_since": "2002",
