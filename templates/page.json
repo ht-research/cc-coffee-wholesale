@@ -100,12 +100,35 @@
             "button_text": "",
             "button_url": ""
           }
+        },
+        "963cd676-f2db-4d0c-9137-b6fdc8828b76": {
+          "type": "banner",
+          "settings": {
+            "image_classes": "",
+            "show_gradient": false,
+            "bg_color": "",
+            "wrapper_classes": "",
+            "use_squiggles": false,
+            "title": "<p>Tech + Education<\/p>",
+            "text_size_mobile": "text-2xl",
+            "text_size_desktop": "lg:text-2xl",
+            "tag": "h3",
+            "font": "font-couch",
+            "weight": "font-regular",
+            "alignment": "text-left",
+            "text_color": "text-black",
+            "title_classes": "",
+            "content": "<ul><li>Trained 3,273 <a href=\"https:\/\/www.eventbrite.com\/cc\/sca-coffee-skills-program-127469\">professional development<\/a> students and 1,017 <a href=\"https:\/\/www.eventbrite.com\/o\/calibrated-18076492859\">Coffee at Home <\/a>students for a total of 3,777 hours training students.<\/li><li>We made 1019 service calls, 820 preventative maintenance visits, and made 162 installs in 253 new locations. <\/li><\/ul>",
+            "button_text": "",
+            "button_url": ""
+          }
         }
       },
       "block_order": [
         "c0f36ebc-661a-487d-a635-c50f3a65e0e8",
         "7fffb337-3fa9-41f8-8c24-30802ab807ac",
-        "ade7d22c-086f-4584-baa8-a5a1b48acb0d"
+        "ade7d22c-086f-4584-baa8-a5a1b48acb0d",
+        "963cd676-f2db-4d0c-9137-b6fdc8828b76"
       ],
       "settings": {
         "reverse_order": false,
