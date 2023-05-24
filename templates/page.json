@@ -25,41 +25,8 @@
         "alignment": "text-center",
         "text_color": "text-black",
         "title_classes": "text-stroke-outline",
-        "content": "",
+        "content": "<p>Since 2009, our annual Transparency Reports have served as a blueprint for our green coffee purchasing practices and a response to chronically low prices in the coffee industry. We believe paying more for green coffee invests in the long-term viability of specialty coffee and every partner in our value chain. <\/p>",
         "testimonial_author": ""
-      }
-    },
-    "02781444-064e-4189-9f20-c223647ae522": {
-      "type": "hero",
-      "settings": {
-        "background_color": "",
-        "video_url": "",
-        "video_placement": "lg:justify-start",
-        "pre_header": "",
-        "subheader": "Since 2009, our annual Transparency Reports have served as a blueprint for our green coffee purchasing practices and a response to chronically low prices in the coffee industry. We believe paying more for green coffee invests in the long-term viability of specialty coffee and every partner in our value chain. ",
-        "title": "<p>Transparent from Seed to Cup.<\/p>",
-        "text_size_mobile": "text-5xl",
-        "text_size_desktop": "lg:text-5xl",
-        "tag": "h1",
-        "font": "font-couch",
-        "weight": "font-regular",
-        "alignment": "text-center",
-        "text_color": "text-black",
-        "title_classes": "text-stroke-outline",
-        "button_style": "btn btn-secondary",
-        "link_text": "",
-        "link_url": "shopify:\/\/products\/field-trip",
-        "link_classes": "",
-        "content_width": "w-full",
-        "justify_content_lg": "lg:justify-center",
-        "justify_content_md": "md:justify-center",
-        "justify_content_sm": "justify-center",
-        "align_items_lg": "lg:items-center",
-        "align_items_md": "md:items-center",
-        "align_items_sm": "items-center",
-        "text_align_lg": "lg:text-center",
-        "text_align_md": "md:text-center",
-        "text_align_sm": "text-center"
       }
     },
     "41e3b176-36ad-447e-bfc5-a2057b206ed2": {
@@ -178,7 +145,6 @@
   "order": [
     "main",
     "a964a693-dd18-4c70-89df-2080b8fb1460",
-    "02781444-064e-4189-9f20-c223647ae522",
     "41e3b176-36ad-447e-bfc5-a2057b206ed2",
     "07726ac8-c669-44e9-88d8-3f775f78d702",
     "e2005a40-3df1-413d-9d74-8bbcc2d68f17",
