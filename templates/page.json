@@ -726,6 +726,23 @@
             "archived_products": "",
             "country": "Guatemala"
           }
+        },
+        "10b1bc83-219b-41ec-ae1b-855ce4227bdf": {
+          "type": "partner_option",
+          "settings": {
+            "title": "La Voz que Clama en el Desierto",
+            "location": "Guatemala",
+            "partner_since": "2012",
+            "fob_price": "$3.50",
+            "price_range": "$3.50",
+            "pounds_purchased": "38,030",
+            "quality_score": "86",
+            "product_list": [
+              "copy-of-slow-motion-decaf"
+            ],
+            "archived_products": "",
+            "country": "Guatemala"
+          }
         }
       },
       "block_order": [
@@ -756,7 +773,8 @@
         "bb087c42-06bf-4ee9-897a-e41bb76f044e",
         "488561ce-604b-4963-b6f0-1ebc839407b0",
         "e73bcad0-8ea9-436c-9ca7-a5c241f88060",
-        "32c8d41c-b69f-4630-8eeb-3673d3d4a44c"
+        "32c8d41c-b69f-4630-8eeb-3673d3d4a44c",
+        "10b1bc83-219b-41ec-ae1b-855ce4227bdf"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
