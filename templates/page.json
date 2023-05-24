@@ -875,6 +875,7 @@
         "8daa88f2-800b-4b85-ace0-4393771815fc": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Cafeco.png",
             "title": "Cafeco",
             "location": "Mexico",
             "partner_since": "2020",
