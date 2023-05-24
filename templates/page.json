@@ -1029,6 +1029,23 @@
             "archived_products": "",
             "country": "Nicaragua"
           }
+        },
+        "674b80f7-d1e7-406e-aaf4-6cdf352652a2": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Finca La Victoria",
+            "location": "Nicaragua",
+            "partner_since": "2017",
+            "fob_price": "$3.33",
+            "price_range": "$3.10-3.97",
+            "pounds_purchased": "41,833",
+            "quality_score": "85.5-87",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Nicaragua"
+          }
         }
       },
       "block_order": [
@@ -1076,7 +1093,8 @@
         "5ddcbf34-694e-43a6-85ef-c597383d71e7",
         "48d10549-dabf-4ea7-a552-bb8877e0f438",
         "17f51c13-7da2-4226-bf8b-5167bd60e244",
-        "5ebcdefe-f6df-4d11-a99a-82f7f7501bd8"
+        "5ebcdefe-f6df-4d11-a99a-82f7f7501bd8",
+        "674b80f7-d1e7-406e-aaf4-6cdf352652a2"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
