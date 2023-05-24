@@ -744,6 +744,23 @@
             "archived_products": "",
             "country": "Guatemala"
           }
+        },
+        "c24afac1-b366-44d4-a847-b0b4adedf181": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Manos Campesinas",
+            "location": "Guatemala",
+            "partner_since": "2013",
+            "fob_price": "$",
+            "price_range": "$3.53-3.81",
+            "pounds_purchased": "442,669",
+            "quality_score": "86-88",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Guatemala"
+          }
         }
       },
       "block_order": [
@@ -775,7 +792,8 @@
         "488561ce-604b-4963-b6f0-1ebc839407b0",
         "e73bcad0-8ea9-436c-9ca7-a5c241f88060",
         "32c8d41c-b69f-4630-8eeb-3673d3d4a44c",
-        "10b1bc83-219b-41ec-ae1b-855ce4227bdf"
+        "10b1bc83-219b-41ec-ae1b-855ce4227bdf",
+        "c24afac1-b366-44d4-a847-b0b4adedf181"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
