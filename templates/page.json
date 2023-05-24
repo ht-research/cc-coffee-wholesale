@@ -781,6 +781,23 @@
             "archived_products": "",
             "country": "Guatemala"
           }
+        },
+        "961a2c52-3aa7-4ecb-8337-f672f007e716": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Boncafe",
+            "location": "Honduras",
+            "partner_since": "2022",
+            "fob_price": "$3.47",
+            "price_range": "$3.47",
+            "pounds_purchased": "9,127",
+            "quality_score": "85",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Honduras"
+          }
         }
       },
       "block_order": [
@@ -814,7 +831,8 @@
         "32c8d41c-b69f-4630-8eeb-3673d3d4a44c",
         "10b1bc83-219b-41ec-ae1b-855ce4227bdf",
         "c24afac1-b366-44d4-a847-b0b4adedf181",
-        "f624c049-bc33-4506-8de7-1e6bb0eef8ea"
+        "f624c049-bc33-4506-8de7-1e6bb0eef8ea",
+        "961a2c52-3aa7-4ecb-8337-f672f007e716"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
