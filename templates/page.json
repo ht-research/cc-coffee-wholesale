@@ -256,6 +256,7 @@
         "38ed3029-2cf0-48c2-b340-30f3cc305181": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Kazoza.jpg",
             "title": "Kazoza N'lkawa",
             "location": "Burundi",
             "partner_since": "2012",
