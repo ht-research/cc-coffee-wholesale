@@ -129,13 +129,6 @@
     "7e252e61-3fcb-4964-a63f-dcb24294dd3c": {
       "type": "richtext",
       "blocks": {
-        "7847dbe9-9e10-490c-bed2-e9e7ba9fb068": {
-          "type": "text_content",
-          "settings": {
-            "content": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.on standards and excellence.",
-            "classes": "text-left text-xl mb-5"
-          }
-        },
         "c400fdde-e7ee-4e04-be73-da7c068e24b5": {
           "type": "heading",
           "settings": {
@@ -152,86 +145,10 @@
         }
       },
       "block_order": [
-        "7847dbe9-9e10-490c-bed2-e9e7ba9fb068",
         "c400fdde-e7ee-4e04-be73-da7c068e24b5"
       ],
       "settings": {
         "classes": ""
-      }
-    },
-    "ebeeab5a-bdec-4b29-ae1e-081593966cbf": {
-      "type": "button-group",
-      "blocks": {
-        "62bf7d90-1173-448a-8027-f28965a8a74e": {
-          "type": "button",
-          "settings": {
-            "button_style": "btn btn-secondary",
-            "link_text": "8.5\"x11\" PDF",
-            "link_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/4283\/7837\/files\/CCC_Value_Stream_print_8.5x11.pdf?v=1674490193",
-            "link_classes": ""
-          }
-        },
-        "aaca71ae-16b0-4505-b9b2-5afeb58a422f": {
-          "type": "button",
-          "settings": {
-            "button_style": "btn btn-secondary",
-            "link_text": "11\"x14\" PDF",
-            "link_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/4283\/7837\/files\/CCC_Value_Stream_print_11x14.pdf?v=1674490193",
-            "link_classes": ""
-          }
-        }
-      },
-      "block_order": [
-        "62bf7d90-1173-448a-8027-f28965a8a74e",
-        "aaca71ae-16b0-4505-b9b2-5afeb58a422f"
-      ],
-      "settings": {
-        "section_classes": ""
-      }
-    },
-    "ce9f778a-d7af-4680-b7e6-0c9e824c1e5b": {
-      "type": "image-plus-text",
-      "blocks": {
-        "c7e6235f-8389-4d55-925e-ad6be5c750ea": {
-          "type": "image",
-          "settings": {
-          }
-        },
-        "b0af0b8f-cead-4798-9c13-84b83a34c9df": {
-          "type": "text",
-          "settings": {
-            "number": "",
-            "title": "Looking for the best way to brew up your coffee?",
-            "font": "font-gopher",
-            "description": "<p>The beauty of Field Trip is you can’t go wrong, no matter the brew method. Loyal to your French Press? We got you. More of an Aeropress-and-out-the-door type? We have that too. However you’re brewing, we can help you get there.<\/p>",
-            "list_html": "",
-            "button_style": "btn btn-secondary",
-            "link_text": "Brew Guides",
-            "link_url": "shopify:\/\/pages\/brewing-guides",
-            "link_classes": "",
-            "btn_icon_name": "",
-            "btn_icon_class": "",
-            "icon_text": "",
-            "icon_info": ""
-          }
-        }
-      },
-      "block_order": [
-        "c7e6235f-8389-4d55-925e-ad6be5c750ea",
-        "b0af0b8f-cead-4798-9c13-84b83a34c9df"
-      ],
-      "settings": {
-        "reverse_blocks_mobile": false,
-        "color_overlay": "",
-        "title": "<p>2022 Highlights<\/p>",
-        "text_size_mobile": "text-2xl",
-        "text_size_desktop": "lg:text-2xl",
-        "tag": "h2",
-        "font": "font-couch",
-        "weight": "font-regular",
-        "alignment": "text-center",
-        "text_color": "text-black",
-        "title_classes": ""
       }
     }
   },
@@ -242,8 +159,6 @@
     "07726ac8-c669-44e9-88d8-3f775f78d702",
     "e2005a40-3df1-413d-9d74-8bbcc2d68f17",
     "0fc3b7cb-8453-4bfe-8687-14f0d7dbcd60",
-    "7e252e61-3fcb-4964-a63f-dcb24294dd3c",
-    "ebeeab5a-bdec-4b29-ae1e-081593966cbf",
-    "ce9f778a-d7af-4680-b7e6-0c9e824c1e5b"
+    "7e252e61-3fcb-4964-a63f-dcb24294dd3c"
   ]
 }
