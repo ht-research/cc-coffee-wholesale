@@ -79,11 +79,19 @@
             "link_url": "shopify:\/\/collections\/all",
             "classes": ""
           }
+        },
+        "67987357-7cd8-420b-b2fe-630eba837411": {
+          "type": "text_content",
+          "settings": {
+            "content": "Explore our archive of reports dating back to 2009.",
+            "classes": ""
+          }
         }
       },
       "block_order": [
         "b2eaf9ee-e632-4865-bd85-fff805a15b68",
-        "a8acca0b-a358-44f8-b1d4-705b595b5396"
+        "a8acca0b-a358-44f8-b1d4-705b595b5396",
+        "67987357-7cd8-420b-b2fe-630eba837411"
       ],
       "settings": {
         "classes": ""
