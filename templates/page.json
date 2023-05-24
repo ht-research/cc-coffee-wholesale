@@ -655,6 +655,23 @@
             "archived_products": "",
             "country": "Guatemala"
           }
+        },
+        "bb087c42-06bf-4ee9-897a-e41bb76f044e": {
+          "type": "partner_option",
+          "settings": {
+            "title": "CODECH",
+            "location": "Guatemala",
+            "partner_since": "2010",
+            "fob_price": "$3.83",
+            "price_range": "$3.02-4.85",
+            "pounds_purchased": "369,276",
+            "quality_score": "85.5-88",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Guatemala"
+          }
         }
       },
       "block_order": [
@@ -681,7 +698,8 @@
         "69f5941c-6bca-4364-8e54-02d2f82e8445",
         "7b663373-87db-4a90-8402-bf8519ccab98",
         "696f4da4-b45b-4dbb-8c6d-b90b43d5753b",
-        "fbddbcae-b0a5-4d79-a043-60e559f098ae"
+        "fbddbcae-b0a5-4d79-a043-60e559f098ae",
+        "bb087c42-06bf-4ee9-897a-e41bb76f044e"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
