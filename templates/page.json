@@ -1086,6 +1086,7 @@
         "ae1ff662-016b-4130-86fb-b332b29c63c1": {
           "type": "partner_option",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Colbran_1.png",
             "title": "Colbran Estates",
             "location": "Papua New Guinea",
             "partner_since": "2010",
@@ -1098,6 +1099,23 @@
             ],
             "archived_products": "",
             "country": "Papua New Guinea"
+          }
+        },
+        "bd28e05f-7e5f-4150-ad2b-81568cf87a1e": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Colbran Estates",
+            "location": "Peru",
+            "partner_since": "",
+            "fob_price": "",
+            "price_range": "",
+            "pounds_purchased": "",
+            "quality_score": "",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Bolivia"
           }
         }
       },
@@ -1150,7 +1168,8 @@
         "674b80f7-d1e7-406e-aaf4-6cdf352652a2",
         "acdb0b0c-f4ec-4cb0-be37-0df8e3a17cef",
         "15e647b6-eeda-439f-ad08-da1e590838a8",
-        "ae1ff662-016b-4130-86fb-b332b29c63c1"
+        "ae1ff662-016b-4130-86fb-b332b29c63c1",
+        "bd28e05f-7e5f-4150-ad2b-81568cf87a1e"
       ],
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
