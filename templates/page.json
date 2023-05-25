@@ -13,7 +13,7 @@
         "show_sunburst": true,
         "sunburst_color": "#d7984f",
         "show_gradient": true,
-        "bg_color": "#EFEBE1",
+        "bg_color": "#efebe1",
         "wrapper_classes": "",
         "use_squiggles": false,
         "title": "<p>Transparent from Seed to Cup. <\/p>",
@@ -1174,7 +1174,7 @@
       "settings": {
         "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
         "partner_image": "shopify:\/\/shop_images\/image_7_f130fd23-f24d-4f2d-8db5-24341cc62112.png",
-        "partner_title": "Adenech Gemede Jabanto Collective",
+        "partner_title": "",
         "map_image": "shopify:\/\/shop_images\/map_1.png"
       }
     }
