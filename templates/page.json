@@ -1104,18 +1104,18 @@
         "bd28e05f-7e5f-4150-ad2b-81568cf87a1e": {
           "type": "partner_option",
           "settings": {
-            "title": "Colbran Estates",
+            "title": "CAC San Fernando",
             "location": "Peru",
-            "partner_since": "",
-            "fob_price": "",
-            "price_range": "",
-            "pounds_purchased": "",
-            "quality_score": "",
+            "partner_since": "2016",
+            "fob_price": "$3.65",
+            "price_range": "$3.65",
+            "pounds_purchased": "125,499",
+            "quality_score": "85-85.5",
             "product_list": [
-
+              "west-coast-big-trouble"
             ],
             "archived_products": "",
-            "country": "Bolivia"
+            "country": "Peru"
           }
         }
       },
