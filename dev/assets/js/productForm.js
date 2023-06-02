@@ -8,8 +8,10 @@ const ProductForm = function($form){
     $idInput: $form.find('[name="id"]'),
     $productScript: $form.find('.js-product-script'),
     $swatches: $form.find('.js-option-swatch'),
+    $swatchesQO: $form.find('.js-option-swatch-qo'),
     $swatchLabel: $form.find('.js-option-label'),
     $hiddenOptionSelects: $form.find('.js-hidden-option-select'),
+    $hiddenOptionSelectsQO: $form.find('.js-hidden-option-select-qo'),
     $addToCart: $form.find('.js-product-form-atc'),
     $deliveryOption: $form.find('[name="delivery_option"]'),
     $frequencyContainer: $form.find('.js-selling-plan-group'),
@@ -37,6 +39,17 @@ const ProductForm = function($form){
     cache.$hiddenOptionSelects.on('change', setCurrentVariant);
     cache.$idInput.on('change', handleVariantChange);
     cache.$deliveryOption.on('change', handleDeliveryChange);
+
+    //event listener for Quick Order	
+    cache.$swatchesQO.each(function(){	
+      $(this).on('change', handleSwatchChangeQO);	
+    })	
+     
+    cache.$hiddenOptionSelectsQO.each(function(){	
+      $(this).on('change', setCurrentVariant);	
+    })
+
+
   }
 
   const parseVariants = function(){
@@ -188,6 +201,20 @@ const ProductForm = function($form){
       .closest(`[data-name=${name}]`)
       .val(value)
       .change()
+  }
+
+  const handleSwatchChangeQO = function(e){	
+    e.preventDefault()	
+    e.stopPropagation()	
+    //console.log('swatch change QO')	
+
+    let $this = $(this)
+    let name = $this.data('option')	
+    let value = $this.data('value')	
+    cache.$hiddenOptionSelectsQO	
+      .closest(`[data-name=${name}]`)	
+      .val(value)	
+      .change()	
   }
 
   const handleDeliveryChange = function(e){
