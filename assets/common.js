@@ -14838,10 +14838,18 @@ const Cart = (function(){
     let data = $this.serialize();
     $elementToFocusOnClose = $this;
 
+    closeQOModal();
     processCartRequest(data, urls.cartAdd, () => {
       buildCart()
       openCart();
     })
+  }
+
+  const closeQOModal = function(){
+    //before processing cart request, close the QO modal	
+    //console.log('closing the QO modal first.... testing')	
+    jquery_default()('.product--buy-panel-quick-order').fadeOut()
+    jquery_default()('.quick-order-overlay').addClass('hidden')
   }
 
   const handleItemRemove = function(e){
@@ -16549,8 +16557,10 @@ const ProductForm = function($form){
     $idInput: $form.find('[name="id"]'),
     $productScript: $form.find('.js-product-script'),
     $swatches: $form.find('.js-option-swatch'),
+    $swatchesQO: $form.find('.js-option-swatch-qo'),
     $swatchLabel: $form.find('.js-option-label'),
     $hiddenOptionSelects: $form.find('.js-hidden-option-select'),
+    $hiddenOptionSelectsQO: $form.find('.js-hidden-option-select-qo'),
     $addToCart: $form.find('.js-product-form-atc'),
     $deliveryOption: $form.find('[name="delivery_option"]'),
     $frequencyContainer: $form.find('.js-selling-plan-group'),
@@ -16578,6 +16588,17 @@ const ProductForm = function($form){
     cache.$hiddenOptionSelects.on('change', setCurrentVariant);
     cache.$idInput.on('change', handleVariantChange);
     cache.$deliveryOption.on('change', handleDeliveryChange);
+
+    //event listener for Quick Order	
+    cache.$swatchesQO.each(function(){	
+      jquery_default()(this).on('change', handleSwatchChangeQO);	
+    })	
+     
+    cache.$hiddenOptionSelectsQO.each(function(){	
+      jquery_default()(this).on('change', setCurrentVariant);	
+    })
+
+
   }
 
   const parseVariants = function(){
@@ -16729,6 +16750,20 @@ const ProductForm = function($form){
       .closest(`[data-name=${name}]`)
       .val(value)
       .change()
+  }
+
+  const handleSwatchChangeQO = function(e){	
+    e.preventDefault()	
+    e.stopPropagation()	
+    //console.log('swatch change QO')	
+
+    let $this = jquery_default()(this)
+    let name = $this.data('option')	
+    let value = $this.data('value')	
+    cache.$hiddenOptionSelectsQO	
+      .closest(`[data-name=${name}]`)	
+      .val(value)	
+      .change()	
   }
 
   const handleDeliveryChange = function(e){
@@ -17030,7 +17065,107 @@ const Video = (function(){
 
 /* harmony default export */ const video = (Video);
 
+;// CONCATENATED MODULE: ./assets/js/quick-order.js
+
+const QuickOrder = (function(){
+
+
+    const init = function(){    
+        quickOrderOpen();
+        quickOrderClose();
+    }
+
+
+    const quickOrderOpen = function(){
+        jquery_default()('.quick-order-btn').each(function(){
+            jquery_default()(this).on('click', function(e){
+              e.preventDefault();
+              jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn()
+              jquery_default()('.quick-order-overlay').removeClass('hidden')
+            })
+        })
+    }
+    
+      
+    const quickOrderClose = function(){
+      jquery_default()('.quick-order-close').each(function(){
+        jquery_default()(this).on('click', function(e){
+          e.preventDefault(); 
+          jquery_default()(this).parents('.product--buy-panel-quick-order').fadeOut()
+          jquery_default()('.quick-order-overlay').addClass('hidden')
+        })
+      })
+    }
+
+
+    return { init }
+
+})()
+ 
+
+/* harmony default export */ const quick_order = (QuickOrder);  
+
+
+
+
+
+
+;// CONCATENATED MODULE: ./assets/js/grid-list-switch.js
+
+const GriListSwitch = (function(){
+
+
+    const init = function(){    
+        gridListLayoutSwitch();
+    }
+
+
+    const gridListLayoutSwitch = function(){
+        jquery_default()('.layout-switch-btn').on('click', function(){
+            jquery_default()(this).addClass('switch__active')
+            jquery_default()(this).siblings().removeClass('switch__active');
+        
+            let currentViewSelected = jquery_default()(this).attr('data-switch')
+
+            jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 0}, 400)
+        
+            if(currentViewSelected == 'list'){
+               
+               setTimeout(function(){
+                jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
+                jquery_default()('.js-collection-list.collection-grid--container').addClass('list-view-active')
+                jquery_default()('.js-collection-list.collection-grid--container').children('ul').addClass('grid-cols-1').removeClass('xl:grid-cols-3') 
+                //$('.product-card--img-container').children('img').removeClass('product-coffee-image')
+               }, 400)
+               }
+            else{
+                setTimeout(function(){
+                jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
+                jquery_default()('.js-collection-list.collection-grid--container').removeClass('list-view-active')
+                jquery_default()('.js-collection-list.collection-grid--container').children('ul').removeClass('grid-cols-1').addClass('xl:grid-cols-3')
+                }, 400)
+            }  
+        })
+    }
+    
+
+
+    return { init }
+
+})()
+ 
+
+/* harmony default export */ const grid_list_switch = (GriListSwitch);  
+
+
+
+
+
+
 ;// CONCATENATED MODULE: ./assets/js/common.js
+
+
+
 
 
 
@@ -17086,6 +17221,8 @@ jquery_default()(() => {
   backInStock.init();
   blendComponents.init();
   giftSubscription.init();
+  quick_order.init();
+  grid_list_switch.init();
 });
 
 

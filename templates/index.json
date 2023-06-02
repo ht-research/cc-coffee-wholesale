@@ -104,8 +104,8 @@
         "background_color": "",
         "use_squiggles": false,
         "number": "",
-        "content": "<p>We get it. Things happen. Our team is here to help. <\/p>",
-        "title": "<p>Need a Tech? <\/p>",
+        "content": "<p>Our team is here to help. <\/p>",
+        "title": "<p>Have any questions? Need an equipment repair?<\/p>",
         "text_size_mobile": "text-2xl",
         "text_size_desktop": "lg:text-3xl",
         "tag": "h2",
@@ -115,8 +115,8 @@
         "text_color": "text-black",
         "title_classes": "",
         "button_style": "btn btn-secondary",
-        "link_text": "866-JAVA-FIX",
-        "link_url": "shopify:\/\/pages\/counter-culture-quiz",
+        "link_text": "Contact Us",
+        "link_url": "https:\/\/counter-culture-coffee-wholesale.myshopify.com\/admin\/themes\/121921896520\/editor?previewPath=%2Fpages%2Fcontact-us",
         "link_classes": "Href=tel: 866-528-2349"
       }
     },
@@ -169,7 +169,7 @@
         "background_color": "",
         "use_squiggles": false,
         "number": "",
-        "content": "<p>Is y our latte art a little rusty? Do you have a bunch of new staff? Let our best-in-class educators help you level up.<\/p>",
+        "content": "<p>Is your latte art a little rusty? Do you have a bunch of new staff? Let our best-in-class educators help you level up.<\/p>",
         "title": "<p>Want to take a workshop or class?<\/p>",
         "text_size_mobile": "text-2xl",
         "text_size_desktop": "lg:text-3xl",
@@ -181,7 +181,7 @@
         "title_classes": "",
         "button_style": "btn btn-secondary",
         "link_text": "Sign up!",
-        "link_url": "shopify:\/\/collections\/all",
+        "link_url": "https:\/\/counter-culture-coffee-wholesale.myshopify.com\/admin\/themes\/121921896520\/editor?previewPath=%2Fpages%2Fcontact-us",
         "link_classes": ""
       }
     },

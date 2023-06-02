@@ -27,6 +27,9 @@ import QuantityBox from './quantityBox'
 import RevealAnimation from './animation.js'
 import Slider from './slider.js'
 import Video from './video.js'
+import QuickOrder from './quick-order.js'
+import GriListSwitch from './grid-list-switch.js'
+
 
 
 $(() => {
@@ -53,6 +56,8 @@ $(() => {
   BackInStock.init();
   BlendComponents.init();
   GiftSubscription.init();
+  QuickOrder.init();
+  GriListSwitch.init();
 });
 
 

@@ -6,16 +6,18 @@
       "settings": {
       }
     },
-    "02781444-064e-4189-9f20-c223647ae522": {
-      "type": "hero",
+    "a964a693-dd18-4c70-89df-2080b8fb1460": {
+      "type": "page-banner",
       "settings": {
-        "background_color": "",
-        "video_url": "",
-        "video_placement": "lg:justify-start",
-        "pre_header": "",
-        "subheader": "Specialty coffee isn’t just about altitude or varieties—it’s the result of an entire value chain’s focus on standards and excellence.  ",
-        "title": "<p>Take a Field Trip with Us<\/p>",
-        "text_size_mobile": "text-5xl",
+        "image": "shopify:\/\/shop_images\/cherries_76fcb0ee-fb65-4f19-8dd4-37a8252e204e.png",
+        "show_sunburst": true,
+        "sunburst_color": "#d7984f",
+        "show_gradient": true,
+        "bg_color": "#efebe1",
+        "wrapper_classes": "",
+        "use_squiggles": false,
+        "title": "<p>Transparent from Seed to Cup. <\/p>",
+        "text_size_mobile": "text-3xl",
         "text_size_desktop": "lg:text-5xl",
         "tag": "h1",
         "font": "font-couch",
@@ -23,34 +25,160 @@
         "alignment": "text-center",
         "text_color": "text-black",
         "title_classes": "text-stroke-outline",
-        "button_style": "btn btn-secondary",
-        "link_text": "SHOP FIELD TRIP",
-        "link_url": "shopify:\/\/products\/field-trip",
-        "link_classes": "",
-        "content_width": "w-full",
-        "justify_content_lg": "lg:justify-center",
-        "justify_content_md": "md:justify-center",
-        "justify_content_sm": "justify-center",
-        "align_items_lg": "lg:items-center",
-        "align_items_md": "md:items-center",
-        "align_items_sm": "items-center",
-        "text_align_lg": "lg:text-center",
-        "text_align_md": "md:text-center",
-        "text_align_sm": "text-center"
+        "content": "<p>Since 2009, our annual Transparency Reports have served as a blueprint for our green coffee purchasing practices and a response to chronically low prices in the coffee industry. We believe paying more for green coffee invests in the long-term viability of specialty coffee and every partner in our value chain. <\/p>",
+        "testimonial_author": ""
       }
     },
-    "08789d13-2c5f-4f12-9a5b-94e5b5c688e7": {
-      "type": "content-columns",
+    "7092a6ee-c6e3-4328-ac10-684d3dcb4a80": {
+      "type": "banner-slider",
+      "blocks": {
+        "c0f36ebc-661a-487d-a635-c50f3a65e0e8": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Planet-2.png",
+            "image_classes": "",
+            "show_gradient": false,
+            "bg_color": "",
+            "wrapper_classes": "",
+            "use_squiggles": false,
+            "title": "<p>Planet<\/p>",
+            "text_size_mobile": "text-2xl",
+            "text_size_desktop": "lg:text-2xl",
+            "tag": "h3",
+            "font": "font-couch",
+            "weight": "font-regular",
+            "alignment": "text-left",
+            "text_color": "text-black",
+            "title_classes": "",
+            "content": "<ul><li>Had a carbon footprint of 925.37 tonnes CO2e <\/li><li>Diverted over 20,000 pounds of LDPE (low-density polyethylene) plastic from landfills<\/li><li>Donated 2,212 pounds of coffee<\/li><li>Installed 393 clean cookstoves in Honduras through our partnership with <a href=\"https:\/\/treeswaterpeople.org\/\">Trees, Water & People<\/a><\/li><\/ul>",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "7fffb337-3fa9-41f8-8c24-30802ab807ac": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Product-3.jpg",
+            "image_classes": "",
+            "show_gradient": false,
+            "bg_color": "",
+            "wrapper_classes": "",
+            "use_squiggles": false,
+            "title": "<p>Product<\/p>",
+            "text_size_mobile": "text-2xl",
+            "text_size_desktop": "lg:text-2xl",
+            "tag": "h3",
+            "font": "font-couch",
+            "weight": "font-regular",
+            "alignment": "text-left",
+            "text_color": "text-black",
+            "title_classes": "",
+            "content": "<ul><li>Purchased 5,600,137 pounds of green coffee, 85% from suppliers we’ve worked with for over 5 years<\/li><li>Scored our coffees an average of 86.3 points<\/li><li>Paid $3.50 per pound weighted average FOB price <\/li><li>Awarded $74,000 to fund 16 Seeds Projects<\/li><\/ul>",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "963cd676-f2db-4d0c-9137-b6fdc8828b76": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-05-24_at_12.47.55_PM.png",
+            "image_classes": "",
+            "show_gradient": false,
+            "bg_color": "",
+            "wrapper_classes": "",
+            "use_squiggles": false,
+            "title": "<p>Tech + Education<\/p>",
+            "text_size_mobile": "text-2xl",
+            "text_size_desktop": "lg:text-2xl",
+            "tag": "h3",
+            "font": "font-couch",
+            "weight": "font-regular",
+            "alignment": "text-left",
+            "text_color": "text-black",
+            "title_classes": "",
+            "content": "<ul><li>Raised $18,338.98 through Shift Drink events<\/li><li>Made 1,527 service calls, 821 preventative maintenance visits, and made 127 equipment installations<\/li><\/ul>",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "ade7d22c-086f-4584-baa8-a5a1b48acb0d": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/People-3.png",
+            "image_classes": "",
+            "show_gradient": false,
+            "bg_color": "",
+            "wrapper_classes": "",
+            "use_squiggles": false,
+            "title": "<p>People<\/p>",
+            "text_size_mobile": "text-2xl",
+            "text_size_desktop": "lg:text-2xl",
+            "tag": "h3",
+            "font": "font-couch",
+            "weight": "font-regular",
+            "alignment": "text-left",
+            "text_color": "text-black",
+            "title_classes": "",
+            "content": "<ul><li>Employed 106 people<\/li><li>Paid out $101,840.51 in  Green Fund, Pushing Potential, CSA, and Preventative Care benefits<\/li><li>Introduced mental health support to all employees and their dependents <\/li><\/ul>",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "c0f36ebc-661a-487d-a635-c50f3a65e0e8",
+        "7fffb337-3fa9-41f8-8c24-30802ab807ac",
+        "963cd676-f2db-4d0c-9137-b6fdc8828b76",
+        "ade7d22c-086f-4584-baa8-a5a1b48acb0d"
+      ],
       "settings": {
+        "reverse_order": false,
+        "title": "<p>2022 Highlights<\/p>",
+        "text_size_mobile": "text-2xl",
+        "text_size_desktop": "lg:text-2xl",
+        "tag": "h3",
+        "font": "font-couch",
+        "weight": "font-regular",
+        "alignment": "text-center",
+        "text_color": "text-black",
+        "title_classes": ""
       }
     },
-    "a05bd05d-18bb-4c0e-9cea-11860990aa24": {
-      "type": "contact-us-section",
+    "e2005a40-3df1-413d-9d74-8bbcc2d68f17": {
+      "type": "cta-banner-with-image",
+      "blocks": {
+        "8baeddce-a010-41a6-b6f1-62e47eb37799": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_style": "btn btn-secondary",
+            "link_text": "2022 Transparency Report",
+            "link_url": "shopify:\/\/collections\/all",
+            "link_classes": ""
+          }
+        }
+      },
+      "block_order": [
+        "8baeddce-a010-41a6-b6f1-62e47eb37799"
+      ],
       "settings": {
-        "feat_img": "shopify:\/\/shop_images\/MO4A5600.jpg",
-        "form_title": "",
-        "subtext": "",
-        "contact_topics": ""
+        "section_style": "background_image",
+        "border_color": "border-transparent",
+        "background_color": "",
+        "background_image": "shopify:\/\/shop_images\/Transparecny_Report_Bg.png",
+        "s_image": "shopify:\/\/shop_images\/transparency_report_BG_mobile.png",
+        "use_squiggles": false,
+        "content_image": "shopify:\/\/shop_images\/Screen_Shot_2023-05-24_at_11.03.31_AM.png",
+        "content": "",
+        "title": "<h1>2022 Transparency Report Coming Soon!<\/h1>",
+        "text_size_mobile": "text-6xl",
+        "text_size_desktop": "lg:text-6xl",
+        "tag": "h1",
+        "font": "font-freight-sans",
+        "weight": "font-regular",
+        "alignment": "text-center",
+        "text_color": "text-black",
+        "title_classes": ""
       }
     },
     "41e3b176-36ad-447e-bfc5-a2057b206ed2": {
@@ -59,10 +187,10 @@
         "show_sunburst": true,
         "sunburst_color": "#4fa0d7",
         "show_gradient": true,
-        "bg_color": "#efebe1",
+        "bg_color": "#ffffff",
         "wrapper_classes": "border border-black",
         "use_squiggles": false,
-        "title": "<p>Visualizing the Value Chain<\/p>",
+        "title": "<p>Past Reports<\/p>",
         "text_size_mobile": "text-2xl",
         "text_size_desktop": "lg:text-2xl",
         "tag": "h1",
@@ -75,171 +203,990 @@
         "testimonial_author": ""
       }
     },
-    "52865e74-13e2-4be8-b958-3aeef6e8c14c": {
-      "type": "richtext",
-      "blocks": {
-        "1b3b1711-bd3a-484b-9b38-91406062f1a5": {
-          "type": "text_content",
-          "settings": {
-            "content": "Specialty coffee is a coordinated effort amongst many people spread across the globe. The unifying thread between us all is a unique expertise and a desire to make coffee special. ",
-            "classes": "text-left text-xl mb-5"
-          }
-        },
-        "b2eaf9ee-e632-4865-bd85-fff805a15b68": {
-          "type": "text_content",
-          "settings": {
-            "content": "In 2021, Counter Culture set out to visualize our value chain. We wanted to illustrate the complexity of the process and the many, varied participants. We also sought to debunk the narrative that sustainable coffee means cutting out the “middlemen.” Great coffee comes from the combined efforts of many talented and hardworking people throughout the value chain.",
-            "classes": "text-left text-xl mb-5"
-          }
-        }
-      },
-      "block_order": [
-        "1b3b1711-bd3a-484b-9b38-91406062f1a5",
-        "b2eaf9ee-e632-4865-bd85-fff805a15b68"
-      ],
+    "07726ac8-c669-44e9-88d8-3f775f78d702": {
+      "type": "transparency-report-dropdown",
       "settings": {
-        "classes": ""
+        "paragraph": "Explore our archive of reports dating back to 2009.",
+        "dropdown_links": "year-1"
       }
     },
-    "e2005a40-3df1-413d-9d74-8bbcc2d68f17": {
-      "type": "cta-banner-with-image",
+    "0fc3b7cb-8453-4bfe-8687-14f0d7dbcd60": {
+      "type": "page-banner",
       "settings": {
-        "section_style": "background_image",
-        "border_color": "border-transparent",
-        "background_color": "",
+        "show_sunburst": true,
+        "sunburst_color": "#4fa0d7",
+        "show_gradient": true,
+        "bg_color": "#ffffff",
+        "wrapper_classes": "border border-black",
         "use_squiggles": false,
-        "content": "",
-        "title": "",
-        "text_size_mobile": "text-6xl",
-        "text_size_desktop": "lg:text-6xl",
-        "tag": "h1",
-        "font": "font-freight-sans",
-        "weight": "font-regular",
-        "alignment": "text-center",
-        "text_color": "text-black",
-        "title_classes": ""
-      }
-    },
-    "7e252e61-3fcb-4964-a63f-dcb24294dd3c": {
-      "type": "richtext",
-      "blocks": {
-        "ca2953c9-7aee-41e8-a076-dc3af729acfd": {
-          "type": "text_content",
-          "settings": {
-            "content": "In the graphic, the circles represent the main actors in our value stream. The dotted lines indicate potential paths for the product’s movement, while solid lines are more common tracks. The icons surrounding the circles describe specialized activities occurring at each step. We depicted these actions as happening either “always” or “sometimes” at each stage to reflect different methods of production.",
-            "classes": "text-left text-xl mb-5"
-          }
-        },
-        "7847dbe9-9e10-490c-bed2-e9e7ba9fb068": {
-          "type": "text_content",
-          "settings": {
-            "content": "Every coffee has a unique story and this graphic is meant to help illustrate that story. Our value stream map is not a static description, but rather a jumping-off point to trace a coffee’s journey from farm to consumer. It also demonstrates how quality coffee is the result of an entire value stream’s focus on standards and excellence.",
-            "classes": "text-left text-xl mb-5"
-          }
-        },
-        "5a07e8f2-0206-44e5-83c4-213db86d92d4": {
-          "type": "text_content",
-          "settings": {
-            "content": "Download a printable version below. Available for non-commercial and educational use only. Copyright Counter Culture Coffee 2023.",
-            "classes": "text-left text-xl mb-5"
-          }
-        }
-      },
-      "block_order": [
-        "ca2953c9-7aee-41e8-a076-dc3af729acfd",
-        "7847dbe9-9e10-490c-bed2-e9e7ba9fb068",
-        "5a07e8f2-0206-44e5-83c4-213db86d92d4"
-      ],
-      "settings": {
-        "classes": ""
-      }
-    },
-    "ebeeab5a-bdec-4b29-ae1e-081593966cbf": {
-      "type": "button-group",
-      "blocks": {
-        "62bf7d90-1173-448a-8027-f28965a8a74e": {
-          "type": "button",
-          "settings": {
-            "button_style": "btn btn-secondary",
-            "link_text": "8.5\"x11\" PDF",
-            "link_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/4283\/7837\/files\/CCC_Value_Stream_print_8.5x11.pdf?v=1674490193",
-            "link_classes": ""
-          }
-        },
-        "aaca71ae-16b0-4505-b9b2-5afeb58a422f": {
-          "type": "button",
-          "settings": {
-            "button_style": "btn btn-secondary",
-            "link_text": "11\"x14\" PDF",
-            "link_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/4283\/7837\/files\/CCC_Value_Stream_print_11x14.pdf?v=1674490193",
-            "link_classes": ""
-          }
-        }
-      },
-      "block_order": [
-        "62bf7d90-1173-448a-8027-f28965a8a74e",
-        "aaca71ae-16b0-4505-b9b2-5afeb58a422f"
-      ],
-      "settings": {
-        "section_classes": ""
-      }
-    },
-    "ce9f778a-d7af-4680-b7e6-0c9e824c1e5b": {
-      "type": "image-plus-text",
-      "blocks": {
-        "c7e6235f-8389-4d55-925e-ad6be5c750ea": {
-          "type": "image",
-          "settings": {
-          }
-        },
-        "b0af0b8f-cead-4798-9c13-84b83a34c9df": {
-          "type": "text",
-          "settings": {
-            "number": "",
-            "title": "Looking for the best way to brew up your coffee?",
-            "font": "font-gopher",
-            "description": "<p>The beauty of Field Trip is you can’t go wrong, no matter the brew method. Loyal to your French Press? We got you. More of an Aeropress-and-out-the-door type? We have that too. However you’re brewing, we can help you get there.<\/p>",
-            "list_html": "",
-            "button_style": "btn btn-secondary",
-            "link_text": "Brew Guides",
-            "link_url": "shopify:\/\/pages\/brewing-guides",
-            "link_classes": "",
-            "btn_icon_name": "",
-            "btn_icon_class": "",
-            "icon_text": "",
-            "icon_info": ""
-          }
-        }
-      },
-      "block_order": [
-        "c7e6235f-8389-4d55-925e-ad6be5c750ea",
-        "b0af0b8f-cead-4798-9c13-84b83a34c9df"
-      ],
-      "settings": {
-        "reverse_blocks_mobile": false,
-        "color_overlay": "",
-        "title": "<p>Brew Field Trip With Us<\/p>",
+        "title": "<p>Purchasing Data<\/p>",
         "text_size_mobile": "text-2xl",
         "text_size_desktop": "lg:text-2xl",
-        "tag": "h2",
+        "tag": "h1",
         "font": "font-couch",
-        "weight": "font-regular",
+        "weight": "font-semibold",
         "alignment": "text-center",
         "text_color": "text-black",
-        "title_classes": ""
+        "title_classes": "",
+        "content": "<p><\/p><p><\/p>",
+        "testimonial_author": ""
+      }
+    },
+    "f9cdaccf-3549-43f3-a65e-b77ff2056cff": {
+      "type": "partner-country-select",
+      "blocks": {
+        "5d2299a1-6870-441e-b7ab-f525d2156756": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cenapro.jpg",
+            "title": "CENAPROC",
+            "location": "Bolivia",
+            "partner_since": "2004",
+            "fob_price": "$3.77",
+            "price_range": "$3.50-$6.00",
+            "pounds_purchased": "80,850",
+            "quality_score": "85.5-88.5",
+            "product_list": [
+              "west-coast-forty-six"
+            ],
+            "archived_products": "",
+            "country": "Bolivia"
+          }
+        },
+        "38ed3029-2cf0-48c2-b340-30f3cc305181": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kazoza.jpg",
+            "title": "Kazoza N'lkawa",
+            "location": "Burundi",
+            "partner_since": "2012",
+            "fob_price": "$3.92",
+            "price_range": "$3.75-4.00",
+            "pounds_purchased": "23,810",
+            "quality_score": "88-88.5",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Burundi"
+          }
+        },
+        "9fda8cbc-3b73-4616-badc-c007365ee84c": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Azahar Coffee",
+            "location": "Colombia",
+            "partner_since": "2022",
+            "fob_price": "$5.7",
+            "price_range": "$5.7",
+            "pounds_purchased": "4,312",
+            "quality_score": "87",
+            "product_list": [
+              "west-coast-gradient"
+            ],
+            "archived_products": "",
+            "country": "Colombia"
+          }
+        },
+        "f345d451-438f-45cf-8f8e-9221aecb66f0": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CRS_Borderlands.png",
+            "title": "Borderlands",
+            "location": "Colombia",
+            "partner_since": "2013",
+            "fob_price": "$3.98",
+            "price_range": "$3.67-$5.95",
+            "pounds_purchased": "188,650",
+            "quality_score": "85-88",
+            "product_list": [
+              "west-coast-gradient"
+            ],
+            "archived_products": "",
+            "country": "Colombia"
+          }
+        },
+        "289f9a2f-5c8c-4d7b-82f1-b68c1b07abc8": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Caravela Colombia",
+            "location": "Colombia",
+            "partner_since": "2022",
+            "fob_price": "$3.03",
+            "price_range": "$2.99-3.08",
+            "pounds_purchased": "84,700",
+            "quality_score": "84-85.75",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Colombia"
+          }
+        },
+        "178893c0-7025-4e46-bac1-383cc73ac660": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Cooperativa de Caficultores de Caldas",
+            "location": "Colombia",
+            "partner_since": "2022",
+            "fob_price": "$3.69",
+            "price_range": "$3.69",
+            "pounds_purchased": "84,700",
+            "quality_score": "85",
+            "product_list": [
+              "west-coast-gradient"
+            ],
+            "archived_products": "",
+            "country": "Colombia"
+          }
+        },
+        "937e5d96-1458-4e5a-95a2-9e875335cc51": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Organica.jpg",
+            "title": "Organica",
+            "location": "Colombia",
+            "partner_since": "2007",
+            "fob_price": "$3.96",
+            "price_range": "$3.95-8.96",
+            "pounds_purchased": "77,154",
+            "quality_score": "85-87",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Colombia"
+          }
+        },
+        "d73252ff-3b1c-491c-940a-b35d06ee564e": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Tierradentro",
+            "location": "Colombia",
+            "partner_since": "2020",
+            "fob_price": "$3.25",
+            "price_range": "$3.25",
+            "pounds_purchased": "38,500",
+            "quality_score": "86",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Colombia"
+          }
+        },
+        "25bef9e1-ace6-4763-ab9e-8cddb9effcee": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Toldopamba.jpg",
+            "title": "Toldopamba",
+            "location": "Colombia",
+            "partner_since": "2016",
+            "fob_price": "$3.84",
+            "price_range": "$3.46-6.00",
+            "pounds_purchased": "170,086",
+            "quality_score": "84.5-88.5",
+            "product_list": [
+              "west-coast-gradient"
+            ],
+            "archived_products": "",
+            "country": "Colombia"
+          }
+        },
+        "f75df7b5-9d67-4e2c-b6d1-c98d2d444943": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MuunganoCooperative.png",
+            "title": "Muungano Cooperative",
+            "location": "Democratic Republic of Congo",
+            "partner_since": "2017",
+            "fob_price": "$4.01",
+            "price_range": "$3.98-4.03",
+            "pounds_purchased": "10,582",
+            "quality_score": "87-88",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Democratic Republic of Congo"
+          }
+        },
+        "5483e12d-d186-44b7-88a2-de80ac65f898": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Abel Salinas",
+            "location": "Ecuador",
+            "partner_since": "2018",
+            "fob_price": "$12",
+            "price_range": "$12",
+            "pounds_purchased": "1,056",
+            "quality_score": "88",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Ecuador"
+          }
+        },
+        "ab1c22a5-84cd-438a-a92b-b880a46cae22": {
+          "type": "partner_option",
+          "settings": {
+            "title": "ACRIM",
+            "location": "Ecuador",
+            "partner_since": "2017",
+            "fob_price": "$4.40",
+            "price_range": "$4.13-4.52",
+            "pounds_purchased": "15,200",
+            "quality_score": "86.5-87",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Ecuador"
+          }
+        },
+        "03d3a7c3-a81f-41b0-9c83-28bfaf857f7d": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Capamaco Trading",
+            "location": "Ecuador",
+            "partner_since": "2018",
+            "fob_price": "$3.90",
+            "price_range": "$3.90",
+            "pounds_purchased": "6,600",
+            "quality_score": "86",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Ecuador"
+          }
+        },
+        "6fa742ad-2ace-4105-a72d-068f03acb118": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/eladio.jpg",
+            "title": "Eladio Chamba",
+            "location": "Ecuador",
+            "partner_since": "2016",
+            "fob_price": "$7.50",
+            "price_range": "$7.50",
+            "pounds_purchased": "1,520",
+            "quality_score": "89.5",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Ecuador"
+          }
+        },
+        "003bd1c3-eb9c-400d-bece-bcd23c36f1e5": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/aida.jpg",
+            "title": "Aida Batlle Farms",
+            "location": "El Salvador",
+            "partner_since": "2004",
+            "fob_price": "$0",
+            "price_range": "$0",
+            "pounds_purchased": "37,674",
+            "quality_score": "85-88.50",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "El Salvador"
+          }
+        },
+        "40524309-16fa-4d98-a1d8-7efc39390a60": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Cooperativa Cuzcachapa",
+            "location": "El Salvador",
+            "partner_since": "2011",
+            "fob_price": "$3.45-4.15",
+            "price_range": "$3.66",
+            "pounds_purchased": "41,855",
+            "quality_score": "85.5-87",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "El Salvador"
+          }
+        },
+        "4951b958-cf77-4623-b978-6320a9db88f4": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Biru Bekele",
+            "location": "Ethiopia",
+            "partner_since": "2022",
+            "fob_price": "$3.07",
+            "price_range": "$3.07",
+            "pounds_purchased": "13,228",
+            "quality_score": "89.5",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Ethiopia"
+          }
+        },
+        "4ff0117f-5ef4-4625-8b63-c457c64034f5": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Dambi Uddo Agro Industries",
+            "location": "Ethiopia",
+            "partner_since": "2019",
+            "fob_price": "$4.2",
+            "price_range": "$4.2",
+            "pounds_purchased": "26,456",
+            "quality_score": "90",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Ethiopia"
+          }
+        },
+        "02fbd382-7ec4-4348-a59a-5c25cabe7cbb": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guji.jpg",
+            "title": "Guji Highlands",
+            "location": "Ethiopia",
+            "partner_since": "2018",
+            "fob_price": "$3.71",
+            "price_range": "$3.70-3.77",
+            "pounds_purchased": "253,948",
+            "quality_score": "89-90.5",
+            "product_list": [
+              "west-coast-apollo",
+              "west-coast-forty-six"
+            ],
+            "archived_products": "",
+            "country": "Ethiopia"
+          }
+        },
+        "205867a7-d2ba-4660-9580-ed599bcfdbf8": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jabanto.jpg",
+            "title": "Jabanto",
+            "location": "Ethiopia",
+            "partner_since": "2018",
+            "fob_price": "$4.08",
+            "price_range": "$4.00-4.43",
+            "pounds_purchased": "169,318",
+            "quality_score": "89-91",
+            "product_list": [
+              "apollo",
+              "west-coast-forty-six"
+            ],
+            "archived_products": "",
+            "country": "Ethiopia"
+          }
+        },
+        "69f5941c-6bca-4364-8e54-02d2f82e8445": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Kata Meduga",
+            "location": "Ethiopia",
+            "partner_since": "2019",
+            "fob_price": "$3.85",
+            "price_range": "$3.85",
+            "pounds_purchased": "42,330",
+            "quality_score": "90.5",
+            "product_list": [
+              "west-coast-forty-six"
+            ],
+            "archived_products": "",
+            "country": "Ethiopia"
+          }
+        },
+        "7b663373-87db-4a90-8402-bf8519ccab98": {
+          "type": "partner_option",
+          "settings": {
+            "title": "SNAP",
+            "location": "Ethiopia",
+            "partner_since": "2018",
+            "fob_price": "$3.45",
+            "price_range": "$3.45",
+            "pounds_purchased": "42,330",
+            "quality_score": "89.5",
+            "product_list": [
+              "apollo"
+            ],
+            "archived_products": "",
+            "country": "Ethiopia"
+          }
+        },
+        "696f4da4-b45b-4dbb-8c6d-b90b43d5753b": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/idido.jpg",
+            "title": "Yirgacheffee Coffee Farmers Cooperative Union",
+            "location": "Ethiopia",
+            "partner_since": "2010",
+            "fob_price": "$3.80",
+            "price_range": "$3.80",
+            "pounds_purchased": "211,648",
+            "quality_score": "90-91",
+            "product_list": [
+              "apollo"
+            ],
+            "archived_products": "",
+            "country": "Ethiopia"
+          }
+        },
+        "fbddbcae-b0a5-4d79-a043-60e559f098ae": {
+          "type": "partner_option",
+          "settings": {
+            "title": "ASDECAFE",
+            "location": "Guatemala",
+            "partner_since": "2022",
+            "fob_price": "$3.28",
+            "price_range": "$3.28",
+            "pounds_purchased": "41,833",
+            "quality_score": "86",
+            "product_list": [
+              "west-coast-fast-forward"
+            ],
+            "archived_products": "",
+            "country": "Guatemala"
+          }
+        },
+        "bb087c42-06bf-4ee9-897a-e41bb76f044e": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Codech.png",
+            "title": "CODECH",
+            "location": "Guatemala",
+            "partner_since": "2010",
+            "fob_price": "$3.83",
+            "price_range": "$3.02-4.85",
+            "pounds_purchased": "369,276",
+            "quality_score": "85.5-88",
+            "product_list": [
+              "copy-of-slow-motion-decaf",
+              "west-coast-fast-forward"
+            ],
+            "archived_products": "",
+            "country": "Guatemala"
+          }
+        },
+        "488561ce-604b-4963-b6f0-1ebc839407b0": {
+          "type": "partner_option",
+          "settings": {
+            "title": "FECCEG",
+            "location": "Guatemala",
+            "partner_since": "2022",
+            "fob_price": "$3.22",
+            "price_range": "$3.22",
+            "pounds_purchased": "41,833",
+            "quality_score": "85.5",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Guatemala"
+          }
+        },
+        "e73bcad0-8ea9-436c-9ca7-a5c241f88060": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Finca La Hermosa",
+            "location": "Guatemala",
+            "partner_since": "2022",
+            "fob_price": "$3.15",
+            "price_range": "$3.15",
+            "pounds_purchased": "42,594",
+            "quality_score": "83.75-85",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Guatemala"
+          }
+        },
+        "32c8d41c-b69f-4630-8eeb-3673d3d4a44c": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FincaNuevaArmenia.jpg",
+            "title": "Finca Nueva Armenia",
+            "location": "Guatemala",
+            "partner_since": "2003",
+            "fob_price": "$3.06",
+            "price_range": "$3.05-3.25",
+            "pounds_purchased": "125,803",
+            "quality_score": "86",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Guatemala"
+          }
+        },
+        "10b1bc83-219b-41ec-ae1b-855ce4227bdf": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lavoz.jpg",
+            "title": "La Voz que Clama en el Desierto",
+            "location": "Guatemala",
+            "partner_since": "2012",
+            "fob_price": "$3.50",
+            "price_range": "$3.50",
+            "pounds_purchased": "38,030",
+            "quality_score": "86",
+            "product_list": [
+              "copy-of-slow-motion-decaf"
+            ],
+            "archived_products": "",
+            "country": "Guatemala"
+          }
+        },
+        "c24afac1-b366-44d4-a847-b0b4adedf181": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ManosCampesinas.png",
+            "title": "Manos Campesinas",
+            "location": "Guatemala",
+            "partner_since": "2013",
+            "fob_price": "$3.66",
+            "price_range": "$3.53-3.81",
+            "pounds_purchased": "442,669",
+            "quality_score": "86-88",
+            "product_list": [
+              "west-coast-big-trouble",
+              "west-coast-fast-forward",
+              "west-coast-forty-six"
+            ],
+            "archived_products": "",
+            "country": "Guatemala"
+          }
+        },
+        "f624c049-bc33-4506-8de7-1e6bb0eef8ea": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Vides 58",
+            "location": "Guatemala",
+            "partner_since": "2022",
+            "fob_price": "$3.39",
+            "price_range": "$3.39",
+            "pounds_purchased": "41,833",
+            "quality_score": "85.5",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Guatemala"
+          }
+        },
+        "961a2c52-3aa7-4ecb-8337-f672f007e716": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Boncafe",
+            "location": "Honduras",
+            "partner_since": "2022",
+            "fob_price": "$3.47",
+            "price_range": "$3.47",
+            "pounds_purchased": "9,127",
+            "quality_score": "85",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Honduras"
+          }
+        },
+        "52ee16b8-c6b2-466b-a606-d9afbb5bd7bd": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/puente.png",
+            "title": "Finca El Puente",
+            "location": "Honduras",
+            "partner_since": "2005",
+            "fob_price": "$3.53",
+            "price_range": "$3.30-25.00",
+            "pounds_purchased": "284,099",
+            "quality_score": "85-90",
+            "product_list": [
+              "west-coast-fast-forward",
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Honduras"
+          }
+        },
+        "f7102a83-88d2-4fc3-a180-3a5d3a1fff6a": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pashapa.png",
+            "title": "Finca Pashapa",
+            "location": "Honduras",
+            "partner_since": "2002",
+            "fob_price": "$3.83",
+            "price_range": "$3.30-4.50",
+            "pounds_purchased": "15,212",
+            "quality_score": "84-86.5",
+            "product_list": [
+              "west-coast-forty-six"
+            ],
+            "archived_products": "",
+            "country": "Honduras"
+          }
+        },
+        "8b4429c6-f274-4ab2-b8f4-e0f62bc0395b": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kamavindi.png",
+            "title": "Kamavindi Estate",
+            "location": "Kenya",
+            "partner_since": "2015",
+            "fob_price": "$6.83",
+            "price_range": "$4.71-31.00",
+            "pounds_purchased": "3,747",
+            "quality_score": "88-92",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Kenya"
+          }
+        },
+        "41761071-6e5a-4e29-973b-e033039f73ab": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kushikamana.png",
+            "title": "Kushikamana",
+            "location": "Kenya",
+            "partner_since": "2015",
+            "fob_price": "$5.20",
+            "price_range": "$3.39-6.56",
+            "pounds_purchased": "16,579",
+            "quality_score": "86.5-91",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Kenya"
+          }
+        },
+        "8daa88f2-800b-4b85-ace0-4393771815fc": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cafeco.png",
+            "title": "Cafeco",
+            "location": "Mexico",
+            "partner_since": "2020",
+            "fob_price": "$3.63",
+            "price_range": "$3.34-3.79",
+            "pounds_purchased": "56,893",
+            "quality_score": "85-86",
+            "product_list": [
+              "west-coast-big-trouble",
+              "west-coast-forty-six"
+            ],
+            "archived_products": "",
+            "country": "Mexico"
+          }
+        },
+        "a53d3afd-326e-4c9d-9e8a-f846f9b4a29e": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Grapos Cooperative",
+            "location": "Mexico",
+            "partner_since": "2022",
+            "fob_price": "$3.29",
+            "price_range": "$3.29",
+            "pounds_purchased": "41,833",
+            "quality_score": "84.5",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Mexico"
+          }
+        },
+        "a02c7ff9-dfd3-4cc9-9abd-41689e4f2880": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Mayan Harvest",
+            "location": "Mexico",
+            "partner_since": "2018",
+            "fob_price": "$3.49",
+            "price_range": "$3.36-3.61",
+            "pounds_purchased": "83,666",
+            "quality_score": "85-86",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Mexico"
+          }
+        },
+        "4446fce9-fb0a-4bb5-a298-06dfabd9060f": {
+          "type": "partner_option",
+          "settings": {
+            "title": "MOCABE",
+            "location": "Mexico",
+            "partner_since": "2022",
+            "fob_price": "$3.86",
+            "price_range": "$3.86",
+            "pounds_purchased": "41,833",
+            "quality_score": "85.5",
+            "product_list": [
+              "copy-of-slow-motion-decaf"
+            ],
+            "archived_products": "",
+            "country": "Mexico"
+          }
+        },
+        "fc92b9eb-f2ad-4d8b-92c2-4e8da4255e44": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/redfox.png",
+            "title": "Red Fox Mexico",
+            "location": "Mexico",
+            "partner_since": "2017",
+            "fob_price": "$3.13",
+            "price_range": "$3.00-3.55",
+            "pounds_purchased": "61,304",
+            "quality_score": "84.5-87",
+            "product_list": [
+              "west-coast-forty-six"
+            ],
+            "archived_products": "",
+            "country": "Mexico"
+          }
+        },
+        "5ddcbf34-694e-43a6-85ef-c597383d71e7": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Union de Ejidos",
+            "location": "Mexico",
+            "partner_since": "2022",
+            "fob_price": "$3.75",
+            "price_range": "$3.75",
+            "pounds_purchased": "12,170",
+            "quality_score": "85.5",
+            "product_list": [
+              "west-coast-forty-six"
+            ],
+            "archived_products": "",
+            "country": "Mexico"
+          }
+        },
+        "48d10549-dabf-4ea7-a552-bb8877e0f438": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Bridazul",
+            "location": "Nicaragua",
+            "partner_since": "2022",
+            "fob_price": "$2.80",
+            "price_range": "$3.65-4.65",
+            "pounds_purchased": "37,726",
+            "quality_score": "85-86",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Nicaragua"
+          }
+        },
+        "17f51c13-7da2-4226-bf8b-5167bd60e244": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Caravela Nicaragua",
+            "location": "Nicaragua",
+            "partner_since": "2016",
+            "fob_price": "$2.90",
+            "price_range": "$2.80-3.00",
+            "pounds_purchased": "83,666",
+            "quality_score": "84-86",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Nicaragua"
+          }
+        },
+        "5ebcdefe-f6df-4d11-a99a-82f7f7501bd8": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CincodeJunio_1.png",
+            "title": "Cinco de Junio",
+            "location": "Nicaragua",
+            "partner_since": "2009",
+            "fob_price": "$",
+            "price_range": "$3.10-3.20",
+            "pounds_purchased": "167,484",
+            "quality_score": "85-86.5",
+            "product_list": [
+              "west-coast-fast-forward",
+              "west-coast-big-trouble",
+              "west-coast-forty-six"
+            ],
+            "archived_products": "",
+            "country": "Nicaragua"
+          }
+        },
+        "674b80f7-d1e7-406e-aaf4-6cdf352652a2": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Victoria.png",
+            "title": "Finca La Victoria",
+            "location": "Nicaragua",
+            "partner_since": "2017",
+            "fob_price": "$3.33",
+            "price_range": "$3.10-3.97",
+            "pounds_purchased": "41,833",
+            "quality_score": "85.5-87",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Nicaragua"
+          }
+        },
+        "acdb0b0c-f4ec-4cb0-be37-0df8e3a17cef": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Sabio Coffee",
+            "location": "Nicaragua",
+            "partner_since": "2017",
+            "fob_price": "$2.40",
+            "price_range": "$2.40",
+            "pounds_purchased": "167,332",
+            "quality_score": "85-85.5",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Nicaragua"
+          }
+        },
+        "15e647b6-eeda-439f-ad08-da1e590838a8": {
+          "type": "partner_option",
+          "settings": {
+            "title": "Finca Nuguo",
+            "location": "Panama",
+            "partner_since": "2015",
+            "fob_price": "$90.74",
+            "price_range": "$90.74",
+            "pounds_purchased": "22",
+            "quality_score": "95",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Panama"
+          }
+        },
+        "ae1ff662-016b-4130-86fb-b332b29c63c1": {
+          "type": "partner_option",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Colbran_1.png",
+            "title": "Colbran Estates",
+            "location": "Papua New Guinea",
+            "partner_since": "2010",
+            "fob_price": "$3.82",
+            "price_range": "$3.74-4.14",
+            "pounds_purchased": "33,070",
+            "quality_score": "86.5-87.5",
+            "product_list": [
+
+            ],
+            "archived_products": "",
+            "country": "Papua New Guinea"
+          }
+        },
+        "bd28e05f-7e5f-4150-ad2b-81568cf87a1e": {
+          "type": "partner_option",
+          "settings": {
+            "title": "CAC San Fernando",
+            "location": "Peru",
+            "partner_since": "2016",
+            "fob_price": "$3.65",
+            "price_range": "$3.65",
+            "pounds_purchased": "125,499",
+            "quality_score": "85-85.5",
+            "product_list": [
+              "west-coast-big-trouble"
+            ],
+            "archived_products": "",
+            "country": "Peru"
+          }
+        }
+      },
+      "block_order": [
+        "5d2299a1-6870-441e-b7ab-f525d2156756",
+        "38ed3029-2cf0-48c2-b340-30f3cc305181",
+        "9fda8cbc-3b73-4616-badc-c007365ee84c",
+        "f345d451-438f-45cf-8f8e-9221aecb66f0",
+        "289f9a2f-5c8c-4d7b-82f1-b68c1b07abc8",
+        "178893c0-7025-4e46-bac1-383cc73ac660",
+        "937e5d96-1458-4e5a-95a2-9e875335cc51",
+        "d73252ff-3b1c-491c-940a-b35d06ee564e",
+        "25bef9e1-ace6-4763-ab9e-8cddb9effcee",
+        "f75df7b5-9d67-4e2c-b6d1-c98d2d444943",
+        "5483e12d-d186-44b7-88a2-de80ac65f898",
+        "ab1c22a5-84cd-438a-a92b-b880a46cae22",
+        "03d3a7c3-a81f-41b0-9c83-28bfaf857f7d",
+        "6fa742ad-2ace-4105-a72d-068f03acb118",
+        "003bd1c3-eb9c-400d-bece-bcd23c36f1e5",
+        "40524309-16fa-4d98-a1d8-7efc39390a60",
+        "4951b958-cf77-4623-b978-6320a9db88f4",
+        "4ff0117f-5ef4-4625-8b63-c457c64034f5",
+        "02fbd382-7ec4-4348-a59a-5c25cabe7cbb",
+        "205867a7-d2ba-4660-9580-ed599bcfdbf8",
+        "69f5941c-6bca-4364-8e54-02d2f82e8445",
+        "7b663373-87db-4a90-8402-bf8519ccab98",
+        "696f4da4-b45b-4dbb-8c6d-b90b43d5753b",
+        "fbddbcae-b0a5-4d79-a043-60e559f098ae",
+        "bb087c42-06bf-4ee9-897a-e41bb76f044e",
+        "488561ce-604b-4963-b6f0-1ebc839407b0",
+        "e73bcad0-8ea9-436c-9ca7-a5c241f88060",
+        "32c8d41c-b69f-4630-8eeb-3673d3d4a44c",
+        "10b1bc83-219b-41ec-ae1b-855ce4227bdf",
+        "c24afac1-b366-44d4-a847-b0b4adedf181",
+        "f624c049-bc33-4506-8de7-1e6bb0eef8ea",
+        "961a2c52-3aa7-4ecb-8337-f672f007e716",
+        "52ee16b8-c6b2-466b-a606-d9afbb5bd7bd",
+        "f7102a83-88d2-4fc3-a180-3a5d3a1fff6a",
+        "8b4429c6-f274-4ab2-b8f4-e0f62bc0395b",
+        "41761071-6e5a-4e29-973b-e033039f73ab",
+        "8daa88f2-800b-4b85-ace0-4393771815fc",
+        "a53d3afd-326e-4c9d-9e8a-f846f9b4a29e",
+        "a02c7ff9-dfd3-4cc9-9abd-41689e4f2880",
+        "4446fce9-fb0a-4bb5-a298-06dfabd9060f",
+        "fc92b9eb-f2ad-4d8b-92c2-4e8da4255e44",
+        "5ddcbf34-694e-43a6-85ef-c597383d71e7",
+        "48d10549-dabf-4ea7-a552-bb8877e0f438",
+        "17f51c13-7da2-4226-bf8b-5167bd60e244",
+        "5ebcdefe-f6df-4d11-a99a-82f7f7501bd8",
+        "674b80f7-d1e7-406e-aaf4-6cdf352652a2",
+        "acdb0b0c-f4ec-4cb0-be37-0df8e3a17cef",
+        "15e647b6-eeda-439f-ad08-da1e590838a8",
+        "ae1ff662-016b-4130-86fb-b332b29c63c1",
+        "bd28e05f-7e5f-4150-ad2b-81568cf87a1e"
+      ],
+      "settings": {
+        "paragraph": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
+        "partner_image": "shopify:\/\/shop_images\/Transparency_wholesale.png",
+        "partner_title": "",
+        "map_image": "shopify:\/\/shop_images\/map_1.png"
       }
     }
   },
   "order": [
     "main",
-    "02781444-064e-4189-9f20-c223647ae522",
-    "08789d13-2c5f-4f12-9a5b-94e5b5c688e7",
-    "a05bd05d-18bb-4c0e-9cea-11860990aa24",
-    "41e3b176-36ad-447e-bfc5-a2057b206ed2",
-    "52865e74-13e2-4be8-b958-3aeef6e8c14c",
+    "a964a693-dd18-4c70-89df-2080b8fb1460",
+    "7092a6ee-c6e3-4328-ac10-684d3dcb4a80",
     "e2005a40-3df1-413d-9d74-8bbcc2d68f17",
-    "7e252e61-3fcb-4964-a63f-dcb24294dd3c",
-    "ebeeab5a-bdec-4b29-ae1e-081593966cbf",
-    "ce9f778a-d7af-4680-b7e6-0c9e824c1e5b"
+    "41e3b176-36ad-447e-bfc5-a2057b206ed2",
+    "07726ac8-c669-44e9-88d8-3f775f78d702",
+    "0fc3b7cb-8453-4bfe-8687-14f0d7dbcd60",
+    "f9cdaccf-3549-43f3-a65e-b77ff2056cff"
   ]
 }
