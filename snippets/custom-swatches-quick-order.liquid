@@ -1,0 +1,25 @@
+<!-- snippets/custom-swatches-quick-order -->
+<p class="uppercase text-lg font-medium tracking-wider animate animate-fadeInUp">{{ option.name }}</p>
+
+<ul class="flex flex-wrap gap-2 lg:gap-2 item-center list-none my-3 mb-5 lg:mb-6 animate animate-fadeInUp">
+  {%- for value in option.values -%}
+    {% assign optionID = trigger %}
+    {% capture input_id %}{{ optionID }}--{{ option.name | handleize }}--{{ value | handleize }}{% endcapture %}
+   
+    <li class="custom-radio-swatch" data-var-id={{ optionID }}>
+      <input id="{{ input_id }}"
+             type="radio"
+             name="{{ trigger }}"
+             value="{{ value }}"
+             class="js-option-swatch-qo"
+             data-option="{{ option.name }}"
+             data-value="{{ value }}"
+             {% if option.selected_value == value %} checked {% endif %}>
+
+      <label for="{{ input_id }}"
+             class="product-swatch js-option-label-qo">
+        {{ value }}
+      </label>
+    </li>
+  {%- endfor -%}
+</ul>

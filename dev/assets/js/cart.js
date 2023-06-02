@@ -175,10 +175,18 @@ const Cart = (function(){
     let data = $this.serialize();
     $elementToFocusOnClose = $this;
 
+    closeQOModal();
     processCartRequest(data, urls.cartAdd, () => {
       buildCart()
       openCart();
     })
+  }
+
+  const closeQOModal = function(){
+    //before processing cart request, close the QO modal	
+    //console.log('closing the QO modal first.... testing')	
+    $('.product--buy-panel-quick-order').fadeOut()
+    $('.quick-order-overlay').addClass('hidden')
   }
 
   const handleItemRemove = function(e){

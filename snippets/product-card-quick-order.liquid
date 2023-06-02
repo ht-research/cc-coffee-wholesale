@@ -1,0 +1,16 @@
+<!-- snippets/product-card-quick-order [aa] -->
+
+<li class="product-card bg-white relative border border-black">
+
+  <div class="product-card-badge">
+    {% render 'product-card-badge', product: product %}
+  </div>
+
+  <div class="js-product-card flex flex-col justify-between h-full">
+    <a href="{{ product.url | within: collection }}">
+      {% render 'product-card-images', product: product %}
+    </a>
+    {% render 'product-card-content-quick-order', product: product %}
+  </div>
+
+</li>
