@@ -9,7 +9,7 @@
         "bg_color": "rgba(0,0,0,0)",
         "wrapper_classes": "border border-black",
         "use_squiggles": false,
-        "title": "<p>FAQ<\/p>",
+        "title": "<p>Frequently Asked Questions<\/p>",
         "text_size_mobile": "text-2xl",
         "text_size_desktop": "lg:text-4xl",
         "tag": "h1",
