@@ -378,7 +378,7 @@
           "type": "faq",
           "settings": {
             "question": "What carriers can I use?",
-            "answer": "<p>You have the option of choosing form the following UPS methods: SurePost, Ground, 2nd-Day Air, or Next Day Air.<\/p><p><\/p><p>All options will be made available during check out.<\/p><p><\/p><p>All PO Box and Military addresses will ship via <a href=\"https:\/\/www.ups.com\/us\/en\/help-center\/tracking-support\/sp-definition.page\" target=\"_blank\">UPS SurePost<\/a>.<\/p>",
+            "answer": "<p>You have the option of choosing form the following UPS methods: Ground, 2nd-Day Air, or Next Day Air.<\/p><p><\/p><p>All options will be made available during check out.<\/p>",
             "label": ""
           }
         },
