@@ -320,6 +320,7 @@
         },
         "2bab7d82-60e6-4ec2-8247-5e74bb5ae7c8": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "How can I update the payment on subscriptions?",
             "answer": "<p>Log into your customer account and select ‘My subscriptions,’ locate the subscription you want to change, select ‘Change Payment’, select the new payment if saved on file or select ‘use a new card’ and type in the new card and finish by selecting ‘Change Payment Method’. <\/p>",
@@ -330,7 +331,7 @@
           "type": "faq",
           "settings": {
             "question": "What do I do if a charge is incorrect?",
-            "answer": "<p>Contact our Customer Experience team at<a href=\"mailto:retail@counterculturecoffee.com\">retail@counterculturecoffee.com<\/a>.<\/p>",
+            "answer": "<p>Contact our Customer Experience team orders<a href=\"mailto:retail@counterculturecoffee.com\">@counterculturecoffee.com<\/a>.<\/p>",
             "label": ""
           }
         },
