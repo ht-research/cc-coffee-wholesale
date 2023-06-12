@@ -37,7 +37,7 @@
           "type": "faq",
           "settings": {
             "question": "Can I adjust my order after it has been placed?",
-            "answer": "<ul><li>We can’t adjust or cancel an order after it has been placed.<\/li><li>Please triple-check your address, order, quantity, and billing details.<\/li><\/ul><p>That said, if there is an issue, please contact our Customer Experience team at <a href=\"mailto:retail@counterculturecoffee.com\">retail@counterculturecoffee.com<\/a> as soon as possible, and we will help to resolve the issue.<\/p>",
+            "answer": "<ul><li>We can’t adjust or cancel an order after it has been placed.<\/li><li>Please triple-check your address, order, quantity, and billing details.<\/li><\/ul><p>That said, if there is an issue, please contact our Customer Experience team at <a href=\"mailto:retail@counterculturecoffee.com\">orders@counterculturecoffee.com<\/a> as soon as possible, and we will help to resolve the issue.<\/p>",
             "label": ""
           }
         },
@@ -714,7 +714,6 @@
         "section_style": "background_image",
         "border_color": "border-black",
         "background_color": "",
-        "background_image": "shopify:\/\/shop_images\/MO4A8777.jpg",
         "use_squiggles": false,
         "number": "",
         "content": "",
