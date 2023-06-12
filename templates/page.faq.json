@@ -476,6 +476,7 @@
         },
         "ee7c57d9-573c-4bed-85e0-49f611563012": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "What do I do if my coffee tastes off?",
             "answer": "<p>We want to make sure you’re happy with your coffee purchase, and if something isn’t tasting right, please contact us at retail@counterculturecoffee.com and we will work towards a solution. <\/p><p><br\/>We also would love to know the roast date, coffee, purchase information, and description of your taste experience. Sometimes changing the grind, water, recipe, and brewing process will help, but we would love to hear from you in either case.<br\/><\/p>",
@@ -484,6 +485,7 @@
         },
         "5db32a75-9bba-4213-937e-df956e813ddd": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "What if I purchased at a coffee shop\/grocery store\/restaurant?",
             "answer": "<p>If you are unhappy with a coffee purchased somewhere other than our website, we ask that you contact the original vendor for a return or exchange. If no resolution is achieved, please contact us, and we will do our best to accommodate.<\/p>",
@@ -509,6 +511,7 @@
       "blocks": {
         "69650d24-5191-4375-820b-28f715bfa729": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "What is your packaging material?",
             "answer": "<p>Our Year-Round and Single Origin coffees are packaged in bags made of a material called Biotrē. We currently use Biotrē 1.0, which has two layers. The first layer is primarily wood chips, and it will break down into healthy compost. The second layer, which keeps our coffee fresh, is not suitable for a composting environment because it takes a bit longer to break down. Additionally, the valve, tin tie, and roast date stickers are not compostable or recyclable. More information about this packaging can be found below.<br\/><\/p><p>Our Limited-Release coffees come in a box that is recyclable and is made from recycled content. The clear bag inside should be disposed of in the landfill.<br\/><\/p><p>We are currently testing Biotrē 3.0, which will be 100% plant-based and 100% compostable, including the valve. We hope to be able to offer this to consumers soon!<\/p>",
@@ -517,6 +520,7 @@
         },
         "23fdc6ed-dd8f-40ae-940e-2b38659afb52": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "What’s up with the Fres-co packaging?",
             "answer": "<p>For our newest Year-Round blend, Gradient, we are working with a new packaging manufacturer, Fres-co. Fres-co produces and manufactures bags domestically and so the shipping distance and time it takes to get to us is dramatically reduced. We will soon be taking a closer look at our packaging options to align with a more sustainable long-term partner. You can read about Fresc-co’s sustainability policy <a href=\"https:\/\/www.fresco.com\/sustainability-policy\/\">here<\/a>.<\/p>",
@@ -525,6 +529,7 @@
         },
         "c6b72481-8e66-492d-a9f1-c9235b46fdd1": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "What is Biotrē packaging?",
             "answer": "<p>Biotrē 1.0 is made from 60% (by weight) renewable wood pulp. The wood pulp portion is biodegradable. Third-party testing per ASTM tests D-6868 and D-6400 confirmed that nearly all of the wood pulp portion will disintegrate into healthy compost over 84 days in a backyard, home composting environment. Internal studies in moist, managed home compost have shown a degradation time of 90 days.<\/p><p><br\/>The remaining 40% (by weight) of the bag is Polyethylene (PE) made from petroleum-based sources.<br\/><\/p><p>Biotrē 1.0 is not compatible with industrial or municipal composting. It is best disposed of by placing it in a privately managed compost pile where the 40% PE layer, the one-way degassing valve, the tin tie, and any stickers can be removed manually and disposed of in the regular trash.<br\/><\/p><p>Although 60% (by weight) of our bags will break down into healthy compost, we cannot label them as compostable because they do not meet the definition of “compostable” under California law. Consumers trying to be conscious should remove the valve, tin tie, stickers, and compost in their backyard. There will be plastic left after 84 days, which should be thrown away.<br\/><\/p><p>We have chosen this packaging because we think it provides environmental benefits without sacrificing our coffee’s freshness and quality. However, we acknowledge that 60% is not 100%, and we will continue to look for packaging that meets our quality standards and can be disposed of in a more environmentally friendly way. If you would like more info on Biotrē please visit: Biotrē bags<\/p>",
@@ -580,9 +585,11 @@
     },
     "1653663903bfd9d077": {
       "type": "faq-group",
+      "disabled": true,
       "blocks": {
         "c86d1a16-6deb-4b14-979e-3f0dab978d8f": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "How can I find out info about Tastings at Ten?",
             "answer": "<p>While we didn’t know it then, we hosted our last Tasting at Ten event on March 6, 2020. A 25-year-old tradition changed, along with the rest of the world.<br\/><\/p><p>We are eager to reactivate our spaces and welcome you back to the newest iteration of Friday tastings with Shift Drink™<br\/>Sign up and learn more about Shift Drink™ here.<br\/><\/p><p>Please check out our Education information here.<\/p>",
@@ -591,6 +598,7 @@
         },
         "8b5ebdc2-765e-41aa-99f3-8b722d39947e": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "What is Shift Drink™?",
             "answer": "<p>Shift Drink™ is a monthly pop-up coffee shop that aims to bring our people together over coffee while supporting local non-profit organizations from each of the communities we are a part of. This event will take place on the last Friday of each month. Register to join us at a Training Center near you for a Shift Drink™️!<\/p><p><br\/>Sign up and learn more about Shift Drink™ here.<br\/><\/p>",
@@ -627,9 +635,20 @@
     },
     "1653664073d815fbbb": {
       "type": "faq-group",
+      "disabled": true,
       "blocks": {
+        "f18099ce-457d-4158-a583-b86d14fd1af2": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "question": "What time is the wholesale order cut-off?",
+            "answer": "<p>Orders placed before 4 p.m. ET will roast and ship out the following business day. <\/p>",
+            "label": ""
+          }
+        },
         "4480f4ce-6b9f-49ca-a70c-3e0ed1c4b67d": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "Can I become a wholesale partner?",
             "answer": "<p>We’re so glad you’re interested in becoming a wholesale partner, the first step is to please fill out this form<a href=\"https:\/\/counterculturecoffee.com\/wholesale\/wholesale-inquiry\">Wholesale Inquiry<\/a>, and our regional teams will reach out shortly.<\/p>",
@@ -638,25 +657,18 @@
         },
         "59f885b0-ca87-45b4-a24e-4cc11c7931e1": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "Can I buy your coffee in bulk?",
             "answer": "<p>Yes, we recently made certain coffees availble in 5 lb bags! <\/p><p><\/p><p>If you’re interested in becoming a wholesale partner, the first step is to please fill out this form <a href=\"https:\/\/counterculturecoffee.com\/wholesale\/wholesale-inquiry\">Wholesale Inquiry<\/a>, and our regional teams will reach out ASAP.<\/p>",
             "label": ""
           }
-        },
-        "f18099ce-457d-4158-a583-b86d14fd1af2": {
-          "type": "faq",
-          "settings": {
-            "question": "What time is the wholesale order cut-off?",
-            "answer": "<p>Orders placed before 4 p.m. ET will roast and ship out the following business day. <\/p>",
-            "label": ""
-          }
         }
       },
       "block_order": [
+        "f18099ce-457d-4158-a583-b86d14fd1af2",
         "4480f4ce-6b9f-49ca-a70c-3e0ed1c4b67d",
-        "59f885b0-ca87-45b4-a24e-4cc11c7931e1",
-        "f18099ce-457d-4158-a583-b86d14fd1af2"
+        "59f885b0-ca87-45b4-a24e-4cc11c7931e1"
       ],
       "settings": {
         "header": "Wholesale",
@@ -668,6 +680,7 @@
       "blocks": {
         "349855e4-89bb-4b1d-98fd-c8c3d1f0d2d9": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "Do you give discounts?",
             "answer": "<p>We don’t offer standing discount programs, but we frequently have promotions; for more info and to catch the next one, please sign up for our newsletter at the bottom of our website.<\/p>",
@@ -684,6 +697,7 @@
         },
         "67705f46-f7b9-4bdd-9db3-bf34595aa297": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "How have you adapted to COVID-19?",
             "answer": "<p><strong>Public Events Temporarily Canceled:<\/strong> The health and safety of our Counter Culture employees and guests is our highest priority. Due to the novel Coronavirus (COVID-19) ‘s continued spread, we’ve decided to temporarily suspend all public Tasting @ Ten events and monthly Catalog Cuppings until further notice.<\/p><p><\/p><p><strong>Virtual Coffee Experiences:<\/strong> We certainly miss having you in our Training Centers for weekly tastings. Want to stay in the loop on virtual events? Add your email to our newsletter<a href=\"https:\/\/counterculturecoffee.com\/\">here<\/a>(bottom right).<\/p><p><\/p><p><strong>Maintaining the Integrity of our Product:<\/strong> As a manufacturer, we continue to follow strict food and safety guidelines and follow OSHA and FDA guidance regarding COVID-19. We have ensured the integrity of our coffee, bagging, production spaces, and our equipment and supplies.We will continue to introduce any additional safety measures as needed to uphold the integrity of our product. We are consistently monitoring and taking all CDC recommendations regarding necessary precautions for our Training Centers, Roasteries, and production staff.<\/p><p><\/p><p><strong>Shipping You Fresh Coffee: <\/strong>All of our coffee is freshly roasted to order. Once your order has been placed, you will receive a confirmation email. Please allow up to 2-business days for your order to process. Your order will roast\/ship the next business day after it has been processed. When your order ships, you will receive a separate email with tracking information.Due to circumstances surrounding the COVID-19 outbreak, you may experience delays in both processing and shipping. We are doing all we can to ensure that freshly roasted coffee will be delivered to you! Thank you for your patience.<\/p>",
@@ -692,6 +706,7 @@
         },
         "4eab912a-c8bf-42f3-a440-39ff1dd5b969": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "Are there career opportunities with your company?",
             "answer": "<p>Yes, to join our team of passionate, dynamic, diverse, coffee-driven people, please check out our job postings here <a href=\"https:\/\/counterculturecoffee.com\/about-us\/careers\">CCC Careers<\/a>.<\/p>",
