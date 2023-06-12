@@ -446,7 +446,7 @@
           "type": "faq",
           "settings": {
             "question": "How can I fix a wrong address?",
-            "answer": "<p>If your order has shipped, please contact our Customer Experience team at <a href=\"mailto:retail@counterculturecoffee.com\">retail@counterculturecoffee.com<\/a>.<\/p><p><\/p><p>If your order hasn’t been created because it is generated from a recurring subscription, you can update your address via the ‘My Subscription’ page in your customer account, from there locate the subscription you want to change, retype in the new address and select “Save.” <\/p>",
+            "answer": "<p>If your order has shipped, please contact our Customer Experience team at <a href=\"mailto:retail@counterculturecoffee.com\">orders@counterculturecoffee<\/a>.com.<\/p><p><\/p><p>If your order hasn’t been created because it is generated from a recurring subscription, you can update your address via the ‘My Subscription’ page in your customer account, from there locate the subscription you want to change, retype in the new address and select “Save.” <\/p>",
             "label": ""
           }
         },
