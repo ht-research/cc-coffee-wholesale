@@ -77,7 +77,7 @@
           "type": "faq",
           "settings": {
             "question": "Do you offer gift certificates?",
-            "answer": "<p>Not at this time, but stay tuned. It’s in the works. That said, we do offer <a href=\"https:\/\/counterculturecoffee.com\/shop\/category\/coffee\/gift-subscriptions\">Gift Subscriptions<\/a>.<\/p>",
+            "answer": "<p>Not at this time, but stay tuned. It’s in the works. <\/p>",
             "label": ""
           }
         },
