@@ -134,6 +134,7 @@
     },
     "16472989604ef7d283": {
       "type": "faq-group",
+      "disabled": true,
       "blocks": {
         "95ac9599-f19b-4533-9c79-582e85d052b0": {
           "type": "faq",
@@ -313,7 +314,7 @@
           "type": "faq",
           "settings": {
             "question": "What payments do you accept?",
-            "answer": "<p>We currently accept Visa, Mastercard, American Express, Discover, Goole Pay, and PayPal. <\/p><p><\/p><p>Because of our site’s card validation requirements, internationally-issued credit and bank cards, excluding those issued in Canada, are not accepted. Please email <a href=\"mailto:retail@counterculturecoffee.com\">retail@counterculturecoffee.com<\/a>for help resolving a payment issue.<\/p>",
+            "answer": "<p>We currently accept all major US issued credit cards. <\/p><p><\/p><p>Because of our site’s card validation requirements, internationally-issued credit and bank cards, excluding those issued in Canada, are not accepted. Please email <a href=\"mailto:retail@counterculturecoffee.com\">retail@counterculturecoffee.com<\/a>for help resolving a payment issue.<\/p>",
             "label": ""
           }
         },
