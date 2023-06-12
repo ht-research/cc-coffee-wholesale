@@ -462,7 +462,7 @@
           "type": "faq",
           "settings": {
             "question": "What do I do if my order is damaged, lost, or mis-delivered?",
-            "answer": "<p>Please contact us at <a href=\"mailto:retail@counterculturecoffee.com\">retail@counterculturecoffee.com<\/a>. If your order is damaged please include a photo, and we will file a claim with the carrier and issue a replacement order.<\/p>",
+            "answer": "<p>Please contact us at <a href=\"mailto:retail@counterculturecoffee.com\">orders@counterculturecoffee.com<\/a>. If your order is damaged please include a photo, and we will file a claim with the carrier and issue a replacement order.<\/p>",
             "label": ""
           }
         },
@@ -470,7 +470,7 @@
           "type": "faq",
           "settings": {
             "question": "What do I do if my order is returning to your facility?",
-            "answer": "<p>Please contact us at <a href=\"mailto:retail@counterculturecoffee.com\">retail@counterculturecoffee.com<\/a>, and we will work toward a resolution.<\/p>",
+            "answer": "<p>Please contact us at <a href=\"mailto:retail@counterculturecoffee.com\">orders@counterculturecoffee.com<\/a>, and we will work toward a resolution.<\/p>",
             "label": ""
           }
         },
