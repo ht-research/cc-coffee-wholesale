@@ -619,7 +619,7 @@
             "product_list": [
               "12-oz-hologram",
               "fast-forward-12oz-bag",
-              "12-oz-slow-motion"
+              "slow-motion-east"
             ],
             "country": "Guatemala"
           }
@@ -670,7 +670,7 @@
             "pounds_purchased": "41,833",
             "quality_score": "85.5",
             "product_list": [
-              "12-oz-slow-motion"
+              "slow-motion-east"
             ],
             "country": "Guatemala"
           }
@@ -951,7 +951,7 @@
               "fast-forward-12oz-bag",
               "12-oz-forty-six",
               "big-trouble",
-              "12-oz-slow-motion"
+              "slow-motion-east"
             ],
             "country": "Peru"
           }
@@ -987,7 +987,7 @@
             "product_list": [
               "fast-forward-12oz-bag",
               "12-oz-forty-six",
-              "12-oz-slow-motion"
+              "slow-motion-east"
             ],
             "country": "Peru"
           }
