@@ -16689,7 +16689,7 @@ const ProductForm = function($form){
     //   $(this).on('change', setCurrentVariant);	
     // })
 
-    jquery_default()('.js-collection-list').on('change', cache.$hiddenOptionSelectsQO,  setCurrentVariant);	
+    jquery_default()('.js-collection-list').on('change', '.js-hidden-option-select-qo',  setCurrentVariant);	
 
 
   }
