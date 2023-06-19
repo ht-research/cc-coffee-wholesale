@@ -16670,13 +16670,13 @@ const ProductForm = function($form){
     cache.$deliveryOption.on('change', handleDeliveryChange);
 
     //event listener for Quick Order	
-    // cache.$swatchesQO.each(function(){	
-    //   $(this).on('change', handleSwatchChangeQO);	
-    // })	
+    cache.$swatchesQO.each(function(){	
+      jquery_default()(this).on('change', handleSwatchChangeQO);	
+    })	
 
 
     // cache.$swatchesQO.each(function(){	
-       jquery_default()('.js-collection-list').on('change', cache.$swatchesQO,  handleSwatchChangeQO);	
+       //$('.js-collection-list').on('change', cache.$swatchesQO,  handleSwatchChangeQO);	
     // })	
 
 
