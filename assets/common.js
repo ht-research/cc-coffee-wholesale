@@ -15508,7 +15508,7 @@ const FilterOptionList = (function(){
   */
   const renderActiveFilterList = function(){
 
-    console.log('re rendering filtered list')
+
     let filterListHTML = ""
 
     $(settings.filterOption).removeClass('active')
@@ -15585,6 +15585,11 @@ const FilterOptionList = (function(){
   }
 
   const getFilteredSection = function(){
+
+    console.log('re rendering filtered list')
+
+
+    
     let url = "";
     let section = sectionRenderingURL.replace("sections=", "")
 
