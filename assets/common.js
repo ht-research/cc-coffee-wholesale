@@ -15336,8 +15336,8 @@ const QuickOrder = (function(){
     const quickOrderOpen = function(){
       console.log('Quick Order Open called...')  
       
-        jquery_default()('.js-product-card .quick-order-btn').each(function(){ 
-            jquery_default()(this).on('hover', function(e){
+        jquery_default()('.product-card .quick-order-btn').each(function(){ 
+            jquery_default()(this).on('onmouseenter', function(e){
               e.preventDefault();
 
               console.log('quick order clicked...')
