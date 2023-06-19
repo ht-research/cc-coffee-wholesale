@@ -14102,11 +14102,29 @@ return jQuery;
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
+
+// NAMESPACE OBJECT: ./assets/js/quick-order.js
+var quick_order_namespaceObject = {};
+__webpack_require__.r(quick_order_namespaceObject);
+__webpack_require__.d(quick_order_namespaceObject, {
+  "Z": () => (quick_order)
+});
 
 // EXTERNAL MODULE: ./node_modules/jquery/dist/jquery.js
 var jquery = __webpack_require__(755);
@@ -15360,7 +15378,10 @@ const QuickOrder = (function(){
     }
 
 
-    return { init }
+    return { init,
+    
+    quickOrderOpen,
+  quickOrderClose}
 
 })()
  
@@ -15614,7 +15635,7 @@ const FilterOptionList = (function(){
       //Quick Order
       console.log('initializing Quick Order after filter refresh')
       //console.log('quickOrderOpen', QuickOrderOpen)
-      //quickOrderOpen();
+      ;(0,quick_order_namespaceObject.quickOrderOpen)();
 
 
   }
