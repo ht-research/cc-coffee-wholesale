@@ -17287,6 +17287,11 @@ const initComponents = () => {
     customerAddresses.init();
   });
 
+
+  jquery_default()(document).watchFor('[data-customer-addresses]', function($el){
+    quick_order.init();
+  });
+
   // * InlineToggle
   jquery_default()('[data-toggle]').each(function() {
     new InlineToggle(this).init();
