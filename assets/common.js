@@ -15344,8 +15344,8 @@ const QuickOrder = (function(){
       //   console.log('hello 2')
       // }, true)
       
-        jquery_default()('.quick-order-btn').each(function(){ 
-            jquery_default()(document).on('click', jquery_default()(this),  function(e){
+        //$('.quick-order-btn').each(function(){ 
+            jquery_default()(document).on('click', '.quick-order-btn',  function(e){
               e.preventDefault();
 
               console.log('quick order clicked...')
@@ -15360,7 +15360,7 @@ const QuickOrder = (function(){
               jquery_default()(this).siblings('.product--buy-panel-quick-order').css('display', 'block')
               jquery_default()('.quick-order-overlay').removeClass('hidden')
             })
-        })
+        //})
     }
     
       
