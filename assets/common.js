@@ -17288,9 +17288,9 @@ const initComponents = () => {
   });
 
 
-  jquery_default()(document).watchFor('.filter--trigger-btn', function($el){
-    quick_order.init();
-  });
+  // $(document).watchFor('.filter--trigger-btn', function($el){
+  //   QuickOrder.init();
+  // });
 
   jquery_default()(document).watchFor('.js-filter-section', function($el){
     quick_order.init();
