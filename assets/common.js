@@ -16674,7 +16674,7 @@ const ProductForm = function($form){
     //   $(this).on('change', handleSwatchChangeQO);	
     // })	
 
-    jquery_default()(document).on('change', '.cache.$swatchesQO', handleSwatchChangeQO);
+    jquery_default()(document).on('change', cache.$swatchesQO , handleSwatchChangeQO);
 
     //  cache.$swatchesQO.each(function(){	
       //$('.js-collection-list').on('change', '.js-option-swatch-qo' , handleSwatchChangeQO )
