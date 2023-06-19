@@ -15345,7 +15345,7 @@ const QuickOrder = (function(){
       // }, true)
       
         jquery_default()('.quick-order-btn').each(function(){ 
-            jquery_default()(document).on('click',  jquery_default()(this),  function(e){
+            jquery_default()(document).on('click', jquery_default()(this),  function(e){
               e.preventDefault();
 
               console.log('quick order clicked...')
