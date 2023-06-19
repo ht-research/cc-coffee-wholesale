@@ -17292,7 +17292,11 @@ const initComponents = () => {
     quick_order.init();
   });
 
-  
+  jquery_default()(document).watchFor('.js-filter-section', function($el){
+    quick_order.init();
+  });
+
+
 
   // * InlineToggle
   jquery_default()('[data-toggle]').each(function() {
