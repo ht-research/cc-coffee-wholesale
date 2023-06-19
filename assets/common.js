@@ -15530,6 +15530,11 @@ const FilterOptionList = (function(){
     })
 
     $(settings.activeFilterContainer).html(filterListHTML)
+
+
+
+    //Quick Order
+    quick_order.init();
   }
 
   const updateFilterCount = function(){
