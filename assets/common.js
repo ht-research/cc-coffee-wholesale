@@ -16674,7 +16674,7 @@ const ProductForm = function($form){
       jquery_default()(this).on('change', handleSwatchChangeQO);	
     })	
 
-    console.log($form)
+    
 
 
     // cache.$swatchesQO.each(function(){	
@@ -16851,6 +16851,7 @@ const ProductForm = function($form){
     e.preventDefault()	
     e.stopPropagation()	
     console.log('swatch change QO')	
+    console.log($form)
 
     let $this = jquery_default()(this)
     let name = $this.data('option')	
