@@ -16675,9 +16675,13 @@ const ProductForm = function($form){
     // })	
 
 
+    cache.$swatchesQO.each(function(){	
+      jquery_default()(document).on('change', this,  handleSwatchChangeQO);	
+    })	
+
 
      //cache.$swatchesQO.each(function(){	
-      jquery_default()('.js-collection-list').on('change', '.js-option-swatch-qo' , handleSwatchChangeQO )
+     // $('.js-collection-list').on('change', '.js-option-swatch-qo' , handleSwatchChangeQO )
     // })	
      
     cache.$hiddenOptionSelectsQO.each(function(){	
