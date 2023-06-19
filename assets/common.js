@@ -17292,6 +17292,8 @@ const initComponents = () => {
     quick_order.init();
   });
 
+  
+
   // * InlineToggle
   jquery_default()('[data-toggle]').each(function() {
     new InlineToggle(this).init();
