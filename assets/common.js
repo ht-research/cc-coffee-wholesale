@@ -16672,12 +16672,12 @@ const ProductForm = function($form){
     //event listener for Quick Order	
     cache.$swatchesQO.each(function(){	
      // $(this).on('change', handleSwatchChangeQO);	
-       jquery_default()(document).on('click', jquery_default()(this), handleSwatchChangeQO)
+       jquery_default()(document).on('change', jquery_default()(this), handleSwatchChangeQO)
     })	
 
     cache.$hiddenOptionSelectsQO.each(function(){	
       //$(this).on('change', setCurrentVariant);	
-      jquery_default()(document).on('click', jquery_default()(this), setCurrentVariant)
+      jquery_default()(document).on('change', jquery_default()(this), setCurrentVariant)
     })
 
     
