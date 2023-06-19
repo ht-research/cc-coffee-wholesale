@@ -16674,12 +16674,11 @@ const ProductForm = function($form){
     //   $(this).on('change', handleSwatchChangeQO);	
     // })	
 
-     jquery_default()(document).on('change', '.js-option-swatch-qo', handleSwatchChangeQO);
 
 
-    //  cache.$swatchesQO.each(function(){	
-      //$('.js-collection-list').on('change', '.js-option-swatch-qo' , handleSwatchChangeQO )
-    //  })	
+     //cache.$swatchesQO.each(function(){	
+      jquery_default()('.js-collection-list').on('change', '.js-option-swatch-qo' , handleSwatchChangeQO )
+    // })	
      
     cache.$hiddenOptionSelectsQO.each(function(){	
       jquery_default()(this).on('change', setCurrentVariant);	
