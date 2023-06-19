@@ -15323,7 +15323,7 @@ const CustomSelectInit = (function(){
 
 ;// CONCATENATED MODULE: ./assets/js/quick-order.js
 
-const QuickOrder = (function(){
+const quick_order_QuickOrder = (function(){
 
 
     const init = function(){    
@@ -15365,7 +15365,7 @@ const QuickOrder = (function(){
 })()
  
 
-/* harmony default export */ const quick_order = (QuickOrder);  
+/* harmony default export */ const quick_order = (quick_order_QuickOrder);  
 
 
 
@@ -15613,8 +15613,8 @@ const FilterOptionList = (function(){
 
       //Quick Order
       console.log('initializing Quick Order after filter refresh')
-      console.log('quickOrder', quick_order)
-      quick_order.init();
+      console.log('quickOrder', QuickOrder)
+      QuickOrder.init();
 
 
   }
