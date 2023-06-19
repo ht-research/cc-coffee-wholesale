@@ -17288,7 +17288,7 @@ const initComponents = () => {
   });
 
 
-  jquery_default()(document).watchFor('[data-customer-addresses]', function($el){
+  jquery_default()(document).watchFor('[ata-target="filters"]', function($el){
     quick_order.init();
   });
 
