@@ -15354,6 +15354,8 @@ const QuickOrder = (function(){
                 console.log('5 lb found')	
                 jquery_default()(this).siblings('.product--buy-panel-quick-order').find('[data-value="5 lb"]').trigger('click')	
               }
+
+              console.log(jquery_default()(this))
              
               jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn()
               jquery_default()('.quick-order-overlay').removeClass('hidden')
