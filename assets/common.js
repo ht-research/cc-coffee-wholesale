@@ -15342,7 +15342,7 @@ const QuickOrder = (function(){
 
       document.querySelector('.quick-order-btn').addEventListener('click', function () {
         console.log('hello 2')
-      }, false)
+      }, true)
       
         // $('.product-card .quick-order-btn').each(function(){ 
         //     $(this).on('click', function(e){
