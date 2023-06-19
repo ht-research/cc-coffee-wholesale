@@ -16674,13 +16674,14 @@ const ProductForm = function($form){
     //   $(this).on('change', handleSwatchChangeQO);	
     // })	
 
-    jquery_default()('.js-option-swatch-qo').each(function(){	
-         jquery_default()(this).on('change', handleSwatchChangeQO);	
-     })	
+    // $('.js-option-swatch-qo').each(function(){	
+    //      $(this).on('change', handleSwatchChangeQO);	
+    //  })	
 
 
-   //$(document).on('change', cache, swatchesQO, handleSwatchChangeQO);
+     jquery_default()(document).on('change', '.js-option-swatch-qo', handleSwatchChangeQO);
 
+     
     //  cache.$swatchesQO.each(function(){	
       //$('.js-collection-list').on('change', '.js-option-swatch-qo' , handleSwatchChangeQO )
     //  })	
