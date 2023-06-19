@@ -15613,6 +15613,7 @@ const FilterOptionList = (function(){
 
       //Quick Order
       console.log('initializing Quick Order after filter refresh')
+      console.log('quickOrder', quick_order)
       quick_order.init();
 
 
