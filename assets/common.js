@@ -17292,7 +17292,7 @@ const initComponents = () => {
   //   QuickOrder.init();
   // });
 
-  jquery_default()(document).watchFor('.js-filter-section', function($el){
+  jquery_default()(document).watchFor('.js-collection-list', function($el){
     quick_order.init();
   });
 
