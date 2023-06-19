@@ -15507,6 +15507,8 @@ const FilterOptionList = (function(){
   * Renders a list of <li> items to the activeFilterContainer
   */
   const renderActiveFilterList = function(){
+
+    console.log('re rendering filtered list')
     let filterListHTML = ""
 
     $(settings.filterOption).removeClass('active')
