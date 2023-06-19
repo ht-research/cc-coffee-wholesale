@@ -15609,7 +15609,7 @@ const FilterOptionList = (function(){
       })
 
 
-      window.location.reload();
+      //window.location.reload();
 
       //Quick Order
       console.log('initializing Quick Order after filter refresh')
