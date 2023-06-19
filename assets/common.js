@@ -15327,7 +15327,7 @@ const QuickOrder = (function(){
 
 
     const init = function(){   
-        console.log('Quick Order Initialized')   
+        console.log('Quick Order Initialized...')   
         quickOrderOpen();
         quickOrderClose();
     }
