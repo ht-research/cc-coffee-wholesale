@@ -15321,7 +15321,59 @@ const CustomSelectInit = (function(){
 
 /* harmony default export */ const customSelectInit = ((/* unused pure expression or super */ null && (CustomSelectInit)));
 
+;// CONCATENATED MODULE: ./assets/js/quick-order.js
+
+const QuickOrder = (function(){
+
+
+    const init = function(){    
+        quickOrderOpen();
+        quickOrderClose();
+    }
+
+
+    const quickOrderOpen = function(){
+        jquery_default()('.quick-order-btn').each(function(){ 
+            jquery_default()(this).on('click', function(e){
+              e.preventDefault();
+
+              if(jquery_default()(this).siblings('.product--buy-panel-quick-order').find('[data-value="5 lb"]')){	
+                console.log('5 lb found')	
+                jquery_default()(this).siblings('.product--buy-panel-quick-order').find('[data-value="5 lb"]').trigger('click')	
+              }
+             
+              jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn()
+              jquery_default()('.quick-order-overlay').removeClass('hidden')
+            })
+        })
+    }
+    
+      
+    const quickOrderClose = function(){
+      jquery_default()('.quick-order-close').each(function(){
+        jquery_default()(this).on('click', function(e){
+          e.preventDefault(); 
+          jquery_default()(this).parents('.product--buy-panel-quick-order').fadeOut()
+          jquery_default()('.quick-order-overlay').addClass('hidden')
+        })
+      })
+    }
+
+
+    return { init }
+
+})()
+ 
+
+/* harmony default export */ const quick_order = (QuickOrder);  
+
+
+
+
+
+
 ;// CONCATENATED MODULE: ./assets/js/filterOptions.js
+
 
 
 const FilterOptionList = (function(){
@@ -17064,57 +17116,6 @@ const Video = (function(){
 })()
 
 /* harmony default export */ const video = (Video);
-
-;// CONCATENATED MODULE: ./assets/js/quick-order.js
-
-const QuickOrder = (function(){
-
-
-    const init = function(){    
-        quickOrderOpen();
-        quickOrderClose();
-    }
-
-
-    const quickOrderOpen = function(){
-        jquery_default()('.quick-order-btn').each(function(){ 
-            jquery_default()(this).on('click', function(e){
-              e.preventDefault();
-
-              if(jquery_default()(this).siblings('.product--buy-panel-quick-order').find('[data-value="5 lb"]')){	
-                console.log('5 lb found')	
-                jquery_default()(this).siblings('.product--buy-panel-quick-order').find('[data-value="5 lb"]').trigger('click')	
-              }
-             
-              jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn()
-              jquery_default()('.quick-order-overlay').removeClass('hidden')
-            })
-        })
-    }
-    
-      
-    const quickOrderClose = function(){
-      jquery_default()('.quick-order-close').each(function(){
-        jquery_default()(this).on('click', function(e){
-          e.preventDefault(); 
-          jquery_default()(this).parents('.product--buy-panel-quick-order').fadeOut()
-          jquery_default()('.quick-order-overlay').addClass('hidden')
-        })
-      })
-    }
-
-
-    return { init }
-
-})()
- 
-
-/* harmony default export */ const quick_order = (QuickOrder);  
-
-
-
-
-
 
 ;// CONCATENATED MODULE: ./assets/js/grid-list-switch.js
 
