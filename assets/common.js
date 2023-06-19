@@ -15378,10 +15378,7 @@ const QuickOrder = (function(){
     }
 
 
-    return { init,
-    
-    quickOrderOpen,
-  quickOrderClose}
+    return { init }
 
 })()
  
