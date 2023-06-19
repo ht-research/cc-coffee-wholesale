@@ -16675,6 +16675,11 @@ const ProductForm = function($form){
        jquery_default()(document).on('click', jquery_default()(this), handleSwatchChangeQO)
     })	
 
+    cache.$hiddenOptionSelectsQO.each(function(){	
+      //$(this).on('change', setCurrentVariant);	
+      jquery_default()(document).on('click', jquery_default()(this), setCurrentVariant)
+    })
+
     
 
 
@@ -16688,9 +16693,7 @@ const ProductForm = function($form){
      // $('.js-collection-list').on('change', '.js-option-swatch-qo' , handleSwatchChangeQO )
     // })	
      
-    cache.$hiddenOptionSelectsQO.each(function(){	
-      jquery_default()(this).on('change', setCurrentVariant);	
-    })
+    
 
     // $('.js-collection-list').on('change', '.js-hidden-option-select-qo',  setCurrentVariant);	
 
