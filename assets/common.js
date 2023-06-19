@@ -16676,12 +16676,9 @@ const ProductForm = function($form){
 
 
     // cache.$swatchesQO.each(function(){	
-    //   $('.js-product-form').on('change', this,  handleSwatchChangeQO);	
+       jquery_default()('.js-product-form').on('change', cache.$swatchesQO,  handleSwatchChangeQO);	
     // })	
 
-    jquery_default()('.js-option-swatch-qo').each(function() {
-      jquery_default()(this).on('change', handleSwatchChangeQO);
-    });
 
 
      //cache.$swatchesQO.each(function(){	
