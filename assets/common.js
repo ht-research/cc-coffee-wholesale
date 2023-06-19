@@ -15334,8 +15334,6 @@ const QuickOrder = (function(){
 
 
     const quickOrderOpen = function(){
-      console.log('Quick Order Open called...')  
-
       // $('.product-card .quick-order-btn').on('click', function(){
       //   console.log('hello')
       // })
@@ -15354,8 +15352,6 @@ const QuickOrder = (function(){
                 console.log('5 lb found')	
                 jquery_default()(this).siblings('.product--buy-panel-quick-order').find('[data-value="5 lb"]').trigger('click')	
               }
-
-              console.log(jquery_default()(this))
              
               jquery_default()(this).siblings('.product--buy-panel-quick-order').css('display', 'block')
               jquery_default()('.quick-order-overlay').removeClass('hidden')
