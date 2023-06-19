@@ -15366,7 +15366,7 @@ const QuickOrder = (function(){
       
     const quickOrderClose = function(){
      // $('.quick-order-close').each(function(){
-        jquery_default()(document).on('click','.quick-order-btn', function(e){
+        jquery_default()(document).on('click','.quick-order-close', function(e){
           e.preventDefault(); 
           jquery_default()(this).parents('.product--buy-panel-quick-order').fadeOut()
           jquery_default()('.quick-order-overlay').addClass('hidden')
