@@ -15614,6 +15614,7 @@ const FilterOptionList = (function(){
 
       //Quick Order
       console.log('initializing Quick Order after filter refresh')
+      quick_order.init();
       //console.log('quickOrderOpen', QuickOrderOpen)
       //quickOrderOpen();
 
