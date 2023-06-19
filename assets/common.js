@@ -15344,7 +15344,7 @@ const QuickOrder = (function(){
       //   console.log('hello 2')
       // }, true)
       
-        jquery_default()('.product-card .quick-order-btn').each(function(){ 
+        jquery_default()('.js-collection-list .quick-order-btn').each(function(){ 
             jquery_default()(this).on('click', function(e){
               e.preventDefault();
 
