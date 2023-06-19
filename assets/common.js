@@ -15338,6 +15338,8 @@ const QuickOrder = (function(){
             jquery_default()(this).on('click', function(e){
               e.preventDefault();
 
+              console.log('quick order clicked...')
+
               if(jquery_default()(this).siblings('.product--buy-panel-quick-order').find('[data-value="5 lb"]')){	
                 console.log('5 lb found')	
                 jquery_default()(this).siblings('.product--buy-panel-quick-order').find('[data-value="5 lb"]').trigger('click')	
