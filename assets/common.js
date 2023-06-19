@@ -15600,20 +15600,19 @@ const FilterOptionList = (function(){
       url = getCollectionFilterURL()
     }
 
-    // $.ajax(url)
-    //   .then(response => {
+    $.ajax(url)
+      .then(response => {
 
-    //     let $htmlResponse = $(response[section])
+        let $htmlResponse = $(response[section])
 
-    //     let $newCollectionList = $htmlResponse.find(settings.collectionList).eq(0)
-    //     $(settings.collectionList).eq(0).replaceWith($newCollectionList)
-    //   })
-
-
+        let $newCollectionList = $htmlResponse.find(settings.collectionList).eq(0)
+        $(settings.collectionList).eq(0).replaceWith($newCollectionList)
+      })
 
       //Quick Order
       console.log('initializing Quick Order after filter refresh')
       quick_order.init();
+
 
   }
 
