@@ -15589,7 +15589,7 @@ const FilterOptionList = (function(){
     console.log('re rendering filtered list')
 
 
-    
+
     let url = "";
     let section = sectionRenderingURL.replace("sections=", "")
 
@@ -15608,6 +15608,8 @@ const FilterOptionList = (function(){
         $(settings.collectionList).eq(0).replaceWith($newCollectionList)
       })
 
+
+      window.location.reload();
 
       //Quick Order
       console.log('initializing Quick Order after filter refresh')
