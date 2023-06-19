@@ -15623,9 +15623,9 @@ const FilterOptionList = (function(){
         $(settings.collectionList).eq(0).replaceWith($newCollectionList)
       })
 
-      //Quick Order
-      console.log('initializing Quick Order after filter refresh')
-      quick_order.init();
+      // //Quick Order
+      // console.log('initializing Quick Order after filter refresh')
+      // QuickOrder.init();
 
 
   }
