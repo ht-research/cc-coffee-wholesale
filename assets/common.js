@@ -15339,22 +15339,26 @@ const QuickOrder = (function(){
       jquery_default()('.product-card .quick-order-btn').on('click', function(){
         console.log('hello')
       })
+
+      document.querySelector('.quick-order-btn').addEventListener('click', function () {
+        console.log('hello 2')
+      })
       
-        jquery_default()('.product-card .quick-order-btn').each(function(){ 
-            jquery_default()(this).on('click', function(e){
-              e.preventDefault();
+        // $('.product-card .quick-order-btn').each(function(){ 
+        //     $(this).on('click', function(e){
+        //       e.preventDefault();
 
-              console.log('quick order clicked...')
+        //       console.log('quick order clicked...')
 
-              if(jquery_default()(this).siblings('.product--buy-panel-quick-order').find('[data-value="5 lb"]')){	
-                console.log('5 lb found')	
-                jquery_default()(this).siblings('.product--buy-panel-quick-order').find('[data-value="5 lb"]').trigger('click')	
-              }
+        //       if($(this).siblings('.product--buy-panel-quick-order').find('[data-value="5 lb"]')){	
+        //         console.log('5 lb found')	
+        //         $(this).siblings('.product--buy-panel-quick-order').find('[data-value="5 lb"]').trigger('click')	
+        //       }
              
-              jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn()
-              jquery_default()('.quick-order-overlay').removeClass('hidden')
-            })
-        })
+        //       $(this).siblings('.product--buy-panel-quick-order').fadeIn()
+        //       $('.quick-order-overlay').removeClass('hidden')
+        //     })
+        // })
     }
     
       
