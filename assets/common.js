@@ -15535,9 +15535,7 @@ const FilterOptionList = (function(){
 
 
 
-    //Quick Order
-    console.log('initializing Quick Order after filter refresh')
-    quick_order.init();
+  
   }
 
   const updateFilterCount = function(){
@@ -15604,6 +15602,13 @@ const FilterOptionList = (function(){
         let $newCollectionList = $htmlResponse.find(settings.collectionList).eq(0)
         $(settings.collectionList).eq(0).replaceWith($newCollectionList)
       })
+
+
+      //Quick Order
+      console.log('initializing Quick Order after filter refresh')
+      quick_order.init();
+
+
   }
 
   const clearFilters = function(e) {
