@@ -15344,8 +15344,8 @@ const QuickOrder = (function(){
       //   console.log('hello 2')
       // }, true)
       
-        jquery_default()('#shopify-section-template--14584158257224__main .quick-order-btn').each(function(){ 
-            jquery_default()(this).on('click', function(e){
+        jquery_default()('.quick-order-btn').each(function(){ 
+            jquery_default()(document).on('click',  jquery_default()(this),  function(e){
               e.preventDefault();
 
               console.log('quick order clicked...')
