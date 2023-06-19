@@ -17293,9 +17293,9 @@ const initComponents = () => {
   //   QuickOrder.init();
   // });
 
-  jquery_default()(document).watchFor('.js-collection-list', function($el){
-    quick_order.init();
-  });
+  // $(document).watchFor('.js-collection-list', function($el){
+  //   QuickOrder.init();
+  // });
 
 
 
