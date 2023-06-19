@@ -17288,7 +17288,7 @@ const initComponents = () => {
   });
 
 
-  jquery_default()(document).watchFor('[data-target="filters"]', function($el){
+  jquery_default()(document).watchFor('.filter--trigger-btn', function($el){
     quick_order.init();
   });
 
