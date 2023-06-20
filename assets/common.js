@@ -15432,27 +15432,6 @@ const ProductForm = function($form){
 
 
 
-    //cache.$swatchesQO.each(function(){	
-      //let $this = $(this)
-      //cache.$swatchesQO.on('change', $(this),  handleSwatchChangeQO);	
-    //})	
-
-    
-      // $('body').delegate(cache.$swatchesQO, 'input propertychange', function (event) {
-      //   cache.$swatchesQO.each(function(){	
-      //     console.log('what is this: ', $(this))
-      //     $(this).on('change', handleSwatchChangeQO);	
-      //   })	
-      // });
-   
-
-
-    // cache.$swatchesQO.on('change', $(this) , function(e) {
-    //   console.log('cache.$swatchesQO: ', $(this))
-    //   handleSwatchChangeQO(e, $(this))
-    //  })
-
-
 
     cache.$hiddenOptionSelectsQO.each(function(){	
       jquery_default()(this).on('change', setCurrentVariant);	
