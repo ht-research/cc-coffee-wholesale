@@ -15421,7 +15421,7 @@ const ProductForm = function($form){
   let options = {};
 
   const initEventListeners = function(){
-    console.log('initEventListeners called...')
+    //console.log('initEventListeners called...')
 
 
     cache.$swatches.on('change', handleSwatchChange); // TODO: change from button click to input change
@@ -15434,7 +15434,6 @@ const ProductForm = function($form){
 
     //event listener for Quick Order	
     cache.$swatchesQO.each(function(){	
-      jquery_default()(this).off('change', handleSwatchChangeQO);	
       jquery_default()(this).on('change', handleSwatchChangeQO);	
     })	
 
