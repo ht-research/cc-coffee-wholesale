@@ -40,13 +40,15 @@
 
     {% section 'footer' %}
 
-    <script type="text/javascript" src="{{ 'lazysizes.min.js' | asset_url }}"></script>
-    <script type="module" src="{{ 'common.js' | asset_url }}" defer></script>
-
     <script>
       const free_cart_product = {{free_var_id}}
       let defaultActiveView = 'list'
     </script>
+
+    <script type="text/javascript" src="{{ 'lazysizes.min.js' | asset_url }}"></script>
+    <script type="module" src="{{ 'common.js' | asset_url }}" defer></script>
+
+    
 
     {% render 'tracking-scripts' %}
     {% render 'additional-scripts' %}
