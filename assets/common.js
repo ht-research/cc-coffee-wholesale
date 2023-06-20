@@ -16056,8 +16056,8 @@ const FilterOptionList = (function(){
         console.log('initializing Product Form and Quick Order after filter refresh')
         productFormsInit.init();
         quick_order.init();
-        
-        (0,grid_list_switch_namespaceObject.loadGrisListLayout)();
+
+        (0,grid_list_switch_namespaceObject.loadGridListLayout)();
       })
 
       
