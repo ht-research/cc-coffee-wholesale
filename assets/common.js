@@ -15735,14 +15735,14 @@ const GriListSwitch = (function(){
 
     const loadGridListLayout = function(){
 
-        jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 0}, 400)
+        //$('.js-collection-list.collection-grid--container').animate({opacity: 0}, 400)
 
         if(defaultActiveView == 'list'){
             console.log('current view selected is LIST')
             jquery_default()('.layout-switch-btn.list-button').addClass('switch__active')
             jquery_default()('.layout-switch-btn.grid-button').removeClass('switch__active')
             setTimeout(function(){
-               // $('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
+                jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
                 jquery_default()('.js-collection-list.collection-grid--container').addClass('list-view-active')
                 jquery_default()('.js-collection-list.collection-grid--container').children('ul').addClass('grid-cols-1').removeClass('xl:grid-cols-3') 
             }, 400)
@@ -15752,7 +15752,7 @@ const GriListSwitch = (function(){
             jquery_default()('.layout-switch-btn.grid-button').addClass('switch__active')
             jquery_default()('.layout-switch-btn.list-button').removeClass('switch__active')
             setTimeout(function(){
-               // $('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
+                jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
                 jquery_default()('.js-collection-list.collection-grid--container').removeClass('list-view-active')
                 jquery_default()('.js-collection-list.collection-grid--container').children('ul').removeClass('grid-cols-1').addClass('xl:grid-cols-3')
             }, 400)
