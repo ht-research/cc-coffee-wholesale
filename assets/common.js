@@ -16683,6 +16683,7 @@ const ProductForm = function($form){
     //})	
 
     jquery_default()('body').delegate(cache.$swatchesQO, 'input propertychange', function (event) {
+      console.log('what is this: ', this)
       handleSwatchChangeQO(event, this);
     });
 
