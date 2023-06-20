@@ -16673,9 +16673,9 @@ const ProductForm = function($form){
 
 
     //event listener for Quick Order	
-    cache.$swatchesQO.each(function(){	
-      jquery_default()(this).on('change', handleSwatchChangeQO);	
-    })	
+    // cache.$swatchesQO.each(function(){	
+    //   $(this).on('change', handleSwatchChangeQO);	
+    // })	
 
     //cache.$swatchesQO.each(function(){	
       //let $this = $(this)
@@ -16683,12 +16683,12 @@ const ProductForm = function($form){
     //})	
 
     
-      // $('body').delegate(cache.$swatchesQO, 'input propertychange', function (event) {
-      //   cache.$swatchesQO.each(function(){	
-      //     console.log('what is this: ', $(this))
-      //     $(this).on('change', handleSwatchChangeQO);	
-      //   })	
-      // });
+      jquery_default()('body').delegate(cache.$swatchesQO, 'input propertychange', function (event) {
+        cache.$swatchesQO.each(function(){	
+          console.log('what is this: ', jquery_default()(this))
+          jquery_default()(this).on('change', handleSwatchChangeQO);	
+        })	
+      });
    
 
 
@@ -16932,8 +16932,8 @@ const ProductForm = function($form){
     console.log('swatch change QO')	
     console.log($form)
 
-    //let $this = $(this)
-    let $this = thisRef
+    let $this = jquery_default()(this)
+    //let $this = thisRef
     let name = $this.data('option')	
     let value = $this.data('value')	
 
