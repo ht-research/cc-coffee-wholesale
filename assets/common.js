@@ -16678,7 +16678,7 @@ const ProductForm = function($form){
     // })	
 
     cache.$swatchesQO.each(function(){	
-      jquery_default()(this).on( 'change', handleSwatchChangeQO);	
+      jquery_default()('.js-collection-list').on( 'change', jquery_default()(this),  handleSwatchChangeQO);	
     })	
 
 
@@ -16688,9 +16688,6 @@ const ProductForm = function($form){
     //  })
 
 
-
-
-  
 
     cache.$hiddenOptionSelectsQO.each(function(){	
       jquery_default()(this).on('change', setCurrentVariant);	
@@ -16706,7 +16703,7 @@ const ProductForm = function($form){
 
 
 
-//===================
+//=================== this is kind of of working
 
     // $(document).on('click', '.js-option-label-qo', function(){
     //   console.log($(this))
@@ -16716,7 +16713,7 @@ const ProductForm = function($form){
 
     
 
- //==============================
+ //============================== 19th June
 
     // cache.$swatchesQO.each(function(){	
        //$('.js-collection-list').on('change', cache.$swatchesQO,  handleSwatchChangeQO);	
