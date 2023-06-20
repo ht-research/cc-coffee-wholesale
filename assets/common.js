@@ -17221,6 +17221,7 @@ const GriListSwitch = (function(){
             if(currentViewSelected == 'list'){
                
                setTimeout(function(){
+                defaultActiveView = 'list'
                 jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
                 jquery_default()('.js-collection-list.collection-grid--container').addClass('list-view-active')
                 jquery_default()('.js-collection-list.collection-grid--container').children('ul').addClass('grid-cols-1').removeClass('xl:grid-cols-3') 
@@ -17228,6 +17229,8 @@ const GriListSwitch = (function(){
                }, 400)
                }
             else{
+                defaultActiveView = 'grid'
+                
                 setTimeout(function(){
                 jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
                 jquery_default()('.js-collection-list.collection-grid--container').removeClass('list-view-active')
