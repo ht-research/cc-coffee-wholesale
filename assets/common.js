@@ -16005,8 +16005,9 @@ const FilterOptionList = (function(){
 
 
         //Success 
-        console.log('initializing Product Form after filter refresh')
+        console.log('initializing Product Form and Quick Order after filter refresh')
         productFormsInit.init();
+        quick_order.init();
       })
 
       
