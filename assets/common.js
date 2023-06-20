@@ -17240,6 +17240,8 @@ const GriListSwitch = (function(){
             // $(this).siblings().removeClass('switch__active');
         
             let currentViewSelected = jquery_default()(this).attr('data-switch')
+            defaultActiveView == currentViewSelected
+            loadGrisListLayout();
 
             //$('.js-collection-list.collection-grid--container').animate({opacity: 0}, 400)
         
