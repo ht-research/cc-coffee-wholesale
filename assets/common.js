@@ -15973,8 +15973,8 @@ const FilterOptionList = (function(){
       })
 
       // //Quick Order
-      // console.log('initializing Quick Order after filter refresh')
-      // QuickOrder.init();
+       console.log('initializing Quick Order after filter refresh')
+       productForm.init();
 
 
   }
