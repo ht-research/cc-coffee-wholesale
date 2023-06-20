@@ -16677,8 +16677,10 @@ const ProductForm = function($form){
     //   $(this).on('change', handleSwatchChangeQO);	
     // })	
 
+    cache.$swatchesQO.each(function(){	
+      jquery_default()(document).on('change', jquery_default()(this), handleSwatchChangeQO);
+    })	
 
-    jquery_default()(document).on('change', cache.$swatchesQO, handleSwatchChangeQO);
 
     //cache.$swatchesQO.each(function(){	
       //let $this = $(this)
