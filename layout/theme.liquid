@@ -24,13 +24,7 @@
   </head>
 
 
-    <script>
-      const free_cart_product = {{free_var_id}}
-      let defaultActiveView = 'list'
-    </script>
-
-
-    
+     
   <body data-template="{{ template.name }}">
     <a href="#MainContent" class="sr-only">Skip to main content</a>
 
@@ -48,6 +42,11 @@
 
     <script type="text/javascript" src="{{ 'lazysizes.min.js' | asset_url }}"></script>
     <script type="module" src="{{ 'common.js' | asset_url }}" defer></script>
+
+    <script>
+      const free_cart_product = {{free_var_id}}
+      let defaultActiveView = 'list'
+    </script>
 
     {% render 'tracking-scripts' %}
     {% render 'additional-scripts' %}
