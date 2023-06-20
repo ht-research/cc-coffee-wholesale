@@ -17246,7 +17246,7 @@ const GriListSwitch = (function(){
             console.log('currentViewSelected', currentViewSelected)
 
 
-            defaultActiveView == currentViewSelected
+            defaultActiveView = currentViewSelected
             loadGrisListLayout();
 
             //$('.js-collection-list.collection-grid--container').animate({opacity: 0}, 400)
