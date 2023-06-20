@@ -23,7 +23,9 @@
 </script>
   </head>
 
-
+  <script>
+    let defaultActiveView = 'list'
+  </script>
      
   <body data-template="{{ template.name }}">
     <a href="#MainContent" class="sr-only">Skip to main content</a>
@@ -40,9 +42,7 @@
 
     {% section 'footer' %}
 
-    <script>
-      let defaultActiveView = 'list'
-    </script>
+  
 
     <script type="text/javascript" src="{{ 'lazysizes.min.js' | asset_url }}"></script>
     <script type="module" src="{{ 'common.js' | asset_url }}" defer></script>
