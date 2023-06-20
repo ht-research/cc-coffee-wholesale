@@ -16046,10 +16046,14 @@ const FilterOptionList = (function(){
     $.ajax(url)
       .then(response => {
 
-        let $htmlResponse = $(response[section])
 
-        let $newCollectionList = $htmlResponse.find(settings.collectionList).eq(0)
-        $(settings.collectionList).eq(0).replaceWith($newCollectionList)
+        setTimeout(function(){
+          let $htmlResponse = $(response[section])
+
+          let $newCollectionList = $htmlResponse.find(settings.collectionList).eq(0)
+          $(settings.collectionList).eq(0).replaceWith($newCollectionList)
+          
+        }, 400)
 
 
         //Success 
