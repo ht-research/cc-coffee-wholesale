@@ -15735,6 +15735,35 @@ const ProductForm = function($form){
 
 /* harmony default export */ const productForm = (ProductForm);
 
+;// CONCATENATED MODULE: ./assets/js/productFormsInit.js
+
+
+
+
+const ProductFormsInit = (function(){
+  const selectors = {
+    form: ".js-product-form"
+  }
+
+  const init = function(){
+    if (!elementsExist([selectors.form])) return;
+    initializeProductForms();
+  }
+
+  const initializeProductForms = function(){
+    jquery_default()(selectors.form).each(function(index, form){
+      productForm(jquery_default()(form))
+    })
+  }
+
+  return {
+    init
+  }
+
+})()
+
+/* harmony default export */ const productFormsInit = (ProductFormsInit);
+
 ;// CONCATENATED MODULE: ./assets/js/filterOptions.js
 
 
@@ -15974,7 +16003,7 @@ const FilterOptionList = (function(){
 
       // //Quick Order
        console.log('initializing Quick Order after filter refresh')
-       productForm.init();
+       productFormsInit.init();
 
 
   }
@@ -16978,35 +17007,6 @@ const ProductCard = (function(){
 })()
 
 /* harmony default export */ const productCard = (ProductCard);
-
-;// CONCATENATED MODULE: ./assets/js/productFormsInit.js
-
-
-
-
-const ProductFormsInit = (function(){
-  const selectors = {
-    form: ".js-product-form"
-  }
-
-  const init = function(){
-    if (!elementsExist([selectors.form])) return;
-    initializeProductForms();
-  }
-
-  const initializeProductForms = function(){
-    jquery_default()(selectors.form).each(function(index, form){
-      productForm(jquery_default()(form))
-    })
-  }
-
-  return {
-    init
-  }
-
-})()
-
-/* harmony default export */ const productFormsInit = (ProductFormsInit);
 
 ;// CONCATENATED MODULE: ./assets/js/productRecommendations.js
 
