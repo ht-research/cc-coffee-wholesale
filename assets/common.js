@@ -15421,6 +15421,9 @@ const ProductForm = function($form){
   let options = {};
 
   const initEventListeners = function(){
+    console.log('initEventListeners called...')
+
+    
     cache.$swatches.on('change', handleSwatchChange); // TODO: change from button click to input change
     cache.$hiddenOptionSelects.on('change', setCurrentVariant);
     cache.$idInput.on('change', handleVariantChange);
