@@ -16677,10 +16677,10 @@ const ProductForm = function($form){
     //   $(this).on('change', handleSwatchChangeQO);	
     // })	
 
-    cache.$swatchesQO.each(function(){	
+    //cache.$swatchesQO.each(function(){	
       //let $this = $(this)
-      jquery_default()(this).on( 'change', jquery_default()(this),  handleSwatchChangeQO);	
-    })	
+      cache.$swatchesQO.on( 'change', jquery_default()(this),  handleSwatchChangeQO);	
+    //})	
 
 
     // cache.$swatchesQO.on('change', $(this) , function(e) {
