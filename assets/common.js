@@ -16676,7 +16676,7 @@ const ProductForm = function($form){
     cache.$swatchesQO.each(function(){	
       //$(this).on('change', handleSwatchChangeQO);	
        jquery_default()(document).on('change', this , () => {
-        handleSwatchChangeQO()
+        handleSwatchChangeQO
        })
     })	
 
