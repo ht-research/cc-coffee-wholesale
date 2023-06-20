@@ -15774,7 +15774,7 @@ const GriListSwitch = (function(){
 
 
             defaultActiveView = currentViewSelected
-            loadGrisListLayout();
+            loadGridListLayout();
 
             //$('.js-collection-list.collection-grid--container').animate({opacity: 0}, 400)
         
