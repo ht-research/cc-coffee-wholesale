@@ -16812,13 +16812,46 @@ const ProductForm = function($form){
   // -------
   // Events
   // -------
-
   const setCurrentVariant = function(e) {
     // findVariant by matching activeOptions[0] / activeOptions[1] etc
-    console.log('setCurrentVariant: before return')
     if (!variants) return;
 
-    console.log('setCurrentVariant: after return')
+
+    let name = jquery_default()(this).data("name")
+    let value = jquery_default()(this).val()
+
+    setActiveOption(name, value)
+
+    currentVariant = variants.find(variant => {
+      let filteredOptions = product.options.filter((option, index) => {
+        let optionName = `option${index + 1}`
+        return variant[optionName] === options[option]
+      })
+
+      return filteredOptions.length === product.options.length
+    })
+
+    if (currentVariant) {
+      // cache.$idInput
+      //   .val(currentVariant.id)
+      //   .change()
+
+
+        jquery_default()('[name="id"]')
+        .val(currentVariant.id)
+        .change()
+    }
+
+    return currentVariant;
+  }
+
+
+  const setCurrentVariantQO = function(e) {
+    // findVariant by matching activeOptions[0] / activeOptions[1] etc
+    console.log('setCurrentVariantQO: before return')
+    if (!variants) return;
+
+    console.log('setCurrentVariantQO: after return')
 
     let name = jquery_default()(this).data("name")
     let value = jquery_default()(this).val()
@@ -16840,9 +16873,7 @@ const ProductForm = function($form){
     })
 
     if (currentVariant) {
-      cache.$idInput
-        .val(currentVariant.id)
-        .change()
+      cache.$idInput.val(currentVariant.id).change()
     }
 
     return currentVariant;
