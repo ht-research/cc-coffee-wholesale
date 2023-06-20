@@ -16872,6 +16872,11 @@ const ProductForm = function($form){
     let name = $this.data('option')	
     let value = $this.data('value')	
 
+    console.log('this: ', jquery_default()(this))
+
+    console.log('name', name)
+    console.log('value', value)
+
 
     cache.$hiddenOptionSelectsQO.closest(`[data-name=${name}]`).val(value).change()	
   }
