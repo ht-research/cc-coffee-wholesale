@@ -16806,6 +16806,8 @@ const ProductForm = function($form){
     let name = jquery_default()(this).data("name")
     let value = jquery_default()(this).val()
 
+    console.log('name,val', name, value)
+
     setActiveOption(name, value)
 
     currentVariant = variants.find(variant => {
