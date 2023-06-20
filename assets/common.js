@@ -16673,9 +16673,9 @@ const ProductForm = function($form){
 
 
     //event listener for Quick Order	
-    // cache.$swatchesQO.each(function(){	
-    //   $(this).on('change', handleSwatchChangeQO);	
-    // })	
+    cache.$swatchesQO.each(function(){	
+      jquery_default()(this).delegate('change', handleSwatchChangeQO);	
+    })	
 
 
     // cache.$swatchesQO.on('change', $(this) , function(e) {
@@ -16683,15 +16683,10 @@ const ProductForm = function($form){
     //   handleSwatchChangeQO(e, $(this))
     //  })
 
-    jquery_default()(document).on('click', '.js-option-label-qo', function(){
-      console.log(jquery_default()(this))
-      jquery_default()(this).siblings('.js-option-swatch-qo').on('change', handleSwatchChangeQO);	
-     // $(this).parent().parent().siblings('.js-hidden-option-select-qo').on('change', setCurrentVariantQO);	
-    })
 
 
 
-
+  
 
     // cache.$hiddenOptionSelectsQO.each(function(){	
     //   $(this).on('change', setCurrentVariant);	
@@ -16702,6 +16697,17 @@ const ProductForm = function($form){
 
     // $(document).on('change', cache.$hiddenOptionSelectsQO ,  function(e) {
     //   setCurrentVariant(e)
+    // })
+
+
+
+
+//===================
+
+    // $(document).on('click', '.js-option-label-qo', function(){
+    //   console.log($(this))
+    //   $(this).siblings('.js-option-swatch-qo').on('change', handleSwatchChangeQO);	
+    //  // $(this).parent().parent().siblings('.js-hidden-option-select-qo').on('change', setCurrentVariantQO);	
     // })
 
     
