@@ -14102,11 +14102,29 @@ return jQuery;
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
+
+// NAMESPACE OBJECT: ./assets/js/grid-list-switch.js
+var grid_list_switch_namespaceObject = {};
+__webpack_require__.r(grid_list_switch_namespaceObject);
+__webpack_require__.d(grid_list_switch_namespaceObject, {
+  "Z": () => (grid_list_switch)
+});
 
 // EXTERNAL MODULE: ./node_modules/jquery/dist/jquery.js
 var jquery = __webpack_require__(755);
@@ -15705,7 +15723,99 @@ const ProductFormsInit = (function(){
 
 /* harmony default export */ const productFormsInit = (ProductFormsInit);
 
+;// CONCATENATED MODULE: ./assets/js/grid-list-switch.js
+
+const GriListSwitch = (function(){
+
+
+    const init = function(){   
+        loadGrisListLayout() 
+        gridListLayoutSwitch();
+    }
+
+    const loadGrisListLayout = function(){
+
+        jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 0}, 200)
+
+        if(defaultActiveView == 'list'){
+            console.log('current view selected is LIST')
+            jquery_default()('.layout-switch-btn.list-button').addClass('switch__active')
+            jquery_default()('.layout-switch-btn.grid-button').removeClass('switch__active')
+            setTimeout(function(){
+                jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
+                jquery_default()('.js-collection-list.collection-grid--container').addClass('list-view-active')
+                jquery_default()('.js-collection-list.collection-grid--container').children('ul').addClass('grid-cols-1').removeClass('xl:grid-cols-3') 
+            }, 400)
+        }
+        else{
+            console.log('current view selected is GRID')
+            jquery_default()('.layout-switch-btn.grid-button').addClass('switch__active')
+            jquery_default()('.layout-switch-btn.list-button').removeClass('switch__active')
+            setTimeout(function(){
+                jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
+                jquery_default()('.js-collection-list.collection-grid--container').removeClass('list-view-active')
+                jquery_default()('.js-collection-list.collection-grid--container').children('ul').removeClass('grid-cols-1').addClass('xl:grid-cols-3')
+            }, 400)
+        }
+
+    }
+
+
+    const gridListLayoutSwitch = function(){
+        jquery_default()('.layout-switch-btn').on('click', function(){
+
+            // console.log('defaultActiveView: ', defaultActiveView)
+
+            // $(this).addClass('switch__active')
+            // $(this).siblings().removeClass('switch__active');
+        
+            let currentViewSelected = jquery_default()(this).attr('data-switch')
+            console.log('currentViewSelected', currentViewSelected)
+
+
+            defaultActiveView = currentViewSelected
+            loadGrisListLayout();
+
+            //$('.js-collection-list.collection-grid--container').animate({opacity: 0}, 400)
+        
+            // if(currentViewSelected == 'list'){
+               
+            //    setTimeout(function(){
+            //     defaultActiveView = 'list'
+            //     $('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
+            //     $('.js-collection-list.collection-grid--container').addClass('list-view-active')
+            //     $('.js-collection-list.collection-grid--container').children('ul').addClass('grid-cols-1').removeClass('xl:grid-cols-3') 
+            //     //$('.product-card--img-container').children('img').removeClass('product-coffee-image')
+            //    }, 400)
+            //    }
+            // else{
+            //     defaultActiveView = 'grid'
+
+            //     setTimeout(function(){
+            //     $('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
+            //     $('.js-collection-list.collection-grid--container').removeClass('list-view-active')
+            //     $('.js-collection-list.collection-grid--container').children('ul').removeClass('grid-cols-1').addClass('xl:grid-cols-3')
+            //     }, 400)
+            // }  
+        })
+    }
+    
+
+
+    return { init }
+
+})()
+ 
+
+/* harmony default export */ const grid_list_switch = (GriListSwitch);  
+
+
+
+
+
+
 ;// CONCATENATED MODULE: ./assets/js/filterOptions.js
+
 
 
 
@@ -15946,6 +16056,8 @@ const FilterOptionList = (function(){
         console.log('initializing Product Form and Quick Order after filter refresh')
         productFormsInit.init();
         quick_order.init();
+        
+        (0,grid_list_switch_namespaceObject.loadGrisListLayout)();
       })
 
       
@@ -17195,97 +17307,6 @@ const Video = (function(){
 })()
 
 /* harmony default export */ const video = (Video);
-
-;// CONCATENATED MODULE: ./assets/js/grid-list-switch.js
-
-const GriListSwitch = (function(){
-
-
-    const init = function(){   
-        loadGrisListLayout() 
-        gridListLayoutSwitch();
-    }
-
-    const loadGrisListLayout = function(){
-
-        jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 0}, 200)
-
-        if(defaultActiveView == 'list'){
-            console.log('current view selected is LIST')
-            jquery_default()('.layout-switch-btn.list-button').addClass('switch__active')
-            jquery_default()('.layout-switch-btn.grid-button').removeClass('switch__active')
-            setTimeout(function(){
-                jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
-                jquery_default()('.js-collection-list.collection-grid--container').addClass('list-view-active')
-                jquery_default()('.js-collection-list.collection-grid--container').children('ul').addClass('grid-cols-1').removeClass('xl:grid-cols-3') 
-            }, 400)
-        }
-        else{
-            console.log('current view selected is GRID')
-            jquery_default()('.layout-switch-btn.grid-button').addClass('switch__active')
-            jquery_default()('.layout-switch-btn.list-button').removeClass('switch__active')
-            setTimeout(function(){
-                jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
-                jquery_default()('.js-collection-list.collection-grid--container').removeClass('list-view-active')
-                jquery_default()('.js-collection-list.collection-grid--container').children('ul').removeClass('grid-cols-1').addClass('xl:grid-cols-3')
-            }, 400)
-        }
-
-    }
-
-
-    const gridListLayoutSwitch = function(){
-        jquery_default()('.layout-switch-btn').on('click', function(){
-
-            // console.log('defaultActiveView: ', defaultActiveView)
-
-            // $(this).addClass('switch__active')
-            // $(this).siblings().removeClass('switch__active');
-        
-            let currentViewSelected = jquery_default()(this).attr('data-switch')
-            console.log('currentViewSelected', currentViewSelected)
-
-
-            defaultActiveView = currentViewSelected
-            loadGrisListLayout();
-
-            //$('.js-collection-list.collection-grid--container').animate({opacity: 0}, 400)
-        
-            // if(currentViewSelected == 'list'){
-               
-            //    setTimeout(function(){
-            //     defaultActiveView = 'list'
-            //     $('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
-            //     $('.js-collection-list.collection-grid--container').addClass('list-view-active')
-            //     $('.js-collection-list.collection-grid--container').children('ul').addClass('grid-cols-1').removeClass('xl:grid-cols-3') 
-            //     //$('.product-card--img-container').children('img').removeClass('product-coffee-image')
-            //    }, 400)
-            //    }
-            // else{
-            //     defaultActiveView = 'grid'
-
-            //     setTimeout(function(){
-            //     $('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
-            //     $('.js-collection-list.collection-grid--container').removeClass('list-view-active')
-            //     $('.js-collection-list.collection-grid--container').children('ul').removeClass('grid-cols-1').addClass('xl:grid-cols-3')
-            //     }, 400)
-            // }  
-        })
-    }
-    
-
-
-    return { init }
-
-})()
- 
-
-/* harmony default export */ const grid_list_switch = (GriListSwitch);  
-
-
-
-
-
 
 ;// CONCATENATED MODULE: ./assets/js/common.js
 
