@@ -17242,6 +17242,9 @@ const GriListSwitch = (function(){
             // $(this).siblings().removeClass('switch__active');
         
             let currentViewSelected = jquery_default()(this).attr('data-switch')
+            console.log('currentViewSelected', currentViewSelected)
+
+            
             defaultActiveView == currentViewSelected
             loadGrisListLayout();
 
