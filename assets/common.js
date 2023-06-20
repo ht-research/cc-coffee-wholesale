@@ -15334,13 +15334,6 @@ const QuickOrder = (function(){
 
 
     const quickOrderOpen = function(){
-      // $('.product-card .quick-order-btn').on('click', function(){
-      //   console.log('hello')
-      // })
-
-      // document.querySelector('.quick-order-btn').addEventListener('click', function () {
-      //   console.log('hello 2')
-      // }, true)
       
         //$('.quick-order-btn').each(function(){ 
             jquery_default()(document).on('click', '.quick-order-btn',  function(e){
