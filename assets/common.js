@@ -16683,7 +16683,6 @@ const ProductForm = function($form){
     cache.$hiddenOptionSelectsQO.each(function(){	
       //$(this).on('change', setCurrentVariant);	
       jquery_default()(document).on('change', this ,  () => {
-        //console.log('hello')
         setCurrentVariant()
       })
     })
@@ -16799,7 +16798,10 @@ const ProductForm = function($form){
 
   const setCurrentVariant = function(e) {
     // findVariant by matching activeOptions[0] / activeOptions[1] etc
+    console.log('setCurrentVariant: before return')
     if (!variants) return;
+
+    console.log('setCurrentVariant: after return')
 
     let name = jquery_default()(this).data("name")
     let value = jquery_default()(this).val()
