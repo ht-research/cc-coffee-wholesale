@@ -16673,22 +16673,22 @@ const ProductForm = function($form){
 
 
     //event listener for Quick Order	
-    // cache.$swatchesQO.each(function(){	
-    //   $(this).on('change', handleSwatchChangeQO);	
-    // })	
+    cache.$swatchesQO.each(function(){	
+      jquery_default()(this).on('change', handleSwatchChangeQO);	
+    })	
 
-    // cache.$hiddenOptionSelectsQO.each(function(){	
-    //   $(this).on('change', setCurrentVariant);	
-    // })
-
-
-    jquery_default()(document).on('change', cache.$swatchesQO , (e) => {
-      handleSwatchChangeQO(e)
-     })
-
-    jquery_default()(document).on('change', cache.$hiddenOptionSelectsQO ,  function(e) {
-      setCurrentVariant(e)
+    cache.$hiddenOptionSelectsQO.each(function(){	
+      jquery_default()(this).on('change', setCurrentVariant);	
     })
+
+
+    // $(document).on('change', cache.$swatchesQO , (e) => {
+    //   handleSwatchChangeQO(e)
+    //  })
+
+    // $(document).on('change', cache.$hiddenOptionSelectsQO ,  function(e) {
+    //   setCurrentVariant(e)
+    // })
 
     
 
