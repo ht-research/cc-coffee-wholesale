@@ -15383,7 +15383,360 @@ const QuickOrder = (function(){
 
 
 
+;// CONCATENATED MODULE: ./assets/js/productForm.js
+
+
+
+const ProductForm = function($form){
+
+  const cache = {
+    $quantityInput: $form.find('[name="quantity"]'),
+    $idInput: $form.find('[name="id"]'),
+    $productScript: $form.find('.js-product-script'),
+    $swatches: $form.find('.js-option-swatch'),
+    $swatchesQO: $form.find('.js-option-swatch-qo'),
+    $swatchLabel: $form.find('.js-option-label'),
+    $hiddenOptionSelects: $form.find('.js-hidden-option-select'),
+    $hiddenOptionSelectsQO: $form.find('.js-hidden-option-select-qo'),
+    $addToCart: $form.find('.js-product-form-atc'),
+    $deliveryOption: $form.find('[name="delivery_option"]'),
+    $frequencyContainer: $form.find('.js-selling-plan-group'),
+    $sellingPlan: $form.find('[name="selling_plan"]'),
+    $price: $form.find(".js-price"),
+    $comparePrice: $form.find(".js-compare-price"),
+    $subscriptionSavings: $form.find("[data-subscription-savings]"),
+  }
+
+  let translations = {
+    addToCart: "Add to Cart",
+    outOfStock: "Out of Stock",
+  }
+
+  let product;
+  let variants;
+  let currentVariant;
+
+  // Size: "4 Pack"
+  // Flavor: "Elderberry Shots"
+  let options = {};
+
+  const initEventListeners = function(){
+    cache.$swatches.on('change', handleSwatchChange); // TODO: change from button click to input change
+    cache.$hiddenOptionSelects.on('change', setCurrentVariant);
+    cache.$idInput.on('change', handleVariantChange);
+    cache.$deliveryOption.on('change', handleDeliveryChange);
+
+
+
+
+    //event listener for Quick Order	
+    cache.$swatchesQO.each(function(){	
+      jquery_default()(this).on('change', handleSwatchChangeQO);	
+    })	
+
+
+
+    //cache.$swatchesQO.each(function(){	
+      //let $this = $(this)
+      //cache.$swatchesQO.on('change', $(this),  handleSwatchChangeQO);	
+    //})	
+
+    
+      // $('body').delegate(cache.$swatchesQO, 'input propertychange', function (event) {
+      //   cache.$swatchesQO.each(function(){	
+      //     console.log('what is this: ', $(this))
+      //     $(this).on('change', handleSwatchChangeQO);	
+      //   })	
+      // });
+   
+
+
+    // cache.$swatchesQO.on('change', $(this) , function(e) {
+    //   console.log('cache.$swatchesQO: ', $(this))
+    //   handleSwatchChangeQO(e, $(this))
+    //  })
+
+
+
+    cache.$hiddenOptionSelectsQO.each(function(){	
+      jquery_default()(this).on('change', setCurrentVariant);	
+    })
+
+
+    
+
+    // $(document).on('change', cache.$hiddenOptionSelectsQO ,  function(e) {
+    //   setCurrentVariant(e)
+    // })
+
+
+
+
+//=================== this is kind of of working
+
+    // $(document).on('click', '.js-option-label-qo', function(){
+    //   console.log($(this))
+    //   $(this).siblings('.js-option-swatch-qo').on('change', handleSwatchChangeQO);	
+    //  // $(this).parent().parent().siblings('.js-hidden-option-select-qo').on('change', setCurrentVariantQO);	
+    // })
+
+    
+
+ //============================== 19th June
+
+    // cache.$swatchesQO.each(function(){	
+       //$('.js-collection-list').on('change', cache.$swatchesQO,  handleSwatchChangeQO);	
+    // })	
+
+     //cache.$swatchesQO.each(function(){	
+     // $('.js-collection-list').on('change', '.js-option-swatch-qo' , handleSwatchChangeQO )
+    // })	
+     
+    // $('.js-collection-list').on('change', '.js-hidden-option-select-qo',  setCurrentVariant);	
+
+  }
+
+  const parseVariants = function(){
+    product = JSON.parse(cache.$productScript.text());
+
+    variants = product.variants;
+  }
+
+  const parseOptions = function(){
+    cache.$hiddenOptionSelects.each(function(index, select){
+      let name = jquery_default()(select).data("name")
+      let value = jquery_default()(select).val()
+      setActiveOption(name, value)
+    })
+  }
+
+  const setActiveOption = function(name, value) {
+    options[name] = value;
+  }
+
+  const updateAddToCart = function(){
+    if (currentVariant && currentVariant.available) {
+      cache.$addToCart.text(translations.addToCart)
+      cache.$addToCart.attr('disabled', false)
+    } else {
+      cache.$addToCart.text(translations.outOfStock)
+      cache.$addToCart.attr('disabled', true)
+    }
+  }
+
+  const updateOneTimePrice = function(){
+    let formattedPrice = formatMoney(currentVariant.price, "amount")
+
+    if (currentVariant.price === 0) {
+      cache.$price.text("Free!")
+    } else {
+      cache.$price.text(`$${formattedPrice}`)
+    }
+
+    // Updates pricing in Buy Panel - COMPARE AT
+    let formattedComparePrice = formatMoney(currentVariant.compare_at_price, "amount")
+    cache.$comparePrice.text(`$${formattedComparePrice}`)
+
+    if (currentVariant.compare_at_price && currentVariant.compare_at_price > currentVariant.price) {
+      cache.$comparePrice.removeClass('hidden').show()
+    } else {
+      cache.$comparePrice.addClass('hidden').hide()
+    }
+  }
+
+  const updateSubscriptionPrice = function(){
+    // Add original price to compare at widget
+    let formattedComparePrice = formatMoney(currentVariant.price, "amount")
+    cache.$comparePrice.text(`$${formattedComparePrice}`)
+
+    // Updates pricing for selling_plan
+    let subscribePriceCents = (currentVariant.selling_plan_allocations.length ? currentVariant.selling_plan_allocations[0].price : 0);
+    let formattedPrice = formatMoney(subscribePriceCents, "amount")
+
+    cache.$price.text(`$${formattedPrice}`)
+
+    if (subscribePriceCents && subscribePriceCents < currentVariant.price) {
+      cache.$comparePrice.removeClass('hidden').show()
+    } else {
+      cache.$comparePrice.addClass('hidden').hide()
+    }
+  }
+
+  const updateSubscriptionSavings = function(){
+    if ( currentVariant.selling_plan_allocations ) {
+      let sellingPlan = currentVariant.selling_plan_allocations[0]
+
+      if (sellingPlan) {
+        let subscriptionSavings = sellingPlan.compare_at_price - sellingPlan.price;
+        let formattedSavings = "$" + formatMoney(subscriptionSavings, "amount");
+
+        cache.$subscriptionSavings.text(formattedSavings)
+      }
+    }    
+  }
+
+  const updateProductPrice = function(){
+    let subscriptionOptionSelected = cache.$deliveryOption.closest(":checked").val() === "subscribe"
+
+    if (subscriptionOptionSelected) {
+      updateSubscriptionPrice()
+    } else {
+      updateOneTimePrice()
+    }
+  }
+
+  // -------
+  // Events
+  // -------
+  const setCurrentVariant = function(e) {
+    // findVariant by matching activeOptions[0] / activeOptions[1] etc
+    if (!variants) return;
+
+
+    let name = jquery_default()(this).data("name")
+    let value = jquery_default()(this).val()
+
+    setActiveOption(name, value)
+
+    currentVariant = variants.find(variant => {
+      let filteredOptions = product.options.filter((option, index) => {
+        let optionName = `option${index + 1}`
+        return variant[optionName] === options[option]
+      })
+
+      return filteredOptions.length === product.options.length
+    })
+
+    if (currentVariant) {
+      cache.$idInput
+        .val(currentVariant.id)
+        .change()
+
+
+    }
+
+    return currentVariant;
+  }
+
+
+  const setCurrentVariantQO = function(e) {
+    // findVariant by matching activeOptions[0] / activeOptions[1] etc
+    console.log('setCurrentVariantQO: before return')
+    if (!variants) return;
+
+    console.log('setCurrentVariantQO: after return')
+
+    let name = jquery_default()(this).data("name")
+    let value = jquery_default()(this).val()
+
+    console.log('this: ', jquery_default()(this))
+
+    console.log('name', name)
+    console.log('value', value)
+
+    setActiveOption(name, value)
+
+    currentVariant = variants.find(variant => {
+      let filteredOptions = product.options.filter((option, index) => {
+        let optionName = `option${index + 1}`
+        return variant[optionName] === options[option]
+      })
+
+      return filteredOptions.length === product.options.length
+    })
+
+    if (currentVariant) {
+     // cache.$idInput.val(currentVariant.id).change()
+
+     jquery_default()('[name="id"]').val(currentVariant.id).change()
+    }
+
+    return currentVariant;
+  }
+
+  const handleVariantChange = function(e){
+    // updateVariant(currentVariant)
+    // updates anything on the form UI
+    // Dispatches "variant:change" event that can capture any other changes in other files.
+    // add to cart / availability
+    updateAddToCart()
+    updateProductPrice()
+    updateSubscriptionSavings()
+    // price
+    // images?
+
+    let event = new CustomEvent('variant:change', {
+      detail: { variant: currentVariant }
+    });
+    document.dispatchEvent(event);
+  }
+
+  const handleSwatchChange = function(e){
+    e.preventDefault()
+    e.stopPropagation()
+
+    let $this = jquery_default()(this)
+    let name = $this.data('option')
+    let value = $this.data('value')
+
+    cache.$hiddenOptionSelects
+      .closest(`[data-name=${name}]`)
+      .val(value)
+      .change()
+  }
+
+  const handleSwatchChangeQO = function(e, thisRef){	
+    e.preventDefault()	
+    e.stopPropagation()	
+    console.log('swatch change QO')	
+    console.log($form)
+
+    let $this = jquery_default()(this)
+    //let $this = thisRef
+    let name = $this.data('option')	
+    let value = $this.data('value')	
+
+    console.log('this: ', jquery_default()(this))
+
+    console.log('name', name)
+    console.log('value', value)
+
+
+    //cache.$hiddenOptionSelectsQO.closest(`[data-name=${name}]`).val(value).change()	
+    jquery_default()('.js-hidden-option-select-qo').closest(`[data-name=${name}]`).val(value).change()	
+
+
+  }
+
+  const handleDeliveryChange = function(e){
+    let $this = jquery_default()(this)
+    if ($this.val() === "subscribe") {
+      // Expand the Frequency group
+      cache.$frequencyContainer.slideDown(300)
+      cache.$sellingPlan.attr('disabled', false)
+    } else {
+      cache.$frequencyContainer.slideUp(300)
+      cache.$sellingPlan.attr('disabled', true)
+    }
+
+    updateProductPrice()
+  }
+
+  const init = function(){
+    initEventListeners()
+    parseVariants()
+    parseOptions()
+
+    cache.$hiddenOptionSelects.change()
+  }
+
+  init()
+}
+
+/* harmony default export */ const productForm = (ProductForm);
+
 ;// CONCATENATED MODULE: ./assets/js/filterOptions.js
+
 
 
 
@@ -16625,358 +16978,6 @@ const ProductCard = (function(){
 })()
 
 /* harmony default export */ const productCard = (ProductCard);
-
-;// CONCATENATED MODULE: ./assets/js/productForm.js
-
-
-
-const ProductForm = function($form){
-
-  const cache = {
-    $quantityInput: $form.find('[name="quantity"]'),
-    $idInput: $form.find('[name="id"]'),
-    $productScript: $form.find('.js-product-script'),
-    $swatches: $form.find('.js-option-swatch'),
-    $swatchesQO: $form.find('.js-option-swatch-qo'),
-    $swatchLabel: $form.find('.js-option-label'),
-    $hiddenOptionSelects: $form.find('.js-hidden-option-select'),
-    $hiddenOptionSelectsQO: $form.find('.js-hidden-option-select-qo'),
-    $addToCart: $form.find('.js-product-form-atc'),
-    $deliveryOption: $form.find('[name="delivery_option"]'),
-    $frequencyContainer: $form.find('.js-selling-plan-group'),
-    $sellingPlan: $form.find('[name="selling_plan"]'),
-    $price: $form.find(".js-price"),
-    $comparePrice: $form.find(".js-compare-price"),
-    $subscriptionSavings: $form.find("[data-subscription-savings]"),
-  }
-
-  let translations = {
-    addToCart: "Add to Cart",
-    outOfStock: "Out of Stock",
-  }
-
-  let product;
-  let variants;
-  let currentVariant;
-
-  // Size: "4 Pack"
-  // Flavor: "Elderberry Shots"
-  let options = {};
-
-  const initEventListeners = function(){
-    cache.$swatches.on('change', handleSwatchChange); // TODO: change from button click to input change
-    cache.$hiddenOptionSelects.on('change', setCurrentVariant);
-    cache.$idInput.on('change', handleVariantChange);
-    cache.$deliveryOption.on('change', handleDeliveryChange);
-
-
-
-
-    //event listener for Quick Order	
-    cache.$swatchesQO.each(function(){	
-      jquery_default()(this).on('change', handleSwatchChangeQO);	
-    })	
-
-
-
-    //cache.$swatchesQO.each(function(){	
-      //let $this = $(this)
-      //cache.$swatchesQO.on('change', $(this),  handleSwatchChangeQO);	
-    //})	
-
-    
-      // $('body').delegate(cache.$swatchesQO, 'input propertychange', function (event) {
-      //   cache.$swatchesQO.each(function(){	
-      //     console.log('what is this: ', $(this))
-      //     $(this).on('change', handleSwatchChangeQO);	
-      //   })	
-      // });
-   
-
-
-    // cache.$swatchesQO.on('change', $(this) , function(e) {
-    //   console.log('cache.$swatchesQO: ', $(this))
-    //   handleSwatchChangeQO(e, $(this))
-    //  })
-
-
-
-    cache.$hiddenOptionSelectsQO.each(function(){	
-      jquery_default()(this).on('change', setCurrentVariant);	
-    })
-
-
-    
-
-    // $(document).on('change', cache.$hiddenOptionSelectsQO ,  function(e) {
-    //   setCurrentVariant(e)
-    // })
-
-
-
-
-//=================== this is kind of of working
-
-    // $(document).on('click', '.js-option-label-qo', function(){
-    //   console.log($(this))
-    //   $(this).siblings('.js-option-swatch-qo').on('change', handleSwatchChangeQO);	
-    //  // $(this).parent().parent().siblings('.js-hidden-option-select-qo').on('change', setCurrentVariantQO);	
-    // })
-
-    
-
- //============================== 19th June
-
-    // cache.$swatchesQO.each(function(){	
-       //$('.js-collection-list').on('change', cache.$swatchesQO,  handleSwatchChangeQO);	
-    // })	
-
-     //cache.$swatchesQO.each(function(){	
-     // $('.js-collection-list').on('change', '.js-option-swatch-qo' , handleSwatchChangeQO )
-    // })	
-     
-    // $('.js-collection-list').on('change', '.js-hidden-option-select-qo',  setCurrentVariant);	
-
-  }
-
-  const parseVariants = function(){
-    product = JSON.parse(cache.$productScript.text());
-
-    variants = product.variants;
-  }
-
-  const parseOptions = function(){
-    cache.$hiddenOptionSelects.each(function(index, select){
-      let name = jquery_default()(select).data("name")
-      let value = jquery_default()(select).val()
-      setActiveOption(name, value)
-    })
-  }
-
-  const setActiveOption = function(name, value) {
-    options[name] = value;
-  }
-
-  const updateAddToCart = function(){
-    if (currentVariant && currentVariant.available) {
-      cache.$addToCart.text(translations.addToCart)
-      cache.$addToCart.attr('disabled', false)
-    } else {
-      cache.$addToCart.text(translations.outOfStock)
-      cache.$addToCart.attr('disabled', true)
-    }
-  }
-
-  const updateOneTimePrice = function(){
-    let formattedPrice = formatMoney(currentVariant.price, "amount")
-
-    if (currentVariant.price === 0) {
-      cache.$price.text("Free!")
-    } else {
-      cache.$price.text(`$${formattedPrice}`)
-    }
-
-    // Updates pricing in Buy Panel - COMPARE AT
-    let formattedComparePrice = formatMoney(currentVariant.compare_at_price, "amount")
-    cache.$comparePrice.text(`$${formattedComparePrice}`)
-
-    if (currentVariant.compare_at_price && currentVariant.compare_at_price > currentVariant.price) {
-      cache.$comparePrice.removeClass('hidden').show()
-    } else {
-      cache.$comparePrice.addClass('hidden').hide()
-    }
-  }
-
-  const updateSubscriptionPrice = function(){
-    // Add original price to compare at widget
-    let formattedComparePrice = formatMoney(currentVariant.price, "amount")
-    cache.$comparePrice.text(`$${formattedComparePrice}`)
-
-    // Updates pricing for selling_plan
-    let subscribePriceCents = (currentVariant.selling_plan_allocations.length ? currentVariant.selling_plan_allocations[0].price : 0);
-    let formattedPrice = formatMoney(subscribePriceCents, "amount")
-
-    cache.$price.text(`$${formattedPrice}`)
-
-    if (subscribePriceCents && subscribePriceCents < currentVariant.price) {
-      cache.$comparePrice.removeClass('hidden').show()
-    } else {
-      cache.$comparePrice.addClass('hidden').hide()
-    }
-  }
-
-  const updateSubscriptionSavings = function(){
-    if ( currentVariant.selling_plan_allocations ) {
-      let sellingPlan = currentVariant.selling_plan_allocations[0]
-
-      if (sellingPlan) {
-        let subscriptionSavings = sellingPlan.compare_at_price - sellingPlan.price;
-        let formattedSavings = "$" + formatMoney(subscriptionSavings, "amount");
-
-        cache.$subscriptionSavings.text(formattedSavings)
-      }
-    }    
-  }
-
-  const updateProductPrice = function(){
-    let subscriptionOptionSelected = cache.$deliveryOption.closest(":checked").val() === "subscribe"
-
-    if (subscriptionOptionSelected) {
-      updateSubscriptionPrice()
-    } else {
-      updateOneTimePrice()
-    }
-  }
-
-  // -------
-  // Events
-  // -------
-  const setCurrentVariant = function(e) {
-    // findVariant by matching activeOptions[0] / activeOptions[1] etc
-    if (!variants) return;
-
-
-    let name = jquery_default()(this).data("name")
-    let value = jquery_default()(this).val()
-
-    setActiveOption(name, value)
-
-    currentVariant = variants.find(variant => {
-      let filteredOptions = product.options.filter((option, index) => {
-        let optionName = `option${index + 1}`
-        return variant[optionName] === options[option]
-      })
-
-      return filteredOptions.length === product.options.length
-    })
-
-    if (currentVariant) {
-      cache.$idInput
-        .val(currentVariant.id)
-        .change()
-
-
-    }
-
-    return currentVariant;
-  }
-
-
-  const setCurrentVariantQO = function(e) {
-    // findVariant by matching activeOptions[0] / activeOptions[1] etc
-    console.log('setCurrentVariantQO: before return')
-    if (!variants) return;
-
-    console.log('setCurrentVariantQO: after return')
-
-    let name = jquery_default()(this).data("name")
-    let value = jquery_default()(this).val()
-
-    console.log('this: ', jquery_default()(this))
-
-    console.log('name', name)
-    console.log('value', value)
-
-    setActiveOption(name, value)
-
-    currentVariant = variants.find(variant => {
-      let filteredOptions = product.options.filter((option, index) => {
-        let optionName = `option${index + 1}`
-        return variant[optionName] === options[option]
-      })
-
-      return filteredOptions.length === product.options.length
-    })
-
-    if (currentVariant) {
-     // cache.$idInput.val(currentVariant.id).change()
-
-     jquery_default()('[name="id"]').val(currentVariant.id).change()
-    }
-
-    return currentVariant;
-  }
-
-  const handleVariantChange = function(e){
-    // updateVariant(currentVariant)
-    // updates anything on the form UI
-    // Dispatches "variant:change" event that can capture any other changes in other files.
-    // add to cart / availability
-    updateAddToCart()
-    updateProductPrice()
-    updateSubscriptionSavings()
-    // price
-    // images?
-
-    let event = new CustomEvent('variant:change', {
-      detail: { variant: currentVariant }
-    });
-    document.dispatchEvent(event);
-  }
-
-  const handleSwatchChange = function(e){
-    e.preventDefault()
-    e.stopPropagation()
-
-    let $this = jquery_default()(this)
-    let name = $this.data('option')
-    let value = $this.data('value')
-
-    cache.$hiddenOptionSelects
-      .closest(`[data-name=${name}]`)
-      .val(value)
-      .change()
-  }
-
-  const handleSwatchChangeQO = function(e, thisRef){	
-    e.preventDefault()	
-    e.stopPropagation()	
-    console.log('swatch change QO')	
-    console.log($form)
-
-    let $this = jquery_default()(this)
-    //let $this = thisRef
-    let name = $this.data('option')	
-    let value = $this.data('value')	
-
-    console.log('this: ', jquery_default()(this))
-
-    console.log('name', name)
-    console.log('value', value)
-
-
-    //cache.$hiddenOptionSelectsQO.closest(`[data-name=${name}]`).val(value).change()	
-    jquery_default()('.js-hidden-option-select-qo').closest(`[data-name=${name}]`).val(value).change()	
-
-
-  }
-
-  const handleDeliveryChange = function(e){
-    let $this = jquery_default()(this)
-    if ($this.val() === "subscribe") {
-      // Expand the Frequency group
-      cache.$frequencyContainer.slideDown(300)
-      cache.$sellingPlan.attr('disabled', false)
-    } else {
-      cache.$frequencyContainer.slideUp(300)
-      cache.$sellingPlan.attr('disabled', true)
-    }
-
-    updateProductPrice()
-  }
-
-  const init = function(){
-    initEventListeners()
-    parseVariants()
-    parseOptions()
-
-    cache.$hiddenOptionSelects.change()
-  }
-
-  init()
-}
-
-/* harmony default export */ const productForm = (ProductForm);
 
 ;// CONCATENATED MODULE: ./assets/js/productFormsInit.js
 
