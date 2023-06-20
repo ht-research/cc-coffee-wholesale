@@ -16678,10 +16678,14 @@ const ProductForm = function($form){
     // })	
 
 
-    cache.$swatchesQO.on('change', jquery_default()(this) , function(e) {
-      console.log('cache.$swatchesQO: ', jquery_default()(this))
-      handleSwatchChangeQO(e, jquery_default()(this))
-     })
+    // cache.$swatchesQO.on('change', $(this) , function(e) {
+    //   console.log('cache.$swatchesQO: ', $(this))
+    //   handleSwatchChangeQO(e, $(this))
+    //  })
+
+    jquery_default()(document).on('click', 'js-option-label-qo', function(){
+      console.log(jquery_default()(this))
+    })
 
 
 
