@@ -16002,11 +16002,14 @@ const FilterOptionList = (function(){
 
         let $newCollectionList = $htmlResponse.find(settings.collectionList).eq(0)
         $(settings.collectionList).eq(0).replaceWith($newCollectionList)
+
+
+        //Success 
+        console.log('initializing Product Form after filter refresh')
+        productFormsInit.init();
       })
 
-      // //Quick Order
-       console.log('initializing Product Form after filter refresh')
-       productFormsInit.init();
+      
 
 
   }
