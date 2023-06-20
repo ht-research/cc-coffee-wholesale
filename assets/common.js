@@ -15729,11 +15729,11 @@ const GriListSwitch = (function(){
 
 
     const init = function(){   
-        loadGrisListLayout() 
+        loadGridListLayout() 
         gridListLayoutSwitch();
     }
 
-    const loadGrisListLayout = function(){
+    const loadGridListLayout = function(){
 
         jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 0}, 200)
 
