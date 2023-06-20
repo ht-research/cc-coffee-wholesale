@@ -16896,7 +16896,10 @@ const ProductForm = function($form){
     console.log('value', value)
 
 
-    cache.$hiddenOptionSelectsQO.closest(`[data-name=${name}]`).val(value).change()	
+    //cache.$hiddenOptionSelectsQO.closest(`[data-name=${name}]`).val(value).change()	
+    jquery_default()('.js-hidden-option-select-qo').closest(`[data-name=${name}]`).val(value).change()	
+
+
   }
 
   const handleDeliveryChange = function(e){
