@@ -17208,6 +17208,9 @@ const GriListSwitch = (function(){
 
     const gridListLayoutSwitch = function(){
         jquery_default()('.layout-switch-btn').on('click', function(){
+
+            console.log('defaultActiveView: ', defaultActiveView)
+
             jquery_default()(this).addClass('switch__active')
             jquery_default()(this).siblings().removeClass('switch__active');
         
