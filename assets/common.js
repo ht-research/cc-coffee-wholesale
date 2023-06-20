@@ -15430,44 +15430,10 @@ const ProductForm = function($form){
       jquery_default()(this).on('change', handleSwatchChangeQO);	
     })	
 
-
-
-
     cache.$hiddenOptionSelectsQO.each(function(){	
       jquery_default()(this).on('change', setCurrentVariant);	
     })
-
-
-    
-
-    // $(document).on('change', cache.$hiddenOptionSelectsQO ,  function(e) {
-    //   setCurrentVariant(e)
-    // })
-
-
-
-
-//=================== this is kind of of working
-
-    // $(document).on('click', '.js-option-label-qo', function(){
-    //   console.log($(this))
-    //   $(this).siblings('.js-option-swatch-qo').on('change', handleSwatchChangeQO);	
-    //  // $(this).parent().parent().siblings('.js-hidden-option-select-qo').on('change', setCurrentVariantQO);	
-    // })
-
-    
-
- //============================== 19th June
-
-    // cache.$swatchesQO.each(function(){	
-       //$('.js-collection-list').on('change', cache.$swatchesQO,  handleSwatchChangeQO);	
-    // })	
-
-     //cache.$swatchesQO.each(function(){	
-     // $('.js-collection-list').on('change', '.js-option-swatch-qo' , handleSwatchChangeQO )
-    // })	
-     
-    // $('.js-collection-list').on('change', '.js-hidden-option-select-qo',  setCurrentVariant);	
+  
 
   }
 
