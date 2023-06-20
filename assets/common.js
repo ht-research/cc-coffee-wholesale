@@ -15772,11 +15772,11 @@ const GriListSwitch = (function(){
             let currentViewSelected = jquery_default()(this).attr('data-switch')
             console.log('currentViewSelected', currentViewSelected)
 
-
+            jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 0}, 400)
             defaultActiveView = currentViewSelected
             loadGridListLayout();
 
-            //$('.js-collection-list.collection-grid--container').animate({opacity: 0}, 400)
+            
         
             // if(currentViewSelected == 'list'){
                
