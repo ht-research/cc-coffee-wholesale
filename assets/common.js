@@ -16682,12 +16682,13 @@ const ProductForm = function($form){
       //cache.$swatchesQO.on('change', $(this),  handleSwatchChangeQO);	
     //})	
 
-    cache.$swatchesQO.each(function(){	
-      jquery_default()(this).delegate(jquery_default()(this), 'input propertychange', function (event) {
-        console.log('what is this: ', jquery_default()(this))
-        handleSwatchChangeQO(event, jquery_default()(this));
+    
+      jquery_default()('body').delegate(cache.$swatchesQO, 'input propertychange', function (event) {
+        cache.$swatchesQO.each(function(){	
+          jquery_default()(this).on('change', handleSwatchChangeQO);	
+        })	
       });
-   })	
+   
 
 
     // cache.$swatchesQO.on('change', $(this) , function(e) {
