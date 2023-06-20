@@ -7,7 +7,7 @@
     </div>
   {%- endif -%}
 
-  <ul class="grid grid-cols-2 grid-cols-1">
+  <ul class="grid grid-cols-2 xl:grid-cols-3">
     {% for product in collection.products limit: section.settings.grid_limit %}
       {% render 'product-card-quick-order', product: product, show_hover_image: section.settings.show_hover_image %}
 
