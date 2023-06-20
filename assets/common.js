@@ -16686,7 +16686,7 @@ const ProductForm = function($form){
     jquery_default()(document).on('click', '.js-option-label-qo', function(){
       console.log(jquery_default()(this))
       jquery_default()(this).siblings('.js-option-swatch-qo').on('change', handleSwatchChangeQO);	
-      jquery_default()(this).siblings('.js-hidden-option-select-qo').on('change', setCurrentVariant);	
+      jquery_default()(this).parent().parent().siblings('.js-hidden-option-select-qo').on('change', setCurrentVariant);	
     })
 
 
