@@ -16674,7 +16674,7 @@ const ProductForm = function($form){
 
     //event listener for Quick Order	
     cache.$swatchesQO.each(function(){	
-      jquery_default()(this).delegate('change', handleSwatchChangeQO);	
+      jquery_default()(this).on('change', handleSwatchChangeQO);	
     })	
 
 
@@ -16688,9 +16688,9 @@ const ProductForm = function($form){
 
   
 
-    // cache.$hiddenOptionSelectsQO.each(function(){	
-    //   $(this).on('change', setCurrentVariant);	
-    // })
+    cache.$hiddenOptionSelectsQO.each(function(){	
+      jquery_default()(this).on('change', setCurrentVariant);	
+    })
 
 
     
