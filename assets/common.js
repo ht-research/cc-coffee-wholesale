@@ -16806,7 +16806,7 @@ const ProductForm = function($form){
     let name = jquery_default()(this).data("name")
     let value = jquery_default()(this).val()
 
-    console.log('this: ', $this)
+    console.log('this: ', jquery_default()(this))
 
     console.log('name', name)
     console.log('value', value)
