@@ -16865,13 +16865,14 @@ const ProductForm = function($form){
       .change()
   }
 
-  const handleSwatchChangeQO = function(e){	
+  const handleSwatchChangeQO = function(e, thisRef){	
     e.preventDefault()	
     e.stopPropagation()	
     console.log('swatch change QO')	
     console.log($form)
 
-    let $this = jquery_default()(this)
+    //let $this = $(this)
+    let $this = thisRef
     let name = $this.data('option')	
     let value = $this.data('value')	
 
