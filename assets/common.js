@@ -17209,7 +17209,6 @@ const GriListSwitch = (function(){
     const loadGrisListLayout = function(){
 
         if(defaultActiveView == 'list'){
-
             jquery_default()('.layout-switch-btn.list-button').addClass('switch__active')
             jquery_default()('.layout-switch-btn.grid-button').removeClass('switch__active')
             setTimeout(function(){
@@ -17219,6 +17218,9 @@ const GriListSwitch = (function(){
             }, 400)
         }
         else{
+
+            jquery_default()('.layout-switch-btn.grid-button').addClass('switch__active')
+            jquery_default()('.layout-switch-btn.list-button').removeClass('switch__active')
             setTimeout(function(){
                 jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
                 jquery_default()('.js-collection-list.collection-grid--container').removeClass('list-view-active')
