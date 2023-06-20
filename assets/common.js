@@ -17214,7 +17214,13 @@ const GriListSwitch = (function(){
                 jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
                 jquery_default()('.js-collection-list.collection-grid--container').addClass('list-view-active')
                 jquery_default()('.js-collection-list.collection-grid--container').children('ul').addClass('grid-cols-1').removeClass('xl:grid-cols-3') 
-                //$('.product-card--img-container').children('img').removeClass('product-coffee-image')
+            }, 400)
+        }
+        else{
+            setTimeout(function(){
+                jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
+                jquery_default()('.js-collection-list.collection-grid--container').removeClass('list-view-active')
+                jquery_default()('.js-collection-list.collection-grid--container').children('ul').removeClass('grid-cols-1').addClass('xl:grid-cols-3')
             }, 400)
         }
 
