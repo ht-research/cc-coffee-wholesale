@@ -15335,8 +15335,8 @@ const QuickOrder = (function(){
 
     const quickOrderOpen = function(){
       
-        //$('.quick-order-btn').each(function(){ 
-            jquery_default()(document).on('click', '.quick-order-btn',  function(e){
+        jquery_default()('.quick-order-btn').each(function(){ 
+            jquery_default()(this).on('click',  function(e){
               e.preventDefault();
 
               console.log('quick order clicked...')
@@ -15349,18 +15349,18 @@ const QuickOrder = (function(){
               jquery_default()(this).siblings('.product--buy-panel-quick-order').css('display', 'block')
               jquery_default()('.quick-order-overlay').removeClass('hidden')
             })
-        //})
+        })
     }
     
       
     const quickOrderClose = function(){
-     // $('.quick-order-close').each(function(){
-        jquery_default()(document).on('click','.quick-order-close', function(e){
+      jquery_default()('.quick-order-close').each(function(){
+        jquery_default()(this).on('click', function(e){
           e.preventDefault(); 
           jquery_default()(this).parents('.product--buy-panel-quick-order').fadeOut()
           jquery_default()('.quick-order-overlay').addClass('hidden')
         })
-     // })
+      })
     }
 
 
