@@ -17201,8 +17201,23 @@ const Video = (function(){
 const GriListSwitch = (function(){
 
 
-    const init = function(){    
+    const init = function(){   
+        loadGrisListLayout() 
         gridListLayoutSwitch();
+    }
+
+    const loadGrisListLayout = function(){
+
+        if(defaultActiveView == 'list'){
+            setTimeout(function(){
+                defaultActiveView = 'list'
+                jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
+                jquery_default()('.js-collection-list.collection-grid--container').addClass('list-view-active')
+                jquery_default()('.js-collection-list.collection-grid--container').children('ul').addClass('grid-cols-1').removeClass('xl:grid-cols-3') 
+                //$('.product-card--img-container').children('img').removeClass('product-coffee-image')
+            }, 400)
+        }
+
     }
 
 
@@ -17230,7 +17245,7 @@ const GriListSwitch = (function(){
                }
             else{
                 defaultActiveView = 'grid'
-                
+
                 setTimeout(function(){
                 jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
                 jquery_default()('.js-collection-list.collection-grid--container').removeClass('list-view-active')
