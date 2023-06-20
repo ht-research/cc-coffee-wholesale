@@ -16683,6 +16683,10 @@ const ProductForm = function($form){
       handleSwatchChangeQO(e, jquery_default()(this))
      })
 
+
+
+
+     
     cache.$hiddenOptionSelectsQO.each(function(){	
       jquery_default()(this).on('change', setCurrentVariant);	
     })
