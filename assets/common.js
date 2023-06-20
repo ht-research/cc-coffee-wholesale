@@ -16682,7 +16682,7 @@ const ProductForm = function($form){
 
     cache.$hiddenOptionSelectsQO.each(function(){	
       //$(this).on('change', setCurrentVariant);	
-      jquery_default()(document).on('change', this ,  () => {
+      jquery_default()(document).on('change', this ,  function() {
         setCurrentVariant()
       })
     })
