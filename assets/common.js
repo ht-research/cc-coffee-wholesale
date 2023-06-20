@@ -16832,14 +16832,11 @@ const ProductForm = function($form){
     })
 
     if (currentVariant) {
-      // cache.$idInput
-      //   .val(currentVariant.id)
-      //   .change()
-
-
-        jquery_default()('[name="id"]')
+      cache.$idInput
         .val(currentVariant.id)
         .change()
+
+
     }
 
     return currentVariant;
@@ -16873,7 +16870,9 @@ const ProductForm = function($form){
     })
 
     if (currentVariant) {
-      cache.$idInput.val(currentVariant.id).change()
+     // cache.$idInput.val(currentVariant.id).change()
+
+     jquery_default()('[name="id"]').val(currentVariant.id).change()
     }
 
     return currentVariant;
