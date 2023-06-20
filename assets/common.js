@@ -17209,6 +17209,8 @@ const GriListSwitch = (function(){
     const loadGrisListLayout = function(){
 
         if(defaultActiveView == 'list'){
+
+            jquery_default()('.layout-switch-btn.list-button').addClass('switch__active')
             setTimeout(function(){
                 jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
                 jquery_default()('.js-collection-list.collection-grid--container').addClass('list-view-active')
