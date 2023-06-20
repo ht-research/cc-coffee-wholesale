@@ -15802,7 +15802,7 @@ const GriListSwitch = (function(){
     
 
 
-    return { init }
+    return { init, loadGridListLayout }
 
 })()
  
