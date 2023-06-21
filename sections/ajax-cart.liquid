@@ -56,6 +56,19 @@
 
 <div class="opacity-20 cursor-pointer bg-black fixed top-0 bottom-0 left-0 hidden h-screen w-screen z-40 js-cart--overlay"></div>
 
+<script>
+
+  {% if customer %}
+     console.log('customer found')
+      
+        {{ customer.current_company | json    }}
+        {{ customer.company_available_locations | json  }} 
+        {{ customer.current_location | json  }} 
+
+      {% else %}
+      console.log('customer not found')
+  {% endif %}
+</script>
 
 {% schema %}
 {
