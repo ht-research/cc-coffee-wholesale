@@ -15335,8 +15335,8 @@ const QuickOrder = (function(){
 
     const quickOrderOpen = function(){
       
-        jquery_default()('.quick-order-btn').each(function(){ 
-            jquery_default()(this).on('click',  function(e){
+        //$('.quick-order-btn').each(function(){ 
+            jquery_default()(document).on('click', '.quick-order-btn',  function(e){
               e.preventDefault();
 
               console.log('quick order clicked...')
@@ -15349,18 +15349,18 @@ const QuickOrder = (function(){
               jquery_default()(this).siblings('.product--buy-panel-quick-order').css('display', 'block')
               jquery_default()('.quick-order-overlay').removeClass('hidden')
             })
-        })
+        //})
     }
     
       
     const quickOrderClose = function(){
-     jquery_default()('.quick-order-close').each(function(){
-        jquery_default()(this).on('click', function(e){
+     // $('.quick-order-close').each(function(){
+        jquery_default()(document).on('click','.quick-order-close', function(e){
           e.preventDefault(); 
           jquery_default()(this).parents('.product--buy-panel-quick-order').fadeOut()
           jquery_default()('.quick-order-overlay').addClass('hidden')
         })
-     })
+     // })
     }
 
 
@@ -16084,6 +16084,7 @@ const FilterOptionList = (function(){
     $.ajax(url)
       .then(response => {
 
+        
         setTimeout(function(){
           let $htmlResponse = $(response[section])
 
