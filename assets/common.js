@@ -15927,6 +15927,14 @@ const FilterOptionList = (function(){
       $this.addClass('active')
       $(settings.sortOptionButton).not($this).removeClass('active')
 
+       //Success 
+       console.log('initializing Product Form and Quick Order after filter refresh')
+       productFormsInit.init();
+       quick_order.init();
+
+       grid_list_switch.init();
+       (0,grid_list_switch_namespaceObject.loadGridListLayout)();
+
       getFilteredSection()
     }
   }
@@ -16052,7 +16060,7 @@ const FilterOptionList = (function(){
 
           let $newCollectionList = $htmlResponse.find(settings.collectionList).eq(0)
           $(settings.collectionList).eq(0).replaceWith($newCollectionList)
-          
+
         }, 400)
 
 
