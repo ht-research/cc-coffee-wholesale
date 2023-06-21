@@ -61,9 +61,9 @@
   {% if customer %}
      console.log('customer found')
       
-        {{ customer.current_company | json    }}
-        {{ customer.company_available_locations | json  }} 
-        {{ customer.current_location | json  }} 
+        {{ customer.current_company    }}
+        {{ customer.company_available_locations  }} 
+        {{ customer.current_location  }} 
 
       {% else %}
       console.log('customer not found')
