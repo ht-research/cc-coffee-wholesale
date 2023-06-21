@@ -15927,13 +15927,6 @@ const FilterOptionList = (function(){
       $this.addClass('active')
       $(settings.sortOptionButton).not($this).removeClass('active')
 
-       //Success 
-       console.log('initializing Product Form and Quick Order after filter refresh')
-       productFormsInit.init();
-       quick_order.init();
-
-      //  GriListSwitch.init();
-      //  loadGridListLayout();
 
       getFilteredSection()
     }
