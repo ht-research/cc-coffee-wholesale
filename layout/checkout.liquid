@@ -26,6 +26,7 @@
     {% if customer %}
      
       {{ customer.current_company | json    }} ================================
+      {{ customer.company_available_locations | json  }} ================
     {% endif %}
 
 
