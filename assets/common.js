@@ -15932,8 +15932,8 @@ const FilterOptionList = (function(){
        productFormsInit.init();
        quick_order.init();
 
-       grid_list_switch.init();
-       (0,grid_list_switch_namespaceObject.loadGridListLayout)();
+      //  GriListSwitch.init();
+      //  loadGridListLayout();
 
       getFilteredSection()
     }
