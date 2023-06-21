@@ -68,19 +68,10 @@
             {{ content_for_order_summary }}
           </div>
 
-          {% if customer %}
-          <p>CUstomer found </p>
           
-            {{ customer.current_company | json    }} ================================
-            {{ customer.company_available_locations | json  }} ================
-            {{ customer.current_location | json  }} ================
-
-          {% else %}
-          <p>CUstomer not found </p>
-          {% endif %}
 
 
-          
+
         </aside>
       </div>
     </div>
@@ -89,5 +80,17 @@
 
 
     <script type="text/javascript" src="{{ 'checkout.js' | asset_url }}"></script>
+    <script>
+      {% if customer %}
+         console.log('customer found')
+          
+            {{ customer.current_company | json    }} ================================
+            {{ customer.company_available_locations | json  }} ================
+            {{ customer.current_location | json  }} ================
+
+          {% else %}
+          console.log('customer not found')
+      {% endif %}
+    </script>
   </body>
 </html>
