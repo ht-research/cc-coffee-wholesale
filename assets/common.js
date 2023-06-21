@@ -14102,29 +14102,11 @@ return jQuery;
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
-
-// NAMESPACE OBJECT: ./assets/js/grid-list-switch.js
-var grid_list_switch_namespaceObject = {};
-__webpack_require__.r(grid_list_switch_namespaceObject);
-__webpack_require__.d(grid_list_switch_namespaceObject, {
-  "Z": () => (grid_list_switch)
-});
 
 // EXTERNAL MODULE: ./node_modules/jquery/dist/jquery.js
 var jquery = __webpack_require__(755);
@@ -15866,9 +15848,16 @@ const GriListSwitch = (function(){
     return { init, loadGridListLayout }
 
 })()
+
+const {
+    init: grid_list_switch_init,
+    loadGridListLayout
+  } = GriListSwitch
+  
+  
  
 
-/* harmony default export */ const grid_list_switch = (GriListSwitch);  
+//export default GriListSwitch;  
 
 
 
@@ -16118,8 +16107,8 @@ const FilterOptionList = (function(){
           productFormsInit.init();
           quick_order.init();
     
-          grid_list_switch.init();
-          (0,grid_list_switch_namespaceObject.loadGridListLayout)();
+          GriListSwitch.init();
+          loadGridListLayout();
         }, 400);
       }
     });
@@ -17433,7 +17422,7 @@ jquery_default()(() => {
   blendComponents.init();
   giftSubscription.init();
   quick_order.init();
-  grid_list_switch.init();
+  GriListSwitch.init();
 });
 
 
