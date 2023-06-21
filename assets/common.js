@@ -16102,14 +16102,16 @@ const FilterOptionList = (function(){
           let $newCollectionList = $htmlResponse.find(settings.collectionList).eq(0);
           $(settings.collectionList).eq(0).replaceWith($newCollectionList);
     
-          // Success 
-          console.log('Initializing Product Form and Quick Order after filter refresh');
-          productFormsInit.init();
-          quick_order.init();
-    
-          GriListSwitch.init();
-          loadGridListLayout();
+          
         }, 400);
+
+        // Success 
+        console.log('Initializing Product Form and Quick Order after filter refresh');
+        productFormsInit.init();
+        quick_order.init();
+  
+        GriListSwitch.init();
+        loadGridListLayout();
       }
     });
     
