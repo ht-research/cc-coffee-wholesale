@@ -61,6 +61,7 @@
 <script>
 
   {% if customer %}
+    {{ customer | JSON}}
      console.log('customer found')
       
         {{ customer.current_company    }}
