@@ -24,13 +24,14 @@
   
   <body id="checkout-override">
     {% if customer %}
+    <p>CUstomer found </p>
      
       {{ customer.current_company | json    }} ================================
       {{ customer.company_available_locations | json  }} ================
       {{ customer.current_location | json  }} ================
 
     {% else %}
-     CUstomer not found
+     <p>CUstomer not found </p>
     {% endif %}
 
 
