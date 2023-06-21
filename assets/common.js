@@ -15414,7 +15414,7 @@ const ProductForm = function($form){
   let options = {};
 
   const initEventListeners = function(){
-    console.log('initEventListeners called...')
+    //console.log('initEventListeners called...')
 
 
     cache.$swatches.on('change', handleSwatchChange); // TODO: change from button click to input change
