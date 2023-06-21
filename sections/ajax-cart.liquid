@@ -64,7 +64,7 @@
     {{ customer | JSON}}
      console.log('customer found')
       
-        {{ customer.current_company    }}
+        {{ customer.current_company  | json   }}
         {{ customer.company_available_locations  }} 
         {{ customer.current_location  }} 
 
