@@ -16101,8 +16101,9 @@ const FilterOptionList = (function(){
         let $htmlResponse = $(response[section]);
         let $newCollectionList = $htmlResponse.find(settings.collectionList).eq(0);
         $(settings.collectionList).eq(0).replaceWith($newCollectionList);
-        setTimeout(function() {
-          
+
+
+        // setTimeout(function() {
         // Success 
         console.log('Initializing Product Form and Quick Order after filter refresh');
         productFormsInit.init();
@@ -16111,7 +16112,7 @@ const FilterOptionList = (function(){
         GriListSwitch.init();
         loadGridListLayout();
           
-        }, 400);
+        // }, 400);
 
         
       }
