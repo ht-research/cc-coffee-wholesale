@@ -16098,8 +16098,7 @@ const FilterOptionList = (function(){
       url: url,
       success: function(response) {
 
-        GriListSwitch.init();
-        loadGridListLayout();
+        
 
         
         setTimeout(function() {
@@ -16116,6 +16115,9 @@ const FilterOptionList = (function(){
         quick_order.init();
           
         }, 400);
+
+        GriListSwitch.init();
+        loadGridListLayout();
 
         
       }
