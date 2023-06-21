@@ -85,16 +85,16 @@
       $(document).on('page:load', function() {
         console.log('page loaded')
       });
-      {% if customer %}
-         console.log('customer found')
+      // {% if customer %}
+      //    console.log('customer found')
           
-            {{ customer.current_company | json    }}
-            {{ customer.company_available_locations | json  }} 
-            {{ customer.current_location | json  }} 
+      //       {{ customer.current_company | json    }}
+      //       {{ customer.company_available_locations | json  }} 
+      //       {{ customer.current_location | json  }} 
 
-          {% else %}
-          console.log('customer not found')
-      {% endif %}
+      //     {% else %}
+      //     console.log('customer not found')
+      // {% endif %}
     </script>
   </body>
 </html>
