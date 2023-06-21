@@ -81,12 +81,14 @@
     {{ tracking_code }}
 
 
+    <script>
+      $(document).on('page:load page:change', console.log('hello checkout'));
+    </script>
+ 
     <script type="text/javascript" src="{{ 'checkout.js' | asset_url }}"></script>
     <script>
 
-      $(document).on('page:load', function() {
-        console.log('checkout page loaded')
-      });
+
       // {% if customer %}
       //    console.log('customer found')
           
