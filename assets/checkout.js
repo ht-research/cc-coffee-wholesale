@@ -50,6 +50,6 @@ const initCheckoutScripts = (function($){
     }
   }
 
-  $(document).on('page:load page:change', console.log('hello'));
+  $(document).on('page:load page:change', handlePageChangeEvents);
 
 })(Checkout.$)
