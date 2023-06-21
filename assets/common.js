@@ -15432,7 +15432,7 @@ const ProductForm = function($form){
   let options = {};
 
   const initEventListeners = function(){
-    //console.log('initEventListeners called...')
+    console.log('initEventListeners called...')
 
 
     cache.$swatches.on('change', handleSwatchChange); // TODO: change from button click to input change
@@ -15448,10 +15448,65 @@ const ProductForm = function($form){
       jquery_default()(this).on('change', handleSwatchChangeQO);	
     })	
 
+
+
+    //cache.$swatchesQO.each(function(){	
+      //let $this = $(this)
+      //cache.$swatchesQO.on('change', $(this),  handleSwatchChangeQO);	
+    //})	
+
+    
+      // $('body').delegate(cache.$swatchesQO, 'input propertychange', function (event) {
+      //   cache.$swatchesQO.each(function(){	
+      //     console.log('what is this: ', $(this))
+      //     $(this).on('change', handleSwatchChangeQO);	
+      //   })	
+      // });
+   
+
+
+    // cache.$swatchesQO.on('change', $(this) , function(e) {
+    //   console.log('cache.$swatchesQO: ', $(this))
+    //   handleSwatchChangeQO(e, $(this))
+    //  })
+
+
+
     cache.$hiddenOptionSelectsQO.each(function(){	
       jquery_default()(this).on('change', setCurrentVariant);	
     })
-  
+
+
+    
+
+    // $(document).on('change', cache.$hiddenOptionSelectsQO ,  function(e) {
+    //   setCurrentVariant(e)
+    // })
+
+
+
+
+//=================== this is kind of of working
+
+    // $(document).on('click', '.js-option-label-qo', function(){
+    //   console.log($(this))
+    //   $(this).siblings('.js-option-swatch-qo').on('change', handleSwatchChangeQO);	
+    //  // $(this).parent().parent().siblings('.js-hidden-option-select-qo').on('change', setCurrentVariantQO);	
+    // })
+
+    
+
+ //============================== 19th June
+
+    // cache.$swatchesQO.each(function(){	
+       //$('.js-collection-list').on('change', cache.$swatchesQO,  handleSwatchChangeQO);	
+    // })	
+
+     //cache.$swatchesQO.each(function(){	
+     // $('.js-collection-list').on('change', '.js-option-swatch-qo' , handleSwatchChangeQO )
+    // })	
+     
+    // $('.js-collection-list').on('change', '.js-hidden-option-select-qo',  setCurrentVariant);	
 
   }
 
