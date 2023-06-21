@@ -16084,7 +16084,6 @@ const FilterOptionList = (function(){
     $.ajax(url)
       .then(response => {
 
-
         setTimeout(function(){
           let $htmlResponse = $(response[section])
 
