@@ -15430,6 +15430,9 @@ const ProductForm = function($form){
       jquery_default()(this).on('change', handleSwatchChangeQO);	
     })	
 
+   // $(document).on('change', cache.$swatchesQO, handleSwatchChangeQO);
+
+
 
 
     //cache.$swatchesQO.each(function(){	
@@ -15457,6 +15460,9 @@ const ProductForm = function($form){
     cache.$hiddenOptionSelectsQO.each(function(){	
       jquery_default()(this).on('change', setCurrentVariant);	
     })
+
+    // $(document).on('change', cache.$hiddenOptionSelectsQO, setCurrentVariant);
+
 
 
     
