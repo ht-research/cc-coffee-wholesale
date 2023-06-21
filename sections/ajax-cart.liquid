@@ -58,7 +58,7 @@
 
 
 <div class="customer-data" data-customer-company='{{customer.current_location }}'>
-<script>
+<script type="application/json">
 
   {% if customer %}
     {{ customer | JSON}}
@@ -71,6 +71,10 @@
       {% else %}
       console.log('customer not found')
   {% endif %}
+</script>
+
+<script type="application/json" data-customer-json>
+  {{ customer | json }}
 </script>
 
 {% schema %}
