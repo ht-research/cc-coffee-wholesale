@@ -28,7 +28,14 @@
       {{ customer.current_company | json    }} ================================
       {{ customer.company_available_locations | json  }} ================
       {{ customer.current_location | json  }} ================
+
+    {% else %}
+     CUstomer not found
     {% endif %}
+
+
+
+
 
 
     {{ skip_to_content_link }}
