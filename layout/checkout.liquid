@@ -81,6 +81,10 @@
 
     <script type="text/javascript" src="{{ 'checkout.js' | asset_url }}"></script>
     <script>
+
+      $(document).on('page:load', function() {
+        console.log('page loaded')
+      });
       {% if customer %}
          console.log('customer found')
           
