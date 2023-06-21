@@ -16103,16 +16103,18 @@ const FilterOptionList = (function(){
         $(settings.collectionList).eq(0).replaceWith($newCollectionList);
 
 
-        // setTimeout(function() {
+        
         // Success 
         console.log('Initializing Product Form and Quick Order after filter refresh');
         productFormsInit.init();
         quick_order.init();
+        setTimeout(function() {
+        
 
         GriListSwitch.init();
         loadGridListLayout();
           
-        // }, 400);
+        }, 400);
 
         
       }
