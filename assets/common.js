@@ -15971,6 +15971,8 @@ const FilterOptionList = (function(){
   const handleCollectionSort = function(e){
     let $this = $(this);
 
+    console.log('after sort: ', $this)
+
     if (!$this.hasClass('active')) {
       sortOption = $this.data('value')
 
