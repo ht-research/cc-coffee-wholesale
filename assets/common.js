@@ -16094,6 +16094,8 @@ const FilterOptionList = (function(){
       url = getCollectionFilterURL()
     }
 
+    let isInitialized = false;
+
     $.ajax({
       url: url,
       success: function(response) {
@@ -16116,9 +16118,14 @@ const FilterOptionList = (function(){
           
         }, 400);
 
+
+        if (!isInitialized) {
         GriListSwitch.init();
         loadGridListLayout();
+        isInitialized = true; // Set the flag to indicate that they have been called
+      }
 
+      console.log(isInitialized)
         
       }
     });
