@@ -16129,7 +16129,7 @@ const FilterOptionList = (function(){
           isInitialized += 1; // Set the flag to indicate that they have been called
         }
 
-      console.log(isInitialized)
+      console.log('removed init: ',isInitialized)
         
       }
     });
