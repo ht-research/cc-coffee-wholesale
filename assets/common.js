@@ -15976,6 +15976,8 @@ const FilterOptionList = (function(){
     if (!$this.hasClass('active')) {
       sortOption = $this.data('value')
 
+      console.log('sortOption: ', sortOption)
+
       $this.addClass('active')
       $(settings.sortOptionButton).not($this).removeClass('active')
 
