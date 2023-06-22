@@ -16090,7 +16090,7 @@ const FilterOptionList = (function(){
 
 
     let url = "";
-    let section = sectionRenderingURL
+    let section = sectionRenderingURL.replace("sections=", "")
 
     if (baseUrl.includes('/blogs')) {
       url = getBlogFilterURL()
