@@ -16120,10 +16120,10 @@ const FilterOptionList = (function(){
 
 
         if (!isInitialized) {
-        GriListSwitch.init();
-        loadGridListLayout();
-        isInitialized = true; // Set the flag to indicate that they have been called
-      }
+          GriListSwitch.init();
+          loadGridListLayout();
+          isInitialized = true; // Set the flag to indicate that they have been called
+        }
 
       console.log(isInitialized)
         
