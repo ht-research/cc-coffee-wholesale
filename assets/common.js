@@ -16098,7 +16098,7 @@ const FilterOptionList = (function(){
       url = getCollectionFilterURL()
     }
 
-    let isInitialized = false;
+    let isInitialized = 0;
 
     $.ajax({
       url: url,
@@ -16126,7 +16126,7 @@ const FilterOptionList = (function(){
         if (!isInitialized) {
           GriListSwitch.init();
           loadGridListLayout();
-          isInitialized = true; // Set the flag to indicate that they have been called
+          isInitialized += 1; // Set the flag to indicate that they have been called
         }
 
       console.log(isInitialized)
