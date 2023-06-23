@@ -12,6 +12,7 @@ Variables:
 {%- endif -%}
 
 {% assign current_variant = product.selected_or_first_available_variant %}
+{% assign price_variant = product.variants | where: 'title', '5 lb' | first %}
 
 <div class="list-view__heading-price bg-white w-full h-full flex flex-col gap-2 justify-between px-4 xl:px-12 py-4 xl:py-6">
 
@@ -24,11 +25,16 @@ Variables:
       <div class="list-view__heading-roast-level">
         <div class="list-view__heading-notes">
           <div class="flex flex-col md:flex-row justify-between items-start gap-2">
-            <h3 class="text-base md:text-lg xl:text-2xl font-couch">{{ product.title }}</h3>
+            <h3 class="text-sm md:text-lg xl:text-2xl font-couch">{{ product.title }}</h3>
 
             <div class="list-view_price">
               {%- unless is_archive -%}
-                {% render 'product-price', variant: current_variant %}
+                {% if price_variant %}
+                  {% render 'product-price', variant: price_variant %}
+                {% else %}
+                  {% render 'product-price', variant: current_variant %}
+                {% endif %}
+                
               {%- endunless -%}
             </div>
           </div>
@@ -39,7 +45,7 @@ Variables:
 
 
 
-        <div class="list-view_roast-level-graph">
+        <div class="list-view_roast-level-graph hidden lg:block">
           {% render 'roast-level', product: product %}
         </div>
       </div>
@@ -48,11 +54,16 @@ Variables:
 
     <div class="list-view_card-price hidden">
 
-      {% assign price = current_variant.price %}
+      {% if price_variant %}
+        {% assign price = price_variant.price %}
+      {% else %}
+        {% assign price = current_variant.price %} 
+      {% endif %}
+
       {%- if price == 0 -%}
-        <p class="text-lg xl:text-2xl font-tenso font-medium">Free!</p>
-      {%- else -%}
-        <p class="text-lg xl:text-2xl font-tenso font-medium">{{ price | money_without_trailing_zeros }}/unit</p>
+          <p class="text-lg xl:text-2xl font-tenso font-medium">Free!</p>
+        {%- else -%}
+          <p class="text-lg xl:text-2xl font-tenso font-medium">{{ price | money_without_trailing_zeros }}/unit</p>
       {%- endif -%}
 
     </div>
@@ -64,7 +75,7 @@ Variables:
 
 
   <div class="quick-order-overlay opacity-20 cursior-pointer-none bg-black/20 fixed top-0 bottom-0 left-0 h-screen w-screen hidden"></div>
-  <div class="product--buy-panel-quick-order border-black border bg-white w-full lg:w-8/12 ">
+  <div class="product--buy-panel-quick-order border-black border bg-white w-full md:w-3/5 lg:w-8/12 ">
     {% render 'product-form-quick-order', product: product %}
   </div>
 

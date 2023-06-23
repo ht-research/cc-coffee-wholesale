@@ -15321,7 +15321,402 @@ const CustomSelectInit = (function(){
 
 /* harmony default export */ const customSelectInit = ((/* unused pure expression or super */ null && (CustomSelectInit)));
 
+;// CONCATENATED MODULE: ./assets/js/quick-order.js
+
+const QuickOrder = (function(){
+
+
+    const init = function(){    
+        quickOrderOpen();
+        quickOrderClose();
+    }
+
+
+    const quickOrderOpen = function(){
+        //$('.quick-order-btn').each(function(){ 
+            jquery_default()(document).on('click', '.quick-order-btn',  function(e){
+              e.preventDefault();
+
+              if(jquery_default()(this).siblings('.product--buy-panel-quick-order').find('[data-value="5 lb"]')){	
+                jquery_default()(this).siblings('.product--buy-panel-quick-order').find('[data-value="5 lb"]').trigger('click')	
+              }
+             
+              jquery_default()(this).siblings('.product--buy-panel-quick-order').css('display', 'block')
+              jquery_default()('.quick-order-overlay').removeClass('hidden')
+            })
+        //})
+    }
+    
+      
+    const quickOrderClose = function(){
+     // $('.quick-order-close').each(function(){
+        jquery_default()(document).on('click','.quick-order-close', function(e){
+          e.preventDefault(); 
+          
+          jquery_default()(this).parents('.product--buy-panel-quick-order').fadeOut()
+          jquery_default()('.quick-order-overlay').addClass('hidden')
+        })
+     // })
+    }
+
+
+    return { init }
+
+})()
+ 
+
+/* harmony default export */ const quick_order = (QuickOrder);  
+
+
+
+
+
+
+;// CONCATENATED MODULE: ./assets/js/productForm.js
+
+
+
+const ProductForm = function($form){
+
+  const cache = {
+    $quantityInput: $form.find('[name="quantity"]'),
+    $idInput: $form.find('[name="id"]'),
+    $productScript: $form.find('.js-product-script'),
+    $swatches: $form.find('.js-option-swatch'),
+    $swatchesQO: $form.find('.js-option-swatch-qo'),
+    $swatchLabel: $form.find('.js-option-label'),
+    $hiddenOptionSelects: $form.find('.js-hidden-option-select'),
+    $hiddenOptionSelectsQO: $form.find('.js-hidden-option-select-qo'),
+    $addToCart: $form.find('.js-product-form-atc'),
+    $deliveryOption: $form.find('[name="delivery_option"]'),
+    $frequencyContainer: $form.find('.js-selling-plan-group'),
+    $sellingPlan: $form.find('[name="selling_plan"]'),
+    $price: $form.find(".js-price"),
+    $comparePrice: $form.find(".js-compare-price"),
+    $subscriptionSavings: $form.find("[data-subscription-savings]"),
+  }
+
+  let translations = {
+    addToCart: "Add to Cart",
+    outOfStock: "Out of Stock",
+  }
+
+  let product;
+  let variants;
+  let currentVariant;
+
+  // Size: "4 Pack"
+  // Flavor: "Elderberry Shots"
+  let options = {};
+
+  const initEventListeners = function(){
+    cache.$swatches.on('change', handleSwatchChange); // TODO: change from button click to input change
+    cache.$hiddenOptionSelects.on('change', setCurrentVariant);
+    cache.$idInput.on('change', handleVariantChange);
+    cache.$deliveryOption.on('change', handleDeliveryChange);
+
+    //event listener for Quick Order	
+    cache.$swatchesQO.each(function(){	
+      jquery_default()(this).on('change', handleSwatchChangeQO);	
+    })	
+     
+    cache.$hiddenOptionSelectsQO.each(function(){	
+      jquery_default()(this).on('change', setCurrentVariant);	
+    })
+
+
+  }
+
+  const parseVariants = function(){
+    product = JSON.parse(cache.$productScript.text());
+
+    variants = product.variants;
+  }
+
+  const parseOptions = function(){
+    cache.$hiddenOptionSelects.each(function(index, select){
+      let name = jquery_default()(select).data("name")
+      let value = jquery_default()(select).val()
+      setActiveOption(name, value)
+    })
+  }
+
+  const setActiveOption = function(name, value) {
+    options[name] = value;
+  }
+
+  const updateAddToCart = function(){
+    if (currentVariant && currentVariant.available) {
+      cache.$addToCart.text(translations.addToCart)
+      cache.$addToCart.attr('disabled', false)
+    } else {
+      cache.$addToCart.text(translations.outOfStock)
+      cache.$addToCart.attr('disabled', true)
+    }
+  }
+
+  const updateOneTimePrice = function(){
+    let formattedPrice = formatMoney(currentVariant.price, "amount")
+
+    if (currentVariant.price === 0) {
+      cache.$price.text("Free!")
+    } else {
+      cache.$price.text(`$${formattedPrice}`)
+    }
+
+    // Updates pricing in Buy Panel - COMPARE AT
+    let formattedComparePrice = formatMoney(currentVariant.compare_at_price, "amount")
+    cache.$comparePrice.text(`$${formattedComparePrice}`)
+
+    if (currentVariant.compare_at_price && currentVariant.compare_at_price > currentVariant.price) {
+      cache.$comparePrice.removeClass('hidden').show()
+    } else {
+      cache.$comparePrice.addClass('hidden').hide()
+    }
+  }
+
+  const updateSubscriptionPrice = function(){
+    // Add original price to compare at widget
+    let formattedComparePrice = formatMoney(currentVariant.price, "amount")
+    cache.$comparePrice.text(`$${formattedComparePrice}`)
+
+    // Updates pricing for selling_plan
+    let subscribePriceCents = (currentVariant.selling_plan_allocations.length ? currentVariant.selling_plan_allocations[0].price : 0);
+    let formattedPrice = formatMoney(subscribePriceCents, "amount")
+
+    cache.$price.text(`$${formattedPrice}`)
+
+    if (subscribePriceCents && subscribePriceCents < currentVariant.price) {
+      cache.$comparePrice.removeClass('hidden').show()
+    } else {
+      cache.$comparePrice.addClass('hidden').hide()
+    }
+  }
+
+  const updateSubscriptionSavings = function(){
+    if ( currentVariant.selling_plan_allocations ) {
+      let sellingPlan = currentVariant.selling_plan_allocations[0]
+
+      if (sellingPlan) {
+        let subscriptionSavings = sellingPlan.compare_at_price - sellingPlan.price;
+        let formattedSavings = "$" + formatMoney(subscriptionSavings, "amount");
+
+        cache.$subscriptionSavings.text(formattedSavings)
+      }
+    }    
+  }
+
+  const updateProductPrice = function(){
+    let subscriptionOptionSelected = cache.$deliveryOption.closest(":checked").val() === "subscribe"
+
+    if (subscriptionOptionSelected) {
+      updateSubscriptionPrice()
+    } else {
+      updateOneTimePrice()
+    }
+  }
+
+  // -------
+  // Events
+  // -------
+
+  const setCurrentVariant = function(e) {
+    // findVariant by matching activeOptions[0] / activeOptions[1] etc
+    if (!variants) return;
+
+    let name = jquery_default()(this).data("name")
+    let value = jquery_default()(this).val()
+
+    setActiveOption(name, value)
+
+    currentVariant = variants.find(variant => {
+      let filteredOptions = product.options.filter((option, index) => {
+        let optionName = `option${index + 1}`
+        return variant[optionName] === options[option]
+      })
+
+      return filteredOptions.length === product.options.length
+    })
+
+    if (currentVariant) {
+      cache.$idInput
+        .val(currentVariant.id)
+        .change()
+    }
+
+    return currentVariant;
+  }
+
+  const handleVariantChange = function(e){
+    // updateVariant(currentVariant)
+    // updates anything on the form UI
+    // Dispatches "variant:change" event that can capture any other changes in other files.
+    // add to cart / availability
+    updateAddToCart()
+    updateProductPrice()
+    updateSubscriptionSavings()
+    // price
+    // images?
+
+    let event = new CustomEvent('variant:change', {
+      detail: { variant: currentVariant }
+    });
+    document.dispatchEvent(event);
+  }
+
+  const handleSwatchChange = function(e){
+    e.preventDefault()
+    e.stopPropagation()
+
+    let $this = jquery_default()(this)
+    let name = $this.data('option')
+    let value = $this.data('value')
+
+    cache.$hiddenOptionSelects
+      .closest(`[data-name=${name}]`)
+      .val(value)
+      .change()
+  }
+
+  const handleSwatchChangeQO = function(e){	
+    e.preventDefault()	
+    e.stopPropagation()	
+    //console.log('swatch change QO')	
+
+    let $this = jquery_default()(this)
+    let name = $this.data('option')	
+    let value = $this.data('value')	
+    cache.$hiddenOptionSelectsQO	
+      .closest(`[data-name=${name}]`)	
+      .val(value)	
+      .change()	
+  }
+
+  const handleDeliveryChange = function(e){
+    let $this = jquery_default()(this)
+    if ($this.val() === "subscribe") {
+      // Expand the Frequency group
+      cache.$frequencyContainer.slideDown(300)
+      cache.$sellingPlan.attr('disabled', false)
+    } else {
+      cache.$frequencyContainer.slideUp(300)
+      cache.$sellingPlan.attr('disabled', true)
+    }
+
+    updateProductPrice()
+  }
+
+  const init = function(){
+    initEventListeners()
+    parseVariants()
+    parseOptions()
+
+    cache.$hiddenOptionSelects.change()
+  }
+
+  init()
+}
+
+/* harmony default export */ const productForm = (ProductForm);
+
+;// CONCATENATED MODULE: ./assets/js/productFormsInit.js
+
+
+
+
+const ProductFormsInit = (function(){
+  const selectors = {
+    form: ".js-product-form"
+  }
+
+  const init = function(){
+    if (!elementsExist([selectors.form])) return;
+    initializeProductForms();
+  }
+
+  const initializeProductForms = function(){
+    jquery_default()(selectors.form).each(function(index, form){
+      productForm(jquery_default()(form))
+    })
+  }
+
+  return {
+    init
+  }
+
+})()
+
+/* harmony default export */ const productFormsInit = (ProductFormsInit);
+
+;// CONCATENATED MODULE: ./assets/js/grid-list-switch.js
+
+const GriListSwitch = (function(){
+
+
+    const init = function(){   
+        loadGridListLayout() 
+        gridListLayoutSwitch();
+    }
+
+    const loadGridListLayout = function(){
+
+        if(defaultActiveView == 'list'){
+            jquery_default()('.layout-switch-btn.list-button').addClass('switch__active')
+            jquery_default()('.layout-switch-btn.grid-button').removeClass('switch__active')
+            setTimeout(function(){
+                jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
+                jquery_default()('.js-collection-list.collection-grid--container').addClass('list-view-active')
+                jquery_default()('.js-collection-list.collection-grid--container').children('ul').addClass('grid-cols-1').removeClass('xl:grid-cols-3') 
+            }, 400)
+        }
+        else{
+            jquery_default()('.layout-switch-btn.grid-button').addClass('switch__active')
+            jquery_default()('.layout-switch-btn.list-button').removeClass('switch__active')
+            setTimeout(function(){
+                jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
+                jquery_default()('.js-collection-list.collection-grid--container').removeClass('list-view-active')
+                jquery_default()('.js-collection-list.collection-grid--container').children('ul').removeClass('grid-cols-1').addClass('xl:grid-cols-3')
+            }, 400)
+        }
+
+    }
+
+
+    const gridListLayoutSwitch = function(){
+        jquery_default()('.layout-switch-btn').on('click', function(){
+            let currentViewSelected = jquery_default()(this).attr('data-switch')
+
+            jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 0}, 400)
+            defaultActiveView = currentViewSelected
+            loadGridListLayout(); 
+        })
+    }
+    
+
+
+    return { init, loadGridListLayout }
+
+})()
+
+const {
+    init: grid_list_switch_init,
+    loadGridListLayout
+  } = GriListSwitch
+  
+  
+ 
+
+//export default GriListSwitch;  
+
+
+
+
+
+
 ;// CONCATENATED MODULE: ./assets/js/filterOptions.js
+
+
+
 
 
 const FilterOptionList = (function(){
@@ -15424,7 +15819,6 @@ const FilterOptionList = (function(){
 
   const handleCollectionSort = function(e){
     let $this = $(this);
-
     if (!$this.hasClass('active')) {
       sortOption = $this.data('value')
 
@@ -15455,6 +15849,8 @@ const FilterOptionList = (function(){
   * Renders a list of <li> items to the activeFilterContainer
   */
   const renderActiveFilterList = function(){
+
+
     let filterListHTML = ""
 
     $(settings.filterOption).removeClass('active')
@@ -15478,6 +15874,10 @@ const FilterOptionList = (function(){
     })
 
     $(settings.activeFilterContainer).html(filterListHTML)
+
+
+
+  
   }
 
   const updateFilterCount = function(){
@@ -15536,14 +15936,38 @@ const FilterOptionList = (function(){
       url = getCollectionFilterURL()
     }
 
-    $.ajax(url)
-      .then(response => {
+    let isInitialized = 0;
 
-        let $htmlResponse = $(response[section])
+    $.ajax({
+      url: url,
+      success: function(response) {
 
-        let $newCollectionList = $htmlResponse.find(settings.collectionList).eq(0)
-        $(settings.collectionList).eq(0).replaceWith($newCollectionList)
-      })
+        
+
+        
+        setTimeout(function() {
+          let $htmlResponse = $(response[section]);
+          let $newCollectionList = $htmlResponse.find(settings.collectionList).eq(0);
+          $(settings.collectionList).eq(0).replaceWith($newCollectionList);
+
+          // Success: After AJAX call, reinitialize the Product Forms and Quick Order
+          productFormsInit.init();
+          quick_order.init();
+        }, 400);
+
+
+        if (!isInitialized) {
+         // GriListSwitch.init();
+          loadGridListLayout();
+          isInitialized += 1; // Set the flag to indicate that they have been called
+        } 
+      }
+    });
+    
+
+      
+
+
   }
 
   const clearFilters = function(e) {
@@ -16546,282 +16970,6 @@ const ProductCard = (function(){
 
 /* harmony default export */ const productCard = (ProductCard);
 
-;// CONCATENATED MODULE: ./assets/js/productForm.js
-
-
-
-const ProductForm = function($form){
-
-  const cache = {
-    $quantityInput: $form.find('[name="quantity"]'),
-    $idInput: $form.find('[name="id"]'),
-    $productScript: $form.find('.js-product-script'),
-    $swatches: $form.find('.js-option-swatch'),
-    $swatchesQO: $form.find('.js-option-swatch-qo'),
-    $swatchLabel: $form.find('.js-option-label'),
-    $hiddenOptionSelects: $form.find('.js-hidden-option-select'),
-    $hiddenOptionSelectsQO: $form.find('.js-hidden-option-select-qo'),
-    $addToCart: $form.find('.js-product-form-atc'),
-    $deliveryOption: $form.find('[name="delivery_option"]'),
-    $frequencyContainer: $form.find('.js-selling-plan-group'),
-    $sellingPlan: $form.find('[name="selling_plan"]'),
-    $price: $form.find(".js-price"),
-    $comparePrice: $form.find(".js-compare-price"),
-    $subscriptionSavings: $form.find("[data-subscription-savings]"),
-  }
-
-  let translations = {
-    addToCart: "Add to Cart",
-    outOfStock: "Out of Stock",
-  }
-
-  let product;
-  let variants;
-  let currentVariant;
-
-  // Size: "4 Pack"
-  // Flavor: "Elderberry Shots"
-  let options = {};
-
-  const initEventListeners = function(){
-    cache.$swatches.on('change', handleSwatchChange); // TODO: change from button click to input change
-    cache.$hiddenOptionSelects.on('change', setCurrentVariant);
-    cache.$idInput.on('change', handleVariantChange);
-    cache.$deliveryOption.on('change', handleDeliveryChange);
-
-    //event listener for Quick Order	
-    cache.$swatchesQO.each(function(){	
-      jquery_default()(this).on('change', handleSwatchChangeQO);	
-    })	
-     
-    cache.$hiddenOptionSelectsQO.each(function(){	
-      jquery_default()(this).on('change', setCurrentVariant);	
-    })
-
-
-  }
-
-  const parseVariants = function(){
-    product = JSON.parse(cache.$productScript.text());
-
-    variants = product.variants;
-  }
-
-  const parseOptions = function(){
-    cache.$hiddenOptionSelects.each(function(index, select){
-      let name = jquery_default()(select).data("name")
-      let value = jquery_default()(select).val()
-      setActiveOption(name, value)
-    })
-  }
-
-  const setActiveOption = function(name, value) {
-    options[name] = value;
-  }
-
-  const updateAddToCart = function(){
-    if (currentVariant && currentVariant.available) {
-      cache.$addToCart.text(translations.addToCart)
-      cache.$addToCart.attr('disabled', false)
-    } else {
-      cache.$addToCart.text(translations.outOfStock)
-      cache.$addToCart.attr('disabled', true)
-    }
-  }
-
-  const updateOneTimePrice = function(){
-    let formattedPrice = formatMoney(currentVariant.price, "amount")
-
-    if (currentVariant.price === 0) {
-      cache.$price.text("Free!")
-    } else {
-      cache.$price.text(`$${formattedPrice}`)
-    }
-
-    // Updates pricing in Buy Panel - COMPARE AT
-    let formattedComparePrice = formatMoney(currentVariant.compare_at_price, "amount")
-    cache.$comparePrice.text(`$${formattedComparePrice}`)
-
-    if (currentVariant.compare_at_price && currentVariant.compare_at_price > currentVariant.price) {
-      cache.$comparePrice.removeClass('hidden').show()
-    } else {
-      cache.$comparePrice.addClass('hidden').hide()
-    }
-  }
-
-  const updateSubscriptionPrice = function(){
-    // Add original price to compare at widget
-    let formattedComparePrice = formatMoney(currentVariant.price, "amount")
-    cache.$comparePrice.text(`$${formattedComparePrice}`)
-
-    // Updates pricing for selling_plan
-    let subscribePriceCents = (currentVariant.selling_plan_allocations.length ? currentVariant.selling_plan_allocations[0].price : 0);
-    let formattedPrice = formatMoney(subscribePriceCents, "amount")
-
-    cache.$price.text(`$${formattedPrice}`)
-
-    if (subscribePriceCents && subscribePriceCents < currentVariant.price) {
-      cache.$comparePrice.removeClass('hidden').show()
-    } else {
-      cache.$comparePrice.addClass('hidden').hide()
-    }
-  }
-
-  const updateSubscriptionSavings = function(){
-    if ( currentVariant.selling_plan_allocations ) {
-      let sellingPlan = currentVariant.selling_plan_allocations[0]
-
-      if (sellingPlan) {
-        let subscriptionSavings = sellingPlan.compare_at_price - sellingPlan.price;
-        let formattedSavings = "$" + formatMoney(subscriptionSavings, "amount");
-
-        cache.$subscriptionSavings.text(formattedSavings)
-      }
-    }    
-  }
-
-  const updateProductPrice = function(){
-    let subscriptionOptionSelected = cache.$deliveryOption.closest(":checked").val() === "subscribe"
-
-    if (subscriptionOptionSelected) {
-      updateSubscriptionPrice()
-    } else {
-      updateOneTimePrice()
-    }
-  }
-
-  // -------
-  // Events
-  // -------
-
-  const setCurrentVariant = function(e) {
-    // findVariant by matching activeOptions[0] / activeOptions[1] etc
-    if (!variants) return;
-
-    let name = jquery_default()(this).data("name")
-    let value = jquery_default()(this).val()
-
-    setActiveOption(name, value)
-
-    currentVariant = variants.find(variant => {
-      let filteredOptions = product.options.filter((option, index) => {
-        let optionName = `option${index + 1}`
-        return variant[optionName] === options[option]
-      })
-
-      return filteredOptions.length === product.options.length
-    })
-
-    if (currentVariant) {
-      cache.$idInput
-        .val(currentVariant.id)
-        .change()
-    }
-
-    return currentVariant;
-  }
-
-  const handleVariantChange = function(e){
-    // updateVariant(currentVariant)
-    // updates anything on the form UI
-    // Dispatches "variant:change" event that can capture any other changes in other files.
-    // add to cart / availability
-    updateAddToCart()
-    updateProductPrice()
-    updateSubscriptionSavings()
-    // price
-    // images?
-
-    let event = new CustomEvent('variant:change', {
-      detail: { variant: currentVariant }
-    });
-    document.dispatchEvent(event);
-  }
-
-  const handleSwatchChange = function(e){
-    e.preventDefault()
-    e.stopPropagation()
-
-    let $this = jquery_default()(this)
-    let name = $this.data('option')
-    let value = $this.data('value')
-
-    cache.$hiddenOptionSelects
-      .closest(`[data-name=${name}]`)
-      .val(value)
-      .change()
-  }
-
-  const handleSwatchChangeQO = function(e){	
-    e.preventDefault()	
-    e.stopPropagation()	
-    //console.log('swatch change QO')	
-
-    let $this = jquery_default()(this)
-    let name = $this.data('option')	
-    let value = $this.data('value')	
-    cache.$hiddenOptionSelectsQO	
-      .closest(`[data-name=${name}]`)	
-      .val(value)	
-      .change()	
-  }
-
-  const handleDeliveryChange = function(e){
-    let $this = jquery_default()(this)
-    if ($this.val() === "subscribe") {
-      // Expand the Frequency group
-      cache.$frequencyContainer.slideDown(300)
-      cache.$sellingPlan.attr('disabled', false)
-    } else {
-      cache.$frequencyContainer.slideUp(300)
-      cache.$sellingPlan.attr('disabled', true)
-    }
-
-    updateProductPrice()
-  }
-
-  const init = function(){
-    initEventListeners()
-    parseVariants()
-    parseOptions()
-
-    cache.$hiddenOptionSelects.change()
-  }
-
-  init()
-}
-
-/* harmony default export */ const productForm = (ProductForm);
-
-;// CONCATENATED MODULE: ./assets/js/productFormsInit.js
-
-
-
-
-const ProductFormsInit = (function(){
-  const selectors = {
-    form: ".js-product-form"
-  }
-
-  const init = function(){
-    if (!elementsExist([selectors.form])) return;
-    initializeProductForms();
-  }
-
-  const initializeProductForms = function(){
-    jquery_default()(selectors.form).each(function(index, form){
-      productForm(jquery_default()(form))
-    })
-  }
-
-  return {
-    init
-  }
-
-})()
-
-/* harmony default export */ const productFormsInit = (ProductFormsInit);
-
 ;// CONCATENATED MODULE: ./assets/js/productRecommendations.js
 
 
@@ -17065,103 +17213,6 @@ const Video = (function(){
 
 /* harmony default export */ const video = (Video);
 
-;// CONCATENATED MODULE: ./assets/js/quick-order.js
-
-const QuickOrder = (function(){
-
-
-    const init = function(){    
-        quickOrderOpen();
-        quickOrderClose();
-    }
-
-
-    const quickOrderOpen = function(){
-        jquery_default()('.quick-order-btn').each(function(){
-            jquery_default()(this).on('click', function(e){
-              e.preventDefault();
-              jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn()
-              jquery_default()('.quick-order-overlay').removeClass('hidden')
-            })
-        })
-    }
-    
-      
-    const quickOrderClose = function(){
-      jquery_default()('.quick-order-close').each(function(){
-        jquery_default()(this).on('click', function(e){
-          e.preventDefault(); 
-          jquery_default()(this).parents('.product--buy-panel-quick-order').fadeOut()
-          jquery_default()('.quick-order-overlay').addClass('hidden')
-        })
-      })
-    }
-
-
-    return { init }
-
-})()
- 
-
-/* harmony default export */ const quick_order = (QuickOrder);  
-
-
-
-
-
-
-;// CONCATENATED MODULE: ./assets/js/grid-list-switch.js
-
-const GriListSwitch = (function(){
-
-
-    const init = function(){    
-        gridListLayoutSwitch();
-    }
-
-
-    const gridListLayoutSwitch = function(){
-        jquery_default()('.layout-switch-btn').on('click', function(){
-            jquery_default()(this).addClass('switch__active')
-            jquery_default()(this).siblings().removeClass('switch__active');
-        
-            let currentViewSelected = jquery_default()(this).attr('data-switch')
-
-            jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 0}, 400)
-        
-            if(currentViewSelected == 'list'){
-               
-               setTimeout(function(){
-                jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
-                jquery_default()('.js-collection-list.collection-grid--container').addClass('list-view-active')
-                jquery_default()('.js-collection-list.collection-grid--container').children('ul').addClass('grid-cols-1').removeClass('xl:grid-cols-3') 
-                //$('.product-card--img-container').children('img').removeClass('product-coffee-image')
-               }, 400)
-               }
-            else{
-                setTimeout(function(){
-                jquery_default()('.js-collection-list.collection-grid--container').animate({opacity: 1}, 400)
-                jquery_default()('.js-collection-list.collection-grid--container').removeClass('list-view-active')
-                jquery_default()('.js-collection-list.collection-grid--container').children('ul').removeClass('grid-cols-1').addClass('xl:grid-cols-3')
-                }, 400)
-            }  
-        })
-    }
-    
-
-
-    return { init }
-
-})()
- 
-
-/* harmony default export */ const grid_list_switch = (GriListSwitch);  
-
-
-
-
-
-
 ;// CONCATENATED MODULE: ./assets/js/common.js
 
 
@@ -17222,7 +17273,7 @@ jquery_default()(() => {
   blendComponents.init();
   giftSubscription.init();
   quick_order.init();
-  grid_list_switch.init();
+  GriListSwitch.init();
 });
 
 

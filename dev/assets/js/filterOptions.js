@@ -1,4 +1,7 @@
 import { elementsExist } from './utilities'
+import QuickOrder from './quick-order'
+import ProductFormsInit from './productFormsInit'
+import GriListSwitch, {loadGridListLayout} from './grid-list-switch'
 
 const FilterOptionList = (function(){
   let baseUrl = location.pathname
@@ -100,7 +103,6 @@ const FilterOptionList = (function(){
 
   const handleCollectionSort = function(e){
     let $this = $(this);
-
     if (!$this.hasClass('active')) {
       sortOption = $this.data('value')
 
@@ -131,6 +133,8 @@ const FilterOptionList = (function(){
   * Renders a list of <li> items to the activeFilterContainer
   */
   const renderActiveFilterList = function(){
+
+
     let filterListHTML = ""
 
     $(settings.filterOption).removeClass('active')
@@ -154,6 +158,10 @@ const FilterOptionList = (function(){
     })
 
     $(settings.activeFilterContainer).html(filterListHTML)
+
+
+
+  
   }
 
   const updateFilterCount = function(){
@@ -212,14 +220,38 @@ const FilterOptionList = (function(){
       url = getCollectionFilterURL()
     }
 
-    $.ajax(url)
-      .then(response => {
+    let isInitialized = 0;
 
-        let $htmlResponse = $(response[section])
+    $.ajax({
+      url: url,
+      success: function(response) {
 
-        let $newCollectionList = $htmlResponse.find(settings.collectionList).eq(0)
-        $(settings.collectionList).eq(0).replaceWith($newCollectionList)
-      })
+        
+
+        
+        setTimeout(function() {
+          let $htmlResponse = $(response[section]);
+          let $newCollectionList = $htmlResponse.find(settings.collectionList).eq(0);
+          $(settings.collectionList).eq(0).replaceWith($newCollectionList);
+
+          // Success: After AJAX call, reinitialize the Product Forms and Quick Order
+          ProductFormsInit.init();
+          QuickOrder.init();
+        }, 400);
+
+
+        if (!isInitialized) {
+         // GriListSwitch.init();
+          loadGridListLayout();
+          isInitialized += 1; // Set the flag to indicate that they have been called
+        } 
+      }
+    });
+    
+
+      
+
+
   }
 
   const clearFilters = function(e) {
