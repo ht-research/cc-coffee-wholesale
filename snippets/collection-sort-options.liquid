@@ -1,7 +1,7 @@
 <!-- snippets/collection-sort-options -->
 
 {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
-{% assign excluded_sort_options = '' %}
+{% assign excluded_sort_options = 'price-ascending, price-descending' %}
 
 {%- if collection.handle == 'coffee-archive' -%}
   {% assign excluded_sort_options = 'manual, best-selling' %}
