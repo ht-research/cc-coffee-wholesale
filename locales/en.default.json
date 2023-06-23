@@ -42,5 +42,12 @@
     "label": "TODO",
     "button_label": "TODO",
     "success": "TODO"
+  },
+  "customer_accounts": {
+    "errors": {
+      "no_access": {
+        "description": "You're not registered as a wholesale customer. If you have an account with us but are having difficulty accessing, reach out to us at orders@counterculturecoffee.com."
+      }
+    }
   }
 }

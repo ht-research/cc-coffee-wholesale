@@ -1,9 +1,10 @@
 {
   "current": {
     "favicon": "shopify:\/\/shop_images\/CCC_Favicon.png",
-    "free_shipping_threshold": 30,
+    "free_shipping_threshold": 250,
     "cart_psa": "",
     "enable_cart_notes": false,
+    "enable_cart_upsell": false,
     "cart_empty_text": "",
     "sections": {
       "announcement-bar": {
@@ -11,7 +12,7 @@
         "settings": {
           "display_announcement": true,
           "enable_marquee": false,
-          "title": "Upcoming closures:  May 29, July 4",
+          "title": "Welcome to our new site!",
           "background_color": "#8d93d9",
           "text_color": "#ffffff"
         }
