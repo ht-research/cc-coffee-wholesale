@@ -517,7 +517,7 @@
           "type": "faq",
           "settings": {
             "question": "What do I do if my order is incorrect?",
-            "answer": "<p>If you receive an incorrect order, please check your order receipt and contact our Customer Experience team at <a href=\"mailto:retail@counterculturecoffee.com\">retail@counterculturecoffee.com<\/a> within four weeks of delivery. We will implement an immediate fix to ensure that the correct order is shipped to you as soon as possible.<\/p>",
+            "answer": "<p>If you receive an incorrect order, please check your order receipt and contact our Customer Experience team at <a href=\"mailto:retail@counterculturecoffee.com\">orders@counterculturecoffee.com<\/a> within four weeks of delivery. We will implement an immediate fix to ensure that the correct order is shipped to you as soon as possible.<\/p>",
             "label": ""
           }
         },
