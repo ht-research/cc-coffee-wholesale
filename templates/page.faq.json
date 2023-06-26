@@ -116,6 +116,7 @@
         },
         "528676b3-9f3b-43b7-a4f3-47d883741f6a": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "Is your coffee Certified Bird-Friendly?",
             "answer": "<ul><li>We do not currently carry certified bird-friendly offerings, but many of the coffees we offer are grown in diverse shade habitats.<\/li><li>Fun fact, Fred Houk, our co-founder, was a bird-enthusiast, and CCC offered one of the first bird-friendly coffees on the market back in 1997— Sanctuary. This coffee and programming paved the way for our sustainability department. While we still appreciate Bird-Friendly efforts, we have shifted our sustainability focus from certification-centered to transparency-centered. For more info on our farm relationships and social and environmental sustainability projects, please check out our transparency report found here: <a href=\"https:\/\/counterculturecoffee.com\/wp-content\/uploads\/2019\/08\/CCC_2019TR-3.pdf\">Transparency Report<\/a><\/li><\/ul>",
