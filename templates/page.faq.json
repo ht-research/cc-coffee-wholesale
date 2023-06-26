@@ -27,6 +27,7 @@
       "blocks": {
         "055dffce-3ca9-4305-8017-e2e8134a5a13": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "What days does Counter Culture operate?",
             "answer": "<p>Counter Culture's roasting facility is open Monday through Friday and is closed on weekends. However, you can place orders anytime!<\/p>",
