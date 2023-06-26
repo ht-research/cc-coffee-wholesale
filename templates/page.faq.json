@@ -129,6 +129,14 @@
             "answer": "<p>Our roasteries close in observance of these holidays.<\/p><ul><li>New Years Day<\/li><li>Martin Luther King Jr. Day<\/li><li>Memorial Day<\/li><li>Independence Day<\/li><li>Labor Day<\/li><li>Thanksgiving Day<\/li><li>The Friday following Thanksgiving Day<\/li><li>Christmas Day<\/li><\/ul><p>Additional closures may occur on occasion, although such events are seldom.<\/p>",
             "label": ""
           }
+        },
+        "e0aaff3e-4b1e-4be6-b05f-1a4b1bc0e832": {
+          "type": "faq",
+          "settings": {
+            "question": "How will I be notified of roasting facility closures?",
+            "answer": "<p>We will email all wholesale partners and place a banner notification on our website no less than one week before the closure.<\/p>",
+            "label": ""
+          }
         }
       },
       "block_order": [
@@ -144,7 +152,8 @@
         "9b5c126a-31c4-4761-b048-b66d12845ffb",
         "949d36b2-bac8-4dab-a6e3-074bffb52ba9",
         "528676b3-9f3b-43b7-a4f3-47d883741f6a",
-        "ce845116-d684-4597-ab59-02165c7f8b81"
+        "ce845116-d684-4597-ab59-02165c7f8b81",
+        "e0aaff3e-4b1e-4be6-b05f-1a4b1bc0e832"
       ],
       "settings": {
         "header": "Shop",
