@@ -57,6 +57,22 @@
             "link_two_classes": ""
           }
         },
+        "39e708ac-64fe-4114-81f2-07902e78f084": {
+          "type": "card",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Boston3.jpg",
+            "title": "Boston",
+            "description": "<p>374 Somerville Ave<\/p><p>Somerville, MA 02143<\/p><p>boston@counterculturecoffee.com<\/p>",
+            "button_one_style": "btn btn-secondary",
+            "link_one_text": "Coffee Classes & Workshops",
+            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/boston",
+            "link_one_classes": "",
+            "button_two_style": "btn btn-secondary",
+            "link_two_text": "",
+            "link_two_url": "shopify:\/\/collections\/all",
+            "link_two_classes": ""
+          }
+        },
         "33a0bf3c-4798-4bcc-a28d-79f972ef0af9": {
           "type": "card",
           "settings": {
@@ -66,6 +82,38 @@
             "button_one_style": "btn btn-secondary",
             "link_one_text": "Coffee Classes & Workshops",
             "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/charleston",
+            "link_one_classes": "",
+            "button_two_style": "btn btn-secondary",
+            "link_two_text": "",
+            "link_two_url": "shopify:\/\/collections\/all",
+            "link_two_classes": ""
+          }
+        },
+        "d66de56f-bf87-4c4f-98ac-d52def482d02": {
+          "type": "card",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_1761.jpg",
+            "title": "Chicago",
+            "description": "<p>177 North Ada, Unit 106<\/p><p>Chicago, IL 60607<\/p><p>chicago@counterculturecoffee.com<\/p>",
+            "button_one_style": "btn btn-secondary",
+            "link_one_text": "Coffee Classes & Workshops",
+            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/chicago",
+            "link_one_classes": "",
+            "button_two_style": "btn btn-secondary",
+            "link_two_text": "",
+            "link_two_url": "shopify:\/\/collections\/all",
+            "link_two_classes": ""
+          }
+        },
+        "29724215-d2cb-49ca-9b2b-5c9807033e87": {
+          "type": "card",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/4B9B8606.jpg",
+            "title": "Dallas",
+            "description": "<p>3333 Commerce St<\/p><p>Dallas, TX 75226<\/p><p>dallas@counterculturecoffee.com<\/p>",
+            "button_one_style": "btn btn-secondary",
+            "link_one_text": "Coffee Classes & Workshops",
+            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/dallas",
             "link_one_classes": "",
             "button_two_style": "btn btn-secondary",
             "link_two_text": "",
@@ -105,60 +153,12 @@
             "link_two_classes": ""
           }
         },
-        "29724215-d2cb-49ca-9b2b-5c9807033e87": {
-          "type": "card",
-          "settings": {
-            "img": "shopify:\/\/shop_images\/4B9B8606.jpg",
-            "title": "Dallas",
-            "description": "<p>3333 Commerce St<\/p><p>Dallas, TX 75226<\/p><p>dallas@counterculturecoffee.com<\/p>",
-            "button_one_style": "btn btn-secondary",
-            "link_one_text": "Coffee Classes & Workshops",
-            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/dallas",
-            "link_one_classes": "",
-            "button_two_style": "btn btn-secondary",
-            "link_two_text": "",
-            "link_two_url": "shopify:\/\/collections\/all",
-            "link_two_classes": ""
-          }
-        },
-        "d66de56f-bf87-4c4f-98ac-d52def482d02": {
-          "type": "card",
-          "settings": {
-            "img": "shopify:\/\/shop_images\/IMG_1761.jpg",
-            "title": "Chicago",
-            "description": "<p>177 North Ada, Unit 106<\/p><p>Chicago, IL 60607<\/p><p>chicago@counterculturecoffee.com<\/p>",
-            "button_one_style": "btn btn-secondary",
-            "link_one_text": "Coffee Classes & Workshops",
-            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/chicago",
-            "link_one_classes": "",
-            "button_two_style": "btn btn-secondary",
-            "link_two_text": "",
-            "link_two_url": "shopify:\/\/collections\/all",
-            "link_two_classes": ""
-          }
-        },
-        "39e708ac-64fe-4114-81f2-07902e78f084": {
-          "type": "card",
-          "settings": {
-            "img": "shopify:\/\/shop_images\/Boston3.jpg",
-            "title": "Boston",
-            "description": "<p>374 Somerville Ave<\/p><p>Somerville, MA 02143<\/p><p>boston@counterculturecoffee.com<\/p>",
-            "button_one_style": "btn btn-secondary",
-            "link_one_text": "Coffee Classes & Workshops",
-            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/boston",
-            "link_one_classes": "",
-            "button_two_style": "btn btn-secondary",
-            "link_two_text": "",
-            "link_two_url": "shopify:\/\/collections\/all",
-            "link_two_classes": ""
-          }
-        },
         "4f9c3d1f-4837-4b46-865f-e3780c2c6ff0": {
           "type": "card",
           "settings": {
             "img": "shopify:\/\/shop_images\/ccny_high_04.jpg",
             "title": "New York City",
-            "description": "<p>376 Broome St<br\/>New York, NY 10013<\/p><p>Newyork@counterculturecoffee.com<\/p><p>*<em>Our New York Training Center is not handicap accessible.<\/em><\/p>",
+            "description": "<p>376 Broome St<\/p><p>New York, NY 10013<\/p><p>newyork@counterculturecoffee.com<\/p><p>*<em>Our New York Training Center is not handicap accessible.<\/em><\/p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "Coffee Classes & Workshops",
             "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/nyc",
@@ -221,12 +221,12 @@
       "block_order": [
         "1dd2ce3e-12c7-4147-bc47-b37f0d1980f1",
         "c39c9853-1cd6-4361-b4c3-9176ad51f667",
+        "39e708ac-64fe-4114-81f2-07902e78f084",
         "33a0bf3c-4798-4bcc-a28d-79f972ef0af9",
+        "d66de56f-bf87-4c4f-98ac-d52def482d02",
+        "29724215-d2cb-49ca-9b2b-5c9807033e87",
         "913e04c5-0dc9-46a1-8d61-7402c253e88b",
         "ff96152e-b15f-4d36-a537-17fbf281412c",
-        "29724215-d2cb-49ca-9b2b-5c9807033e87",
-        "d66de56f-bf87-4c4f-98ac-d52def482d02",
-        "39e708ac-64fe-4114-81f2-07902e78f084",
         "4f9c3d1f-4837-4b46-865f-e3780c2c6ff0",
         "9c174405-639e-49eb-a915-fad9f05a6d08",
         "adb3a149-0765-475b-953c-4f806c19145a",
