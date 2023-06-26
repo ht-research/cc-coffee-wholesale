@@ -479,6 +479,14 @@
     "165366319200c7affa": {
       "type": "faq-group",
       "blocks": {
+        "c759c798-be1a-4d57-af61-a7a1e246f9d3": {
+          "type": "faq",
+          "settings": {
+            "question": "Who do I contact with questions about my order?",
+            "answer": "<p>Whether you have a general inquiry or an order issue, you can reach our customer support team at <a href=\"mailto:orders@counterculturecoffee.com\"><span style=\"text-decoration:underline\">orders@counterculturecoffee.com<\/span><\/a>.<\/p>",
+            "label": ""
+          }
+        },
         "65b8a228-2247-48c2-9c36-10d2f66ab31e": {
           "type": "faq",
           "settings": {
@@ -528,24 +536,16 @@
             "answer": "<p>If you are unhappy with a coffee purchased somewhere other than our website, we ask that you contact the original vendor for a return or exchange. If no resolution is achieved, please contact us, and we will do our best to accommodate.<\/p>",
             "label": ""
           }
-        },
-        "c759c798-be1a-4d57-af61-a7a1e246f9d3": {
-          "type": "faq",
-          "settings": {
-            "question": "Who do I contact with questions about my order?",
-            "answer": "<p>Whether you have a general inquiry or an order issue, you can reach our customer support team at <a href=\"mailto:orders@counterculturecoffee.com\"><span style=\"text-decoration:underline\">orders@counterculturecoffee.com<\/span><\/a>.<\/p>",
-            "label": ""
-          }
         }
       },
       "block_order": [
+        "c759c798-be1a-4d57-af61-a7a1e246f9d3",
         "65b8a228-2247-48c2-9c36-10d2f66ab31e",
         "4c8d8938-3908-4b8d-9bfa-987c9ffab3b2",
         "136a2b68-34e6-4953-86f8-4de2bfab5537",
         "a41ec154-c7b7-4f4a-a1e3-b60a3ad7ccd8",
         "ee7c57d9-573c-4bed-85e0-49f611563012",
-        "5db32a75-9bba-4213-937e-df956e813ddd",
-        "c759c798-be1a-4d57-af61-a7a1e246f9d3"
+        "5db32a75-9bba-4213-937e-df956e813ddd"
       ],
       "settings": {
         "header": "Order Issues",
