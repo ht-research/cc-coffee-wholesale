@@ -585,6 +585,7 @@
         },
         "23fdc6ed-dd8f-40ae-940e-2b38659afb52": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "What’s up with the Fres-co packaging?",
             "answer": "<p>For our newest Year-Round blend, Gradient, we are working with a new packaging manufacturer, Fres-co. Fres-co produces and manufactures bags domestically and so the shipping distance and time it takes to get to us is dramatically reduced. We will soon be taking a closer look at our packaging options to align with a more sustainable long-term partner. You can read about Fresc-co’s sustainability policy <a href=\"https:\/\/www.fresco.com\/sustainability-policy\/\">here<\/a>.<\/p>",
