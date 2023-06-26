@@ -15347,8 +15347,8 @@ const QuickOrder = (function(){
               }
              
 
-              //$('.quick-order-overlay').removeClass('hidden', 2000)
-              jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn()
+              jquery_default()('.quick-order-overlay').removeClass('hidden')
+              jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn(500)
               
             })
         //})
