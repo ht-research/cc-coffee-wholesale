@@ -54,7 +54,7 @@
           "type": "faq",
           "settings": {
             "question": "Can I schedule a future order?",
-            "answer": "<ul><li>Our apologies, we cannot offer order scheduling for standard orders. <\/li><li>However, if you’re interested in scheduling future coffee orders on a recurring basis, I recommend checking out our <a href=\"https:\/\/counterculturecoffee.com\/subscriptions\">Ongoing Subscriptions<\/a> offering. Our Ongoing subscription gives the flexibility to schedule orders to any date in the future after the first order is processed.<\/li><\/ul>",
+            "answer": "<ul><li>Our apologies, we cannot offer order scheduling for standard orders. <\/li><\/ul><p><\/p>",
             "label": ""
           }
         },
