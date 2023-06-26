@@ -40,12 +40,12 @@
         "4ce7c65c-bc96-4f59-8a62-6f1e00a32622": {
           "type": "text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot-2023-05-11-at-12.25.00-PM.jpg",
+            "image": "shopify:\/\/shop_images\/Idido_2023_12oz_bag_d4c94071-273f-4e67-b17b-7504c7b67a66.png",
             "items_alignment": "items-center",
             "number": "",
-            "title": "Nueva Llusta | Cranavi, Bolivia",
+            "title": "Idido | Yirgacheffe, Ethiopia",
             "font": "font-gopher",
-            "description": "<p>This coffee is a combination of small, single-farmer lots and coffee produced specifically for Counter Culture at the CENAPROC cooperative's central mill. The result is a vibrant and creamy coffee with notes of black cherry and hazelnut. <\/p>",
+            "description": "<p>Situated throughout seven communities, Idido members reside in some of the region’s highest-elevation coffee-growing areas. Coffees from this part of the world are renowned for their sweet and delicate flavors. We’ve purchased coffee from the cooperative since 2011, and every year, Idido is one of our favorite releases. Look for floral, melon, and citrus notes.<\/p>",
             "list_html": "",
             "button_style": "btn btn-secondary",
             "link_text": "Shop Now",
@@ -85,7 +85,7 @@
       "settings": {
         "reverse_order": false,
         "color_overlay": "",
-        "title": "<p>May Featured Coffee<\/p>",
+        "title": "<p>July Featured Coffee<\/p>",
         "text_size_mobile": "text-2xl",
         "text_size_desktop": "lg:text-2xl",
         "tag": "h2",
