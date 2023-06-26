@@ -620,6 +620,7 @@
         },
         "c6e59439-3c5d-43be-9709-f0315a65bf65": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "Can your coffee bags be composted?",
             "answer": "<p>While 60% (by weight) of our Biotrē bags will break down into healthy compost, we cannot label them as compostable because they do not meet the definition of “compostable” under California law. That said, the bags will break down quickly in regular waste.<\/p>",
