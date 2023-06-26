@@ -368,7 +368,7 @@
           "type": "faq",
           "settings": {
             "question": "What is your return policy?",
-            "answer": "<p>We do not accept returns on coffee due to its perishable nature. However, if you have any issues with your coffee or errors in your order, please contact us at <a href=\"mailto:retail@counterculturecoffee.com\" target=\"_blank\" title=\"mailto:retail@counterculturecoffee.com\">retail@counterculturecoffee.com<\/a> within four weeks of receiving your order, and we will find a solution.<\/p>",
+            "answer": "<p>We do not accept returns on coffee due to its perishable nature. However, if you have any issues with your coffee or errors in your order, please contact us at orders<a href=\"mailto:retail@counterculturecoffee.com\" target=\"_blank\" title=\"mailto:retail@counterculturecoffee.com\">@counterculturecoffee.com<\/a> within four weeks of receiving your order, and we will find a solution.<\/p>",
             "label": ""
           }
         }
