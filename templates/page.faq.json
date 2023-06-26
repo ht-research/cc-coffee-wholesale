@@ -367,6 +367,14 @@
     "1653662647f626174f": {
       "type": "faq-group",
       "blocks": {
+        "805bdab3-66b5-4ca5-aeee-851d94db8f5b": {
+          "type": "faq",
+          "settings": {
+            "question": "What days does Counter Culture fulfill orders?",
+            "answer": "<p>We roast and fulfill orders Monday through Friday, except for select holidays.<\/p>",
+            "label": ""
+          }
+        },
         "0c37c8ad-71db-4bee-aece-88b00e17015b": {
           "type": "faq",
           "settings": {
@@ -431,17 +439,10 @@
             "answer": "<p>We follow the same holiday schedule as USPS and will not ship on the days that USPS and UPS are closed. Please note, shipping will not occur on the following days:<\/p><p>New Year’s Day <\/p><p>Martin Luther King Day <\/p><p>President’s Day <\/p><p>Memorial Day <\/p><p>Independence Day <\/p><p>Labor Day <\/p><p>Columbus Day <\/p><p>Veterans Day <\/p><p>Thanksgiving <\/p><p>Day after Thanksgiving<\/p><p>Christmas Day <\/p>",
             "label": ""
           }
-        },
-        "805bdab3-66b5-4ca5-aeee-851d94db8f5b": {
-          "type": "faq",
-          "settings": {
-            "question": "What days does Counter Culture fulfill orders?",
-            "answer": "<p>We roast and fulfill orders Monday through Friday, except for select holidays.<\/p>",
-            "label": ""
-          }
         }
       },
       "block_order": [
+        "805bdab3-66b5-4ca5-aeee-851d94db8f5b",
         "0c37c8ad-71db-4bee-aece-88b00e17015b",
         "5ccb5c47-10bb-4cd4-a6da-cc97155ef2f7",
         "653065b8-3f4b-4575-b50d-cb74c03f5f89",
@@ -449,8 +450,7 @@
         "3e484378-0498-439c-ba66-1c995b46e178",
         "60320f62-b582-4d2d-9765-eba401d5972a",
         "23c65211-c44e-4d09-91b5-7b717cb8082d",
-        "6fee9014-7e7c-437d-9c09-400cfab7534f",
-        "805bdab3-66b5-4ca5-aeee-851d94db8f5b"
+        "6fee9014-7e7c-437d-9c09-400cfab7534f"
       ],
       "settings": {
         "header": "Shipping",
