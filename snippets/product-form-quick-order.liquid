@@ -125,13 +125,6 @@
 
   
 
-  {%- if is_archive -%}
-    {% render 'notify-me-form', product: product %}
-  {%- else  -%}
-    <div class="hidden js-notify-form">
-      {% render 'notify-me-form', product: product %}
-    </div>
-  {%- endif -%}
 
   <script type="application/json" class="js-product-script">
     {{ product | json }}
