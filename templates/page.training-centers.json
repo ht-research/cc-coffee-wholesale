@@ -190,7 +190,7 @@
           "settings": {
             "img": "shopify:\/\/shop_images\/4B9B9221-2.jpg",
             "title": "Washington, DC",
-            "description": "<p>1781 Florida Ave NW, Suite F<br\/>Washington, DC 20009<\/p><p>DC@counterculturecoffee.com<\/p>",
+            "description": "<p>1781 Florida Ave NW, Suite F<\/p><p>Washington, DC 20009<\/p><p>dc@counterculturecoffee.com<\/p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "Coffee Classes & Workshops",
             "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/dc",
@@ -206,7 +206,7 @@
           "settings": {
             "img": "shopify:\/\/shop_images\/CCC_BayArea_brewbar_1_-2.jpg",
             "title": "Emeryville",
-            "description": "<p>1329 64th St, Emeryville, CA 94608<\/p><p>Emeryville@counterculturecoffee.com<\/p>",
+            "description": "<p>1329 64th St<\/p><p>Emeryville, CA 94608<\/p><p>emeryville@counterculturecoffee.com<\/p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "",
             "link_one_url": "shopify:\/\/collections\/all",
