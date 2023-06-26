@@ -37,13 +37,10 @@
 
       <div class="{{ image_classes }}"
            style="min-height: calc(100vw / {{ image_aspect }});">
-        <div class="" style="min-height: inherit;">
-          {% render 'responsive-image',
-          src: section.settings.image.src,
-          alt: section.settings.image.alt,
-          class: "h-full w-full object-cover" %}
-        </div>
-        
+        {% render 'responsive-image',
+           src: section.settings.image.src,
+           alt: section.settings.image.alt,
+           class: "h-full w-full object-cover" %}
       </div>
     {%- endunless -%}
 
@@ -52,14 +49,10 @@
 
       <div class="{{ s_image_classes }}"
            style="min-height: calc(100vw / {{ image_aspect_s }});">
-
-           <div class="" style="min-height: inherit;">
-            {% render 'responsive-image',
-            src: section.settings.s_image.src,
-            alt: section.settings.s_image.alt,
-            class: "h-full w-full object-cover" %}
-           </div>
-        
+        {% render 'responsive-image',
+           src: section.settings.s_image.src,
+           alt: section.settings.s_image.alt,
+           class: "h-full w-full object-cover" %}
        </div>
     {%- endunless -%}
   </div>
