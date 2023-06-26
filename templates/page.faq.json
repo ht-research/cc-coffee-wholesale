@@ -94,7 +94,7 @@
           "type": "faq",
           "settings": {
             "question": "Is your coffee organic?",
-            "answer": "<ul><li>We offer both organic and conventional offerings. For clarity on where to find organic only products, please check out our <a href=\"https:\/\/counterculturecoffee.com\/shop\/category\/coffee\/organic\">Organic menu items<\/a>.<\/li><\/ul>",
+            "answer": "<ul><li>We offer both organic and conventional offerings. Feel free to use our sort-by-filtering feature to select organic-only options. <\/li><\/ul>",
             "label": ""
           }
         },
