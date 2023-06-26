@@ -17,8 +17,8 @@ const QuickOrder = (function(){
                 $(this).siblings('.product--buy-panel-quick-order').find('[data-value="5 lb"]').trigger('click')	
               }
              
-              $(this).siblings('.product--buy-panel-quick-order').css('display', 'block')
               $('.quick-order-overlay').removeClass('hidden')
+              $(this).siblings('.product--buy-panel-quick-order').fadeIn(500)
             })
         //})
     }

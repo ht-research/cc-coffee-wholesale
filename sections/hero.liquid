@@ -40,7 +40,7 @@
         {% render 'responsive-image',
            src: section.settings.image.src,
            alt: section.settings.image.alt,
-           class: "h-full w-full object-cover" %}
+           class: "h-full w-full object-cover min-height-inherit" %}
       </div>
     {%- endunless -%}
 
@@ -52,7 +52,7 @@
         {% render 'responsive-image',
            src: section.settings.s_image.src,
            alt: section.settings.s_image.alt,
-           class: "h-full w-full object-cover" %}
+           class: "h-full w-full object-cover min-height-inherit" %}
        </div>
     {%- endunless -%}
   </div>
