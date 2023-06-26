@@ -5068,6 +5068,10 @@ img.lazyloaded {
 
 }
 
+.quick-order-overlay {
+  background-color: rgb(0 0 0 / 0.04);
+}
+
 .product--buy-panel-quick-order .product-card--img-container{
   height: 100%;
   border-bottom: 0
@@ -5102,6 +5106,10 @@ img.lazyloaded {
 .product--buy-panel-quick-order .product-image-container img{
       -o-object-fit: contain;
          object-fit: contain;
+}
+
+.min-height-inherit{
+  min-height: inherit;
 }
 
 @media (min-width: 768px) {
