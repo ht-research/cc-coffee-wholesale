@@ -15346,8 +15346,8 @@ const QuickOrder = (function(){
                 jquery_default()(this).siblings('.product--buy-panel-quick-order').find('[data-value="5 lb"]').trigger('click')	
               }
              
-              jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn()
-              jquery_default()('.quick-order-overlay').removeClass('hidden')
+              jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn(2000)
+              // $('.quick-order-overlay').removeClass('hidden')
             })
         //})
     }
