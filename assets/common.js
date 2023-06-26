@@ -15348,7 +15348,7 @@ const QuickOrder = (function(){
              
 
               jquery_default()('.quick-order-overlay').removeClass('hidden')
-              jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn(500)
+              jquery_default()(this).siblings('.product--buy-panel-quick-order').fadeIn()
               
             })
         //})
