@@ -149,11 +149,10 @@
       "blocks": {
         "8baeddce-a010-41a6-b6f1-62e47eb37799": {
           "type": "button",
-          "disabled": true,
           "settings": {
             "button_style": "btn btn-secondary",
             "link_text": "2022 Transparency Report",
-            "link_url": "shopify:\/\/collections\/all",
+            "link_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0256\/7664\/4424\/files\/CCC_2022_Transparency_Report.pdf?v=1687808505",
             "link_classes": ""
           }
         }
@@ -170,7 +169,7 @@
         "use_squiggles": false,
         "content_image": "shopify:\/\/shop_images\/Screen_Shot_2023-05-24_at_11.03.31_AM.png",
         "content": "",
-        "title": "<h1>2022 Transparency Report Coming Soon!<\/h1>",
+        "title": "",
         "text_size_mobile": "text-6xl",
         "text_size_desktop": "lg:text-6xl",
         "tag": "h1",
