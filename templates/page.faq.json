@@ -603,6 +603,7 @@
         },
         "bb8e1545-1b0b-4395-bf73-375cf1c9ffd6": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "Why are your coffees in different types of packaging?",
             "answer": "<p>Due to the impact of COVID-19 on our packaging supply chain, we are currently using a mix of packaging to fulfill our commitments within our varied partnerships.<\/p>",
