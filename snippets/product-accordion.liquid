@@ -19,10 +19,8 @@
     {%- case group -%}
       {%- when 'Harvest' -%}
         {% capture group_content %}{% render 'product-accordion-harvest', product: product %}{% endcapture %}
-        {{group_content}}
       {%- when 'Partnership' -%}
         {% capture group_content %}{% render 'product-accordion-partnership', product: product %}{% endcapture %}
-        {{group_content}}
       {%- when 'Story' -%}
         {% capture group_content %}{% render 'product-accordion-story', product: product %}{% endcapture %}
       {%- when 'Pricing' -%}
