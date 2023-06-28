@@ -158,7 +158,7 @@
           "settings": {
             "img": "shopify:\/\/shop_images\/ccny_high_04.jpg",
             "title": "New York City",
-            "description": "<p>376 Broome St<\/p><p>New York, NY 10013<\/p><p>newyork@counterculturecoffee.com<\/p><p>*<em>Our New York Training Center is not handicap accessible.<\/em><\/p>",
+            "description": "<p>376 Broome St<\/p><p>New York, NY 10013<\/p><p>newyork@counterculturecoffee.com<\/p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "Coffee Classes & Workshops",
             "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/nyc",
