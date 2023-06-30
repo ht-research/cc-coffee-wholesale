@@ -17026,6 +17026,8 @@ const ProductBuyPanel = (function(){
     console.log('filter slick slide called..')
     if (cache.$productImageSlider.hasClass('slick-initialized')) {
 
+      console.log('current variant:', variant)
+
       let { id } = variant;
 
       cache.$productImageSlider.slick('slickUnfilter')
