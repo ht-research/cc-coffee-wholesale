@@ -15399,6 +15399,7 @@ const ProductForm = function($form){
     $frequencyContainer: $form.find('.js-selling-plan-group'),
     $sellingPlan: $form.find('[name="selling_plan"]'),
     $price: $form.find(".js-price"),
+    $priceQO: $form.find(".js-price-qo"),
     $comparePrice: $form.find(".js-compare-price"),
     $subscriptionSavings: $form.find("[data-subscription-savings]"),
   }
