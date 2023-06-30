@@ -15686,7 +15686,6 @@ const ProductForm = function($form){
     // Dispatches "variant:change" event that can capture any other changes in other files.
     // add to cart / availability
 
-    console.log('handleVariantChange called...')
     updateAddToCart()
     updateProductPrice()
     updateSubscriptionSavings()
