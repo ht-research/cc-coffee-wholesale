@@ -17034,6 +17034,7 @@ const ProductBuyPanel = (function(){
 
       cache.$productImageSlider.slick('slickFilter', function(index, slide){
         let $slideItem = jquery_default()(slide).find(selectors.imageSlides)
+        console.log($slideItem)
         let attachedVariantId = $slideItem.data('variant');
 
         console.log('attachedVariantId: ', attachedVariantId)
