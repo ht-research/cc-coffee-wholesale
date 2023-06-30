@@ -15581,6 +15581,7 @@ const ProductForm = function($form){
     let formattedPrice = formatMoney(subscribePriceCents, "amount")
 
     cache.$price.text(`$${formattedPrice}`)
+    cache.$priceQO.text(`$${formattedPrice}`)
 
     if (subscribePriceCents && subscribePriceCents < currentVariant.price) {
       cache.$comparePrice.removeClass('hidden').show()
