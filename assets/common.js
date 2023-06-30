@@ -15546,7 +15546,7 @@ const ProductForm = function($form){
       cache.$price.text("Free!")
 
       //Quick Order (Out of Stock)
-      if (currentVariant && currentVariant.available){
+      if (currentVariant.available){
         console.log('this variant is Available')
         cache.$addToCartQO.children('.js-price').text('Free!')
       }
