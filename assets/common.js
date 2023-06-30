@@ -15533,6 +15533,8 @@ const ProductForm = function($form){
 
 
       cache.$addToCartQO.children('span:first-child').text(translations.outOfStock)
+      cache.$addToCartQO.children('span:nth-child(2)').text('')
+      cache.$addToCartQO.children('.js-price').text('')
       cache.$addToCartQO.attr('disabled', true)
     }
   }
