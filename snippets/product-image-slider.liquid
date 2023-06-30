@@ -33,6 +33,8 @@
 
       {%- if image.attached_to_variant? -%}
         {% assign variant_id = image.variants[0].id %}
+      {%- else -%}
+        {% assign variant_id = product.images[0].variants[0].id %}
       {%- endif -%}
 
       {% assign normalized_alt = image.alt | downcase %}
