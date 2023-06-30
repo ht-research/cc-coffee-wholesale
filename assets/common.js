@@ -15547,8 +15547,12 @@ const ProductForm = function($form){
 
       //Quick Order (Out of Stock)
       if (currentVariant && currentVariant.available){
+        cache.$addToCartQO.children('.js-price').text('Free!')
+      }
+      else{
         cache.$addToCartQO.children('.js-price').text('')
       }
+      
     } else {
       cache.$price.text(`$${formattedPrice}`)
     }
