@@ -15554,7 +15554,8 @@ const ProductForm = function($form){
       }
       else{
         console.log('this variant is Our of Stock')
-        cache.$addToCartQO.children('.js-price').text('')
+        //cache.$addToCartQO.children('.js-price').text('')
+        cache.$price.text("Free!")
       }
 
     } else {
