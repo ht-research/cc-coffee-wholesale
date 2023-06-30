@@ -15534,7 +15534,7 @@ const ProductForm = function($form){
 
       cache.$addToCartQO.children('span:first-child').text(translations.outOfStock)
       cache.$addToCartQO.children('span:nth-child(2)').text('')
-      cache.$addToCartQO.children('.js-price').text('')
+
       cache.$addToCartQO.attr('disabled', true)
     }
   }
@@ -15544,6 +15544,11 @@ const ProductForm = function($form){
 
     if (currentVariant.price === 0) {
       cache.$price.text("Free!")
+
+      //Quick Order (Out of Stock)
+      if (currentVariant && currentVariant.available){
+        cache.$addToCartQO.children('.js-price').text('')
+      }
     } else {
       cache.$price.text(`$${formattedPrice}`)
     }
