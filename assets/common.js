@@ -15394,6 +15394,7 @@ const ProductForm = function($form){
     $hiddenOptionSelects: $form.find('.js-hidden-option-select'),
     $hiddenOptionSelectsQO: $form.find('.js-hidden-option-select-qo'),
     $addToCart: $form.find('.js-product-form-atc'),
+    $addToCartQO: $form.find('.js-product-form-atc-qo'),
     $deliveryOption: $form.find('[name="delivery_option"]'),
     $frequencyContainer: $form.find('.js-selling-plan-group'),
     $sellingPlan: $form.find('[name="selling_plan"]'),
