@@ -16970,7 +16970,7 @@ const ProductBuyPanel = (function(){
   const init = function(){
     if (!elementsExist( [selectors.productImages] )) return;
 
-    initEventListeners()
+   // initEventListeners()
   }
 
   const initEventListeners = function(){
