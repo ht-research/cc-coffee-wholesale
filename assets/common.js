@@ -16980,6 +16980,8 @@ const ProductBuyPanel = (function(){
   const handleVariantChange = function(e){
     let { variant } = e.detail;
 
+    console.log('e.detail: ', e.detail)
+
     filterSlickSlides(variant)
     updateClassButton(variant)
     updateClassInstructor(variant)
