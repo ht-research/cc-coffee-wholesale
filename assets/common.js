@@ -15524,15 +15524,15 @@ const ProductForm = function($form){
       cache.$addToCart.text(translations.addToCart)
       cache.$addToCart.attr('disabled', false)
 
-      // cache.$addToCartQO.children().text(translations.addToCart)
-      // cache.$addToCartQO.attr('disabled', false)
+      cache.$addToCartQO.children('span').text(translations.addToCart)
+      cache.$addToCartQO.attr('disabled', false)
 
     } else {
       cache.$addToCart.text(translations.outOfStock)
       cache.$addToCart.attr('disabled', true)
 
 
-      cache.$addToCartQO.text(translations.outOfStock)
+      cache.$addToCartQO.children('span').text(translations.outOfStock)
       cache.$addToCartQO.attr('disabled', true)
     }
   }
