@@ -15676,8 +15676,9 @@ const ProductForm = function($form){
     // add to cart / availability
 
     console.log('handleVariantChange called...')
-    updateAddToCart()
+
     updateProductPrice()
+    updateAddToCart()
     updateSubscriptionSavings()
     // price
     // images?
