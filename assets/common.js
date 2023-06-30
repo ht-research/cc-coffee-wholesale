@@ -15526,6 +15526,10 @@ const ProductForm = function($form){
     } else {
       cache.$addToCart.text(translations.outOfStock)
       cache.$addToCart.attr('disabled', true)
+
+
+      cache.$addToCartQO.text(translations.outOfStock)
+      cache.$addToCartQO.attr('disabled', true)
     }
   }
 
