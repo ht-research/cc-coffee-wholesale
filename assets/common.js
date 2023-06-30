@@ -15545,21 +15545,19 @@ const ProductForm = function($form){
 
     if (currentVariant.price === 0) {
       cache.$price.text("Free!")
+      cache.$priceQO.text("Free!")
 
       console.log(currentVariant)
 
       //Quick Order (Out of Stock)
-      if (currentVariant.available){
-        console.log('this variant is Available')
-        cache.$price.text("Free!")
+      if (!currentVariant.available){
+        cache.$priceQO.text("")
       }
-      else{
-        console.log('this variant is Our of Stock')
-        cache.$price.text("")
-      }
+     
 
     } else {
       cache.$price.text(`$${formattedPrice}`)
+      cache.$priceQO.text(`$${formattedPrice}`)
     }
 
     // Updates pricing in Buy Panel - COMPARE AT
