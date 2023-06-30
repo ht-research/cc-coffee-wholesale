@@ -15524,7 +15524,7 @@ const ProductForm = function($form){
       cache.$addToCart.text(translations.addToCart)
       cache.$addToCart.attr('disabled', false)
 
-      cache.$addToCartQO.children('span').text(translations.addToCart)
+      cache.$addToCartQO.children('span:first-child').text(translations.addToCart)
       cache.$addToCartQO.attr('disabled', false)
 
     } else {
@@ -15532,7 +15532,7 @@ const ProductForm = function($form){
       cache.$addToCart.attr('disabled', true)
 
 
-      cache.$addToCartQO.children('span').text(translations.outOfStock)
+      cache.$addToCartQO.children('span:first-child').text(translations.outOfStock)
       cache.$addToCartQO.attr('disabled', true)
     }
   }
