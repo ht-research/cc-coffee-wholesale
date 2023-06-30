@@ -17032,19 +17032,19 @@ const ProductBuyPanel = (function(){
 
       cache.$productImageSlider.slick('slickUnfilter')
 
-      // cache.$productImageSlider.slick('slickFilter', function(index, slide){
-      //   let $slideItem = $(slide).find(selectors.imageSlides)
-      //   let attachedVariantId = $slideItem.data('variant');
+      cache.$productImageSlider.slick('slickFilter', function(index, slide){
+        let $slideItem = jquery_default()(slide).find(selectors.imageSlides)
+        let attachedVariantId = $slideItem.data('variant');
 
-      //   console.log('attachedVariantId: ', attachedVariantId)
-      //   console.log('id: ', id)
+        console.log('attachedVariantId: ', attachedVariantId)
+        console.log('id: ', id)
 
-      //   if (attachedVariantId) {
-      //     return id === parseInt(attachedVariantId);
-      //   } else {
-      //     return true
-      //   }
-      // })
+        if (attachedVariantId) {
+          return id === parseInt(attachedVariantId);
+        } else {
+          return true
+        }
+      })
 
       cache.$productImageSlider.slick("slickGoTo", 0, false);
     }
