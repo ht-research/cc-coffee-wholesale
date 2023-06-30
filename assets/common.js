@@ -15550,9 +15550,10 @@ const ProductForm = function($form){
         cache.$addToCartQO.children('.js-price').text('Free!')
       }
       else{
+        console.log('this veriant is Our of Stock')
         cache.$addToCartQO.children('.js-price').text('')
       }
-      
+
     } else {
       cache.$price.text(`$${formattedPrice}`)
     }
