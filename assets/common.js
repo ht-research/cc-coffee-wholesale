@@ -15543,7 +15543,7 @@ const ProductForm = function($form){
     let formattedPrice = formatMoney(currentVariant.price, "amount")
 
     if (currentVariant.price === 0) {
-     // cache.$price.text("Free!")
+      cache.$price.text("Free!")
 
       //Quick Order (Out of Stock)
       if (currentVariant && currentVariant.available){
