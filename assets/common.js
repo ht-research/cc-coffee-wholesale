@@ -17034,6 +17034,8 @@ const ProductBuyPanel = (function(){
         let $slideItem = jquery_default()(slide).find(selectors.imageSlides)
         let attachedVariantId = $slideItem.data('variant');
 
+        console.log('attachedVariantId: ', attachedVariantId)
+
         if (attachedVariantId) {
           return id === parseInt(attachedVariantId);
         } else {
