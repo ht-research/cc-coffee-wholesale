@@ -15540,6 +15540,8 @@ const ProductForm = function($form){
   }
 
   const updateOneTimePrice = function(){
+
+    console.log('updateOneTimePrice called...')
     let formattedPrice = formatMoney(currentVariant.price, "amount")
 
     if (currentVariant.price === 0) {
@@ -15547,10 +15549,11 @@ const ProductForm = function($form){
 
       //Quick Order (Out of Stock)
       if (currentVariant && currentVariant.available){
+        console.log('this variant is Available')
         cache.$addToCartQO.children('.js-price').text('Free!')
       }
       else{
-        console.log('this veriant is Our of Stock')
+        console.log('this variant is Our of Stock')
         cache.$addToCartQO.children('.js-price').text('')
       }
 
