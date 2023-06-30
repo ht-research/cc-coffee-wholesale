@@ -15523,6 +15523,10 @@ const ProductForm = function($form){
     if (currentVariant && currentVariant.available) {
       cache.$addToCart.text(translations.addToCart)
       cache.$addToCart.attr('disabled', false)
+
+      cache.$addToCartQO.text(translations.addToCart)
+      cache.$addToCartQO.attr('disabled', false)
+
     } else {
       cache.$addToCart.text(translations.outOfStock)
       cache.$addToCart.attr('disabled', true)
