@@ -15,10 +15,10 @@
   }
 {% endcapture %}
 
-<div class="product--image-container js-product-images {{ section.id }}"
+<div class="product--image-container js-product-images overflow-hidden {{ section.id }}"
      {% render 'background-color', product: product %}>
 
-  {% render 'slick-arrows',
+  {% render 'slick-arrows-white',
       left_class: 'top-1/2 -translate-y-1/2 left-5',
       right_class: 'top-1/2 -translate-y-1/2 right-5' %}
 
@@ -26,35 +26,76 @@
   {% render 'product-attribute-list', product: product %}
 
   <ul class="js-slick js-product-image-slider product--image-slider max-w-full" data-slick='{{ slick_settings | strip }}'>
-    {%- for image in product.images -%}
+    {%- for media in product.media -%}
       
-      {% assign image_classes = 'h-full w-full object-cover' %}
+      {% assign media_classes = 'h-full w-full object-cover' %}
       {% assign variant_id = '' %}
-
-      {%- if image.attached_to_variant? -%}
-        {% assign variant_id = image.variants[0].id %}
+      {% assign media_type = media.media_type %}
+      
+      {%- if media.attached_to_variant? -%}
+        {% assign variant_id = media.variants[0].id %}
       {%- endif -%}
 
-      {% assign normalized_alt = image.alt | downcase %}
-      {% assign is_bag_image = false %}
-      {% if normalized_alt contains bag or image.src contains 'bag' %}
-        {% assign is_bag_image = true %}
+      {% assign normalized_alt = media.alt | downcase %}
+      {% assign is_bag_media = false %}
+      {% if normalized_alt contains bag or media.src contains 'bag' %}
+        {% assign is_bag_media = true %}
       {% endif %}
 
-      {%- if product.type == "Coffee" and is_bag_image -%}
-        {% assign image_classes = 'h-full w-9/12 mx-auto object-contain' %}
+      {%- if product.type == "Coffee" and is_bag_media -%}
+        {% assign media_classes = 'h-full w-9/12 mx-auto object-contain' %}
       {%- endif -%}
 
-      <li class="js-image-slide w-full product--image-slide flex items-center justify-center relative"
-          data-variant="{{ variant_id }}">
-        
-        {%
-          render 'responsive-image',
-          src: image.src,
-          alt: alt_text,
-          class: image_classes
-        %}
+      <li class="js-media-slide w-full product--media-slide flex items-center justify-center relative"
+          data-variant="{{ variant_id }}" data-media-type="{{media_type}}">
+        {% if media_type == "image" %}
+          {%
+            render 'responsive-image',
+            src: media.src,
+            alt: alt_text,
+            class: media_classes
+          %}
+        {% elsif media_type == "external_video" or media_type == "video" %}
+          {% for source in media.sources %}
+                        {% if source.mime_type contains 'mp4' %}
+                          <div class="pb-full relative block" style="padding-bottom: 100%;">
+                            <video loop muted playsinline autoplay controls controlsList="nodownload" poster="{{ media.preview_image | img_url: product_image_size }}" class="absolute inset-0 product-video-mp4-sound w-full lazy-video" data-src-scroll="{{ source.url }}" src="{{ source.url }}" type="{{ source.mime_type }}">
+                            Your browser does not support the video tag.
+                            </video>
+                          </div>
+                        {% endif %}
+          {% endfor %}
+          {% if media.host contains 'youtube' or media.host contains 'vimeo' %}
+                          <div class="w-full relative block" >
+                            <div class="video-container">
+                              {% if media.host == 'youtube' %}
+                                {{ media | external_video_url: color: 'white' | external_video_tag }}
+                              {% elsif media.host == 'vimeo' %}
+                                {{ media | external_video_url: loop: '1', muted: '1' | external_video_tag }}
+                              {% endif %}
+                            </div>
+                          </div>
+          {% endif %}
+        {% endif %}
       </li>
     {%- endfor -%}
   </ul>
 </div>
+
+
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 100%; /* 16:9 aspect ratio */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+</style>
