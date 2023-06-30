@@ -16981,6 +16981,7 @@ const ProductBuyPanel = (function(){
     let { variant } = e.detail;
 
     console.log('e.detail: ', e.detail)
+    console.log('varaint product ID: ', variant.product)
 
     filterSlickSlides(variant)
     updateClassButton(variant)
