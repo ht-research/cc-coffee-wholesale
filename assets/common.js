@@ -17035,6 +17035,7 @@ const ProductBuyPanel = (function(){
         let attachedVariantId = $slideItem.data('variant');
 
         console.log('attachedVariantId: ', attachedVariantId)
+        console.log('id: ', id)
 
         if (attachedVariantId) {
           return id === parseInt(attachedVariantId);
