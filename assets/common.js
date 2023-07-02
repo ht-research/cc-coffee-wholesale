@@ -17031,32 +17031,39 @@ const ProductBuyPanel = (function(){
 
       cache.$productImageSlider.slick('slickUnfilter')
 
-      cache.$productImageSlider.slick('slickFilter', function(index, slide){
-        let $slideItem = jquery_default()(slide).find(selectors.imageSlides)
-        console.log('slide: ', slide)
-        let attachedVariantId = $slideItem.data('variant');
 
-        console.log('attachedVariantId: ', attachedVariantId)
-        console.log('id: ', id)
+      //1. check the available variant IDs
+      //2. If the current variant ID is part of it, filter them
+      //3. If not, don't filter
 
-        // if(id == attachedVariantId){
-        //   console.log('ID found')
-        //   console.log(id === parseInt(attachedVariantId))
-        //   return id === parseInt(attachedVariantId)
-        // }
-        // else{
-        //   console.log('ID NOT found')
+
+
+      // cache.$productImageSlider.slick('slickFilter', function(index, slide){
+      //   let $slideItem = $(slide).find(selectors.imageSlides)
+      //   console.log('slide: ', slide)
+      //   let attachedVariantId = $slideItem.data('variant');
+
+      //   console.log('attachedVariantId: ', attachedVariantId)
+      //   console.log('id: ', id)
+
+      //   // if(id == attachedVariantId){
+      //   //   console.log('ID found')
+      //   //   console.log(id === parseInt(attachedVariantId))
+      //   //   return id === parseInt(attachedVariantId)
+      //   // }
+      //   // else{
+      //   //   console.log('ID NOT found')
           
-        //   return id === parseInt(attachedVariantId)
-        // } 
+      //   //   return id === parseInt(attachedVariantId)
+      //   // } 
 
 
-        if (attachedVariantId) {
-            return id === parseInt(attachedVariantId);
-        } else {
-            return true
-        }
-      })
+      //   if (attachedVariantId) {
+      //       return id === parseInt(attachedVariantId);
+      //   } else {
+      //       return true
+      //   }
+      // })
 
       cache.$productImageSlider.slick("slickGoTo", 0, false);
     }
