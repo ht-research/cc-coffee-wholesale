@@ -17040,12 +17040,12 @@ const ProductBuyPanel = (function(){
         console.log('attachedVariantId: ', typeof attachedVariantId)
         //console.log('id: ', id)
 
-        // if(id in attachedVariantId){
-        //   console.log('ID found')
-        // }
-        // else{
-        //   console.log('ID NOT found')
-        // }
+        if(id == attachedVariantId){
+          console.log('ID found')
+        }
+        else{
+          console.log('ID NOT found')
+        }
 
         if (attachedVariantId) {
           return id === parseInt(attachedVariantId);
