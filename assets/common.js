@@ -17031,29 +17031,29 @@ const ProductBuyPanel = (function(){
 
       cache.$productImageSlider.slick('slickUnfilter')
 
-      // cache.$productImageSlider.slick('slickFilter', function(index, slide){
-      //   let $slideItem = $(slide).find(selectors.imageSlides)
-      //   console.log($slideItem)
-      //   let attachedVariantId = $slideItem.data('variant');
+      cache.$productImageSlider.slick('slickFilter', function(index, slide){
+        let $slideItem = jquery_default()(slide).find(selectors.imageSlides)
+        console.log($slideItem)
+        let attachedVariantId = $slideItem.data('variant');
 
-      //   console.log('attachedVariantId: ', attachedVariantId)
-      //   console.log('id: ', id)
+        console.log('attachedVariantId: ', attachedVariantId)
+        console.log('id: ', id)
 
-      //   if(id == attachedVariantId){
-      //     console.log('ID found')
-      //     // if (attachedVariantId) {
-      //     //   return id === parseInt(attachedVariantId);
-      //     // } else {
-      //     //   return true
-      //     // }
+        if(id == attachedVariantId){
+          console.log('ID found')
+          // if (attachedVariantId) {
+          //   return id === parseInt(attachedVariantId);
+          // } else {
+          //   return true
+          // }
 
-      //     return id === parseInt(attachedVariantId)
-      //   }
-      //   else{
-      //     console.log('ID NOT found')
-      //     return true
-      //   } 
-      // })
+          return id === parseInt(attachedVariantId)
+        }
+        else{
+          console.log('ID NOT found')
+          return true
+        } 
+      })
 
       cache.$productImageSlider.slick("slickGoTo", 0, false);
     }
