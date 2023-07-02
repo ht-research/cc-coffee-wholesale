@@ -17045,7 +17045,7 @@ const ProductBuyPanel = (function(){
 
       console.log('new Set:', allAttachedVaraints)
 
-      if(jquery_default().inArray(id, allAttachedVaraints) >= 0 ){
+      if(allAttachedVaraints.indexOf(id) != -1 ){
         console.log('ID found')
       }
       else{
