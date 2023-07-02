@@ -17039,23 +17039,23 @@ const ProductBuyPanel = (function(){
         console.log('attachedVariantId: ', attachedVariantId)
         console.log('id: ', id)
 
-        if(id == attachedVariantId){
-          console.log('ID found')
-          console.log(id === parseInt(attachedVariantId))
-          return id === parseInt(attachedVariantId)
+        // if(id == attachedVariantId){
+        //   console.log('ID found')
+        //   console.log(id === parseInt(attachedVariantId))
+        //   return id === parseInt(attachedVariantId)
+        // }
+        // else{
+        //   console.log('ID NOT found')
+          
+        //   return id === parseInt(attachedVariantId)
+        // } 
+
+
+        if (attachedVariantId) {
+            return id === parseInt(attachedVariantId);
+        } else {
+            return true
         }
-        else{
-          console.log('ID NOT found')
-          console.log(id === parseInt(attachedVariantId))
-          return id === parseInt(attachedVariantId)
-        } 
-
-
-        // if (attachedVariantId) {
-          //   return id === parseInt(attachedVariantId);
-          // } else {
-          //   return true
-          // }
       })
 
       cache.$productImageSlider.slick("slickGoTo", 0, false);
