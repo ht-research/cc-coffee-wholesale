@@ -16979,7 +16979,7 @@ const ProductBuyPanel = (function(){
 
   const handleVariantChange = function(e){
     let { variant } = e.detail;
-
+    
     filterSlickSlides(variant)
     updateClassButton(variant)
     updateClassInstructor(variant)
@@ -17043,7 +17043,7 @@ const ProductBuyPanel = (function(){
         if (attachedVariantId) {
           return id === parseInt(attachedVariantId);
         } else {
-          return id
+          return true
         }
       })
 
