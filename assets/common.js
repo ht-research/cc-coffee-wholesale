@@ -17050,9 +17050,9 @@ const ProductBuyPanel = (function(){
         }
         else{
           console.log('ID NOT found')
-          return false
+          return true
         } 
-        
+
       })
 
       cache.$productImageSlider.slick("slickGoTo", 0, false);
