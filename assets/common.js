@@ -17046,7 +17046,8 @@ const ProductBuyPanel = (function(){
         }
         else{
           console.log('ID NOT found')
-          return false
+          console.log(id === parseInt(attachedVariantId))
+          return id === parseInt(attachedVariantId)
         } 
 
 
