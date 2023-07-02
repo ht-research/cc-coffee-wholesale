@@ -17038,14 +17038,14 @@ const ProductBuyPanel = (function(){
         let attachedVariantId = $slideItem.data('variant');
 
         console.log('attachedVariantId: ', attachedVariantId)
-        console.log('id: ', id)
+        //console.log('id: ', id)
 
-        if(id in attachedVariantId){
-          console.log('ID found')
-        }
-        else{
-          console.log('ID NOT found')
-        }
+        // if(id in attachedVariantId){
+        //   console.log('ID found')
+        // }
+        // else{
+        //   console.log('ID NOT found')
+        // }
 
         if (attachedVariantId) {
           return id === parseInt(attachedVariantId);
