@@ -17041,18 +17041,20 @@ const ProductBuyPanel = (function(){
 
         if(id == attachedVariantId){
           console.log('ID found')
-          // if (attachedVariantId) {
-          //   return id === parseInt(attachedVariantId);
-          // } else {
-          //   return true
-          // }
-
+          console.log(id === parseInt(attachedVariantId))
           return id === parseInt(attachedVariantId)
         }
         else{
           console.log('ID NOT found')
           return true
         } 
+
+
+        // if (attachedVariantId) {
+          //   return id === parseInt(attachedVariantId);
+          // } else {
+          //   return true
+          // }
       })
 
       cache.$productImageSlider.slick("slickGoTo", 0, false);
