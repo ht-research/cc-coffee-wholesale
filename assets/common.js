@@ -17046,7 +17046,7 @@ const ProductBuyPanel = (function(){
         }
         else{
           console.log('ID NOT found')
-          return true
+          return false
         } 
 
 
