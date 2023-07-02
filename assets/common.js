@@ -17043,7 +17043,7 @@ const ProductBuyPanel = (function(){
         allAttachedVaraints.add(jquery_default()(this).data('variant'))
       })
 
-      console.log('new Set:', allAttachedVaraints)
+      console.log('new Set:',typeof allAttachedVaraints)
 
       if(allAttachedVaraints.indexOf(id) != -1 ){
         console.log('ID found')
