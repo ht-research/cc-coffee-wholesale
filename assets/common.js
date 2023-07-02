@@ -17052,7 +17052,7 @@ const ProductBuyPanel = (function(){
         // if (attachedVariantId) {
         //   return id === parseInt(attachedVariantId);
         // } else {
-        //   return false
+        //   return true
         // }
 
       })
