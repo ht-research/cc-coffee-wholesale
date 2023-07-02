@@ -17045,6 +17045,12 @@ const ProductBuyPanel = (function(){
 
       console.log('new Set:', allAttachedVaraints)
 
+      if(jquery_default().inArray(id, allAttachedVaraints) >= 0 ){
+        console.log('ID found')
+      }
+      else{
+         console.log('ID NOT found')
+      }
 
 
       // cache.$productImageSlider.slick('slickFilter', function(index, slide){
