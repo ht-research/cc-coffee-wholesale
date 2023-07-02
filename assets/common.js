@@ -17037,7 +17037,7 @@ const ProductBuyPanel = (function(){
       //3. If not, don't filter
 
       jquery_default()('.js-image-slide').each(function(){
-        console.log(jquery_default()(this))
+        console.log(jquery_default()(this).data('variant'))
       })
 
 
