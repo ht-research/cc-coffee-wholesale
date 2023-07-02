@@ -17041,16 +17041,19 @@ const ProductBuyPanel = (function(){
 
         if(id == attachedVariantId){
           console.log('ID found')
-          if (attachedVariantId) {
-            return id === parseInt(attachedVariantId);
-          } else {
-            return false
-          }
+          return true
         }
         else{
           console.log('ID NOT found')
-          return true
+          return false
         } 
+
+
+        // if (attachedVariantId) {
+        //   return id === parseInt(attachedVariantId);
+        // } else {
+        //   return false
+        // }
 
       })
 
