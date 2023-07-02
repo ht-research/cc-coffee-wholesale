@@ -17036,6 +17036,10 @@ const ProductBuyPanel = (function(){
       //2. If the current variant ID is part of it, filter them
       //3. If not, don't filter
 
+      jquery_default()('.js-image-slide').each(function(){
+        console.log($this)
+      })
+
 
 
       // cache.$productImageSlider.slick('slickFilter', function(index, slide){
