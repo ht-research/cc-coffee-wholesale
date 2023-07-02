@@ -17031,38 +17031,32 @@ const ProductBuyPanel = (function(){
 
       cache.$productImageSlider.slick('slickUnfilter')
 
+      cache.$productImageSlider.slick('slickFilter', function(index, slide){
+        let $slideItem = jquery_default()(slide).find(selectors.imageSlides)
+        console.log('slide: ', slide)
+        let attachedVariantId = $slideItem.data('variant');
+
+        console.log('attachedVariantId: ', attachedVariantId)
+        console.log('id: ', id)
+
+        // if(id == attachedVariantId){
+        //   console.log('ID found')
+        //   console.log(id === parseInt(attachedVariantId))
+        //   return id === parseInt(attachedVariantId)
+        // }
+        // else{
+        //   console.log('ID NOT found')
+          
+        //   return id === parseInt(attachedVariantId)
+        // } 
 
 
-
-
-      let $slideItem = jquery_default()(slide).find(selectors.imageSlides)
-      console.log($slideItem)
-      let attachedVariantId = $slideItem.data('variant');
-
-      console.log('attachedVariantId: ', attachedVariantId)
-      console.log('id: ', id)
-
-      if(id == attachedVariantId){
-        console.log('ID found')
-        cache.$productImageSlider.slick('slickFilter', function(index, slide){
-          if (attachedVariantId) {
-              return id === parseInt(attachedVariantId);
-          } else {
-              return true
-          }
-        })
-      }
-      else{
-        console.log('ID NOT found, no filtering')
-        //return id === parseInt(attachedVariantId)
-      } 
-
-
-
-
-    
-      
-      
+        if (attachedVariantId) {
+            return id === parseInt(attachedVariantId);
+        } else {
+            return true
+        }
+      })
 
       cache.$productImageSlider.slick("slickGoTo", 0, false);
     }
