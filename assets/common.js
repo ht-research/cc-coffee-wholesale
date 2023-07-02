@@ -17039,11 +17039,10 @@ const ProductBuyPanel = (function(){
       let allAttachedVaraints = new Set();
 
       jquery_default()('.js-image-slide').each(function(){
-        console.log(jquery_default()(this).data('variant'))
         allAttachedVaraints.add(jquery_default()(this).data('variant'))
       })
 
-      console.log('new Set:',typeof allAttachedVaraints)
+      //console.log('new Set:',typeof allAttachedVaraints)
       let allAttachedVaraintIDs = Array.from(allAttachedVaraints);
 
       if(allAttachedVaraintIDs.indexOf(id) != -1 ){
