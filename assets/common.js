@@ -17037,8 +17037,8 @@ const ProductBuyPanel = (function(){
         console.log($slideItem)
         let attachedVariantId = $slideItem.data('variant');
 
-        console.log('attachedVariantId: ', typeof attachedVariantId)
-        //console.log('id: ', id)
+        console.log('attachedVariantId: ', attachedVariantId)
+        console.log('id: ', id)
 
         if(id == attachedVariantId){
           console.log('ID found')
@@ -17051,9 +17051,7 @@ const ProductBuyPanel = (function(){
         else{
           console.log('ID NOT found')
           return false
-        }
-
-        
+        } 
       })
 
       cache.$productImageSlider.slick("slickGoTo", 0, false);
