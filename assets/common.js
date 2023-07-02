@@ -17041,7 +17041,7 @@ const ProductBuyPanel = (function(){
         console.log('id: ', id)
 
         if (attachedVariantId) {
-          return id === parseInt(attachedVariantId);
+          return true;
         } else {
           return true
         }
