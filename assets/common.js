@@ -17024,9 +17024,6 @@ const ProductBuyPanel = (function(){
 
   const filterSlickSlides = function(variant){
     if (cache.$productImageSlider.hasClass('slick-initialized')) {
-
-      console.log('current variant:', variant)
-
       let { id } = variant;
 
       cache.$productImageSlider.slick('slickUnfilter')
@@ -17049,11 +17046,11 @@ const ProductBuyPanel = (function(){
         console.log('ID found')
         cache.$productImageSlider.slick('slickFilter', function(index, slide){
           let $slideItem = jquery_default()(slide).find(selectors.imageSlides)
-          console.log('slide: ', slide)
+          //console.log('slide: ', slide)
           let attachedVariantId = $slideItem.data('variant');
 
-          console.log('attachedVariantId: ', attachedVariantId)
-          console.log('id: ', id)
+          // console.log('attachedVariantId: ', attachedVariantId)
+          // console.log('id: ', id)
 
           if (attachedVariantId) {
               return id === parseInt(attachedVariantId);
