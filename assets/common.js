@@ -17036,9 +17036,14 @@ const ProductBuyPanel = (function(){
       //2. If the current variant ID is part of it, filter them
       //3. If not, don't filter
 
+      let allAttachedVaraints = new Set();
+
       jquery_default()('.js-image-slide').each(function(){
         console.log(jquery_default()(this).data('variant'))
+        allAttachedVaraints.add(jquery_default()(this).data('variant'))
       })
+
+      console.log('new Set:', allAttachedVaraints)
 
 
 
