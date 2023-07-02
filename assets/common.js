@@ -17041,11 +17041,11 @@ const ProductBuyPanel = (function(){
 
         if(id == attachedVariantId){
           console.log('ID found')
-          return true
+          return false
         }
         else{
           console.log('ID NOT found')
-          return false
+          return true
         } 
 
 
