@@ -17037,7 +17037,7 @@ const ProductBuyPanel = (function(){
         console.log($slideItem)
         let attachedVariantId = $slideItem.data('variant');
 
-        console.log('attachedVariantId: ', attachedVariantId)
+        console.log('attachedVariantId: ', typeof attachedVariantId)
         //console.log('id: ', id)
 
         // if(id in attachedVariantId){
