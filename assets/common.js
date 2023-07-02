@@ -17044,9 +17044,9 @@ const ProductBuyPanel = (function(){
       })
 
       console.log('new Set:',typeof allAttachedVaraints)
-      let array = Array.from(allAttachedVaraints);
+      let allAttachedVaraintIDs = Array.from(allAttachedVaraints);
 
-      if(array.indexOf(id) != -1 ){
+      if(allAttachedVaraintIDs.indexOf(id) != -1 ){
         console.log('ID found')
       }
       else{
