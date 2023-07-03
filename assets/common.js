@@ -15621,6 +15621,8 @@ const ProductForm = function($form){
     // findVariant by matching activeOptions[0] / activeOptions[1] etc
     if (!variants) return;
 
+    console.log('variants', variants)
+
 
     let name = jquery_default()(this).data("name")
     let value = jquery_default()(this).val()
