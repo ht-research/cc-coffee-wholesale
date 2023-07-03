@@ -15544,18 +15544,18 @@ const ProductForm = function($form){
     console.log('updateOneTimePrice called...')
 
     let formattedPrice = formatMoney(currentVariant.price, "amount")
+
     console.log('currentVariant: ', currentVariant)
+
     if (currentVariant.price === 0) {
       cache.$price.text("Free!")
       cache.$priceQO.text("Free!")
 
-    
-
+  
       //Quick Order (Out of Stock)
       if (!currentVariant.available){
         cache.$priceQO.text("")
       }
-     
 
     } else {
       cache.$price.text(`$${formattedPrice}`)
