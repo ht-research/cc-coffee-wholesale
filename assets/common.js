@@ -15541,6 +15541,7 @@ const ProductForm = function($form){
   }
 
   const updateOneTimePrice = function(){
+    console.log('updateOneTimePrice called...')
 
     let formattedPrice = formatMoney(currentVariant.price, "amount")
 
