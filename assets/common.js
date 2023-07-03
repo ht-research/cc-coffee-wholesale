@@ -15549,7 +15549,7 @@ const ProductForm = function($form){
       cache.$price.text("Free!")
       cache.$priceQO.text("Free!")
 
-      console.log(currentVariant)
+      console.log('currentVariant: ', currentVariant)
 
       //Quick Order (Out of Stock)
       if (!currentVariant.available){
