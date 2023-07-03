@@ -15545,7 +15545,7 @@ const ProductForm = function($form){
 
     let formattedPrice = formatMoney(currentVariant.price, "amount")
 
-    console.log('currentVariant: ', currentVariant)
+    console.log('currentVariant: ', currentVariant.compare_at_price)
 
     if (currentVariant.price === 0) {
       cache.$price.text("Free!")
