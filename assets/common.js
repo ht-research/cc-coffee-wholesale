@@ -15564,6 +15564,7 @@ const ProductForm = function($form){
 
     // Updates pricing in Buy Panel - COMPARE AT
     let formattedComparePrice = formatMoney(currentVariant.compare_at_price, "amount")
+    console.log('formattedComparePrice', formattedComparePrice)
     cache.$comparePrice.text(`$${formattedComparePrice}`)
 
     if (currentVariant.compare_at_price && currentVariant.compare_at_price > currentVariant.price) {
