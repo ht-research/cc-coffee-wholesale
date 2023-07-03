@@ -15505,6 +15505,8 @@ const ProductForm = function($form){
   const parseVariants = function(){
     product = JSON.parse(cache.$productScript.text());
 
+    console.log('product', product)
+
     variants = product.variants;
   }
 
