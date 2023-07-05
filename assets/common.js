@@ -17441,7 +17441,104 @@ const Video = (function(){
 
 /* harmony default export */ const video = (Video);
 
+;// CONCATENATED MODULE: ./assets/js/contactForm.js
+
+
+const contactForm = (function() {
+
+
+    const selectors = {
+        contactFirstNameError: ".contact-first-name-error",
+        contactLastNameError: ".contact-last-name-error",
+        contactEmailError: ".contact-email-error",
+        contactTextboxError: ".contact-textbox-error",
+        firstNameInputID: "#contact-first-name",
+        lastNameInputID: "#contact-last-name",
+        emailInputID: "#contact-email",
+        textboxInputID: "#contact-body",
+        contactSubmitBtn: ".contact-form-submit",
+    }
+
+
+  const init = function(){
+    initEventListeners()
+  }
+
+  const initEventListeners = function(){
+    jquery_default()(selectors.contactSubmitBtn).on('click', validateContactForm)
+  }
+
+  const validateContactForm = function(e){
+    e.preventDefault();
+
+
+    let firstNameVal = jquery_default()(selectors.firstNameInputID).val();
+    let lastNameVal = jquery_default()(selectors.lastNameInputID).val();
+    let emailVal = jquery_default()(selectors.emailInputID).val();
+    let textboxVal = jquery_default()(selectors.textboxInputID).val();
+    const pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+
+
+
+    if(firstNameVal.length === 0 || lastNameVal.length === 0 || emailVal.length === 0 || textboxVal.length === 0){
+        if(firstNameVal.length === 0){
+            jquery_default()(selectors.contactFirstNameError).removeClass('hidden')
+        }
+        else{
+            jquery_default()(selectors.contactFirstNameError).addClass('hidden')
+        }
+
+
+        if(lastNameVal.length === 0){
+            jquery_default()(selectors.contactLastNameError).removeClass('hidden')
+        }else{
+            jquery_default()(selectors.contactLastNameError).addClass('hidden')
+        }
+
+
+        if(emailVal.length === 0){
+            jquery_default()(selectors.contactEmailError).removeClass('hidden')
+        }
+        else{
+            jquery_default()(selectors.contactEmailError).addClass('hidden')
+        }
+
+
+        if(textboxVal.length === 0){
+            jquery_default()(selectors.contactTextboxError).removeClass('hidden')
+        }
+        else{
+            jquery_default()(selectors.contactTextboxError).addClass('hidden')
+        }
+
+
+
+        return;
+    }
+    else{
+
+        //pattern test email
+        if (!pattern.test(emailVal)){
+            jquery_default()(selectors.contactEmailError).text('Please enter correct email')
+            jquery_default()(selectors.contactEmailError).removeClass('hidden')
+            return false;
+        }
+        jquery_default()('#contact_form').trigger('submit');
+    }
+    
+
+  } 
+
+
+  return { init }
+})()
+
+
+/* harmony default export */ const js_contactForm = (contactForm);  
+
 ;// CONCATENATED MODULE: ./assets/js/common.js
+
 
 
 
@@ -17502,6 +17599,7 @@ jquery_default()(() => {
   giftSubscription.init();
   quick_order.init();
   GriListSwitch.init();
+  js_contactForm.init();
 });
 
 
