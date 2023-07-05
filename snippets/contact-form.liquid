@@ -71,7 +71,10 @@
                 input_class: 'border-black',
                 placeholder: '123-456-9999',
                 label: 'Phone (xxx-xxx-xxxx)',
-                label_class: 'text-black' %}
+                label_class: 'text-black'
+                additional_attr: 'maxlength="10"'
+                
+                %}
 
             <span class="contact-form-error contact-textbox-error text-sm text-ethiopia hidden">Please enter some text</span> 
             {% render 'floating-label', 
