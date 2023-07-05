@@ -31,6 +31,7 @@
                     options: topics %}
             {% endunless %}
               
+            <span class="contact-form-error contact-first-name-error text-sm text-ethiopia hidden">First Name cannot be blank</span>
             {% render 'floating-label', 
                 id: 'contact-first-name',
                 input_name: 'contact[first_name]',
@@ -40,6 +41,7 @@
                 label: '*First Name',
                 label_class: 'text-black' %}
 
+            <span class="contact-form-error contact-last-name-error text-sm text-ethiopia hidden">Last Name cannot be blank</span>
             {% render 'floating-label', 
                 id: 'contact-last-name',
                 input_name: 'contact[last_name]',
@@ -49,6 +51,7 @@
                 label: '*Last Name',
                 label_class: 'text-black' %}
 
+            <span class="contact-form-error contact-email-error text-sm text-ethiopia hidden">Email cannot be blank</span>
             {% render 'floating-label', 
                 id: 'contact-email',
                 input_name: 'contact[email]',
@@ -58,6 +61,7 @@
                 placeholder: 'you@example.com',
                 label: '*Email',
                 label_class: 'text-black' %}
+
 
             {% render 'floating-label', 
                 id: 'contact-phone',
@@ -69,6 +73,7 @@
                 label: 'Phone (xxx-xxx-xxxx)',
                 label_class: 'text-black' %}
 
+            <span class="contact-form-error contact-textbox-error text-sm text-ethiopia hidden">Please enter some text</span> 
             {% render 'floating-label', 
                 id: 'contact-body',
                 input_name: 'contact[body]',
@@ -84,6 +89,7 @@
                         class="btn btn-secondary w-full md:w-auto">
                     Submit
                 </button>
+                <div class="btn btn-secondary w-full md:w-auto contact-form-submit cursor-pointer"> Submit </div>
             </div>
         </div>
     {% endform %}
