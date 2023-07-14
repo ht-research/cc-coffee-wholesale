@@ -85,13 +85,13 @@
   {%- comment %}
   	Seeds projects
   {% endcomment -%}
-  Seed Proj: {{ cf.partnership_seeds_projects[0] }}
-  {%- if cf.partnership_seeds_projects != blank -%}
+  Seed Proj: {{ cf.partnership_seeds_project[0] }}
+  {%- if cf.partnership_seeds_project != blank -%}
     <div class="py-5 px-5 text-center border-b border-black">
       <p class="uppercase tracking-wide font-freight-sans">Seeds Project</p>
 
-      {%- for seed_link in cf.partnership_seeds_projects -%}
-        <p class="text-center tracking-wider my-2">{{ seed_link["partnership_seeds_projects"] }}</p>
+      {%- for seed_link in cf.partnership_seeds_project -%}
+        <p class="text-center tracking-wider my-2">{{ seed_link["partnership_seeds_project"] }}</p>
       {%- endfor -%}
     </div>
   {%- endif -%}
