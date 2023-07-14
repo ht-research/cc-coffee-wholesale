@@ -31,6 +31,8 @@
 
     {% assign group_content = group_content | strip %}
 
+    {{group_content}}
+
     {%- unless group_content == "" -%}
       {%
         render 'expandable-faq',
