@@ -31,7 +31,10 @@
 
     {% assign group_content = group_content | strip %}
 
-    {{group_content}}
+
+    {%- if group_content != blank -%}
+      {{group}}
+    {%- endif -%}
 
     {%- unless group_content == "" -%}
       {%
