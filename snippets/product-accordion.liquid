@@ -31,12 +31,6 @@
 
     {% assign group_content = group_content | strip %}
 
-
-    {%- if group_content != blank -%}
-      {{group}}
-      {{group_content | size }}
-    {%- endif -%}
-
     {%- unless group_content == "" -%}
       {%
         render 'expandable-faq',
