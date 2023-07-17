@@ -7,14 +7,10 @@
         </h2>
     {%- endunless -%}
 
-    {%- unless subtext == blank -%}
-        <p  class="font-tenso mt-6 mb-7 animate animate-fadeInUp"
-            data-delay="200">
-            {{ subtext }}
-        </p>
-    {%- endunless -%}
+    
 
     {% form 'contact' %}
+        
         {%- if form.errors -%}
             <div class="mb-2.5">
                 {{ form.errors | default_errors }}
@@ -28,6 +24,13 @@
             Thank you for submitting this form
           </p>
         {%- endif -%}
+
+        {%- unless subtext == blank -%}
+            <p  class="font-tenso mt-6 mb-7 animate animate-fadeInUp"
+                data-delay="200">
+                {{ subtext }}
+            </p>
+        {%- endunless -%}
 
         <div    class="flex flex-col gap-5 animate animate-fadeInUp" 
                 data-delay="400">
