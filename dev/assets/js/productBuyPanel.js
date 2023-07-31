@@ -82,16 +82,35 @@ const ProductBuyPanel = (function(){
 
       cache.$productImageSlider.slick('slickUnfilter')
 
-      cache.$productImageSlider.slick('slickFilter', function(index, slide){
-        let $slideItem = $(slide).find(selectors.imageSlides)
-        let attachedVariantId = $slideItem.data('variant');
+      
 
-        if (attachedVariantId) {
-          return id === parseInt(attachedVariantId);
-        } else {
-          return true
-        }
-      })
+      //1. check the available variant IDs	
+      //2. If the current variant ID is part of it, filter them	
+      //3. If not, don't filter	
+      let allAttachedVaraints = new Set();	
+      $('.js-image-slide').each(function(){	
+        allAttachedVaraints.add($(this).data('variant'))	
+      })	
+      //console.log('new Set:',typeof allAttachedVaraints)	
+      let allAttachedVaraintIDs = Array.from(allAttachedVaraints);	
+      if(allAttachedVaraintIDs.indexOf(id) != -1 ){	
+        console.log('ID found')	
+      cache.$productImageSlider.slick('slickFilter', function(index, slide){	
+        let $slideItem = $(slide).find(selectors.imageSlides)	
+          //console.log('slide: ', slide)	
+        let attachedVariantId = $slideItem.data('variant');	
+          // console.log('attachedVariantId: ', attachedVariantId)	
+          // console.log('id: ', id)	
+        if (attachedVariantId) {	
+          return id === parseInt(attachedVariantId);	
+        } else {	
+          return true	
+        }	
+      })	
+      }	
+      else{	
+         console.log('ID NOT found')	
+      }
 
       cache.$productImageSlider.slick("slickGoTo", 0, false);
     }

@@ -15388,10 +15388,12 @@ const ProductForm = function($form){
     $hiddenOptionSelects: $form.find('.js-hidden-option-select'),
     $hiddenOptionSelectsQO: $form.find('.js-hidden-option-select-qo'),
     $addToCart: $form.find('.js-product-form-atc'),
+    $addToCartQO: $form.find('.js-product-form-atc-qo'),
     $deliveryOption: $form.find('[name="delivery_option"]'),
     $frequencyContainer: $form.find('.js-selling-plan-group'),
     $sellingPlan: $form.find('[name="selling_plan"]'),
     $price: $form.find(".js-price"),
+    $priceQO: $form.find(".js-price-qo"),
     $comparePrice: $form.find(".js-compare-price"),
     $subscriptionSavings: $form.find("[data-subscription-savings]"),
   }
@@ -15449,9 +15451,18 @@ const ProductForm = function($form){
     if (currentVariant && currentVariant.available) {
       cache.$addToCart.text(translations.addToCart)
       cache.$addToCart.attr('disabled', false)
+
+      cache.$addToCartQO.children('span:first-child').text(translations.addToCart)	
+      cache.$addToCartQO.children('span:nth-child(2)').text('-')	
+      cache.$addToCartQO.attr('disabled', false)
+
     } else {
       cache.$addToCart.text(translations.outOfStock)
       cache.$addToCart.attr('disabled', true)
+
+      cache.$addToCartQO.children('span:first-child').text(translations.outOfStock)	
+      cache.$addToCartQO.children('span:nth-child(2)').text('')	
+      cache.$addToCartQO.attr('disabled', true)
     }
   }
 
@@ -15460,8 +15471,17 @@ const ProductForm = function($form){
 
     if (currentVariant.price === 0) {
       cache.$price.text("Free!")
+
+      cache.$priceQO.text("Free!")	
+  	
+      //Quick Order (Out of Stock)	
+      if (!currentVariant.available){	
+        cache.$priceQO.text("")	
+      }
+
     } else {
       cache.$price.text(`$${formattedPrice}`)
+      cache.$priceQO.text(`$${formattedPrice}`)
     }
 
     // Updates pricing in Buy Panel - COMPARE AT
@@ -15485,6 +15505,7 @@ const ProductForm = function($form){
     let formattedPrice = formatMoney(subscribePriceCents, "amount")
 
     cache.$price.text(`$${formattedPrice}`)
+    cache.$priceQO.text(`$${formattedPrice}`)
 
     if (subscribePriceCents && subscribePriceCents < currentVariant.price) {
       cache.$comparePrice.removeClass('hidden').show()
@@ -15590,6 +15611,7 @@ const ProductForm = function($form){
       .closest(`[data-name=${name}]`)	
       .val(value)	
       .change()	
+      
   }
 
   const handleDeliveryChange = function(e){
@@ -16831,16 +16853,35 @@ const ProductBuyPanel = (function(){
 
       cache.$productImageSlider.slick('slickUnfilter')
 
-      cache.$productImageSlider.slick('slickFilter', function(index, slide){
-        let $slideItem = jquery_default()(slide).find(selectors.imageSlides)
-        let attachedVariantId = $slideItem.data('variant');
+      
 
-        if (attachedVariantId) {
-          return id === parseInt(attachedVariantId);
-        } else {
-          return true
-        }
-      })
+      //1. check the available variant IDs	
+      //2. If the current variant ID is part of it, filter them	
+      //3. If not, don't filter	
+      let allAttachedVaraints = new Set();	
+      jquery_default()('.js-image-slide').each(function(){	
+        allAttachedVaraints.add(jquery_default()(this).data('variant'))	
+      })	
+      //console.log('new Set:',typeof allAttachedVaraints)	
+      let allAttachedVaraintIDs = Array.from(allAttachedVaraints);	
+      if(allAttachedVaraintIDs.indexOf(id) != -1 ){	
+        console.log('ID found')	
+      cache.$productImageSlider.slick('slickFilter', function(index, slide){	
+        let $slideItem = jquery_default()(slide).find(selectors.imageSlides)	
+          //console.log('slide: ', slide)	
+        let attachedVariantId = $slideItem.data('variant');	
+          // console.log('attachedVariantId: ', attachedVariantId)	
+          // console.log('id: ', id)	
+        if (attachedVariantId) {	
+          return id === parseInt(attachedVariantId);	
+        } else {	
+          return true	
+        }	
+      })	
+      }	
+      else{	
+         console.log('ID NOT found')	
+      }
 
       cache.$productImageSlider.slick("slickGoTo", 0, false);
     }
@@ -17213,7 +17254,78 @@ const Video = (function(){
 
 /* harmony default export */ const video = (Video);
 
+;// CONCATENATED MODULE: ./assets/js/contactForm.js
+
+
+const contactForm = (function() {	
+    const selectors = {	
+        contactFirstNameError: ".contact-first-name-error",	
+        contactLastNameError: ".contact-last-name-error",	
+        contactEmailError: ".contact-email-error",	
+        contactTextboxError: ".contact-textbox-error",	
+        firstNameInputID: "#contact-first-name",	
+        lastNameInputID: "#contact-last-name",	
+        emailInputID: "#contact-email",	
+        textboxInputID: "#contact-body",	
+        contactSubmitBtn: ".contact-form-submit",	
+    }	
+  const init = function(){	
+    initEventListeners()	
+  }	
+  const initEventListeners = function(){	
+    jquery_default()(selectors.contactSubmitBtn).on('click', validateContactForm)	
+  }	
+  const validateContactForm = function(e){	
+    e.preventDefault();	
+    let firstNameVal = jquery_default()(selectors.firstNameInputID).val();	
+    let lastNameVal = jquery_default()(selectors.lastNameInputID).val();	
+    let emailVal = jquery_default()(selectors.emailInputID).val();	
+    let textboxVal = jquery_default()(selectors.textboxInputID).val();	
+    const pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;	
+    if(firstNameVal.length === 0 || lastNameVal.length === 0 || emailVal.length === 0 || textboxVal.length === 0){	
+        if(firstNameVal.length === 0){	
+            jquery_default()(selectors.contactFirstNameError).removeClass('hidden')	
+        }	
+        else{	
+            jquery_default()(selectors.contactFirstNameError).addClass('hidden')	
+        }	
+        if(lastNameVal.length === 0){	
+            jquery_default()(selectors.contactLastNameError).removeClass('hidden')	
+        }else{	
+            jquery_default()(selectors.contactLastNameError).addClass('hidden')	
+        }	
+        if(emailVal.length === 0){	
+            jquery_default()(selectors.contactEmailError).removeClass('hidden')	
+        }	
+        else{	
+            jquery_default()(selectors.contactEmailError).addClass('hidden')	
+        }	
+        if(textboxVal.length === 0){	
+            jquery_default()(selectors.contactTextboxError).removeClass('hidden')	
+        }	
+        else{	
+            jquery_default()(selectors.contactTextboxError).addClass('hidden')	
+        }	
+        return;	
+    }	
+    else{	
+        //pattern test email	
+        if (!pattern.test(emailVal)){	
+            jquery_default()(selectors.contactEmailError).text('Please enter correct email')	
+            jquery_default()(selectors.contactEmailError).removeClass('hidden')	
+            return false;	
+        }	
+        jquery_default()('#contact_form').trigger('submit');	
+    }	
+    	
+  } 	
+  return { init }	
+})()
+
+
+/* harmony default export */ const js_contactForm = (contactForm);  
 ;// CONCATENATED MODULE: ./assets/js/common.js
+
 
 
 
@@ -17274,6 +17386,7 @@ jquery_default()(() => {
   giftSubscription.init();
   quick_order.init();
   GriListSwitch.init();
+  js_contactForm.init();
 });
 
 

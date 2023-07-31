@@ -13,10 +13,12 @@ const ProductForm = function($form){
     $hiddenOptionSelects: $form.find('.js-hidden-option-select'),
     $hiddenOptionSelectsQO: $form.find('.js-hidden-option-select-qo'),
     $addToCart: $form.find('.js-product-form-atc'),
+    $addToCartQO: $form.find('.js-product-form-atc-qo'),
     $deliveryOption: $form.find('[name="delivery_option"]'),
     $frequencyContainer: $form.find('.js-selling-plan-group'),
     $sellingPlan: $form.find('[name="selling_plan"]'),
     $price: $form.find(".js-price"),
+    $priceQO: $form.find(".js-price-qo"),
     $comparePrice: $form.find(".js-compare-price"),
     $subscriptionSavings: $form.find("[data-subscription-savings]"),
   }
@@ -74,9 +76,18 @@ const ProductForm = function($form){
     if (currentVariant && currentVariant.available) {
       cache.$addToCart.text(translations.addToCart)
       cache.$addToCart.attr('disabled', false)
+
+      cache.$addToCartQO.children('span:first-child').text(translations.addToCart)	
+      cache.$addToCartQO.children('span:nth-child(2)').text('-')	
+      cache.$addToCartQO.attr('disabled', false)
+
     } else {
       cache.$addToCart.text(translations.outOfStock)
       cache.$addToCart.attr('disabled', true)
+
+      cache.$addToCartQO.children('span:first-child').text(translations.outOfStock)	
+      cache.$addToCartQO.children('span:nth-child(2)').text('')	
+      cache.$addToCartQO.attr('disabled', true)
     }
   }
 
@@ -85,8 +96,17 @@ const ProductForm = function($form){
 
     if (currentVariant.price === 0) {
       cache.$price.text("Free!")
+
+      cache.$priceQO.text("Free!")	
+  	
+      //Quick Order (Out of Stock)	
+      if (!currentVariant.available){	
+        cache.$priceQO.text("")	
+      }
+
     } else {
       cache.$price.text(`$${formattedPrice}`)
+      cache.$priceQO.text(`$${formattedPrice}`)
     }
 
     // Updates pricing in Buy Panel - COMPARE AT
@@ -110,6 +130,7 @@ const ProductForm = function($form){
     let formattedPrice = formatMoney(subscribePriceCents, "amount")
 
     cache.$price.text(`$${formattedPrice}`)
+    cache.$priceQO.text(`$${formattedPrice}`)
 
     if (subscribePriceCents && subscribePriceCents < currentVariant.price) {
       cache.$comparePrice.removeClass('hidden').show()
@@ -215,6 +236,7 @@ const ProductForm = function($form){
       .closest(`[data-name=${name}]`)	
       .val(value)	
       .change()	
+      
   }
 
   const handleDeliveryChange = function(e){
