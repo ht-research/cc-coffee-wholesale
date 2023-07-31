@@ -4,7 +4,7 @@
 
     partnership_partner
     partnership_length
-    partnership_seeds_projects
+    partnership_seeds_project
     partnership_location
 {% endcomment -%}
 
@@ -12,7 +12,7 @@
 
 {%- if cf.partnership_partner != blank
     or cf.partnership_length != blank
-    or cf.partnership_seeds_projects != blank
+    or cf.partnership_seeds_project != blank
     or cf.partnership_location != blank -%}
   <!-- snippets/product-accordion-partnership [aa] -->
 
@@ -85,12 +85,12 @@
   {%- comment %}
   	Seeds projects
   {% endcomment -%}
-  {%- if cf.partnership_seeds_projects != blank -%}
+  {%- if cf.partnership_seeds_project != blank -%}
     <div class="py-5 px-5 text-center border-b border-black">
       <p class="uppercase tracking-wide font-freight-sans">Seeds Project</p>
 
-      {%- for seed_link in cf.partnership_seeds_projects -%}
-        <p class="text-center tracking-wider my-2">{{ seed_link["partnership_seeds_projects"] }}</p>
+      {%- for seed_link in cf.partnership_seeds_project -%}
+        <p class="text-center tracking-wider my-2">{{ seed_link["partnership_seeds_project"] }}</p>
       {%- endfor -%}
     </div>
   {%- endif -%}

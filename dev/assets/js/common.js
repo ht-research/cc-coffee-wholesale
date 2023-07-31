@@ -29,6 +29,7 @@ import Slider from './slider.js'
 import Video from './video.js'
 import QuickOrder from './quick-order.js'
 import GriListSwitch from './grid-list-switch.js'
+import ContactForm from './contactForm.js'
 
 
 
@@ -58,6 +59,7 @@ $(() => {
   GiftSubscription.init();
   QuickOrder.init();
   GriListSwitch.init();
+  ContactForm.init();
 });
 
 
