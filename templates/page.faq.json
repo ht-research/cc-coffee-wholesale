@@ -25,6 +25,15 @@
     "16472989575779fd1a": {
       "type": "faq-group",
       "blocks": {
+        "055dffce-3ca9-4305-8017-e2e8134a5a13": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "question": "What days does Counter Culture operate?",
+            "answer": "<p>Counter Culture's roasting facility is open Monday through Friday and is closed on weekends. However, you can place orders anytime!<\/p>",
+            "label": ""
+          }
+        },
         "1f3b5636-3a3a-4a3d-b39c-18cea1d9dd3b": {
           "type": "faq",
           "settings": {
@@ -45,7 +54,7 @@
           "type": "faq",
           "settings": {
             "question": "Can I schedule a future order?",
-            "answer": "<ul><li>Our apologies, we cannot offer order scheduling for standard orders. <\/li><li>However, if you’re interested in scheduling future coffee orders on a recurring basis, I recommend checking out our <a href=\"https:\/\/counterculturecoffee.com\/subscriptions\">Ongoing Subscriptions<\/a> offering. Our Ongoing subscription gives the flexibility to schedule orders to any date in the future after the first order is processed.<\/li><\/ul>",
+            "answer": "<ul><li>Our apologies, we cannot offer order scheduling for standard orders. <\/li><\/ul><p><\/p>",
             "label": ""
           }
         },
@@ -69,7 +78,7 @@
           "type": "faq",
           "settings": {
             "question": "Can you pre-grind coffee for my order?",
-            "answer": "<ul><li>We ship whole bean coffees because it helps maintain freshness, and we believe great coffees are at their best when brewed within 30 minutes of grinding. Also, we want the grind size to fit your brew method and flavor preference perfectly, and once you grind, there’s no going back.<\/li><li>Our only ground product is <a href=\"https:\/\/counterculturecoffee.com\/single-serve\">Single-Serve.<\/a><\/li><li>Please note, there are many great price-sensitive home grinders on the market; if you’re looking for a recommendation, please contact our CX team at retail@counterculturecoffee.com or visit our friends at <a href=\"https:\/\/baratza.com\/\">Baratza<\/a>.<\/li><\/ul>",
+            "answer": "<ul><li>We ship whole bean coffees because it helps maintain freshness, and we believe great coffees are at their best when brewed within 30 minutes of grinding.<\/li><\/ul>",
             "label": ""
           }
         },
@@ -85,7 +94,7 @@
           "type": "faq",
           "settings": {
             "question": "Is your coffee organic?",
-            "answer": "<ul><li>We offer both organic and conventional offerings. For clarity on where to find organic only products, please check out our <a href=\"https:\/\/counterculturecoffee.com\/shop\/category\/coffee\/organic\">Organic menu items<\/a>.<\/li><\/ul>",
+            "answer": "<ul><li>We offer both organic and conventional offerings. Feel free to use our sort-by-filtering feature to select organic-only options. <\/li><\/ul>",
             "label": ""
           }
         },
@@ -107,14 +116,32 @@
         },
         "528676b3-9f3b-43b7-a4f3-47d883741f6a": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "Is your coffee Certified Bird-Friendly?",
             "answer": "<ul><li>We do not currently carry certified bird-friendly offerings, but many of the coffees we offer are grown in diverse shade habitats.<\/li><li>Fun fact, Fred Houk, our co-founder, was a bird-enthusiast, and CCC offered one of the first bird-friendly coffees on the market back in 1997— Sanctuary. This coffee and programming paved the way for our sustainability department. While we still appreciate Bird-Friendly efforts, we have shifted our sustainability focus from certification-centered to transparency-centered. For more info on our farm relationships and social and environmental sustainability projects, please check out our transparency report found here: <a href=\"https:\/\/counterculturecoffee.com\/wp-content\/uploads\/2019\/08\/CCC_2019TR-3.pdf\">Transparency Report<\/a><\/li><\/ul>",
             "label": ""
           }
+        },
+        "ce845116-d684-4597-ab59-02165c7f8b81": {
+          "type": "faq",
+          "settings": {
+            "question": "Does Counter Culture close on holidays or other dates throughout the year?",
+            "answer": "<p>Our roasteries close in observance of these holidays.<\/p><ul><li>New Years Day<\/li><li>Martin Luther King Jr. Day<\/li><li>Memorial Day<\/li><li>Independence Day<\/li><li>Labor Day<\/li><li>Thanksgiving Day<\/li><li>The Friday following Thanksgiving Day<\/li><li>Christmas Day<\/li><\/ul><p>Additional closures may occur on occasion, although such events are seldom.<\/p>",
+            "label": ""
+          }
+        },
+        "e0aaff3e-4b1e-4be6-b05f-1a4b1bc0e832": {
+          "type": "faq",
+          "settings": {
+            "question": "How will I be notified of roasting facility closures?",
+            "answer": "<p>We will email all wholesale partners and place a banner notification on our website no less than one week before the closure.<\/p>",
+            "label": ""
+          }
         }
       },
       "block_order": [
+        "055dffce-3ca9-4305-8017-e2e8134a5a13",
         "1f3b5636-3a3a-4a3d-b39c-18cea1d9dd3b",
         "c6a4dd08-a65e-4c14-a756-0e85fc648199",
         "0b465978-e1c1-43f5-9802-a3b9ca363fe0",
@@ -125,7 +152,9 @@
         "916a39f1-426c-48ab-81ae-bb618e81a03c",
         "9b5c126a-31c4-4761-b048-b66d12845ffb",
         "949d36b2-bac8-4dab-a6e3-074bffb52ba9",
-        "528676b3-9f3b-43b7-a4f3-47d883741f6a"
+        "528676b3-9f3b-43b7-a4f3-47d883741f6a",
+        "ce845116-d684-4597-ab59-02165c7f8b81",
+        "e0aaff3e-4b1e-4be6-b05f-1a4b1bc0e832"
       ],
       "settings": {
         "header": "Shop",
@@ -339,7 +368,7 @@
           "type": "faq",
           "settings": {
             "question": "What is your return policy?",
-            "answer": "<p>We do not accept returns on coffee due to its perishable nature. However, if you have any issues with your coffee or errors in your order, please contact us at <a href=\"mailto:retail@counterculturecoffee.com\" target=\"_blank\" title=\"mailto:retail@counterculturecoffee.com\">retail@counterculturecoffee.com<\/a> within four weeks of receiving your order, and we will find a solution.<\/p>",
+            "answer": "<p>We do not accept returns on coffee due to its perishable nature. However, if you have any issues with your coffee or errors in your order, please contact us at orders<a href=\"mailto:retail@counterculturecoffee.com\" target=\"_blank\" title=\"mailto:retail@counterculturecoffee.com\">@counterculturecoffee.com<\/a> within four weeks of receiving your order, and we will find a solution.<\/p>",
             "label": ""
           }
         }
@@ -358,6 +387,30 @@
     "1653662647f626174f": {
       "type": "faq-group",
       "blocks": {
+        "40e92e82-20f4-44e7-a0d0-03c61071af3d": {
+          "type": "faq",
+          "settings": {
+            "question": "Does Counter Culture offer free shipping?",
+            "answer": "<p>Yes! Orders of more than $250 receive free shipping via UPS Ground Ship.<\/p>",
+            "label": ""
+          }
+        },
+        "4e9b4072-3f5b-4e51-84e9-dbea68f192b8": {
+          "type": "faq",
+          "settings": {
+            "question": " Can I track my order?",
+            "answer": "<p>Once we create a shipping label, you can view tracking information for your order. We provide tracking for each box shipped.<\/p>",
+            "label": ""
+          }
+        },
+        "805bdab3-66b5-4ca5-aeee-851d94db8f5b": {
+          "type": "faq",
+          "settings": {
+            "question": "What days does Counter Culture fulfill orders?",
+            "answer": "<p>We roast and fulfill orders Monday through Friday, except for select holidays.<\/p>",
+            "label": ""
+          }
+        },
         "0c37c8ad-71db-4bee-aece-88b00e17015b": {
           "type": "faq",
           "settings": {
@@ -377,8 +430,8 @@
         "653065b8-3f4b-4575-b50d-cb74c03f5f89": {
           "type": "faq",
           "settings": {
-            "question": "What carriers can I use?",
-            "answer": "<p>You have the option of choosing form the following UPS methods: Ground, 2nd-Day Air, or Next Day Air.<\/p><p><\/p><p>All options will be made available during check out.<\/p>",
+            "question": "What delivery service does Counter Culture use for wholesale orders?",
+            "answer": "<p>We exclusively partner with UPS to offer various shipping options.<\/p>",
             "label": ""
           }
         },
@@ -403,7 +456,7 @@
           "type": "faq",
           "settings": {
             "question": "How long does it take to get my package?",
-            "answer": "<p>We currently offer shipping through UPS with these estimated transit times:<br\/><br\/><strong>UPS SurePost<\/strong> – with an estimated transit time of 1-9 business days.<br\/><br\/><strong>UPS Ground<\/strong> – with an estimated transit time of 1-8 business days.<br\/><br\/><strong>UPS 2-Day-Select<\/strong> – with an estimated transit time of two business days from pick up.<br\/><br\/><strong>UPS Next-Day-Air<\/strong> – with an estimated transit time of one business day from pick up.<br\/><br\/>For SurePost and Ground orders shipping from our North Carolina Roastery, you can expect deliveries within one week if you’re on the Eastern side of the country and within two weeks if you’re on the country’s western side. If your order doesn’t arrive within this range, please contact our Customer Experience team at orders@counterculturecoffee.com<\/p><p><br\/>For Alaska, Hawaii, Puerto Rico, American Samoa, Guam, Northern Mariana Islands, and the U.S. Virgin Islands, <strong>please allow three full weeks<\/strong>.<br\/>That said, as soon as your order has been fulfilled, you should receive a follow-up email with tracking information. This tracking will provide a more precise transit time.<br\/><\/p>",
+            "answer": "<p>We currently offer shipping through UPS with these estimated transit times:<br\/><br\/><strong>UPS Ground<\/strong> – with an estimated transit time of 1-8 business days.<br\/><br\/><strong>UPS 2-Day-Select<\/strong> – with an estimated transit time of two business days from pick up.<br\/><br\/><strong>UPS Next-Day-Air<\/strong> – with an estimated transit time of one business day from pick up.<br\/><br\/>For SurePost and Ground orders shipping from our North Carolina Roastery, you can expect deliveries within one week if you’re on the Eastern side of the country and within two weeks if you’re on the country’s western side. If your order doesn’t arrive within this range, please contact our Customer Experience team at orders@counterculturecoffee.com<\/p><p><br\/>For Alaska, Hawaii, Puerto Rico, American Samoa, Guam, Northern Mariana Islands, and the U.S. Virgin Islands, <strong>please allow three full weeks<\/strong>.<br\/>That said, as soon as your order has been fulfilled, you should receive a follow-up email with tracking information. This tracking will provide a more precise transit time.<br\/><\/p>",
             "label": ""
           }
         },
@@ -425,6 +478,9 @@
         }
       },
       "block_order": [
+        "40e92e82-20f4-44e7-a0d0-03c61071af3d",
+        "4e9b4072-3f5b-4e51-84e9-dbea68f192b8",
+        "805bdab3-66b5-4ca5-aeee-851d94db8f5b",
         "0c37c8ad-71db-4bee-aece-88b00e17015b",
         "5ccb5c47-10bb-4cd4-a6da-cc97155ef2f7",
         "653065b8-3f4b-4575-b50d-cb74c03f5f89",
@@ -442,11 +498,20 @@
     "165366319200c7affa": {
       "type": "faq-group",
       "blocks": {
-        "65b8a228-2247-48c2-9c36-10d2f66ab31e": {
+        "c759c798-be1a-4d57-af61-a7a1e246f9d3": {
           "type": "faq",
           "settings": {
+            "question": "Who do I contact with questions about my order?",
+            "answer": "<p>Whether you have a general inquiry or an order issue, you can reach our customer support team at <a href=\"mailto:orders@counterculturecoffee.com\"><span style=\"text-decoration:underline\">orders@counterculturecoffee.com<\/span><\/a>.<\/p>",
+            "label": ""
+          }
+        },
+        "65b8a228-2247-48c2-9c36-10d2f66ab31e": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
             "question": "How can I fix a wrong address?",
-            "answer": "<p>If your order has shipped, please contact our Customer Experience team at <a href=\"mailto:retail@counterculturecoffee.com\">orders@counterculturecoffee<\/a>.com.<\/p><p><\/p><p>If your order hasn’t been created because it is generated from a recurring subscription, you can update your address via the ‘My Subscription’ page in your customer account, from there locate the subscription you want to change, retype in the new address and select “Save.” <\/p>",
+            "answer": "<p>Please contact our Customer Experience team at <a href=\"mailto:retail@counterculturecoffee.com\">orders@counterculturecoffee<\/a>.com<\/p>",
             "label": ""
           }
         },
@@ -454,7 +519,7 @@
           "type": "faq",
           "settings": {
             "question": "What do I do if my order is incorrect?",
-            "answer": "<p>If you receive an incorrect order, please check your order receipt and contact our Customer Experience team at <a href=\"mailto:retail@counterculturecoffee.com\">retail@counterculturecoffee.com<\/a> within four weeks of delivery. We will implement an immediate fix to ensure that the correct order is shipped to you as soon as possible.<\/p>",
+            "answer": "<p>If you receive an incorrect order, please check your order receipt and contact our Customer Experience team at <a href=\"mailto:retail@counterculturecoffee.com\">orders@counterculturecoffee.com<\/a> within four weeks of delivery. We will implement an immediate fix to ensure that the correct order is shipped to you as soon as possible.<\/p>",
             "label": ""
           }
         },
@@ -494,6 +559,7 @@
         }
       },
       "block_order": [
+        "c759c798-be1a-4d57-af61-a7a1e246f9d3",
         "65b8a228-2247-48c2-9c36-10d2f66ab31e",
         "4c8d8938-3908-4b8d-9bfa-987c9ffab3b2",
         "136a2b68-34e6-4953-86f8-4de2bfab5537",
@@ -538,6 +604,7 @@
         },
         "bb8e1545-1b0b-4395-bf73-375cf1c9ffd6": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "Why are your coffees in different types of packaging?",
             "answer": "<p>Due to the impact of COVID-19 on our packaging supply chain, we are currently using a mix of packaging to fulfill our commitments within our varied partnerships.<\/p>",
@@ -554,6 +621,7 @@
         },
         "c6e59439-3c5d-43be-9709-f0315a65bf65": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "Can your coffee bags be composted?",
             "answer": "<p>While 60% (by weight) of our Biotrē bags will break down into healthy compost, we cannot label them as compostable because they do not meet the definition of “compostable” under California law. That said, the bags will break down quickly in regular waste.<\/p>",
@@ -564,7 +632,7 @@
           "type": "faq",
           "settings": {
             "question": "What bag sizes do you have available for whole bean coffee?",
-            "answer": "<p>All year-round blends are availble in 12 oz, 24 oz, and 5 lbs bags. Most others, inlcuding single-origin and limited release coffees are available only in 12 oz. bags. <\/p>",
+            "answer": "<p>All year-round blends are availble in 6-pack cases of 12 oz, 24 oz, and 5 lbs bags. <\/p>",
             "label": ""
           }
         }
@@ -691,7 +759,7 @@
           "type": "faq",
           "settings": {
             "question": "Do you give away burlap coffee bags?",
-            "answer": "<p>Yes, if you’re local to our Durham, NC roastery, and can stop by our facility Monday through Friday from 9:00 a.m.-4:00 p.m., you’re very welcome to pick up free burlap bags. Feel free to contact us at retail@counterculturecoffee.com to confirm availability.<\/p>",
+            "answer": "<p>Yes, if you’re local to our Durham, NC roastery, and can stop by our facility Monday through Friday from 9:00 a.m.-4:00 p.m., you’re very welcome to pick up free burlap bags. Feel free to contact us at orders@counterculturecoffee.com to confirm availability.<\/p>",
             "label": ""
           }
         },

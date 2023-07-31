@@ -106,9 +106,9 @@
             {% assign price = current_variant.price %}    
             <div class="flex justify-start">
               {%- if price == 0 -%}
-                <p class="font-tenso js-price">Free</p>
+                <p class="font-tenso js-price-qo">Free</p>
               {%- else -%}
-                <p class="font-tenso js-price">{{ price | money_without_trailing_zeros }}</p>
+                <p class="font-tenso js-price-qo">{{ price | money_without_trailing_zeros }}</p>
               {%- endif -%}
             </div>
           {%- endunless -%}
