@@ -36,6 +36,7 @@
     },
     "1651268179b4854e2c": {
       "type": "image-text-slider",
+      "disabled": true,
       "blocks": {
         "4ce7c65c-bc96-4f59-8a62-6f1e00a32622": {
           "type": "text",
