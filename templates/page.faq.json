@@ -163,7 +163,6 @@
     },
     "16472989604ef7d283": {
       "type": "faq-group",
-      "disabled": true,
       "blocks": {
         "95ac9599-f19b-4533-9c79-582e85d052b0": {
           "type": "faq",
@@ -331,6 +330,7 @@
         "9e689311-fd76-4ae3-bad5-57abd9fecbbe",
         "c9ff8107-1a32-465c-af2c-55436279f17b"
       ],
+      "disabled": true,
       "settings": {
         "header": "Subscriptions",
         "active": false
@@ -556,6 +556,14 @@
             "answer": "<p>If you are unhappy with a coffee purchased somewhere other than our website, we ask that you contact the original vendor for a return or exchange. If no resolution is achieved, please contact us, and we will do our best to accommodate.<\/p>",
             "label": ""
           }
+        },
+        "887974dd-7c3f-4df6-a259-9bc1d247e28c": {
+          "type": "faq",
+          "settings": {
+            "question": "Return Policy",
+            "answer": "<p>We do not accept returns on coffee due to its perishable nature. However, if you have any issues with your coffee or errors in your order, please contact us at orders@ within 48 hours of receiving your order and we will find a solution.<\/p>",
+            "label": ""
+          }
         }
       },
       "block_order": [
@@ -565,7 +573,8 @@
         "136a2b68-34e6-4953-86f8-4de2bfab5537",
         "a41ec154-c7b7-4f4a-a1e3-b60a3ad7ccd8",
         "ee7c57d9-573c-4bed-85e0-49f611563012",
-        "5db32a75-9bba-4213-937e-df956e813ddd"
+        "5db32a75-9bba-4213-937e-df956e813ddd",
+        "887974dd-7c3f-4df6-a259-9bc1d247e28c"
       ],
       "settings": {
         "header": "Order Issues",
@@ -653,7 +662,6 @@
     },
     "1653663903bfd9d077": {
       "type": "faq-group",
-      "disabled": true,
       "blocks": {
         "c86d1a16-6deb-4b14-979e-3f0dab978d8f": {
           "type": "faq",
@@ -696,6 +704,7 @@
         "283302de-6d64-4b33-9866-b25d3ec75763",
         "89a30ab9-4c2f-49d6-a3d3-8c8caead469a"
       ],
+      "disabled": true,
       "settings": {
         "header": "Events",
         "active": false
@@ -703,7 +712,6 @@
     },
     "1653664073d815fbbb": {
       "type": "faq-group",
-      "disabled": true,
       "blocks": {
         "f18099ce-457d-4158-a583-b86d14fd1af2": {
           "type": "faq",
@@ -738,6 +746,7 @@
         "4480f4ce-6b9f-49ca-a70c-3e0ed1c4b67d",
         "59f885b0-ca87-45b4-a24e-4cc11c7931e1"
       ],
+      "disabled": true,
       "settings": {
         "header": "Wholesale",
         "active": false
