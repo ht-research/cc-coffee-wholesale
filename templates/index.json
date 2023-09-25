@@ -3,13 +3,13 @@
     "main": {
       "type": "hero",
       "settings": {
-        "image": "shopify:\/\/shop_images\/wide.jpg",
+        "image": "shopify:\/\/shop_images\/cubed_product_images-10213-Edit.jpg",
         "background_color": "",
         "video_url": "",
         "video_placement": "lg:justify-center",
         "pre_header": "",
         "subheader": "",
-        "title": "<p>Welcome to Our New Website<\/p>",
+        "title": "<p>Cubed is Here!<\/p>",
         "text_size_mobile": "text-4xl",
         "text_size_desktop": "lg:text-6xl",
         "tag": "h1",
@@ -19,7 +19,7 @@
         "text_color": "text-white",
         "title_classes": "text-stroke-outline mb-5",
         "button_style": "btn btn-secondary",
-        "link_text": "Shop the menu",
+        "link_text": "Shop Now",
         "link_url": "shopify:\/\/collections\/coffee",
         "link_classes": "",
         "content_width": "w-1\/2",
@@ -36,7 +36,6 @@
     },
     "1651268179b4854e2c": {
       "type": "image-text-slider",
-      "disabled": true,
       "blocks": {
         "4ce7c65c-bc96-4f59-8a62-6f1e00a32622": {
           "type": "text",
@@ -83,6 +82,7 @@
         "4ce7c65c-bc96-4f59-8a62-6f1e00a32622",
         "6297bcf3-5149-47e7-b1e8-cd1e10e04a43"
       ],
+      "disabled": true,
       "settings": {
         "reverse_order": false,
         "color_overlay": "",
@@ -188,7 +188,6 @@
     },
     "1644619715b5f70dab": {
       "type": "index--icon-banner",
-      "disabled": true,
       "blocks": {
         "fbe71319-7120-4136-9e11-2f4b21cf57cd": {
           "type": "icon",
@@ -243,6 +242,7 @@
         "043c8f70-8c94-4bd5-a88e-4ea64fa6cc36",
         "a91bc4d7-3b4a-435b-aa6b-df5893f14422"
       ],
+      "disabled": true,
       "settings": {
         "bg_color": "radial-gradient(rgba(236, 232, 223, 1), rgba(196, 196, 196, 0) 99.97%, rgba(196, 196, 196, 0) 99.98%)",
         "show_border": true,
