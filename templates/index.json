@@ -3,13 +3,13 @@
     "main": {
       "type": "hero",
       "settings": {
-        "image": "shopify:\/\/shop_images\/cubed_product_images-10215-Edit_eeec1ebb-7f61-4168-91a6-0f0aed347985.jpg",
+        "image": "shopify:\/\/shop_images\/4B9B7938.jpg",
         "background_color": "",
         "video_url": "",
         "video_placement": "lg:justify-center",
         "pre_header": "",
         "subheader": "",
-        "title": "<p>Cubed is Here!<\/p>",
+        "title": "<p>Gem is Here!<\/p>",
         "text_size_mobile": "text-4xl",
         "text_size_desktop": "lg:text-6xl",
         "tag": "h1",
