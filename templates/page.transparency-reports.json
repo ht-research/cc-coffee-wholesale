@@ -339,7 +339,7 @@
               "big-trouble",
               "12-oz-hologram",
               "gradient-east",
-              "urcunina"
+              "urcunina-east"
             ],
             "country": "Colombia"
           }
@@ -1154,7 +1154,6 @@
     },
     "transparency-reports": {
       "type": "transparency-reports",
-      "disabled": true,
       "blocks": {
         "2c97c757-5823-4d29-99d8-e68561c02260": {
           "type": "report",
@@ -1278,6 +1277,7 @@
         "1f939b2f-4b84-401e-abb9-7ddc3f53347b",
         "343ec7e2-9e75-442a-b68e-cb14d9bb6cd9"
       ],
+      "disabled": true,
       "settings": {
       }
     }
