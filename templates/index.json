@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "hero",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/4B9B7938.jpg",
         "background_color": "",
@@ -30,6 +31,40 @@
         "align_items_md": "md:items-center",
         "align_items_sm": "items-center",
         "text_align_lg": "lg:text-center",
+        "text_align_md": "md:text-center",
+        "text_align_sm": "text-center"
+      }
+    },
+    "dde36baf-19c6-4e64-bef9-7840368fdf0a": {
+      "type": "hero",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Cubed_Hologram_feffad98-582f-4ff7-b3ea-59b2b5296477.jpg",
+        "background_color": "",
+        "video_url": "",
+        "video_placement": "lg:justify-center",
+        "pre_header": "END OF YEAR SALE!",
+        "subheader": "",
+        "title": "<p>Hologram Cubed is 20% Off<\/p>",
+        "text_size_mobile": "text-4xl",
+        "text_size_desktop": "lg:text-6xl",
+        "tag": "h1",
+        "font": "font-couch",
+        "weight": "font-regular",
+        "alignment": "text-left",
+        "text_color": "text-white",
+        "title_classes": "text-stroke-outline mb-5",
+        "button_style": "btn btn-secondary",
+        "link_text": "Shop Now",
+        "link_url": "shopify:\/\/collections\/coffee",
+        "link_classes": "",
+        "content_width": "w-1\/2",
+        "justify_content_lg": "lg:justify-center",
+        "justify_content_md": "md:justify-center",
+        "justify_content_sm": "justify-center",
+        "align_items_lg": "lg:items-start",
+        "align_items_md": "md:items-center",
+        "align_items_sm": "items-center",
+        "text_align_lg": "lg:text-left",
         "text_align_md": "md:text-center",
         "text_align_sm": "text-center"
       }
@@ -257,6 +292,7 @@
   },
   "order": [
     "main",
+    "dde36baf-19c6-4e64-bef9-7840368fdf0a",
     "1651268179b4854e2c",
     "1644620818e34163c4",
     "4290ab56-655f-4576-8bf4-b807070531cc",
