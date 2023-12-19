@@ -44,7 +44,7 @@
             "alignment": "text-left",
             "text_color": "text-black",
             "title_classes": "",
-            "content": "<ul><li>Employed 116 people<\/li><li>Paid out $68,508.81 in  Green Fund, Pushing Potential, and CSA benefits<\/li><li>Rolled out stock options to all full-time employees<\/li><\/ul>",
+            "content": "<ul><li>Employed 116 people<\/li><li>Paid out $68,508.81 in \u2028Green Fund, Pushing Potential, and CSA benefits<\/li><li>Rolled out stock options to all full-time employees<\/li><\/ul>",
             "button_text": "",
             "button_url": ""
           }
@@ -393,7 +393,7 @@
             "product_list": [
               "12-oz-hologram",
               "field-trip",
-              "santafe"
+              "santafe-east"
             ],
             "country": "Colombia"
           }
