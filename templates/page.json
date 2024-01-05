@@ -119,7 +119,7 @@
             "alignment": "text-left",
             "text_color": "text-black",
             "title_classes": "",
-            "content": "<ul><li>Employed 106 people<\/li><li>Paid out $101,840.51 in  Green Fund, Pushing Potential, CSA, and Preventative Care benefits<\/li><li>Introduced mental health support to all employees and their dependents <\/li><\/ul>",
+            "content": "<ul><li>Employed 106 people<\/li><li>Paid out $101,840.51 in \u2028Green Fund, Pushing Potential, CSA, and Preventative Care benefits<\/li><li>Introduced mental health support to all employees and their dependents <\/li><\/ul>",
             "button_text": "",
             "button_url": ""
           }
@@ -155,10 +155,20 @@
             "link_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0256\/7664\/4424\/files\/CCC-TR-2022-FINAL.pdf",
             "link_classes": ""
           }
+        },
+        "df14bae3-cb9b-4fd3-986e-f60075d62c17": {
+          "type": "button",
+          "settings": {
+            "button_style": "btn btn-secondary",
+            "link_text": "Spanish",
+            "link_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/4283\/7837\/files\/CCC-TR-2022-ES.pdf?v=1704492041",
+            "link_classes": ""
+          }
         }
       },
       "block_order": [
-        "8baeddce-a010-41a6-b6f1-62e47eb37799"
+        "8baeddce-a010-41a6-b6f1-62e47eb37799",
+        "df14bae3-cb9b-4fd3-986e-f60075d62c17"
       ],
       "settings": {
         "section_style": "background_image",
