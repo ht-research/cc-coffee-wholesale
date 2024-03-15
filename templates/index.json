@@ -2,6 +2,7 @@
   "sections": {
     "dde36baf-19c6-4e64-bef9-7840368fdf0a": {
       "type": "hero",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/NarinoBanner.jpg",
         "background_color": "",
@@ -32,6 +33,40 @@
         "text_align_lg": "lg:text-left",
         "text_align_md": "md:text-left",
         "text_align_sm": "text-left"
+      }
+    },
+    "hero_EGUcUi": {
+      "type": "hero",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/BuchiroWashingStation_1.jpg",
+        "background_color": "",
+        "video_url": "",
+        "video_placement": "lg:justify-center",
+        "pre_header": "",
+        "subheader": "",
+        "title": "<p>Sustainably Sourced<\/p>",
+        "text_size_mobile": "text-4xl",
+        "text_size_desktop": "lg:text-6xl",
+        "tag": "h1",
+        "font": "font-couch",
+        "weight": "font-regular",
+        "alignment": "text-center",
+        "text_color": "text-white",
+        "title_classes": "text-stroke-outline mb-5",
+        "button_style": "btn btn-secondary",
+        "link_text": "Shop Now",
+        "link_url": "shopify:\/\/collections\/coffee",
+        "link_classes": "",
+        "content_width": "w-1\/2",
+        "justify_content_lg": "lg:justify-center",
+        "justify_content_md": "md:justify-center",
+        "justify_content_sm": "justify-center",
+        "align_items_lg": "lg:items-center",
+        "align_items_md": "md:items-center",
+        "align_items_sm": "items-center",
+        "text_align_lg": "lg:text-center",
+        "text_align_md": "md:text-center",
+        "text_align_sm": "text-center"
       }
     },
     "hero_hjJbLM": {
@@ -292,6 +327,7 @@
   },
   "order": [
     "dde36baf-19c6-4e64-bef9-7840368fdf0a",
+    "hero_EGUcUi",
     "hero_hjJbLM",
     "1651268179b4854e2c",
     "1644620818e34163c4",
