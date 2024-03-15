@@ -60,7 +60,7 @@
         "content_width": "w-1\/2",
         "justify_content_lg": "lg:justify-center",
         "justify_content_md": "md:justify-center",
-        "justify_content_sm": "justify-center",
+        "justify_content_sm": "justify-end",
         "align_items_lg": "lg:items-center",
         "align_items_md": "md:items-center",
         "align_items_sm": "items-center",
