@@ -259,7 +259,7 @@
           "disabled": true,
           "settings": {
             "button_style": "btn btn-secondary",
-            "link_text": "Sign up for classes!",
+            "link_text": "Signup for classes",
             "link_url": "shopify:\/\/pages\/training-centers",
             "link_classes": ""
           }
