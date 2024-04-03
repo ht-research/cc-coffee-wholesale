@@ -169,15 +169,14 @@
     },
     "1644620818e34163c4": {
       "type": "cta-banner",
-      "disabled": true,
       "settings": {
         "section_style": "background_image",
         "border_color": "border-black",
         "background_color": "",
         "use_squiggles": false,
         "number": "",
-        "content": "<p>Looking for an equipment repair or maintenance?<\/p>",
-        "title": "<p>Tech Request Form<\/p>",
+        "content": "<p>Looking for an equipment repair or maintenance, help with a question or classes?<\/p>",
+        "title": "<p>Account Support!<\/p>",
         "text_size_mobile": "text-2xl",
         "text_size_desktop": "lg:text-3xl",
         "tag": "h2",
@@ -188,32 +187,48 @@
         "title_classes": "",
         "button_style": "btn btn-secondary",
         "link_text": "request a tech",
-        "link_url": "https:\/\/counterculturecoffee.com\/pages\/tech-service-form",
+        "link_url": "",
         "link_classes": "Href=tel: 866-528-2349"
       }
     },
-    "cta_banner_KTzJUC": {
-      "type": "cta-banner",
+    "button_group_nMprWd": {
+      "type": "button-group",
+      "blocks": {
+        "button_fxHqtt": {
+          "type": "button",
+          "settings": {
+            "button_style": "btn btn-secondary",
+            "link_text": "Request a tech!",
+            "link_url": "https:\/\/counterculturecoffee.com\/pages\/tech-service-form",
+            "link_classes": ""
+          }
+        },
+        "button_PnGeWA": {
+          "type": "button",
+          "settings": {
+            "button_style": "btn btn-secondary",
+            "link_text": "General help!",
+            "link_url": "shopify:\/\/pages\/contact-us",
+            "link_classes": ""
+          }
+        },
+        "button_mpnmxA": {
+          "type": "button",
+          "settings": {
+            "button_style": "btn btn-secondary",
+            "link_text": "Sign up for classes!",
+            "link_url": "shopify:\/\/pages\/training-centers",
+            "link_classes": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_fxHqtt",
+        "button_PnGeWA",
+        "button_mpnmxA"
+      ],
       "settings": {
-        "section_style": "background_image",
-        "border_color": "border-black",
-        "background_color": "",
-        "use_squiggles": false,
-        "number": "",
-        "content": "<p>Our team is here to help. <\/p>",
-        "title": "<p>Have any account questions? <\/p>",
-        "text_size_mobile": "text-2xl",
-        "text_size_desktop": "lg:text-3xl",
-        "tag": "h2",
-        "font": "font-couch",
-        "weight": "font-regular",
-        "alignment": "text-center",
-        "text_color": "text-black",
-        "title_classes": "",
-        "button_style": "btn btn-secondary",
-        "link_text": "Contact Us",
-        "link_url": "shopify:\/\/pages\/contact-us",
-        "link_classes": "Href=tel: 866-528-2349"
+        "section_classes": ""
       }
     },
     "4290ab56-655f-4576-8bf4-b807070531cc": {
@@ -257,8 +272,34 @@
         "title_classes": ""
       }
     },
+    "cta_banner_KTzJUC": {
+      "type": "cta-banner",
+      "disabled": true,
+      "settings": {
+        "section_style": "background_image",
+        "border_color": "border-black",
+        "background_color": "",
+        "use_squiggles": false,
+        "number": "",
+        "content": "<p>Our team is here to help. <\/p>",
+        "title": "<p>Have any account questions? <\/p>",
+        "text_size_mobile": "text-2xl",
+        "text_size_desktop": "lg:text-3xl",
+        "tag": "h2",
+        "font": "font-couch",
+        "weight": "font-regular",
+        "alignment": "text-center",
+        "text_color": "text-black",
+        "title_classes": "",
+        "button_style": "btn btn-secondary",
+        "link_text": "Contact Us",
+        "link_url": "shopify:\/\/pages\/contact-us",
+        "link_classes": "Href=tel: 866-528-2349"
+      }
+    },
     "54770e40-b722-49af-8eb0-a5d394b2f05b": {
       "type": "cta-banner",
+      "disabled": true,
       "settings": {
         "section_style": "pill",
         "border_color": "border-black",
@@ -356,8 +397,9 @@
     "hero_hjJbLM",
     "1651268179b4854e2c",
     "1644620818e34163c4",
-    "cta_banner_KTzJUC",
+    "button_group_nMprWd",
     "4290ab56-655f-4576-8bf4-b807070531cc",
+    "cta_banner_KTzJUC",
     "54770e40-b722-49af-8eb0-a5d394b2f05b",
     "1644619715b5f70dab"
   ]
