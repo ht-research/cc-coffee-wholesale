@@ -231,6 +231,49 @@
         "section_classes": ""
       }
     },
+    "button_group_AnRKer": {
+      "type": "button-group",
+      "blocks": {
+        "button_XFkVJE": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_style": "btn btn-secondary",
+            "link_text": "Request a tech!",
+            "link_url": "https:\/\/counterculturecoffee.com\/pages\/tech-service-form",
+            "link_classes": ""
+          }
+        },
+        "button_tKNzzG": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_style": "btn btn-secondary",
+            "link_text": "General help!",
+            "link_url": "shopify:\/\/pages\/contact-us",
+            "link_classes": ""
+          }
+        },
+        "button_gAR9Pp": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_style": "btn btn-secondary",
+            "link_text": "Sign up for classes!",
+            "link_url": "shopify:\/\/pages\/training-centers",
+            "link_classes": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_XFkVJE",
+        "button_tKNzzG",
+        "button_gAR9Pp"
+      ],
+      "settings": {
+        "section_classes": ""
+      }
+    },
     "4290ab56-655f-4576-8bf4-b807070531cc": {
       "type": "image-text-slider",
       "blocks": {
@@ -398,6 +441,7 @@
     "1651268179b4854e2c",
     "1644620818e34163c4",
     "button_group_nMprWd",
+    "button_group_AnRKer",
     "4290ab56-655f-4576-8bf4-b807070531cc",
     "cta_banner_KTzJUC",
     "54770e40-b722-49af-8eb0-a5d394b2f05b",
