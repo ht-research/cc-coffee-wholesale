@@ -2,15 +2,14 @@
   "sections": {
     "dde36baf-19c6-4e64-bef9-7840368fdf0a": {
       "type": "hero",
-      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/NarinoBanner.jpg",
+        "image": "shopify:\/\/shop_images\/Gem_Wide.jpg",
         "background_color": "",
         "video_url": "",
         "video_placement": "lg:justify-center",
-        "pre_header": "From Nariño, COLOMBIA",
+        "pre_header": "San José del Alto, Peru",
         "subheader": "",
-        "title": "<p>GEM 002 is here!<\/p>",
+        "title": "<p>GEM 003<\/p>",
         "text_size_mobile": "text-4xl",
         "text_size_desktop": "lg:text-6xl",
         "tag": "h1",
@@ -37,6 +36,7 @@
     },
     "hero_EGUcUi": {
       "type": "hero",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/BuchiroWashingStation_1.jpg",
         "background_color": "",
