@@ -36,13 +36,14 @@
           "type": "button",
           "settings": {
             "button_style": "btn btn-secondary",
-            "link_text": "English",
-            "link_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0256\/7664\/4424\/files\/CCC-TR-2022-FINAL.pdf",
+            "link_text": "Read Report",
+            "link_url": "https:\/\/counterculturecoffee.com\/pages\/transparency-report",
             "link_classes": ""
           }
         },
         "df14bae3-cb9b-4fd3-986e-f60075d62c17": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_style": "btn btn-secondary",
             "link_text": "Spanish",
