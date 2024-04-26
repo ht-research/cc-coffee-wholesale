@@ -205,8 +205,8 @@
           "type": "card",
           "settings": {
             "img": "shopify:\/\/shop_images\/CCC_BayArea_brewbar_1_-2.jpg",
-            "title": "Emeryville",
-            "description": "<p>1329 64th St<\/p><p>Emeryville, CA 94608<\/p><p>emeryville@counterculturecoffee.com<\/p>",
+            "title": "Bay Area",
+            "description": "<p>1329 64th St<\/p><p>Emeryville, CA 94608<\/p><p>bayarea@counterculturecoffee.com<\/p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "",
             "link_one_url": "shopify:\/\/collections\/all",
