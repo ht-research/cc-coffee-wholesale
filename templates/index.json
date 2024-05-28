@@ -2,6 +2,7 @@
   "sections": {
     "dde36baf-19c6-4e64-bef9-7840368fdf0a": {
       "type": "hero",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Gembanner2-2_jpg.jpg",
         "s_image": "shopify:\/\/shop_images\/Gem004-2_jpg.jpg",
@@ -37,7 +38,6 @@
     },
     "hero_wBnhNx": {
       "type": "hero",
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/SpringCarousel_2_Horizontal.jpg",
         "background_color": "",
