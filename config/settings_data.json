@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "favicon": "shopify:\/\/shop_images\/CCC_Favicon_430x_fb8ead38-1aae-406a-8d45-16968c88ddc6.png",
@@ -31,7 +40,7 @@
           "badge_image": "shopify:\/\/shop_images\/since-1995-badge_5117ac2f-052a-44f6-bc1d-21090fb0b225_1.png",
           "title": "",
           "footer_menu": "footer-new",
-          "privacy_menu": "",
+          "privacy_menu": "footer",
           "newsletter_title": "",
           "newsletter_text": ""
         }
