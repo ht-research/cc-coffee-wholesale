@@ -11,7 +11,6 @@
   "sections": {
     "dde36baf-19c6-4e64-bef9-7840368fdf0a": {
       "type": "hero",
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/gem5-15129-Edit-Edit_b9563b99-1a5c-4d9a-b8cb-903ccfbc9634.jpg",
         "s_image": "shopify:\/\/shop_images\/gem5-15129-Edit-Edit_b9563b99-1a5c-4d9a-b8cb-903ccfbc9634.jpg",
@@ -117,6 +116,7 @@
     },
     "hero_hjJbLM": {
       "type": "hero",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/GeminiBanner_c0d79499-bc4e-4af7-8bbb-dcd29a0dcad1.jpg",
         "s_image": "shopify:\/\/shop_images\/4B9B9678.jpg",
