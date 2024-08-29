@@ -43,8 +43,10 @@
           %}
         {%- else -%}
           <li class="{% unless forloop.first %} border-t border-white {% endunless %} flex items-center text-base tracking-wider text-left w-full px-5 lg:px-12 py-5">
+            {% assign link_title = link.title | handleize %}
             <a id="menu-link--{{ link.id }}"
               href="{{ link.url }}"
+              {% if link_title contains 'tech-request' %} target="_blank" {% endif %}
               class="text-base uppercase text-white"
             >
               {{ link.title }}
