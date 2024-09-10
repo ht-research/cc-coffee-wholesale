@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "16509957948bad1e61": {
@@ -45,8 +54,8 @@
           "type": "card",
           "settings": {
             "img": "shopify:\/\/shop_images\/CCC_FLOWERS.jpg",
-            "title": "Asheville – Opening Soon!",
-            "description": "<p>178A Westwood Place<\/p><p>Asheville, NC 28806<\/p><p>asheville@counterculturecoffee.com<\/p>",
+            "title": "Asheville – Now Open",
+            "description": "<p>178 Westwood Place Unit A Asheville, NC 28806<\/p><p>asheville@counterculturecoffee.com<\/p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "Coffee Classes & Workshops",
             "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/asheville",
