@@ -1,16 +1,17 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "dde36baf-19c6-4e64-bef9-7840368fdf0a": {
       "type": "hero",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/gigantic_-banner-2_jpg_d7608bd5-239b-47c8-8656-4dd48760241e.png",
         "s_image": "shopify://shop_images/gigantic_-15628-Edit-2_jpg.png",
@@ -117,7 +118,6 @@
     },
     "hero_EGUcUi": {
       "type": "hero",
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/BuchiroWashingStation_1.png",
         "background_color": "",
