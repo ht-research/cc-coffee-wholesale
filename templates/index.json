@@ -45,6 +45,42 @@
         "text_align_sm": "text-center"
       }
     },
+    "hero_HnUyt3": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Gem007banner.jpg",
+        "s_image": "shopify://shop_images/Gem7_c3177f6f-d4e1-4c51-8380-a6bc7965a21a.jpg",
+        "background_color": "linear-gradient(180deg, rgba(255, 145, 129, 1), rgba(254, 91, 124, 1) 49%, rgba(255, 140, 162, 1) 100%)",
+        "video_url": "",
+        "video_placement": "lg:justify-center",
+        "pre_header": "Our first GEM from Ethiopia",
+        "subheader": "",
+        "title": "<p>GEM 007<br/>is here!</p>",
+        "text_size_mobile": "text-3xl",
+        "text_size_desktop": "lg:text-5xl",
+        "tag": "h1",
+        "font": "font-couch",
+        "weight": "font-regular",
+        "alignment": "text-right",
+        "text_color": "text-black",
+        "title_classes": "text-stroke-outline mb-5",
+        "button_style": "btn btn-secondary",
+        "link_text": "See Current Menu",
+        "link_url": "shopify://collections/coffee",
+        "link_classes": "",
+        "content_width": "w-1/2",
+        "justify_content_lg": "lg:justify-center",
+        "justify_content_md": "md:justify-center",
+        "justify_content_sm": "justify-start",
+        "align_items_lg": "lg:items-end",
+        "align_items_md": "md:items-end",
+        "align_items_sm": "items-center",
+        "text_align_lg": "lg:text-right",
+        "text_align_md": "md:text-right",
+        "text_align_sm": "text-center"
+      }
+    },
     "hero_wBnhNx": {
       "type": "hero",
       "disabled": true,
@@ -446,6 +482,7 @@
   },
   "order": [
     "hero_aFY6ta",
+    "hero_HnUyt3",
     "hero_wBnhNx",
     "hero_EGUcUi",
     "1651268179b4854e2c",
