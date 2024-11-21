@@ -11,6 +11,7 @@
   "sections": {
     "hero_aFY6ta": {
       "type": "hero",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Gem007banner.jpg",
         "s_image": "shopify://shop_images/Gem7_c3177f6f-d4e1-4c51-8380-a6bc7965a21a.jpg",
@@ -81,7 +82,6 @@
     },
     "hero_EGUcUi": {
       "type": "hero",
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/BuchiroWashingStation_1.png",
         "background_color": "",
