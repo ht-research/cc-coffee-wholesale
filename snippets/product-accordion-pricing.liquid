@@ -40,8 +40,8 @@
       {%- endif -%}
 
       {%- if cf.pricing_fair_trade != blank-%}
-
-        {% assign dot_percentage = cf.pricing_fair_trade | times: 10000 | divided_by: max_price %}
+        {% assign pricing_fair_trade = cf.pricing_fair_trade  | split: " "  %}
+        {% assign dot_percentage = pricing_fair_trade[0] | times: 10000 | divided_by: max_price %}
         <div class="bg-blue w-4 h-4 rounded-full border border-black absolute top-1/2 -translate-y-1/2"
              style="left: {{ dot_percentage }}%;"></div>
       {%- endif -%}
