@@ -55,7 +55,8 @@
       {% endcomment -%}
       
       {%- if cf.pricing_average_c_market != blank -%}
-        {% assign dot_percentage = cf.pricing_average_c_market | times: 10000 | divided_by: max_price %}
+        {% assign pricing_average_c_market = cf.pricing_average_c_market  | split: " "  %}
+        {% assign dot_percentage = pricing_average_c_market[0] | times: 10000 | divided_by: max_price %}
         <div class="bg-bluebell w-4 h-4 rounded-full border border-black absolute top-1/2 -translate-y-1/2"
              style="left: {{ dot_percentage }}%;"></div>
       {%- endif -%}
