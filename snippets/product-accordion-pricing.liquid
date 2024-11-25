@@ -33,7 +33,8 @@
       <div class="h-[2px] w-full absolute top-1/2 -translate-y-1/2 left-0 bg-black"></div>
 
       {%- if cf.pricing_specific_coffee != blank -%}
-        {% assign dot_percentage = cf.pricing_specific_coffee | times: 10000 | divided_by: max_price %}
+        {% assign pricing_specific_coffee = cf.pricing_specific_coffee  | split: " "  %}
+        {% assign dot_percentage = pricing_specific_coffee[0] | times: 10000 | divided_by: max_price %}
         <div class="bg-yellow w-4 h-4 rounded-full border border-black absolute top-1/2 -translate-y-1/2"
              style="left: {{ dot_percentage }}%;"></div>
       {%- endif -%}
