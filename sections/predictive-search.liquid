@@ -45,7 +45,9 @@
 
       <ul class="grid grid-cols-2 xl:grid-cols-3 js-product-results">
         {%- for item in product_results -%}
-          {% render 'product-card', product: item %}
+          {%- unless product.tags contains 'Non-Inventory' -%}
+            {% render 'product-card', product: item %}
+          {%- endunless -%}
         {%- endfor -%}
       </ul>
     {% endif %}
