@@ -2790,6 +2790,14 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
   top: 7rem;
 }
 
+.top-\[88px\] {
+  top: 88px;
+}
+
+.top-\[25\%\] {
+  top: 25%;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -3211,6 +3219,14 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
   margin-top: 3.5rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mb-\[136px\] {
+  margin-bottom: 136px;
+}
+
 .block {
   display: block;
 }
@@ -3257,6 +3273,14 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
 
 .aspect-square {
   aspect-ratio: 1 / 1;
+}
+
+.aspect-\[1\/1\] {
+  aspect-ratio: 1/1;
+}
+
+.aspect-\[4\/3\] {
+  aspect-ratio: 4/3;
 }
 
 .h-screen {
@@ -3392,6 +3416,18 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
   height: 10px;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[96px\] {
+  height: 96px;
+}
+
+.h-\[90vh\] {
+  height: 90vh;
+}
+
 .max-h-72 {
   max-height: 18rem;
 }
@@ -3410,6 +3446,10 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
 
 .min-h-\[50vw\] {
   min-height: 50vw;
+}
+
+.min-h-\[48px\] {
+  min-height: 48px;
 }
 
 .w-screen {
@@ -3606,6 +3646,10 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
   width: 10px;
 }
 
+.w-\[110px\] {
+  width: 110px;
+}
+
 .min-w-\[15rem\] {
   min-width: 15rem;
 }
@@ -3632,6 +3676,10 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
 
 .min-w-\[12rem\] {
   min-width: 12rem;
+}
+
+.min-w-\[125px\] {
+  min-width: 125px;
 }
 
 .max-w-full {
@@ -3672,6 +3720,10 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
 
 .max-w-sm {
   max-width: 24rem;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
 }
 
 .flex-1 {
@@ -4032,6 +4084,14 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
   gap: 4rem;
 }
 
+.gap-\[22px\] {
+  gap: 22px;
+}
+
+.gap-\[38px\] {
+  gap: 38px;
+}
+
 .gap-y-10 {
   row-gap: 2.5rem;
 }
@@ -4039,6 +4099,15 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
+}
+
+.gap-y-3 {
+  row-gap: 0.75rem;
+}
+
+.gap-x-\[40px\] {
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
 
 .overflow-auto {
@@ -4051,6 +4120,10 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
 
 .overflow-scroll {
   overflow: scroll;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .truncate {
@@ -4097,6 +4170,22 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-\[10px\] {
+  border-radius: 10px;
+}
+
+.rounded-\[16px\] {
+  border-radius: 16px;
+}
+
+.rounded-\[8px\] {
+  border-radius: 8px;
+}
+
+.rounded-\[14px\] {
+  border-radius: 14px;
 }
 
 .rounded-r-none {
@@ -4181,6 +4270,11 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-\[\#DEDEDE\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(222 222 222 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -4488,6 +4582,16 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
   padding-bottom: 0px;
 }
 
+.px-\[80px\] {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.py-\[60px\] {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -4636,6 +4740,14 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
   padding-right: 2rem;
 }
 
+.pb-\[50px\] {
+  padding-bottom: 50px;
+}
+
+.pb-\[148px\] {
+  padding-bottom: 148px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -4742,6 +4854,14 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
 
 .text-\[22px\] {
   font-size: 22px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-\[38px\] {
+  font-size: 38px;
 }
 
 .font-bold {
@@ -4876,6 +4996,10 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
 
 .opacity-60 {
   opacity: 0.6;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .shadow {
@@ -8433,6 +8557,10 @@ a, button {
     top: auto;
   }
 
+  .lg\:left-1\/2 {
+    left: 50%;
+  }
+
   .lg\:row-start-\[none\] {
     grid-row-start: none;
   }
@@ -8556,6 +8684,10 @@ a, button {
     margin-bottom: 0.25rem;
   }
 
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -8630,6 +8762,10 @@ a, button {
 
   .lg\:h-12 {
     height: 3rem;
+  }
+
+  .lg\:h-\[75vh\] {
+    height: 75vh;
   }
 
   .lg\:w-8\/12 {
@@ -8745,6 +8881,10 @@ a, button {
     width: 6rem;
   }
 
+  .lg\:w-\[80vw\] {
+    width: 80vw;
+  }
+
   .lg\:min-w-0 {
     min-width: 0px;
   }
@@ -8764,6 +8904,11 @@ a, button {
 
   .lg\:-translate-y-1\/2 {
     --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:-translate-x-1\/2 {
+    --tw-translate-x: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -8887,6 +9032,10 @@ a, button {
     gap: 1.25rem;
   }
 
+  .lg\:gap-y-12 {
+    row-gap: 3rem;
+  }
+
   .lg\:border-t {
     border-top-width: 1px;
   }
@@ -8996,6 +9145,11 @@ a, button {
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .lg\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .lg\:pb-0 {
@@ -9339,5 +9493,43 @@ a, button {
 
   .\32xl\:w-11\/12 {
     width: 91.666667%;
+  }
+}
+
+.\[\&\:\:-webkit-scrollbar\]\:w-2::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.\[\&\:\:-webkit-scrollbar-track\]\:rounded-full::-webkit-scrollbar-track {
+  border-radius: 9999px;
+}
+
+.\[\&\:\:-webkit-scrollbar-track\]\:bg-gray-100::-webkit-scrollbar-track {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .dark\:\[\&\:\:-webkit-scrollbar-track\]\:bg-neutral-900::-webkit-scrollbar-track {
+    --tw-bg-opacity: 1;
+    background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+  }
+}
+
+.\[\&\:\:-webkit-scrollbar-thumb\]\:rounded-full::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+}
+
+.\[\&\:\:-webkit-scrollbar-thumb\]\:bg-gray-300::-webkit-scrollbar-thumb {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .dark\:\[\&\:\:-webkit-scrollbar-thumb\]\:bg-neutral-500::-webkit-scrollbar-thumb {
+    --tw-bg-opacity: 1;
+    background-color: rgb(115 115 115 / var(--tw-bg-opacity));
   }
 }
