@@ -60,9 +60,23 @@
         "sus_pp_para": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint.",
         "sus_pp_url": "shopify://pages/sustainability-reports"
       }
+    },
+    "sustainability_icon_banner_gpW8E4": {
+      "type": "sustainability-icon-banner",
+      "settings": {
+        "bg_color": "linear-gradient(90deg, rgba(158, 136, 187, 1) 1.6%, rgba(255, 141, 107, 1) 46.04%, rgba(168, 173, 0, 1) 100%)",
+        "show_border": true,
+        "icon_bg_color": "transparent",
+        "mobile_layout": "slider",
+        "font": "font-couch",
+        "icon_layout": "flex-row",
+        "text_color": "text-black",
+        "text_classes": ""
+      }
     }
   },
   "order": [
-    "sustainability_header_yN3NNg"
+    "sustainability_header_yN3NNg",
+    "sustainability_icon_banner_gpW8E4"
   ]
 }
