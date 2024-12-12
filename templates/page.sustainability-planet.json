@@ -73,10 +73,42 @@
         "text_color": "text-black",
         "text_classes": ""
       }
+    },
+    "sustainability_investment_3RFgbV": {
+      "type": "sustainability-investment",
+      "settings": {
+        "inv_header": "Investing in Sustainability",
+        "inv_para": "Through our giving program Two for the Future, we set aside two cents for every pound of coffee we sell to fund our sustainability initiatives: Seeds + Bloom.",
+        "inv_image": "shopify://shop_images/twoforthefuture_1.png",
+        "sf_header": "Seeds Fund",
+        "sf_para": "Since 2009, Seeds has offered financial grants to producers and producer organizations to implement sustainability projects they identify as beneficial. To date, we've allocated over $450,000 to Seeds projects.",
+        "sf_tagline": "From Seed",
+        "sf_cs_image": "shopify://shop_images/sus-seeds-fund_1.png",
+        "sf_cs_title": "Muungano Cooperative",
+        "sf_cs_subtitle": "Literacy Training",
+        "sf_cs_url": "https://counterculturecoffee.com/blogs/seeds-program/literacy-training-muungano-cooperative-2023",
+        "bf_header": "Bloom Fund",
+        "bf_para": "Started in 2023 and modeled after Seeds, Bloom supports sustainability projects at the cafe level.",
+        "bf_tagline": "To Cup",
+        "bf_cs_image": "shopify://shop_images/sus-bloom-fund_1.png",
+        "bf_cs_title": "Zinnia",
+        "bf_cs_subtitle": "Pollinator Garden",
+        "bf_cs_url": "https://counterculturecoffee.com/blogs/bloom/pollinator-garden-zinnia",
+        "bcorp_image": "shopify://shop_images/b_corp_logo.png",
+        "bcorp_para": "<p>In 2020 we became a <em><strong>certified B corp</strong></em><em>.</em>B Lab, like us, believes that <em><strong>business can</strong></em><em> </em>be used as a<strong> </strong><em><strong>force for good</strong></em>. In 2024, our score went up significantly to 91.9!</p>",
+        "bcorp_urk": "https://counterculturecoffee.com/blogs/counter-culture-coffee/increasing-our-b-corp-score",
+        "wcr_header": "Fueling The Future Of Coffee",
+        "wcr_header_1": "<p>World Coffee Research<br/>We support World Coffee Research, an organization working globally to increase the climate resistance of the coffee plant and the profitability of the people who grow it. Beyond annual contributions to fund their organization, we’ve served as advisors and opened our labs to help execute important projects, bolstering their important work to strengthen the coffee sector.</p>",
+        "wcr_image_1": "shopify://shop_images/sus-coffee-card-1_1.png",
+        "wcr_url": "https://counterculturecoffee.com/blogs/counter-culture-coffee/world-coffee-research?",
+        "wcr_header_2": "<p>We aim to reduce our impact on the environment and support the coffee growing communities that bear the brunt of a changing climate. We offset what environmental impact we cannot mitigate by partnering with Trees, Water & People (TWP). TWP implement clean cookstoves in rural Honduran households — creating jobs in rural communities and reducing both indoor and outdoor pollution.</p>",
+        "wcr_image_2": "shopify://shop_images/4B9B1824_1.png"
+      }
     }
   },
   "order": [
     "sustainability_header_yN3NNg",
-    "sustainability_icon_banner_gpW8E4"
+    "sustainability_icon_banner_gpW8E4",
+    "sustainability_investment_3RFgbV"
   ]
 }
