@@ -8,7 +8,7 @@
   - question [text]
   - answer [Richtext]
   - active [Boolean]
-  - theme_style: [Enum] Blue/Black
+  - theme_style: [Enum] Blue/Black/Product
 {% endcomment -%}
 
 {%- if theme_style == 'blue' -%}
@@ -33,7 +33,19 @@
     px-5 lg:px-12 py-5
     {% if active %}active{% endif %}
   {% endcapture %}
-{%- endif -%}
+{%- elsif theme_style == 'Product' -%}
+    {% assign wrapper_styles = "border-t border-black" %}
+    {% assign inner_styles = "" %}
+  
+    {% capture button_styles %}
+      js-expandable-toggle faq--expandable-toggle faq--expandable-toggle-prod btn-transparent
+      flex justify-between items-center
+      text-xl xl:text-3xl tracking-wider text-left w-full
+      font-acorn-semibold
+      px-5 lg:px-12 py-5
+      {% if active %}active{% endif %}
+    {% endcapture %}
+  {%- endif -%}
 
 <div class="{{ wrapper_styles }}">
     <dt class="{{ inner_styles }}">

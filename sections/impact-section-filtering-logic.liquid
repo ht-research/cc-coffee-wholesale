@@ -17,7 +17,7 @@
     <p class="font-acorn-semibold text-[40px] text-center mt-4 mb-6">Producer Partners</p>
 
     <!-- Producer Countries: Desktop -->
-    <div id="desktopCountryStickyTab" class="desktopCountryStickyTab hidden lg:flex gap-3 items-center justify-center pt-6 pb-[50px] px-8 flex-wrap z-10 bg-white">
+    <div id="desktopCountryStickyTab" class="desktopCountryStickyTab hidden lg:flex gap-3 items-center justify-center pt-6 pb-[50px] px-8 flex-wrap z-[10] bg-white">
             <div class="producer-country__index  transition-all duration-300 border border-black px-6 py-3 font-medium rounded-full cursor-pointer pp-country--active"  data-country-index="All">
                 All
             </div>
@@ -30,8 +30,8 @@
 
 
     <!-- Producer Countries: Mobile -->
-     <div class="px-6 lg:hidden sticky z-10 top-[88px]">
-        <div class="relative z-10">
+     <div class="px-6 lg:hidden sticky z-[10] top-[88px]">
+        <div class="relative z-[10]">
             <div class="producer-country__index--main transition-all duration-300 border bg-white border-black flex items-center justify-between px-6 py-3 font-medium rounded-full w-full cursor-pointer"  data-toggle="#sus--country-dropdown--mob">
                     <span>
                         All
@@ -196,19 +196,19 @@
 
 
                     <!-- Producer Partner: Fixed Popup -->
-                    <div class="producer-partner__popup fixed w-screen h-screen top-0 left-0 z-100 hidden">
-                        <div class="opacity-60 cursor-pointer bg-black fixed top-0 bottom-0 left-0 h-screen w-screen z-40"></div>
+                    <div class="producer-partner__popup fixed w-screen h-screen top-0 left-0 z-[100] hidden">
+                        <div class="opacity-60 cursor-pointer bg-black fixed top-0 bottom-0 left-0 h-screen w-screen z-[40]"></div>
 
                         <!-- Popup Close -->
-                        <div class="absolute bg-white bg-white border border-black w-full lg:w-[80vw] h-[90vh] lg:h-[75vh] bottom-0 lg:bottom-unset lg:top-1/2 left-0 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 z-50">
-                            <div class="absolute right-4 top-4 cursor-pointer producer-partner__popup--close z-20">
+                        <div class="absolute bg-white bg-white border border-black w-full lg:w-[80vw] h-[90vh] lg:h-[75vh] bottom-0 lg:bottom-unset lg:top-1/2 left-0 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 z-[50]">
+                            <div class="absolute right-4 top-4 cursor-pointer producer-partner__popup--close z-[20]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                     <rect x="1.0957" y="0.918945" width="27.812" height="1.32438" rx="0.66219" transform="rotate(45 1.0957 0.918945)" fill="black"/>
                                     <rect x="21.1631" y="1.72168" width="27.812" height="1.32438" rx="0.66219" transform="rotate(135 21.1631 1.72168)" fill="black"/>
                                 </svg>
                             </div>
 
-                            <div class="absolute hidden lg:block top-[25%] left-1/2 -translate-x-1/2 z-10">
+                            <div class="absolute hidden lg:block top-[25%] left-1/2 -translate-x-1/2 z-[10]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="81" height="70" viewBox="0 0 81 70" fill="none">
                                     <g clip-path="url(#clip0_6562_3405)">
                                     <path d="M19.0001 31C19.0001 31 37.7458 50.5863 75.8585 45.7852" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -272,7 +272,7 @@
                                     dark:[&::-webkit-scrollbar-track]:bg-neutral-900
                                     dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500
                                 ">
-                                    <div class="absolute top-0 px-6 py-5 z-10 w-full lg:hidden" style="background-color: {{ producerCountry.country_hexcode }};">
+                                    <div class="absolute top-0 px-6 py-5 z-[10] w-full lg:hidden" style="background-color: {{ producerCountry.country_hexcode }};">
                                         <h5 class="font-acorn-semibold mb-2 text-[38px] text-left leading-none">{{ producerPartner.partner_name }}</h5>
                                         <p class=" uppercase text-sm text-left leading-none">{{ producerPartner.partner_country }}</p>
                                     </div>
