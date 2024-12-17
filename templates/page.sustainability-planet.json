@@ -144,6 +144,15 @@
             "prod_country": "Peru",
             "partner_since": "PARTNER FOR 8 YEARS"
           }
+        },
+        "icon_krEDDe": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/Finca_Pashapa_3609afc9-59d8-4ea6-9cee-8f7c88ff3570.jpg",
+            "prod_name": "Finca Pashapa",
+            "prod_country": "Macala, Honduras",
+            "partner_since": "PARTNER FOR 22 YEARS"
+          }
         }
       },
       "block_order": [
@@ -155,7 +164,8 @@
         "icon_yD8GPX",
         "icon_D4Qd7e",
         "icon_eV7mfd",
-        "icon_q347DH"
+        "icon_q347DH",
+        "icon_krEDDe"
       ],
       "settings": {
         "bg_color": "linear-gradient(90deg, rgba(158, 136, 187, 1) 1.6%, rgba(255, 141, 107, 1) 46.04%, rgba(168, 173, 0, 1) 100%)",
