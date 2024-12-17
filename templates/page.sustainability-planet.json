@@ -115,10 +115,109 @@
             "tl_image": "shopify://shop_images/1995.png",
             "tl_para": "<p>After meeting at the UNC Kenan-Flagler Business School, Brett Smith and Fred Houk founded Counter Culture Coffee. Our first sale was a bag of coffee to Pop’s Trattoria.</p>"
           }
+        },
+        "timeline_APz9yD": {
+          "type": "timeline",
+          "settings": {
+            "tl_year": "1997",
+            "tl_image": "shopify://shop_images/1997.png",
+            "tl_para": "<p>We launched Sanctuary, a bird-friendly coffee line, at the 1997 Specialty Coffee Association of America event in New Orleans. We were among the first roasters to offer shade-grown coffee.</p>"
+          }
+        },
+        "timeline_xkANiC": {
+          "type": "timeline",
+          "settings": {
+            "tl_year": "2002",
+            "tl_image": "shopify://shop_images/2002.png",
+            "tl_para": "<p>Our Durham facility became the first organic-certified coffee roaster in North Carolina.  We held our first public tasting on a Friday morning, which initiated a tradition that continues today: Tasting at Ten. </p>"
+          }
+        },
+        "timeline_wnJhWP": {
+          "type": "timeline",
+          "settings": {
+            "tl_year": "2003",
+            "tl_image": "shopify://shop_images/2003.png",
+            "tl_para": "<p>We formalized our commitment to real social, environmental, and financial sustainability in the Counter Culture vision statement. This document was signed by Brett Smith, Peter Giuliano, and Daryn Berlin on March 10, 2003.</p>"
+          }
+        },
+        "timeline_JrieJj": {
+          "type": "timeline",
+          "settings": {
+            "tl_year": "2004",
+            "tl_image": "shopify://shop_images/2004.png",
+            "tl_para": "<p>We took our first customer group to visit coffee farms in Nicaragua—a precursor to our annual Origin Field Lab event.</p>"
+          }
+        },
+        "timeline_X7riYL": {
+          "type": "timeline",
+          "settings": {
+            "tl_year": "2007",
+            "tl_image": "shopify://shop_images/2007.png",
+            "tl_para": "<p>We launched our Source coffees: 12 oz bags focused on single-origin coffees. That year, the Source line won Best New Product at the annual Specialty Coffee Association of America conference.</p>"
+          }
+        },
+        "timeline_4M8iri": {
+          "type": "timeline",
+          "settings": {
+            "tl_year": "2008",
+            "tl_image": "shopify://shop_images/2008.png",
+            "tl_para": "<p>We established our certified Direct Trade policy, paving the way for our current coffee-buying model.</p>"
+          }
+        },
+        "timeline_YzLdDm": {
+          "type": "timeline",
+          "settings": {
+            "tl_year": "2009",
+            "tl_image": "shopify://shop_images/2009.png",
+            "tl_para": "<p>We published our first Transparency Report, detailing Direct Trade purchases of twelve coffees in the previous year.</p>"
+          }
+        },
+        "timeline_9Qxj7A": {
+          "type": "timeline",
+          "settings": {
+            "tl_year": "2010",
+            "tl_image": "shopify://shop_images/2010.png",
+            "tl_para": "<p>We created our Seeds program to structure and define our monetary contributions to projects that benefit our coffee-producing partners and their communities. We also obtained a Green Plus sustainable business certification. </p>"
+          }
+        },
+        "timeline_h4an3A": {
+          "type": "timeline",
+          "settings": {
+            "tl_year": "2012",
+            "tl_image": "shopify://shop_images/2012.png",
+            "tl_para": "<p>We became a founding member of the Coalition for Coffee Communities, an organization established to address food security issues in coffee communities and promote collaboration among competitors. Additionally, we received the Green Plus Sustainable Enterprise of the Year award.</p>"
+          }
+        },
+        "timeline_FRaBf3": {
+          "type": "timeline",
+          "settings": {
+            "tl_year": "2015",
+            "tl_image": "shopify://shop_images/2015.png",
+            "tl_para": "<p>Drawing upon two decades of expertise, we opened a new roastery and training center in the San Francisco Bay area. This strategic move not only enhanced our ability to cater to our West Coast partners but also significantly reduced the environmental footprint associated with shipping our products throughout the region</p>"
+          }
+        },
+        "timeline_wxLK8p": {
+          "type": "timeline",
+          "settings": {
+            "tl_year": "2016",
+            "tl_image": "shopify://shop_images/2016.png",
+            "tl_para": "<p>We moved our Headquarters to a new facility near downtown Durham, NC. We became the first specialty coffee roaster to deploy color-sorting technology for roasted<br/>coffee. This machine eliminates coffee outside of a desired color profile, helping to create a<br/>higher quality product for our partners.</p>"
+          }
         }
       },
       "block_order": [
-        "timeline_AFU83d"
+        "timeline_AFU83d",
+        "timeline_APz9yD",
+        "timeline_xkANiC",
+        "timeline_wnJhWP",
+        "timeline_JrieJj",
+        "timeline_X7riYL",
+        "timeline_4M8iri",
+        "timeline_YzLdDm",
+        "timeline_9Qxj7A",
+        "timeline_h4an3A",
+        "timeline_FRaBf3",
+        "timeline_wxLK8p"
       ],
       "settings": {
         "tl_header": "We’ve been doing this for a while and we won’t stop."
