@@ -32,7 +32,7 @@
 
 
 <section class="js-sustainability-header py-8 pt-4 lg:py-14 lg:pt-[86px] px-5 lg:px-20">
-    <h1 class="font-acorn-medium text-[30px] lg:text-[40px] mb-4 lg:mb-[42px] flex flex-col-reverse items-center text-center w-fit mx-auto relative leading-tight">
+    <h1 class="font-acorn-medium text-[24px] lg:text-[32px] mb-4 lg:mb-[42px] flex flex-col-reverse items-center text-center w-fit mx-auto relative leading-tight">
         {{ section.settings.sus_header }}
         <div class="lg:absolute right-0 top-0 lg:translate-x-[150px] lg:-translate-y-1/2">
             <img class="w-[125px] mb-6" src="https://cdn.shopify.com/s/files/1/0249/4283/7837/files/heart.gif?v=1718022629" alt="hand-illustration">
@@ -44,7 +44,7 @@
     </div>
 
 
-    <h2 class="font-acorn-medium text-[30px] lg:text-[40px] mb-8 lg:mb-[48px] flex flex-col-reverse items-center text-center relative">
+    <h2 class="font-couch text-[22px] lg:text-[32px] mb-8 lg:mb-[48px] flex flex-col-reverse items-center text-center relative">
         <span class="lg:w-1/2 mx-auto capitalize leading-tight">
         {{ section.settings.sus_subheader }}
         </span>
@@ -66,7 +66,7 @@
             {% for block in section.blocks %}
                 <div>
                 <img class="mb-5 lg:mb-8 px-14" src="{{ block.settings.coffee_image | img_url: 'master'}}" alt="coffee {{ forloop.index }}">
-                    <h4 class="text-[24px] lg:text-[30px] font-acorn-semibold mb-3 lg:mb-4 text-center capitalize">{{ block.settings.coffee_header }}</h4>
+                    <h4 class="text-[18px] lg:text-[24px] font-acorn-semibold mb-3 lg:mb-4 text-center capitalize">{{ block.settings.coffee_header }}</h4>
                     <p class="font-light text-xl text-center">{{ block.settings.coffee_para }}</p>
                 </div>
             {% endfor %}
@@ -75,7 +75,7 @@
     
 
     <div class="sustainability-price__comparison mb-[66px] lg:mb-[78px]">
-        <h3 class="font-acorn-semibold mb-3 lg:mb-2 text-2xl lg:text-[30px] text-center">{{ section.settings.sus_price_header }}</h3>
+        <h3 class="font-couch mb-3 lg:mb-2 text-lg lg:text-[24px] text-center">{{ section.settings.sus_price_header }}</h3>
         <p class="font-regular text-base lg:font-semibold text-center">{{ section.settings.sus_price_subheader }}</p>
 
         <div class="flex flex-col lg:flex-row gap-[50px] lg:gap-[72px] justify-center mt-[38px] lg:mt-[30px]">
@@ -113,7 +113,7 @@
             <div>
                 <img class="rounded-[30px] mb-6 lg:mb-8" src="{{ section.settings.sus_tr_image | img_url: 'master' }}" alt="truly transparent">
 
-                <h4 class="font-acorn-medium mb-3 lg:mb-6 text-[30px] lg:text-[40px] text-center lg:text-left relative z-10">
+                <h4 class="font-acorn-medium mb-3 lg:mb-6 text-[24px] lg:text-[32px] text-center lg:text-left relative z-10 leading-tight">
                     <span class="z-10 relative">{{ section.settings.sus_tr_header }}</span>
                     <img class="hidden xl:block w-[130px] absolute top-0 right-0 -translate-y-1/2 z-1" src="https://cdn.shopify.com/s/files/1/0249/4283/7837/files/magnifier.gif?v=1718022630" alt="magnifier">
                 </h4>

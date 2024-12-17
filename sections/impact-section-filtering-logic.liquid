@@ -14,7 +14,7 @@
             </defs>
         </svg>
     </div>
-    <p class="font-acorn-semibold text-[40px] text-center mt-4 mb-6">Producer Partners</p>
+    <p class="font-couch text-[40px] text-center mt-4 mb-6">Producer Partners</p>
 
     <!-- Producer Countries: Desktop -->
     <div id="desktopCountryStickyTab" class="desktopCountryStickyTab hidden lg:flex gap-3 items-center justify-center pt-6 pb-[50px] px-8 flex-wrap z-[10] bg-white">
@@ -623,7 +623,7 @@ window.addEventListener('scroll', () => {
         let firstSoldAsProds = partnerInfo.producerInfo[0]['Sold As'];
         let fetchPromises = []; // Array to store fetch promises
             firstSoldAsProds.forEach(productHandle => {
-                let fetchPromise = fetch(window.Shopify.routes.root + 'products/' + productHandle + '.js')
+                let fetchPromise = fetch('https://counterculturecoffee.com/products/' + 'products/' + productHandle + '.js')
                     .then(response => {
                         if (response.ok) {
                             return response.json();
@@ -747,7 +747,7 @@ window.addEventListener('scroll', () => {
 
             let fetchPromises = []; // Array to store fetch promises
             allSoldAsProds.forEach(productHandle => {
-                let fetchPromise = fetch(window.Shopify.routes.root + 'products/' + productHandle + '.js')
+                let fetchPromise = fetch('https://counterculturecoffee.com/products/' + 'products/' + productHandle + '.js')
                     .then(response => {
                         if (response.ok) {
                             return response.json();

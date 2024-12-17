@@ -3,7 +3,7 @@
     <div class="lg:px-20 flex flex-col lg:flex-row gap-3 lg:gap-[42px] mb-[38px] lg:mb-[68px] items-center">
         <img class="w-[140px] lg:w-[218px]" src="{{ section.settings.inv_image |  img_url: 'master' }}" alt="twoforthefuture">
         <div>
-            <h2 class="font-acorn-medium leading-tight text-[30px] lg:text-[48px] mb-4 lg:mb-4 text-center lg:text-left">{{ section.settings.inv_header }}</h2>
+            <h2 class="font-acorn-medium leading-tight text-[28px] lg:text-[40px] mb-4 lg:mb-4 text-center lg:text-left">{{ section.settings.inv_header }}</h2>
             <p class="text-lg lg:text-[30px] font-light text-center lg:text-left leading-tight">
                 {{ section.settings.inv_para }}
             </p>
@@ -21,14 +21,14 @@
                     </svg>
                     <p class="text-base lg:text-lg font-medium rotate-[-90deg] absolute whitespace-nowrap origin-bottom-left left-[75%] bottom-[-24px]_ top-[8rem] w-[90px] text-right uppercase">{{ section.settings.sf_tagline }}</p>
 
-                    <div class="absolute mb:hidden top-[10rem] left-1/2 -translate-x-1/2">
+                    {% comment %} <div class="absolute mb:hidden top-[10rem] left-1/2 -translate-x-1/2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="7" height="144" viewBox="0 0 7 144" fill="none">
                             <path d="M3.50001 144L6.38676 139L0.613255 139L3.50001 144ZM3 2.18557e-08L3.00001 139.5L4.00001 139.5L4 -2.18557e-08L3 2.18557e-08Z" fill="black"/>
                         </svg>
-                    </div>
+                    </div> {% endcomment %}
                 </div>
                 <div>
-                    <h4 class="font-acorn-semibold  text-2xl lg:text-[30px] mb-2 lg:mb-3">{{ section.settings.sf_header }}</h4>
+                    <h4 class="font-couch text-lg lg:text-[28px] mb-2 lg:mb-3">{{ section.settings.sf_header }}</h4>
                     <p class="text-lg">{{ section.settings.sf_para }}</p>
                     
                     
@@ -78,14 +78,14 @@
                     </svg>
                     <p class="text-base lg:text-lg font-medium rotate-[-90deg] absolute whitespace-nowrap origin-bottom-left left-[75%] bottom-[-24px]_ top-[8rem] w-[90px] text-right uppercase">{{ section.settings.bf_tagline }}</p>
 
-                    <div class="absolute mb:hidden top-[8rem] left-1/2 -translate-x-1/2">
+                    {% comment %} <div class="absolute mb:hidden top-[8rem] left-1/2 -translate-x-1/2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="7" height="144" viewBox="0 0 7 144" fill="none">
                             <path d="M3.50001 144L6.38676 139L0.613255 139L3.50001 144ZM3 2.18557e-08L3.00001 139.5L4.00001 139.5L4 -2.18557e-08L3 2.18557e-08Z" fill="black"/>
                         </svg>
-                    </div>
+                    </div> {% endcomment %}
                 </div>
                 <div>
-                    <h4 class="font-acorn-semibold text-2xl lg:text-[30px] mb-2 lg:mb-3">{{ section.settings.bf_header }}</h4>
+                    <h4 class="font-couch text-lg lg:text-[28px] mb-2 lg:mb-3">{{ section.settings.bf_header }}</h4>
                     <p class="text-lg">{{ section.settings.bf_para }}</p>
 
 
@@ -205,7 +205,7 @@
         <div class="transparency--card bg-[#E0DF00] border border-black px-4 xl:px-[52px] py-5 xl:py-[46px] flex flex-col justify-between">
             <img class="rounded-[30px] mb-6 lg:mb-8" src="{{ section.settings.wcr_image_1 |  img_url: 'master' }}" alt="coffee card 1">
 
-            <h4 class="text-[30px] lg:text-[36px] font-acorn-medium mb-4 leading-tight text-center lg:text-left w-4/5 mx-auto  lg:w-full">{{ section.settings.wcr_header }}</h4>
+            <h4 class="text-[24px] lg:text-[32px] font-couch mb-4 leading-tight text-center lg:text-left w-4/5 mx-auto  lg:w-full">{{ section.settings.wcr_header }}</h4>
             <div class=" text-lg font-light mb-9 lg:mb-[60px] text-center lg:text-left">
                 {{ section.settings.wcr_header_1 }}
             </div>
@@ -226,7 +226,7 @@
 
             </div>
 
-            <div class="text-lg font-medium py-6 lg:py-0 text-center lg:text-left">
+            <div class="text-lg font-light py-6 lg:py-0 text-center lg:text-left">
                 {{ section.settings.wcr_header_2 }}
             </div>
 

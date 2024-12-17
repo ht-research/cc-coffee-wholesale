@@ -4880,6 +4880,14 @@ a.icon-link:hover svg, a.icon-link:focus-within svg {
   font-size: 38px;
 }
 
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.text-\[28px\] {
+  font-size: 28px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -9280,6 +9288,14 @@ a, button {
 
   .lg\:text-\[36px\] {
     font-size: 36px;
+  }
+
+  .lg\:text-\[24px\] {
+    font-size: 24px;
+  }
+
+  .lg\:text-\[28px\] {
+    font-size: 28px;
   }
 
   .lg\:font-semibold {
