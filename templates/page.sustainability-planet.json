@@ -66,7 +66,7 @@
       "settings": {
         "bg_color": "linear-gradient(90deg, rgba(158, 136, 187, 1) 1.6%, rgba(255, 141, 107, 1) 46.04%, rgba(168, 173, 0, 1) 100%)",
         "show_border": true,
-        "icon_bg_color": "transparent",
+        "icon_bg_color": "rgba(0,0,0,0)",
         "mobile_layout": "slider",
         "font": "font-couch",
         "icon_layout": "flex-row",
@@ -104,11 +104,31 @@
         "wcr_header_2": "<p>We aim to reduce our impact on the environment and support the coffee growing communities that bear the brunt of a changing climate. We offset what environmental impact we cannot mitigate by partnering with Trees, Water & People (TWP). TWP implement clean cookstoves in rural Honduran households — creating jobs in rural communities and reducing both indoor and outdoor pollution.</p>",
         "wcr_image_2": "shopify://shop_images/4B9B1824_1.png"
       }
+    },
+    "sustainability_timeline_PmxXy7": {
+      "type": "sustainability-timeline",
+      "blocks": {
+        "timeline_AFU83d": {
+          "type": "timeline",
+          "settings": {
+            "tl_year": "1995",
+            "tl_image": "shopify://shop_images/1995.png",
+            "tl_para": "<p>After meeting at the UNC Kenan-Flagler Business School, Brett Smith and Fred Houk founded Counter Culture Coffee. Our first sale was a bag of coffee to Pop’s Trattoria.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "timeline_AFU83d"
+      ],
+      "settings": {
+        "tl_header": "We’ve been doing this for a while and we won’t stop."
+      }
     }
   },
   "order": [
     "sustainability_header_yN3NNg",
     "sustainability_icon_banner_gpW8E4",
-    "sustainability_investment_3RFgbV"
+    "sustainability_investment_3RFgbV",
+    "sustainability_timeline_PmxXy7"
   ]
 }
