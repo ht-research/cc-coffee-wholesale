@@ -552,7 +552,15 @@ console.log('shopify root: ', window.Shopify.routes.root)
         } else {
             throw new Error(`Product handle not found: ${productHandle}`);
         }
+    })
+    .then(productData => {
+        console.log('Fetched Product Data:', productData);
+        // Further processing of productData can go here
+    })
+    .catch(error => {
+        console.error('Error fetching product:', error);
     });
+
 
   
   const stickyElement = document.getElementById('desktopCountryStickyTab');
