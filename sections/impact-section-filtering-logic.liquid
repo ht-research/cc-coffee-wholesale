@@ -541,30 +541,7 @@
 </style>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script>
-
-
-console.log('shopify root: ', window.Shopify.routes.root)
-  let fetchPromise = fetch('https://counterculturecoffee.com/products/' + 'big-trouble' + '.js')
-    .then(response => {
-        if (response.ok) {
-            return response.json();
-        } else {
-            throw new Error(`Product handle not found: ${productHandle}`);
-        }
-    })
-    .then(productData => {
-        console.log('Fetched Product Data:', productData);
-        // Further processing of productData can go here
-    })
-    .catch(error => {
-        console.error('Error fetching product:', error);
-    });
-
-  
-
-
-  
+<script>  
   const stickyElement = document.getElementById('desktopCountryStickyTab');
 //   console.log(stickyElement);
 
