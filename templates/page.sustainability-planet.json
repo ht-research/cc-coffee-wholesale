@@ -203,6 +203,14 @@
             "tl_image": "shopify://shop_images/2016.png",
             "tl_para": "<p>We moved our Headquarters to a new facility near downtown Durham, NC. We became the first specialty coffee roaster to deploy color-sorting technology for roasted<br/>coffee. This machine eliminates coffee outside of a desired color profile, helping to create a<br/>higher quality product for our partners.</p>"
           }
+        },
+        "timeline_mWfFem": {
+          "type": "timeline",
+          "settings": {
+            "tl_year": "2018",
+            "tl_image": "shopify://shop_images/2018.png",
+            "tl_para": "<p>After over two years of research by many members of the Counter Culture team, we published our first book, <em>A Reference Guide to Ethiopian Coffee Varieties, </em>by Getu Bekele and Tim Hill. After five years of research and development, we led our first Climate Change Adaptation Workshops series. <br/></p>"
+          }
         }
       },
       "block_order": [
@@ -217,7 +225,8 @@
         "timeline_9Qxj7A",
         "timeline_h4an3A",
         "timeline_FRaBf3",
-        "timeline_wxLK8p"
+        "timeline_wxLK8p",
+        "timeline_mWfFem"
       ],
       "settings": {
         "tl_header": "We’ve been doing this for a while and we won’t stop."
