@@ -545,6 +545,16 @@
 
 
 console.log('shopify root: ', window.Shopify.routes.root)
+  let fetchPromise = fetch('https://counterculturecoffee.com/products/' + productHandle + '.js')
+    .then(response => {
+        if (response.ok) {
+            return response.json();
+        } else {
+            throw new Error(`Product handle not found: ${productHandle}`);
+        }
+    });
+
+  
   const stickyElement = document.getElementById('desktopCountryStickyTab');
 //   console.log(stickyElement);
 
