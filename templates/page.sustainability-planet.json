@@ -63,6 +63,100 @@
     },
     "sustainability_icon_banner_gpW8E4": {
       "type": "sustainability-icon-banner",
+      "blocks": {
+        "icon_LqmiTX": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/IMG_4867-2_85e752e2-47f0-44f5-8594-7726684a9d43.jpg",
+            "prod_name": "Cenfrocafe",
+            "prod_country": "Peru",
+            "partner_since": "PARTNER FOR 17 YEARS"
+          }
+        },
+        "icon_7HhCK9": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/IMG_2418_cebb0449-4060-41b3-9017-af57d5382639.jpg",
+            "prod_name": "Cafenor",
+            "prod_country": "El Salvador",
+            "partner_since": "Partner for 2 years"
+          }
+        },
+        "icon_ertrHc": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/Organica_dce84896-9590-4acf-9136-870bdf0188f8.jpg",
+            "prod_name": "Organica",
+            "prod_country": "Colombia",
+            "partner_since": "PARTNER FOR 17 YEARS"
+          }
+        },
+        "icon_BDJnVK": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/PXL_20221201_101043926.MP-2_96c00c9d-d97c-4cd9-86f7-db701e6c0353.jpg",
+            "prod_name": "Jabanto",
+            "prod_country": "Ethiopia",
+            "partner_since": "partner for 6 years"
+          }
+        },
+        "icon_dmMcGU": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/Toldopamba_491509e3-4bc8-4725-9480-ec0ea5ed0b8b.jpg",
+            "prod_name": "Toldopamba",
+            "prod_country": "Colombia",
+            "partner_since": "partner for 8 years"
+          }
+        },
+        "icon_yD8GPX": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/IMG_2695_9987b26b-2312-48b0-9e13-50620cf388cb.jpg",
+            "prod_name": "CODECH",
+            "prod_country": "Guatemala",
+            "partner_since": "Partner for 14 years"
+          }
+        },
+        "icon_D4Qd7e": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0069_12434b9c-a81b-491c-bf1e-808084f7452b.jpg",
+            "prod_name": "Ikawa House",
+            "prod_country": "Rwanda",
+            "partner_since": "PARTNER FOR 3 YEARS"
+          }
+        },
+        "icon_eV7mfd": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/Kushikamana_517f3e12-1f4a-4ac8-8cf6-9ec5e55b4de0.jpg",
+            "prod_name": "Kushikamana",
+            "prod_country": "Kenya",
+            "partner_since": "PARTNER FOR 7 YEARS"
+          }
+        },
+        "icon_q347DH": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/Valle_Inca4_9183fd49-2828-4e11-9001-62ff62cadd4d.jpg",
+            "prod_name": "Valle Inca",
+            "prod_country": "Peru",
+            "partner_since": "PARTNER FOR 8 YEARS"
+          }
+        }
+      },
+      "block_order": [
+        "icon_LqmiTX",
+        "icon_7HhCK9",
+        "icon_ertrHc",
+        "icon_BDJnVK",
+        "icon_dmMcGU",
+        "icon_yD8GPX",
+        "icon_D4Qd7e",
+        "icon_eV7mfd",
+        "icon_q347DH"
+      ],
       "settings": {
         "bg_color": "linear-gradient(90deg, rgba(158, 136, 187, 1) 1.6%, rgba(255, 141, 107, 1) 46.04%, rgba(168, 173, 0, 1) 100%)",
         "show_border": true,
