@@ -545,7 +545,7 @@
 
 
 console.log('shopify root: ', window.Shopify.routes.root)
-  let fetchPromise = fetch('https://counterculturecoffee.com/products/' + productHandle + '.js')
+  let fetchPromise = fetch('https://counterculturecoffee.com/products/' + 'big-trouble' + '.js')
     .then(response => {
         if (response.ok) {
             return response.json();
