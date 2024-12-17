@@ -623,7 +623,7 @@ window.addEventListener('scroll', () => {
         let firstSoldAsProds = partnerInfo.producerInfo[0]['Sold As'];
         let fetchPromises = []; // Array to store fetch promises
             firstSoldAsProds.forEach(productHandle => {
-                let fetchPromise = fetch('https://counterculturecoffee.com/products/' + 'products/' + productHandle + '.js')
+                let fetchPromise = fetch(window.Shopify.routes.root + 'products/' + productHandle + '.js')
                     .then(response => {
                         if (response.ok) {
                             return response.json();
@@ -747,7 +747,7 @@ window.addEventListener('scroll', () => {
 
             let fetchPromises = []; // Array to store fetch promises
             allSoldAsProds.forEach(productHandle => {
-                let fetchPromise = fetch('https://counterculturecoffee.com/products/' + 'products/' + productHandle + '.js')
+                let fetchPromise = fetch(window.Shopify.routes.root + 'products/' + productHandle + '.js')
                     .then(response => {
                         if (response.ok) {
                             return response.json();
