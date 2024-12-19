@@ -1,0 +1,236 @@
+<!-- sections/sustainability-icon-banner [aa] -->
+
+{% comment %}lg:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 lg:grid-cols-5 lg:grid-cols-6{% endcomment %}
+
+<section class="py-8 px-0 md:px-12 
+                {% if section.settings.show_border == true %} border-t border-b border-black {% endif %}
+                {% if section.settings.mobile_layout == 'slider' %} js-marquee-wrapper overflow-scroll {% endif %}" 
+        style="background: {{ section.settings.bg_color }};"> 
+        
+  <ul class="lg:grid_ lg:grid-cols-{{ section.blocks | size }}_
+             gap-12 md:gap-12 lg:gap-24 w-full mx-auto
+             flex
+             {% if section.settings.mobile_layout == 'slider' %} js-marquee w-auto {% else %} flex-wrap justify-center px-5 {% endif %}" >
+
+
+    <!-- Static Blocks -->
+    {%- for block in section.blocks -%}
+
+        <li class="min-w-[18rem]_ w-60_ lg:w-full_ w-fit flex items-center gap-4 lg:gap-6 animate animate-fadeIn lg:hidden_" data-delay="{{ forloop.index | times: 150 }}">
+            {%- if block.settings.image != blank -%}
+              <div class="w-[114px] h-[114px] lg:w-[125px] lg:h-[125px] relative flex-shrink-0" 
+                   style="background: {{ section.settings.icon_bg_color }};">
+                {% 
+                  render 'responsive-image', 
+                  src: block.settings.image,
+                  alt: block.settings.image.alt,
+                  class: "w-[114px] h-[114px] lg:w-[125px] lg:h-[125px] absolute top-0 left-0 rounded-full object-cover"   
+                %}
+              </div>
+            {%- else -%}
+              <div class="w-[114px] h-[114px] lg:w-[125px] lg:h-[125px] relative flex-shrink-0" 
+                    style="background: {{ section.settings.icon_bg_color }};">
+                  {% 
+                    render 'responsive-image', 
+                    src: "https://cdn.shopify.com/s/files/1/0249/4283/7837/files/country-placeholder-image.png?v=1716583172",
+                    alt: "partner",
+                    class: "w-[114px] h-[114px] lg:w-[125px] lg:h-[125px] absolute top-0 left-0 rounded-full object-cover"   
+                  %}
+                </div>
+            {%- endif -%}
+  
+            {%- if block.settings.prod_name != blank -%}
+              <div class="flex flex-col justify-center ">
+                <p class="{{ section.settings.text_color }} {{ section.settings.font }} {{ section.settings.text_classes }} text-2xl lg:text-[30px] whitespace-nowrap mb-2 leading-none">{{ block.settings.prod_name }}</p>
+                <p class="uppercase text-sm font-light mb-2 whitespace-nowrap">{{ block.settings.prod_country }}</p>
+
+                {%- if block.settings.partner_since != blank -%}
+                    <p class="bg-[#000F9F] text-white text-[12px] font-medium uppercase px-4 py-1 lg:py-2 whitespace-nowrap polygon-banner relative w-fit">{{ block.settings.partner_since }}</p>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          </li>
+
+      
+    {%- endfor -%}
+
+    {% if section.settings.mobile_layout == 'slider' %}
+      {%- for block in section.blocks -%}
+        <li class="min-w-[17rem] w-60_ lg:w-full_ w-fit flex items-center gap-4 lg:gap-6 animate animate-fadeIn lg:hidden_" data-delay="{{ forloop.index | times: 150 }}">
+          {%- if block.settings.image != blank -%}
+            <div class="w-[114px] h-[114px] lg:w-[125px] lg:h-[125px] relative flex-shrink-0" 
+                 style="background: {{ section.settings.icon_bg_color }};">
+              {% 
+                render 'responsive-image', 
+                src: block.settings.image,
+                alt: block.settings.image.alt,
+                class: "w-[114px] h-[114px] lg:w-[125px] lg:h-[125px] absolute top-0 left-0 rounded-full"   
+              %}
+            </div>
+          {%- endif -%}
+
+          {%- if block.settings.prod_name != blank -%}
+            <div class="flex flex-col justify-center ">
+              <p class="{{ section.settings.text_color }} {{ section.settings.font }} {{ section.settings.text_classes }} text-2xl lg:text-[30px] whitespace-nowrap mb-2 leading-none">{{ block.settings.prod_name }}</p>
+
+              <p class="uppercase text-sm font-light mb-4 whitespace-nowrap">{{ block.settings.prod_country }}</p>
+
+                {%- if block.settings.partner_since != blank -%}
+                    <p class="bg-[#000F9F] text-white text-[12px] font-medium uppercase px-4 py-1 lg:py-2 whitespace-nowrap polygon-banner relative w-fit">{{ block.settings.partner_since }}</p>
+                {%- endif -%}
+            </div>
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+    {% endif %}
+
+  </ul>
+</section>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Sustainability Banner",
+    "settings": [
+      {
+        "type": "color_background",
+        "id": "bg_color",
+        "label": "Background Color",
+        "default": "#B76887"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_border",
+        "label": "Show Border",
+        "default": true
+      },
+      {
+        "type": "color",
+        "id": "icon_bg_color",
+        "label": "Icon Background Color",
+        "default": "transparent"
+      },
+      {
+        "type": "select",
+        "id": "mobile_layout",
+        "label": "Mobile + Tablet Layout",
+        "default": "grid",
+        "options": [
+          {
+            "label": "Grid Rows",
+            "value": "grid"
+          }, {
+            "label": "Slider",
+            "value": "slider"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "font",
+        "label": "Icon Text Font Family",
+        "info": "Font selector between theme fonts: Freight Sans, Couch, Tenso",
+        "default": "font-freight-sans",
+        "options": [
+          {
+            "label": "Freight Sans",
+            "value": "font-freight-sans"
+          }, 
+          {
+            "label": "Couch",
+            "value": "font-couch"
+          }, 
+          {
+            "label": "Tenso",
+            "value": "font-tenso"
+          },
+          {
+            "label": "Gopher",
+            "value": "font-gopher"
+          },
+          {	
+            "label": "Acorn",	
+            "value": "font-acorn"	
+          },
+          {	
+            "label": "Acorn-semibold",	
+            "value": "font-acorn-semibold"	
+          }
+        ]
+      }, {
+        "type": "select",
+        "id": "icon_layout",
+        "label": "Icon Layout",
+        "default": "flex-row",
+        "options": [
+          {
+            "label": "Row",
+            "value": "flex-row"
+          }, {
+            "label": "Column",
+            "value": "flex-col"
+          }
+        ]
+      }, {
+        "type": "select",
+        "id": "text_color",
+        "label": "Text Color",
+        "default": "text-black",
+        "options": [
+          {
+            "label": "Black",
+            "value": "text-black"
+          }, {
+            "label": "Blue",
+            "value": "text-blue"
+          }, {
+            "label": "White",
+            "value": "text-white"
+          }, {
+            "label": "Camel",
+            "value": "text-camel"
+          }
+        ]
+      }, {
+        "type": "text",
+        "id": "text_classes",
+        "label": "Additional CSS Classes to add to text"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "icon",
+        "name": "Icon + Text",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Icon image"
+          }, {
+            "type": "text",
+            "id": "prod_name",
+            "label": "Producer Name"
+          },{
+            "type": "text",
+            "id": "prod_country",
+            "label": "Producer Country"
+          },
+          {
+            "type": "text",
+            "id": "partner_since",
+            "label": "Partner Since"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "Image",
+        "name": "Sustainability Icon Banner"
+      }
+    ]
+  }
+{% endschema %}

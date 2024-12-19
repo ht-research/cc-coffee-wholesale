@@ -1,0 +1,60 @@
+<!-- snippets/sustainability-transparency-dropdown.liquid -->
+
+{% assign ss = section.settings %}
+
+<div class="relative z-20">
+  {% unless ss.dropdown_links == blank %}
+    <div class="relative z-10 flex flex-col xl:flex-row gap-6 w-full items-center">
+      <button
+        class="flex items-center justify-between gap-2.5 rounded-full border border-black py-3 pl-8 pr-8 pr-20_ group w-full xl:w-fit"
+        data-toggle="#sus--report-dropdown"
+      >
+       
+        <span class="text-lg font-medium">{{ ss.dropdown_links.links[0].title }}</span>
+        {% render 'icon', icon: 'chevron', class: 'transition-all group-activated group-activated:rotate-180' %}
+      </button>
+
+      <div
+        id="sus--report-dropdown"
+        class="absolute top-[calc(100%_-_4rem)]  xl:top-[calc(100%_+_1.25rem)] left-0 z-20 hidden w-full xl:w-64 rounded-2xl bg-white py-5 activated:block"
+      >
+        <ul class="sus-year--data max-h-72 overflow-scroll">
+          {% for link in ss.dropdown_links.links %}
+            <li class="sus-year--item group w-full">
+              
+             
+                <a  href="{{ link.url }}"
+                    target="_blank"
+                    data-year-url="{{ link.url }}" class="block w-full px-10 py-2.5 font-freight-sans text-lg transition-colors hover:bg-[#E9E7E1] group-hover:bg-[#E9E7E1] group-focus-within:bg-[#E9E7E1]">
+                    {{- link.title -}}
+                </a>
+              
+
+              {% if link.links.size > 0 %}
+                <ul class="sus-language--data">
+                  {%- for sublink in link.links -%}
+                    <li class="sus-language--item group-hover hidden group-hover:block group-focus-within:block">
+                      
+                      <a href="{{ sublink.url }}"
+                         target="_blank" 
+                         data-language-url="{{ sublink.url }}"  class="block w-full py-2.5 pl-14 pr-10 font-freight-sans text-lg transition-colors hover:bg-[#F39873] cursor-pointer">
+                         {{- sublink.title -}}
+                      </a>
+
+
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+
+
+      <a class="btn btn-secondary py-3 text-white font-medium uppercase font-variant-lining w-full xl:w-fit" target="_blank" href="{{ ss.dropdown_links.links[0].url }}">READ THE {{ ss.dropdown_links.links[0].title }} REPORT</a>
+    </div>
+  {% endunless %}
+</div>
+

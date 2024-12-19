@@ -1,0 +1,288 @@
+{% capture slick_settings_header %}
+    {
+      "dots": true,
+      "arrows": true,
+      "infinite": true,
+      "speed": 300,
+      "slidesToShow": 1,
+      "slidesToScroll": 1,
+      "mobileFirst": true,
+      "adaptiveHeight": true,
+      "nextArrow": ".sustainability-coffees--wrapper .js-next",
+      "prevArrow": ".sustainability-coffees--wrapper .js-prev",
+      "responsive": [
+        {
+            "breakpoint": 1023,
+            "settings": "unslick"
+        }
+      ]
+    }
+  {% endcapture %}
+
+
+<style>
+    .impact--main-desc em{
+        font-family: "freight-text-pro", serif;
+    }
+
+    .sustainability-coffees--wrapper .slick-dots{
+        margin-top: 16px;
+    }
+</style>
+
+
+<section class="js-sustainability-header py-8 pt-4 lg:py-14 lg:pt-[86px] px-5 lg:px-20">
+    <h1 class="font-couch text-[24px] lg:text-[32px] mb-4 lg:mb-[42px] flex flex-col-reverse items-center text-center w-fit mx-auto relative leading-tight">
+        {{ section.settings.sus_header }}
+        <div class="lg:absolute right-0 top-0 lg:translate-x-[150px] lg:-translate-y-1/2">
+            <img class="w-[125px] mb-6" src="https://cdn.shopify.com/s/files/1/0249/4283/7837/files/heart.gif?v=1718022629" alt="hand-illustration">
+        </div>
+    </h1>
+
+    <div class="text-lg lg:text-[32px] mb-[56px] lg:mb-[66px] font-light text-center leading-relaxed impact--main-desc">
+                {{ section.settings.sus_paragraph }}
+    </div>
+
+
+    <h2 class="font-couch text-[22px] lg:text-[32px] mb-8 lg:mb-[48px] flex flex-col-reverse items-center text-center relative">
+        <span class="lg:w-1/2 mx-auto capitalize leading-tight">
+        {{ section.settings.sus_subheader }}
+        </span>
+        <div class="lg:absolute left-0 top-0">
+            <img class="w-[130px] mb-6" src="https://cdn.shopify.com/s/files/1/0249/4283/7837/files/farmer.gif?v=1718022630" alt="farmer-illustration">
+        </div>
+    </h2>
+
+
+    <div class="sustainability-coffees--wrapper relative">
+        {% render 'slick-arrows-white',
+            class: 'lg:hidden absolute top-[26%]',
+            left_class: 'left-0',
+            right_class: 'right-0'
+        %}
+
+        <div class="sustainability-coffees lg:grid lg:grid-cols-3 lg:gap-[50px] mb-[60px] js-slick"  data-slick='{{ slick_settings_header | strip }}'>
+
+            {% for block in section.blocks %}
+                <div>
+                <img class="mb-5 lg:mb-8 px-14" src="{{ block.settings.coffee_image | img_url: 'master'}}" alt="coffee {{ forloop.index }}">
+                    <h4 class="text-[18px] lg:text-[24px] font-acorn-semibold mb-3 lg:mb-4 text-center capitalize">{{ block.settings.coffee_header }}</h4>
+                    <p class="font-light text-xl text-center">{{ block.settings.coffee_para }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+
+    <div class="sustainability-price__comparison mb-[66px] lg:mb-[78px]">
+        <h3 class="font-couch mb-3 lg:mb-2 text-lg lg:text-[24px] text-center">{{ section.settings.sus_price_header }}</h3>
+        <p class="font-regular text-base lg:font-semibold text-center">{{ section.settings.sus_price_subheader }}</p>
+
+        <div class="flex flex-col lg:flex-row gap-[50px] lg:gap-[72px] justify-center mt-[38px] lg:mt-[30px]">
+            <div class="flex flex-col justify-between items-center">
+                <img class="w-[160px] mb-4 lg:mb-5" src="https://cdn.shopify.com/s/files/1/0249/4283/7837/files/sus-cash-1.png?v=1716972691" alt="">
+                <p class="text-xl font-light text-center uppercase">
+                    COUNTER CULTURE
+                    <span class="font-acorn-semibold text-2xl block">{{ section.settings.sus_price_cc }}</span>
+                </p>
+            </div>
+
+            <div class="flex gap-[72px] justify-center">
+                <div class="flex flex-col justify-between">
+                    <img class="w-[160px] mb-4 lg:mb-5" src="https://cdn.shopify.com/s/files/1/0249/4283/7837/files/sus-cash-2.png?v=1716972691" alt="">
+                    <p class="text-xl font-light text-center uppercase">
+                        Fair Trade Min
+                        <span class="font-acorn-semibold text-2xl block">{{ section.settings.sus_price_ftm }}</span>
+                    </p>
+                </div>
+    
+               <div class="flex flex-col justify-between">
+                    <img class="w-[160px] mb-4 lg:mb-5" src="https://cdn.shopify.com/s/files/1/0249/4283/7837/files/sus-cash-3.png?v=1716972691" alt="">
+                    <p class="text-xl font-light text-center uppercase">
+                        C Market
+                        <span class="font-acorn-semibold text-2xl block">{{ section.settings.sus_price_cm }}</span>
+                    </p>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="sustainability-cards grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[52px]">
+        <div class="transparency--card bg-[#F39873] border border-black px-5 py-5 xl:px-[52px] xl:py-[46px] flex flex-col justify-between">
+            <div>
+                <img class="rounded-[30px] mb-6 lg:mb-8" src="{{ section.settings.sus_tr_image | img_url: 'master' }}" alt="truly transparent">
+
+                <h4 class="font-acorn-medium mb-3 lg:mb-6 text-[24px] lg:text-[32px] text-center lg:text-left relative z-10 leading-tight">
+                    <span class="z-10 relative">{{ section.settings.sus_tr_header }}</span>
+                    <img class="hidden xl:block w-[130px] absolute top-0 right-0 -translate-y-1/2 z-1" src="https://cdn.shopify.com/s/files/1/0249/4283/7837/files/magnifier.gif?v=1718022630" alt="magnifier">
+                </h4>
+                <p class="text-lg lg:text-xl font-light mb-8 lg:mb-6 text-center lg:text-left">{{ section.settings.sus_tr_para }}</p>    
+            </div>
+            
+            <div class="__ctas .flex gap-[40px]">
+                {% render 'sustainability-transparency-dropdown' %}
+            </div>
+        </div>
+
+        <div class="transparency--card bg-[#ACD7D8] border border-black px-5 py-5 xl:px-[52px] xl:py-[46px] flex flex-col justify-between">
+            <div>
+                <img class="rounded-[30px] mb-6 lg:mb-8" src="{{ section.settings.sus_pp_image | img_url: 'master' }}" alt="purchasing data">
+
+                <h4 class="font-acorn-medium mb-3 lg:mb-6 text-[30px] lg:text-[40px] text-center lg:text-left">{{ section.settings.sus_pp_header }}</h4>
+                <p class="text-lg lg:text-xl font-light mb-8 lg:mb-6 text-center lg:text-left">{{ section.settings.sus_pp_para }}</p>    
+            </div>
+            
+            <div class="__ctas .flex gap-[40px]">
+                <a href="{{ section.settings.sus_pp_url }}" target="_blank" class="btn btn-secondary w-full lg:w-[280px] py-3 text-white font-medium uppercase font-variant-lining">SEE THE NUMBERS</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+{% schema %}
+    {
+      "name": "Sustainability Header",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Sustainability Header - Settings"
+        },
+        {
+            "type": "textarea",
+            "id": "sus_header",
+            "label": "Sustainabiliy - Header",
+            "default": "Our Impact: Building Towards Better."
+        },
+        {
+            "type": "richtext",
+            "id": "sus_paragraph",
+            "label": "Sustainabiliy Header - Paragraph"        
+        },
+        {
+            "type": "textarea",
+            "id": "sus_subheader",
+            "label": "Sustainabiliy - Sub Header",
+            "default": "We Value + Invest In Coffee And The People Who Grow It."
+        },
+        {
+          "type": "header",
+          "content": "Sustainability Price Comparison - Settings"
+        },
+        {
+            "type": "textarea",
+            "id": "sus_price_header",
+            "label": "Sustainabiliy - Price Header",
+            "default": "What we pay compared to others"
+        },
+        {
+            "type": "textarea",
+            "id": "sus_price_subheader",
+            "label": "Sustainabiliy - Price Sub Header",
+            "default": "*PRICE PER LB IN 2023"
+        },
+        {
+            "type": "text",
+            "id": "sus_price_cc",
+            "label": "Price - COUNTER CULTURE",
+            "default": "$3.52*"
+        },
+        {
+            "type": "text",
+            "id": "sus_price_ftm",
+            "label": "Price - FAIR TRADE MIN",
+            "default": "$1.97*"
+        },
+        {
+            "type": "text",
+            "id": "sus_price_cm",
+            "label": "Price - C MARKET",
+            "default": "$1.73*"
+        },
+        {
+          "type": "header",
+          "content": "Transparency Information"
+        },
+        {
+            "type": "image_picker",
+            "id": "sus_tr_image",
+            "label": "Transparency - Image"
+        },
+        {
+            "type": "text",
+            "id": "sus_tr_header",
+            "label": "Transparency - Header",
+            "default": "Truly Transparent"
+        },
+        {
+            "type": "textarea",
+            "id": "sus_tr_para",
+            "label": "Transparency - Paragraph",
+            "default": "As a response to chronically low Since 2009, our annual Transparency Reports have served as a blueprint for our green coffee purchasing practices and a response to chronically low prices in the coffee industry. We believe paying more for green coffee invests in the long-term viability of specialty coffee and every partner in our supply chain. "
+        },
+        {
+            "type": "link_list",
+            "id": "dropdown_links",
+            "label": "Dropdown Linklist"
+        },
+        {
+          "type": "header",
+          "content": "Purchasing Data Information"
+        },
+        {
+            "type": "image_picker",
+            "id": "sus_pp_image",
+            "label": "Purchasing - Image"
+        },
+        {
+            "type": "text",
+            "id": "sus_p_header",
+            "label": "Purchasing - Header",
+            "default": "Purchasing Data"
+        },
+        {
+            "type": "textarea",
+            "id": "sus_pp_para",
+            "label": "Purchasing - Paragraph",
+            "default": "On top of the information available in our Transparency Report, we publish data about every coffee we buy. The data combines all contracts from the same organization in a given year to provide a concise snapshot of our purchasing footprint."
+        },
+        {
+            "type": "url",
+            "id": "sus_pp_url",
+            "label": "Purchasing - URL"
+        }
+      ],
+      "blocks": [
+        {
+            "type": "coffee",
+            "name": "Coffee Details",
+            "limit": 3,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "coffee_image",
+                    "label": "Coffee - Image"
+                },
+                {
+                    "type": "textarea",
+                    "id": "coffee_header",
+                    "label": "Coffee - Header"
+                },
+                {
+                    "type": "textarea",
+                    "id": "coffee_para",
+                    "label": "Coffee - Paragraph"
+                }
+            ]
+
+        }
+      ],
+      "presets": [
+        {
+          "name": "Sustainability Header"
+        }
+      ]
+    }
+{% endschema %}

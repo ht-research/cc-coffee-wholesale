@@ -114,6 +114,39 @@
     transform: translate(2px, -2px);
   }
 
+
+   /* transparent BG + black borders + black text */
+
+   .btn-outline-black {
+
+    @apply bg-transparent border border-black text-black;
+
+  }
+
+
+
+  .btn-outline-black:hover, .btn-outline-black:focus, .btn-outline-black:focus-within, .btn-outline-black:focus-visible {
+
+    @apply bg-transparent border-black text-black;
+
+    box-shadow: -4px 4px theme('colors.black');
+
+    transform: translate(4px, -4px);
+
+  }
+
+
+
+  .btn-outline-black:active {
+
+    @apply bg-white border-black text-black;
+
+    box-shadow: -2px 2px theme('colors.black');
+
+    transform: translate(2px, -2px);
+
+  }
+
   .btn-transparent {
     @apply bg-transparent border-0;
   }
@@ -143,4 +176,16 @@
   a.uppercase {
     @apply font-freight-sans;
   }
+}
+
+
+
+.polygon-banner {
+  background-color: #000F9F;
+  color: white;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 92% 50%, 100% 100%, 0% 100%, 8% 50%);
+          clip-path: polygon(0% 0%, 100% 0%, 92% 50%, 100% 100%, 0% 100%, 8% 50%);
 }

@@ -1,15 +1,15 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "favicon": "shopify:\/\/shop_images\/CCC_Favicon_430x_fb8ead38-1aae-406a-8d45-16968c88ddc6.png",
+    "favicon": "shopify://shop_images/CCC_Favicon_430x_fb8ead38-1aae-406a-8d45-16968c88ddc6.png",
     "free_shipping_threshold": 250,
     "cart_psa": "",
     "enable_cart_notes": false,
@@ -37,7 +37,7 @@
       "footer": {
         "type": "footer",
         "settings": {
-          "badge_image": "shopify:\/\/shop_images\/since-1995-badge_5117ac2f-052a-44f6-bc1d-21090fb0b225_1.png",
+          "badge_image": "shopify://shop_images/since-1995-badge_5117ac2f-052a-44f6-bc1d-21090fb0b225_1.png",
           "title": "",
           "footer_menu": "footer-new",
           "privacy_menu": "footer",
@@ -57,13 +57,12 @@
           "4f67f657-076f-4886-83e2-9e6f8297268e": {
             "type": "paragraph",
             "settings": {
-              "text": "<p>Get updates from Ethan and exclusive discounts including <strong>20%<\/strong> off your first purchase.<\/p>"
+              "text": "<p>Get updates from Ethan and exclusive discounts including <strong>20%</strong> off your first purchase.</p>"
             }
           },
           "852f6036-38e6-4b3e-9fa9-bce62b7d9c93": {
             "type": "email_form",
-            "settings": {
-            }
+            "settings": {}
           }
         },
         "block_order": [
@@ -90,7 +89,7 @@
             "type": "empty_button",
             "settings": {
               "text": "Shop now",
-              "url": "shopify:\/\/collections"
+              "url": "shopify://collections"
             }
           },
           "deccad2d-0aba-441a-8940-e0230720f475": {
@@ -146,19 +145,15 @@
           "b2c6a5e2-4739-4e1f-be13-1be871700be2",
           "86f13c0f-3d36-4d48-8ad9-212e9f842e6c"
         ],
-        "settings": {
-        }
+        "settings": {}
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   }

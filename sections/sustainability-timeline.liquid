@@ -1,0 +1,198 @@
+
+{% capture slick_settings_tl %}
+    {
+      "dots": false,
+      "arrows": true,
+      "centerMode": true,
+      "centerPadding": "15px",
+      "infinite": true,
+      "autoplay": false,
+      "autoplaySpeed": 0,
+      "cssEase": "linear",
+      "speed": 500,
+      "slidesToShow": 1,
+      "slidesToScroll": 1,
+      "mobileFirst": true,
+      "adaptiveHeight": true,
+      "nextArrow": ".js-sustainability-timeline .js-next",
+      "prevArrow": ".js-sustainability-timeline .js-prev",
+      "useAutoplayToggleButton": false,
+      "responsive": [
+        {
+            "breakpoint": 1024,
+            "settings": {
+                "slidesToShow": 3,
+                "centerMode": false,
+                "adaptiveHeight": false
+            }
+        }
+      ]
+    }
+{% endcapture %}
+
+<style>
+
+    .__timeline .tl-img-wrapper{
+        display: flex;
+        align-items: center;
+    }
+    .__timeline .tl-img-wrapper img{
+        margin: auto;
+    }
+
+    
+    .slick-current.slick-active.slick-center .__timeline .tl-img-wrapper img{
+        width: 168px;
+        height: 168px;
+        transition: .3s ease-in-out;
+        transform-origin: center;
+    }
+
+    @media (max-width: 756px) {
+        .impact--tl-desc{
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+
+        .tl-img-wrapper img{
+            transition: 0.1s ease-in-out;
+        }
+
+
+        .slick-current.slick-active.slick-center .impact--tl-desc{
+            opacity: 1;
+        }
+
+
+        .slick-current.slick-active.slick-center ~ .slick-slide  .tl-img-wrapper img{
+            transform: translateX(-40vw);
+        }
+
+
+        .slick-slide.previous .tl-img-wrapper img {
+            transform: translateX(+40vw); /* Move the previous slide */
+        }
+    }
+
+   
+
+</style>
+
+
+
+<section class="pb-[60px] px-0">
+
+    <h2 class="text-[24px] lg:text-[32px] font-couch leading-tight mb-9 lg:mb-[68px] text-center px-8 lg:w-3/5 mx-auto">{{ section.settings.tl_header }} </h2>
+
+    <div class="js-sustainability-timeline relative mb-[40px]_ ">
+        {% render 'slick-arrows-white',
+            class: 'hidden lg:block absolute bottom-0_ lg:bottom-unset top-1/2 lg:top-1/2',
+            left_class: 'left-[5%]',
+            right_class: 'right-[5%]'
+        %}
+        <div class="js-slick tl-slick-slider"  data-slick='{{ slick_settings_tl | strip }}'>
+            {% for block in section.blocks %}
+                <div class="__timeline tl-{{ block.settings.tl_year }}">
+                    <div class="mx-auto">
+                        <div class="w-[168px] h-[168px] lg:w-[230px] lg:h-[230px]  mb-3 mx-auto overflow-hidden_ tl-img-wrapper">
+                            {% if block.settings.tl_image != blank %}
+                                <img class="w-[85px] h-[85px] lg:w-full lg:h-full object-cover rounded-full border border-black" src="{{ block.settings.tl_image |  img_url: 'master' }}" alt="{{ block.settings.tl_year }}">
+                            {% else %}
+                                <img class="w-[85px] h-[85px] lg:w-full lg:h-full object-cover rounded-full border border-black" src="https://cdn.shopify.com/s/files/1/0249/4283/7837/files/Mountain_Harvest1.jpg?v=1716905814" alt="{{ block.settings.tl_year }}">
+                            {% endif %}
+                        </div>
+            
+                        <p class="font-acorn-semibold text-[22px] lg:text-[36px] mb-4 lg:mb-[52px] mx-auto text-center">{{ block.settings.tl_year }}</p>
+                        <div class="w-full relative z-1">
+                            <div class="w-fit mx-auto z-10 relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                    <circle cx="14.5" cy="14.5" r="14" fill="#A7A4DF" stroke="black"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="absolute border-b border-black w-full top-1/2">
+
+                            </div>
+                        </div>
+                        
+
+                        <div class="text-base lg:text-lg font-medium mt-5 text-center w-4/5 mx-auto impact--tl-desc">{{ block.settings.tl_para }}</div>
+                    </div>
+                </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+    
+</section>
+
+
+<script>
+    $(document).ready(function () {
+
+        function setPreviousClass() {
+            // Remove any existing 'previous' classes
+            $('.slick-slide').removeClass('previous');
+
+            // Add 'previous' class to the slide before the current one
+            $('.slick-slide.slick-current').prev().addClass('previous');
+        }
+
+        setPreviousClass();
+
+        $('.tl-slick-slider').on('afterChange', function(event, slick, currentSlide) {
+            console.log('slick'); // Log this to confirm event firing
+            $('.slick-slide').removeClass('previous');
+            $('.slick-slide.slick-current').prev().addClass('previous');
+        });
+    });
+
+
+</script>
+
+
+{% schema %}
+    {
+      "name": "Sustainability Timeline",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Sustainability Timeline - Settings"
+        },
+        {
+            "type": "textarea",
+            "id": "tl_header",
+            "label": "Timeline - Header",
+            "default": "We’ve been doing this for a while and we won’t stop."
+        }
+      ],
+      "blocks": [
+        {
+            "type": "timeline",
+            "name": "Timeline - year",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "tl_year",
+                    "label": "Timeline - Year"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "tl_image",
+                    "label": "Timeline - Image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "tl_para",
+                    "label": "Timeline - Paragraph"
+                }
+            ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Sustainability Timeline"
+        }
+      ]
+    }
+{% endschema %}
