@@ -11,6 +11,7 @@
   "sections": {
     "hero_aFY6ta": {
       "type": "hero",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Iridescent_banner.jpg",
         "s_image": "shopify://shop_images/Iridescent_banner.jpg",
@@ -117,7 +118,6 @@
     },
     "hero_EGUcUi": {
       "type": "hero",
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/BuchiroWashingStation_1.png",
         "background_color": "",
