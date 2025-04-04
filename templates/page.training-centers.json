@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "16509957948bad1e61": {
@@ -18,7 +18,7 @@
         "bg_color": "#ece8df",
         "wrapper_classes": "border border-black",
         "use_squiggles": false,
-        "title": "<p>Training Centers<\/p>",
+        "title": "<p>Training Centers</p>",
         "text_size_mobile": "text-4xl",
         "text_size_desktop": "lg:text-4xl",
         "tag": "h1",
@@ -27,7 +27,7 @@
         "alignment": "text-center",
         "text_color": "text-black",
         "title_classes": "text-stroke-outline",
-        "content": "<p>Training Centers are hubs for coffee education. They are homebases for our regional teams. They are places for our wholesale partners to train, and venues where all coffee-curious people can learn about and celebrate the world of coffee.<\/p>",
+        "content": "<p>Training Centers are hubs for coffee education. They are homebases for our regional teams. They are places for our wholesale partners to train, and venues where all coffee-curious people can learn about and celebrate the world of coffee.</p>",
         "testimonial_author": ""
       }
     },
@@ -37,192 +37,193 @@
         "1dd2ce3e-12c7-4147-bc47-b37f0d1980f1": {
           "type": "card",
           "settings": {
-            "img": "shopify:\/\/shop_images\/CCC_HQ_Training_Center.jpg",
+            "img": "shopify://shop_images/CCC_HQ_Training_Center.jpg",
             "title": "Durham",
-            "description": "<p><strong>Roastery & Headquarters<\/strong><\/p><p>812 Mallard Ave<\/p><p>Durham, NC 27701<\/p><p><\/p><p>durham@counterculturecoffee.com<\/p>",
+            "description": "<p><strong>Roastery & Headquarters</strong></p><p>812 Mallard Ave</p><p>Durham, NC 27701</p><p></p><p>durham@counterculturecoffee.com</p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "Coffee Classes & Workshops",
-            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/durham",
+            "link_one_url": "https://counterculturecoffee.zohobookings.com/#/customer/durham",
             "link_one_classes": "",
             "button_two_style": "btn btn-secondary",
             "link_two_text": "",
-            "link_two_url": "shopify:\/\/collections\/all",
+            "link_two_url": "shopify://collections/all",
             "link_two_classes": ""
           }
         },
         "c39c9853-1cd6-4361-b4c3-9176ad51f667": {
           "type": "card",
           "settings": {
-            "img": "shopify:\/\/shop_images\/CCC_FLOWERS.jpg",
+            "img": "shopify://shop_images/CCC_FLOWERS.jpg",
             "title": "Asheville – Now Open",
-            "description": "<p>178 Westwood Place Unit A Asheville, NC 28806<\/p><p>asheville@counterculturecoffee.com<\/p>",
+            "description": "<p>178 Westwood Place Unit A Asheville, NC 28806</p><p>asheville@counterculturecoffee.com</p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "Coffee Classes & Workshops",
-            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/asheville",
+            "link_one_url": "https://counterculturecoffee.zohobookings.com/#/customer/asheville",
             "link_one_classes": "",
             "button_two_style": "btn btn-secondary",
             "link_two_text": "",
-            "link_two_url": "shopify:\/\/collections\/all",
+            "link_two_url": "shopify://collections/all",
             "link_two_classes": ""
           }
         },
         "39e708ac-64fe-4114-81f2-07902e78f084": {
           "type": "card",
           "settings": {
-            "img": "shopify:\/\/shop_images\/Boston3.jpg",
+            "img": "shopify://shop_images/Boston3.jpg",
             "title": "Boston",
-            "description": "<p>374 Somerville Ave<\/p><p>Somerville, MA 02143<\/p><p>boston@counterculturecoffee.com<\/p>",
+            "description": "<p>374 Somerville Ave</p><p>Somerville, MA 02143</p><p>boston@counterculturecoffee.com</p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "Coffee Classes & Workshops",
-            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/boston",
+            "link_one_url": "https://counterculturecoffee.zohobookings.com/#/customer/boston",
             "link_one_classes": "",
             "button_two_style": "btn btn-secondary",
             "link_two_text": "",
-            "link_two_url": "shopify:\/\/collections\/all",
+            "link_two_url": "shopify://collections/all",
             "link_two_classes": ""
           }
         },
         "33a0bf3c-4798-4bcc-a28d-79f972ef0af9": {
           "type": "card",
           "settings": {
-            "img": "shopify:\/\/shop_images\/CCC_CHS_2c_espresso.jpg",
+            "img": "shopify://shop_images/CCC_CHS_2c_espresso.jpg",
             "title": "Charleston",
-            "description": "<p>85½ Spring St<\/p><p>Charleston, SC 29403<\/p><p>charleston@counterculturecoffee.com<\/p>",
+            "description": "<p>85½ Spring St</p><p>Charleston, SC 29403</p><p>charleston@counterculturecoffee.com</p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "Coffee Classes & Workshops",
-            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/charleston",
+            "link_one_url": "https://counterculturecoffee.zohobookings.com/#/customer/charleston",
             "link_one_classes": "",
             "button_two_style": "btn btn-secondary",
             "link_two_text": "",
-            "link_two_url": "shopify:\/\/collections\/all",
+            "link_two_url": "shopify://collections/all",
             "link_two_classes": ""
           }
         },
         "d66de56f-bf87-4c4f-98ac-d52def482d02": {
           "type": "card",
           "settings": {
-            "img": "shopify:\/\/shop_images\/IMG_1761.jpg",
+            "img": "shopify://shop_images/IMG_1761.jpg",
             "title": "Chicago",
-            "description": "<p>177 North Ada Street, Unit 106<\/p><p>Chicago, IL 60607<\/p><p>chicago@counterculturecoffee.com<\/p>",
+            "description": "<p>177 North Ada Street, Unit 106</p><p>Chicago, IL 60607</p><p>chicago@counterculturecoffee.com</p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "Coffee Classes & Workshops",
-            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/chicago",
+            "link_one_url": "https://counterculturecoffee.zohobookings.com/#/customer/chicago",
             "link_one_classes": "",
             "button_two_style": "btn btn-secondary",
             "link_two_text": "",
-            "link_two_url": "shopify:\/\/collections\/all",
+            "link_two_url": "shopify://collections/all",
             "link_two_classes": ""
           }
         },
         "29724215-d2cb-49ca-9b2b-5c9807033e87": {
           "type": "card",
           "settings": {
-            "img": "shopify:\/\/shop_images\/4B9B8606.jpg",
+            "img": "shopify://shop_images/4B9B8606.jpg",
             "title": "Dallas",
-            "description": "<p>3333 Commerce St<\/p><p>Dallas, TX 75226<\/p><p>dallas@counterculturecoffee.com<\/p>",
+            "description": "<p>3333 Commerce St</p><p>Dallas, TX 75226</p><p>dallas@counterculturecoffee.com</p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "Coffee Classes & Workshops",
-            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/dallas",
+            "link_one_url": "https://counterculturecoffee.zohobookings.com/#/customer/dallas",
             "link_one_classes": "",
             "button_two_style": "btn btn-secondary",
             "link_two_text": "",
-            "link_two_url": "shopify:\/\/collections\/all",
+            "link_two_url": "shopify://collections/all",
             "link_two_classes": ""
           }
         },
         "913e04c5-0dc9-46a1-8d61-7402c253e88b": {
           "type": "card",
           "settings": {
-            "img": "shopify:\/\/shop_images\/CCC_LA_Outdoor_Indoor.jpg",
+            "img": "shopify://shop_images/CCC_LA_Outdoor_Indoor.jpg",
             "title": "LA",
-            "description": "<p>1601 Griffith Park Blvd<br\/>Los Angeles, CA 90026<\/p><p>losangeles@counterculturecoffee.com<\/p>",
+            "description": "<p>1601 Griffith Park Blvd<br/>Los Angeles, CA 90026</p><p>losangeles@counterculturecoffee.com</p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "Coffee Classes & Workshops",
-            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/la",
+            "link_one_url": "https://counterculturecoffee.zohobookings.com/#/customer/la",
             "link_one_classes": "",
             "button_two_style": "btn btn-secondary",
             "link_two_text": "",
-            "link_two_url": "shopify:\/\/collections\/all",
+            "link_two_url": "shopify://collections/all",
             "link_two_classes": ""
           }
         },
         "ff96152e-b15f-4d36-a537-17fbf281412c": {
           "type": "card",
           "settings": {
-            "img": "shopify:\/\/shop_images\/4B9B5619.jpg",
+            "img": "shopify://shop_images/4B9B5619.jpg",
             "title": "Miami",
-            "description": "<p>7450 N Miami Ave<\/p><p>Miami, FL 33150<\/p><p>miami@counterculturecoffee.com<\/p>",
+            "description": "<p>7450 N Miami Ave</p><p>Miami, FL 33150</p><p>miami@counterculturecoffee.com</p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "Coffee Classes & Workshops",
-            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/miami",
+            "link_one_url": "https://counterculturecoffee.zohobookings.com/#/customer/miami",
             "link_one_classes": "",
             "button_two_style": "btn btn-secondary",
             "link_two_text": "",
-            "link_two_url": "shopify:\/\/collections\/all",
+            "link_two_url": "shopify://collections/all",
             "link_two_classes": ""
           }
         },
         "4f9c3d1f-4837-4b46-865f-e3780c2c6ff0": {
           "type": "card",
           "settings": {
-            "img": "shopify:\/\/shop_images\/ccny_high_04.jpg",
+            "img": "shopify://shop_images/ccny_high_04.jpg",
             "title": "New York City",
-            "description": "<p>376 Broome St<\/p><p>New York, NY 10013<\/p><p>newyork@counterculturecoffee.com<\/p><h6>Accessibility Note: Our New York Training Center entrance requires the use of stairs. If you have questions or would like to discuss alternatives that may be more accessible, please contact education@counterculturecoffee.com<\/h6>",
+            "description": "<p>376 Broome St</p><p>New York, NY 10013</p><p>newyork@counterculturecoffee.com</p><h6>Accessibility Note: Our New York Training Center entrance requires the use of stairs. If you have questions or would like to discuss alternatives that may be more accessible, please contact education@counterculturecoffee.com</h6>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "Coffee Classes & Workshops",
-            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/nyc",
+            "link_one_url": "https://counterculturecoffee.zohobookings.com/#/customer/nyc",
             "link_one_classes": "",
             "button_two_style": "btn btn-secondary",
             "link_two_text": "",
-            "link_two_url": "shopify:\/\/collections\/all",
+            "link_two_url": "shopify://collections/all",
             "link_two_classes": ""
           }
         },
         "9c174405-639e-49eb-a915-fad9f05a6d08": {
           "type": "card",
+          "disabled": true,
           "settings": {
-            "img": "shopify:\/\/shop_images\/4B9B0562.jpg",
+            "img": "shopify://shop_images/4B9B0562.jpg",
             "title": "Seattle",
-            "description": "<p>313 1st Ave S<br\/>Seattle, WA 98104<\/p><p>seattle@counterculturecoffee.com<\/p>",
+            "description": "<p>313 1st Ave S<br/>Seattle, WA 98104</p><p>seattle@counterculturecoffee.com</p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "EVENTS AND CLASSES",
             "link_one_url": "",
             "link_one_classes": "",
             "button_two_style": "btn btn-secondary",
             "link_two_text": "",
-            "link_two_url": "shopify:\/\/collections\/all",
+            "link_two_url": "shopify://collections/all",
             "link_two_classes": ""
           }
         },
         "adb3a149-0765-475b-953c-4f806c19145a": {
           "type": "card",
           "settings": {
-            "img": "shopify:\/\/shop_images\/4B9B9221-2.jpg",
+            "img": "shopify://shop_images/4B9B9221-2.jpg",
             "title": "Washington, DC",
-            "description": "<p>1781 Florida Ave NW, Suite F<\/p><p>Washington, DC 20009<\/p><p>dc@counterculturecoffee.com<\/p>",
+            "description": "<p>1781 Florida Ave NW, Suite F</p><p>Washington, DC 20009</p><p>dc@counterculturecoffee.com</p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "Coffee Classes & Workshops",
-            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/customer\/dc",
+            "link_one_url": "https://counterculturecoffee.zohobookings.com/#/customer/dc",
             "link_one_classes": "",
             "button_two_style": "btn btn-secondary",
             "link_two_text": "",
-            "link_two_url": "shopify:\/\/collections\/all",
+            "link_two_url": "shopify://collections/all",
             "link_two_classes": ""
           }
         },
         "f7aee7fd-e3db-467b-8465-3a07487d8f69": {
           "type": "card",
           "settings": {
-            "img": "shopify:\/\/shop_images\/CCC_BayArea_brewbar_1_-2.jpg",
+            "img": "shopify://shop_images/CCC_BayArea_brewbar_1_-2.jpg",
             "title": "Bay Area",
-            "description": "<p>1329 64th St<\/p><p>Emeryville, CA 94608<\/p><p>bayarea@counterculturecoffee.com<\/p>",
+            "description": "<p>1329 64th St</p><p>Emeryville, CA 94608</p><p>bayarea@counterculturecoffee.com</p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "Coffee Classes & Workshops",
-            "link_one_url": "https:\/\/counterculturecoffee.zohobookings.com\/#\/bayarea",
+            "link_one_url": "https://counterculturecoffee.zohobookings.com/#/bayarea",
             "link_one_classes": "",
             "button_two_style": "btn btn-secondary",
             "link_two_text": "",
-            "link_two_url": "shopify:\/\/collections\/all",
+            "link_two_url": "shopify://collections/all",
             "link_two_classes": ""
           }
         }
@@ -242,7 +243,7 @@
         "f7aee7fd-e3db-467b-8465-3a07487d8f69"
       ],
       "settings": {
-        "title": "<p>Locations<\/p>",
+        "title": "<p>Locations</p>",
         "text_size_mobile": "text-xl",
         "text_size_desktop": "lg:text-2xl",
         "tag": "h1",
@@ -259,11 +260,11 @@
         "section_style": "background_image",
         "border_color": "border-camel",
         "background_color": "",
-        "background_image": "shopify:\/\/shop_images\/20211215-MO4A9537.jpg",
+        "background_image": "shopify://shop_images/20211215-MO4A9537.jpg",
         "use_squiggles": false,
         "number": "",
         "content": "",
-        "title": "<p>If you haven't signed up to access our education portal, contact your local team to register!<\/p>",
+        "title": "<p>If you haven't signed up to access our education portal, contact your local team to register!</p>",
         "text_size_mobile": "text-xl",
         "text_size_desktop": "lg:text-3xl",
         "tag": "h1",
@@ -274,7 +275,7 @@
         "title_classes": "",
         "button_style": "btn btn-white",
         "link_text": "check out our online classes",
-        "link_url": "https:\/\/counterculturecoffee.bridgeapp.com",
+        "link_url": "https://counterculturecoffee.bridgeapp.com",
         "link_classes": "uppercase tracking-wider font-freight-sans mt-4"
       }
     }
