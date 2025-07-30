@@ -80,6 +80,42 @@
         "text_align_sm": "text-center"
       }
     },
+    "hero_TejTWD": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/AugustOnIce_copy_jpg.jpg",
+        "s_image": "shopify://shop_images/august_on_ice-2_copy.jpg",
+        "background_color": "linear-gradient(180deg, rgba(243, 255, 129, 1), rgba(194, 224, 62, 1) 49%, rgba(234, 255, 140, 1) 100%)",
+        "video_url": "",
+        "video_placement": "lg:justify-start",
+        "pre_header": "",
+        "subheader": "",
+        "title": "<p><strong>It’s Officially August on Ice</strong></p>",
+        "text_size_mobile": "text-2xl",
+        "text_size_desktop": "lg:text-6xl",
+        "tag": "h1",
+        "font": "font-couch",
+        "weight": "font-regular",
+        "alignment": "text-center",
+        "text_color": "text-black",
+        "title_classes": "text-stroke-outline mb-5",
+        "button_style": "btn btn-primary",
+        "link_text": "Stock up on Cold Hearted",
+        "link_url": "shopify://collections/coffee",
+        "link_classes": "",
+        "content_width": "w-4/5",
+        "justify_content_lg": "lg:justify-end",
+        "justify_content_md": "md:justify-end",
+        "justify_content_sm": "justify-end",
+        "align_items_lg": "lg:items-center",
+        "align_items_md": "md:items-center",
+        "align_items_sm": "items-center",
+        "text_align_lg": "lg:text-center",
+        "text_align_md": "md:text-center",
+        "text_align_sm": "text-center"
+      }
+    },
     "hero_HnUyt3": {
       "type": "hero",
       "disabled": true,
@@ -519,6 +555,7 @@
   "order": [
     "hero_aFY6ta",
     "hero_baYNhw",
+    "hero_TejTWD",
     "hero_HnUyt3",
     "hero_wBnhNx",
     "hero_EGUcUi",
