@@ -48,8 +48,8 @@
     "hero_baYNhw": {
       "type": "hero",
       "settings": {
-        "image": "shopify://shop_images/Equilibrium_Studio_2025.gif",
-        "s_image": "shopify://shop_images/Equilibrium_Studio_2025_Mobile.gif",
+        "image": "shopify://shop_images/Iridescent_Square_2.jpg",
+        "s_image": "shopify://shop_images/Iridescent_Square_2.jpg",
         "background_color": "linear-gradient(180deg, rgba(243, 255, 129, 1), rgba(194, 224, 62, 1) 49%, rgba(234, 255, 140, 1) 100%)",
         "video_url": "",
         "video_placement": "lg:justify-start",
@@ -65,7 +65,7 @@
         "text_color": "text-black",
         "title_classes": "text-stroke-outline mb-5",
         "button_style": "btn btn-primary",
-        "link_text": "Stock up on Equilibrium",
+        "link_text": "Stock up on Iridescent",
         "link_url": "shopify://collections/coffee",
         "link_classes": "",
         "content_width": "w-4/5",
