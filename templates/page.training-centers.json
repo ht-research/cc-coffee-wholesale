@@ -180,11 +180,10 @@
         },
         "9c174405-639e-49eb-a915-fad9f05a6d08": {
           "type": "card",
-          "disabled": true,
           "settings": {
-            "img": "shopify://shop_images/4B9B0562.jpg",
-            "title": "Seattle",
-            "description": "<p>313 1st Ave S<br/>Seattle, WA 98104</p><p>seattle@counterculturecoffee.com</p>",
+            "img": "shopify://shop_images/Image_20251104_163856_332.jpg",
+            "title": "Atlanta",
+            "description": "<p>318 Cherokee Ave SE #104</p><p>Atlanta, GA 30312</p><p>atlanta@counterculturecoffee.com</p>",
             "button_one_style": "btn btn-secondary",
             "link_one_text": "EVENTS AND CLASSES",
             "link_one_url": "",
