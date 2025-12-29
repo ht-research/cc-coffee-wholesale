@@ -47,6 +47,7 @@
     },
     "hero_baYNhw": {
       "type": "hero",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Holiday2025_Lifestyle_Iridescent_Horizontal_1.jpg",
         "s_image": "shopify://shop_images/Iridescent_Square_2.jpg",
@@ -191,7 +192,6 @@
     },
     "hero_EGUcUi": {
       "type": "hero",
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/BuchiroWashingStation_1.png",
         "background_color": "",
