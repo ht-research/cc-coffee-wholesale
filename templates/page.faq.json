@@ -34,14 +34,6 @@
     "16472989575779fd1a": {
       "type": "faq-group",
       "blocks": {
-        "faq_UTwwnA": {
-          "type": "faq",
-          "settings": {
-            "question": "How do we prevent mold in our coffee?",
-            "answer": "<p><strong> </strong>We don’t just test for mold after the fact; we take a prevention-first approach by controlling the environment at every stage of the supply chain. Our data shows that 100% of our coffee since 2020 has met the moisture standards that make toxin production virtually impossible.</p><p>We take a prevention-first approach to mold/mycotoxins where we monitor moisture levels at every stage of the supply chain. Properly dried coffee (with a moisture content of 12.5% or lower), stored dry, and roasted does not support mold growth, which is why moisture control throughout the supply chain is so important. While some coffee companies do make mold-free claims, it’s not a legally defined or regulated term.</p>",
-            "label": ""
-          }
-        },
         "055dffce-3ca9-4305-8017-e2e8134a5a13": {
           "type": "faq",
           "disabled": true,
@@ -147,10 +139,17 @@
             "answer": "<p>We will email all wholesale partners and place a banner notification on our website no less than one week before the closure.</p>",
             "label": ""
           }
+        },
+        "faq_UTwwnA": {
+          "type": "faq",
+          "settings": {
+            "question": "How do we prevent mold in our coffee?",
+            "answer": "<p><strong> </strong>We don’t just test for mold after the fact; we take a prevention-first approach by controlling the environment at every stage of the supply chain. Our data shows that 100% of our coffee since 2020 has met the moisture standards that make toxin production virtually impossible.</p><p>We take a prevention-first approach to mold/mycotoxins where we monitor moisture levels at every stage of the supply chain. Properly dried coffee (with a moisture content of 12.5% or lower), stored dry, and roasted does not support mold growth, which is why moisture control throughout the supply chain is so important. While some coffee companies do make mold-free claims, it’s not a legally defined or regulated term.</p>",
+            "label": ""
+          }
         }
       },
       "block_order": [
-        "faq_UTwwnA",
         "055dffce-3ca9-4305-8017-e2e8134a5a13",
         "1f3b5636-3a3a-4a3d-b39c-18cea1d9dd3b",
         "c6a4dd08-a65e-4c14-a756-0e85fc648199",
@@ -163,7 +162,8 @@
         "949d36b2-bac8-4dab-a6e3-074bffb52ba9",
         "528676b3-9f3b-43b7-a4f3-47d883741f6a",
         "ce845116-d684-4597-ab59-02165c7f8b81",
-        "e0aaff3e-4b1e-4be6-b05f-1a4b1bc0e832"
+        "e0aaff3e-4b1e-4be6-b05f-1a4b1bc0e832",
+        "faq_UTwwnA"
       ],
       "settings": {
         "header": "Shop",
