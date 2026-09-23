@@ -7,15 +7,23 @@
     </div>
   {%- endif -%}
 
-  <ul class="grid grid-cols-2 grid-cols-1">
-    {% for product in collection.products limit: section.settings.grid_limit %}
-      {% unless product.tags contains 'Non-Inventory' %}
-        {% render 'product-card-quick-order', product: product, show_hover_image: section.settings.show_hover_image %}
-  
-        {% if section.settings.feature_image != blank and forloop.index == section.settings.feature_image_index %}
-          {% render 'grid-image-divider', image: section.settings.feature_image %}
-        {% endif %}
-      {% endunless %}
-    {% endfor %}
-  </ul>
+  {% paginate collection.products by 50 %}
+
+    {% if paginate.pages > 1 %}
+      <ul class="grid grid-cols-2 grid-cols-1">
+        {% for product in collection.products limit: section.settings.grid_limit %}
+          {% unless product.tags contains 'Non-Inventory' %}
+            {% render 'product-card-quick-order', product: product, show_hover_image: section.settings.show_hover_image %}
+      
+            {% if section.settings.feature_image != blank and forloop.index == section.settings.feature_image_index %}
+              {% render 'grid-image-divider', image: section.settings.feature_image %}
+            {% endif %}
+          {% endunless %}
+        {% endfor %}
+      </ul>
+      <div class="block px-4 py-4">
+        {% render 'pagination', align: 'center', paginate: paginate, class: 'pt1 account--pagination' %}
+      </div>
+    {% endif %}
+  {% endpaginate %}
 </div>
